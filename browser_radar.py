@@ -23,6 +23,11 @@ URL_KEYS   = ["url","absolute_url","hostedurl","joburl","applyurl","apply_url","
               "careers_url","permalink","href","canonicalurl","landing_page_url"]
 LOC_KEYS   = ["location","city","worklocation","office","joblocation","location_name","region"]
 
+# URL-мусор: блоги/статьи/новости, которые притворяются вакансиями
+URL_BAN = ["/insights/","/insight/","/blog/","/blogs/","/life-at-","/culture/","/news/",
+           "/article","/stories/","/story/",".ghost.io","/press/","/resources/","/guide",
+           "/webinar","/podcast","/events/","/event/","/case-stud","/customers/","/about"]
+
 def _first(d, keys):
     low = {k.lower(): v for k, v in d.items() if isinstance(k, str)}
     for k in keys:
@@ -101,6 +106,12 @@ def extract_jsonld(html, base_url):
                 if isinstance(v,(list,dict)): stack.append(v)
     return out
 
+def _looks_like_job(j):
+    url=(j.get("url") or "").lower()
+    if any(b in url for b in URL_BAN):        # блог/статья/новость по URL — не вакансия
+        return False
+    return True
+
 def scrape(page, link):
     """Открываем страницу, собираем JSON-ответы + JSON-LD, возвращаем список вакансий."""
     captured=[]
@@ -127,7 +138,7 @@ def scrape(page, link):
         if len(got)>len(best): best=got
     ld=extract_jsonld(html, link)
     if len(ld)>len(best): best=ld
-    return best
+    return [j for j in best if _looks_like_job(j)]
 
 def main():
     dump_all = "--all" in sys.argv
