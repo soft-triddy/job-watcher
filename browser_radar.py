@@ -115,6 +115,24 @@ NAV_TEXTS = {"apply","apply now","learn more","read more","see all","see more","
  "log in","login","subscribe","see openings","see opening","view opportunities","browse jobs",
  "search jobs","find jobs","more","details","read story","read","watch","play"}
 
+ATS_HOSTS = ["applytojob.com","skailer.com","casthr.co","careers-page.com","greenhouse.io",
+ "lever.co","ashbyhq.com","recruitee.com","workable.com","breezy.hr","pinpointhq.com",
+ "teamtailor.com","bamboohr.com","smartrecruiters.com","rippling","softr.app","sage.hr",
+ "hibob.com","peopleforce","freshteam","zoho","join.com","getro","huntflow"]
+CAREER_SEG = ["/job","/vacan","/career","/position","/opening","/apply","/o/","/role"]
+
+def _site(host):
+    host=(host or "").lower().replace("www.","")
+    parts=[p for p in host.split(".") if p]
+    return parts[-2] if len(parts)>=2 else (parts[0] if parts else "")
+
+def _in_zone(base_host, url):
+    from urllib.parse import urlparse
+    p=urlparse(url.lower()); host=p.netloc; path=p.path
+    if any(h in host for h in ATS_HOSTS): return True          # ссылка на ATS-хост = точно вакансия
+    if _site(host)!=_site(base_host): return False             # чужой домен (medium/entrepreneur) — нет
+    return any(seg in path for seg in CAREER_SEG)              # свой домен + карьерный путь (только path!)
+
 def _clean(t):
     return " ".join((t or "").split()).strip()
 
@@ -131,7 +149,8 @@ def _text_is_jobish(text):
 
 def _dom_candidates(anchors, base):
     """anchors: список dict {href, text, head}. Возвращает кандидатов-вакансий по ТЕКСТУ."""
-    from urllib.parse import urljoin
+    from urllib.parse import urljoin, urlparse
+    base_host=urlparse(base).netloc
     out=[]; seen=set()
     for a in anchors:
         href=(a.get("href") or "").strip()
@@ -139,6 +158,7 @@ def _dom_candidates(anchors, base):
         title = _clean(a.get("head")) or _clean(a.get("text"))   # приоритет вложенному заголовку
         if not _text_is_jobish(title): continue
         url = href if href.startswith("http") else urljoin(base, href)
+        if not _in_zone(base_host, url): continue     # только карьерная зона / ATS-хосты
         key=(title.lower(), url)
         if key in seen: continue
         seen.add(key)
@@ -196,10 +216,10 @@ def scrape(page, link):
         if len(got)>len(best): best=got
     ld=extract_jsonld(html, link)
     if len(ld)>len(best): best=ld
-    best=[j for j in best if _looks_like_job(j)]
-    if not best:                                  # 3-й метод — только как фолбэк
-        best=[j for j in extract_from_dom(page, link) if _looks_like_job(j)]
-    return best
+    if best:                                       # структурированные данные ЕСТЬ — доверяем им
+        return [j for j in best if _looks_like_job(j)]
+    # структурированного нет вообще — только тогда DOM-фолбэк
+    return [j for j in extract_from_dom(page, link) if _looks_like_job(j)]
 
 def main():
     dump_all = "--all" in sys.argv
