@@ -106,11 +106,69 @@ def extract_jsonld(html, base_url):
                 if isinstance(v,(list,dict)): stack.append(v)
     return out
 
+# тексты-навигация, которые НЕ являются вакансиями
+NAV_TEXTS = {"apply","apply now","learn more","read more","see all","see more","view all",
+ "view job","view jobs","view details","view opening","view openings","all positions",
+ "all jobs","open positions","open roles","join us","join our team","join the team","back",
+ "share","load more","show more","next","previous","prev","home","about","about us","contact",
+ "contact us","careers","career","jobs","explore","explore jobs","get in touch","sign in",
+ "log in","login","subscribe","see openings","see opening","view opportunities","browse jobs",
+ "search jobs","find jobs","more","details","read story","read","watch","play"}
+
+def _clean(t):
+    return " ".join((t or "").split()).strip()
+
+def _text_is_jobish(text):
+    t = _clean(text)
+    low = t.lower()
+    if not t: return False
+    if low in NAV_TEXTS: return False
+    for p in ("apply","learn more","read more","see all","view all","load more","show more"):
+        if low.startswith(p): return False
+    if len(t) < 8 or len(t) > 140: return False      # слишком коротко/длинно — не тайтл
+    if len(t.split()) > 16: return False              # это уже абзац, не заголовок
+    return True
+
+def _dom_candidates(anchors, base):
+    """anchors: список dict {href, text, head}. Возвращает кандидатов-вакансий по ТЕКСТУ."""
+    from urllib.parse import urljoin
+    out=[]; seen=set()
+    for a in anchors:
+        href=(a.get("href") or "").strip()
+        if not href or href.lower().startswith(("javascript:","mailto:","tel:")): continue
+        title = _clean(a.get("head")) or _clean(a.get("text"))   # приоритет вложенному заголовку
+        if not _text_is_jobish(title): continue
+        url = href if href.startswith("http") else urljoin(base, href)
+        key=(title.lower(), url)
+        if key in seen: continue
+        seen.add(key)
+        out.append({"title":title, "url":url, "location":""})
+    return out
+
 def _looks_like_job(j):
     url=(j.get("url") or "").lower()
     if any(b in url for b in URL_BAN):        # блог/статья/новость по URL — не вакансия
         return False
     return True
+
+def extract_from_dom(page, base):
+    try:
+        anchors = page.eval_on_selector_all("a[href]", '''els => els.map(e => {
+            const h = e.querySelector("h1,h2,h3,h4");
+            return {href: e.getAttribute("href") || "",
+                    text: (e.innerText || "").trim(),
+                    head: h ? (h.innerText || "").trim() : ""};
+        })''')
+    except Exception:
+        anchors=[]
+    cands=_dom_candidates(anchors, base)
+    if cands: return cands
+    # аварийный запас: голые заголовки без ссылок
+    try:
+        heads = page.eval_on_selector_all("h1,h2,h3", "els => els.map(e => (e.innerText||\"\").trim())")
+    except Exception:
+        heads=[]
+    return [{"title":_clean(h),"url":base,"location":""} for h in heads if _text_is_jobish(h)]
 
 def scrape(page, link):
     """Открываем страницу, собираем JSON-ответы + JSON-LD, возвращаем список вакансий."""
@@ -138,7 +196,10 @@ def scrape(page, link):
         if len(got)>len(best): best=got
     ld=extract_jsonld(html, link)
     if len(ld)>len(best): best=ld
-    return [j for j in best if _looks_like_job(j)]
+    best=[j for j in best if _looks_like_job(j)]
+    if not best:                                  # 3-й метод — только как фолбэк
+        best=[j for j in extract_from_dom(page, link) if _looks_like_job(j)]
+    return best
 
 def main():
     dump_all = "--all" in sys.argv
