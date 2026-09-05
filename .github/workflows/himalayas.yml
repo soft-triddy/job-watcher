@@ -1,7 +1,12 @@
 name: himalayas
 
 on:
-  workflow_dispatch:      # пока только ручной запуск — это проверочная Фаза 1
+  schedule:
+    - cron: "45 5 * * *"      # 05:45 UTC ≈ 11:45 по Бишкеку (со сдвигом от других радаров)
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run:
@@ -12,8 +17,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - name: run himalayas (dump all — показать весь текущий улов)
-        run: python himalayas_radar.py --all
+      - name: run himalayas
+        run: python himalayas_radar.py
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
+      - name: save state
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add seen_himalayas.json || true
+          git commit -m "himalayas state [skip ci]" || echo "no changes to save"
+          git push
