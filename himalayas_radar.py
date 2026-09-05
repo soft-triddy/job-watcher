@@ -53,15 +53,28 @@ def collect():
             for j in batch:
                 g = j.get("guid")
                 if not g: continue
+                cats = (j.get("categories") or []) + (j.get("parentCategories") or [])
                 jobs[g] = {"title": j.get("title"), "company": j.get("companyName"),
                            "url": j.get("applicationLink"), "location": loc_str(j),
-                           "slug": j.get("companySlug"), "guid": g}
+                           "slug": j.get("companySlug"), "guid": g,
+                           "cats": " ".join(str(c) for c in cats)}
             total = data.get("totalCount", 0)
             got = (page * (data.get("limit") or len(batch)))
             if got >= total: break
             page += 1; time.sleep(PAUSE)
         time.sleep(PAUSE)
     return list(jobs.values())
+
+# крипта на уровне КОМПАНИИ (титул чистый, а контора крипта) — Himalayas даёт categories
+CRYPTO_TERMS = ["crypto","web3","blockchain","defi","stablecoin","ethereum","bitcoin","nft","token"]
+CRYPTO_COMPANIES = {"tether","tether operations limited","filecoin","filecoin foundation",
+                    "chainstack","immunefi"}
+
+def _is_crypto_company(job):
+    name=(job.get("company") or "").lower().strip()
+    if name in CRYPTO_COMPANIES: return True
+    blob=(name+" "+(job.get("cats") or "")).lower()
+    return any(t in blob for t in CRYPTO_TERMS)
 
 def main():
     dump_all = "--all" in sys.argv
@@ -72,6 +85,7 @@ def main():
 
     allj = collect()
     mk = [j for j in allj if j.get("title") and j.get("url")
+          and not _is_crypto_company(j)
           and is_marketing(j["title"], j.get("location", ""))]
     new = [j for j in mk if j["guid"] not in seen]
     for j in mk: seen[j["guid"]] = j["title"]
