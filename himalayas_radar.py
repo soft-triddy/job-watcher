@@ -17,7 +17,7 @@ STATE = "seen_himalayas.json"
 QUERIES = ["demand generation", "growth marketing", "inbound marketing",
            "digital marketing", "performance marketing", "seo"]
 WORLDWIDE = True                 # hire-anywhere — твой жёсткий гейт
-EMPLOYMENT_TYPES = "Contractor"  # узко. Хочешь шире — "Contractor,Full Time"
+EMPLOYMENT_TYPES = "Full Time"   # строго фултайм (EOR/контракт-оформленные роли не попадут)
 MAX_PAGES = 5                    # вежливый потолок пагинации на запрос
 PAUSE = 1.0                      # пауза между запросами (rate limit 429)
 TIMEOUT = 30
