@@ -38,7 +38,9 @@ NEG_ROLE = ["market research analyst","stock market","supermarket","capital mark
            "corporate communications","integration",
            "recruiter","community","customer success","product manager","acquisition",
            "engineer","account executive","partner","deployment","event","influencer",
-           "talent acquisition","cpo"]
+           "talent acquisition","cpo",
+           "crypto","web3","blockchain","affiliate","copywriter","producer",
+           "data scien","account manager","account supervisor"]
 
 # формат/гео — выкидываем по ЗАГОЛОВКУ + ЛОКАЦИИ вместе (тип работы и штат часто в локации!)
 NEG_GEO_SUB = ["hybrid"]
