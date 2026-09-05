@@ -1,0 +1,19 @@
+name: himalayas
+
+on:
+  workflow_dispatch:      # пока только ручной запуск — это проверочная Фаза 1
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: run himalayas (dump all — показать весь текущий улов)
+        run: python himalayas_radar.py --all
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
