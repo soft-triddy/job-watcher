@@ -14,8 +14,7 @@ BASE  = "https://himalayas.app/jobs/api/search"
 STATE = "seen_himalayas.json"
 
 # --- настройки гейта (правишь тут) ---
-QUERIES = ["demand generation", "growth marketing", "inbound marketing",
-           "digital marketing", "performance marketing", "seo"]
+QUERIES = ["marketing", "growth", "demand", "seo", "crm", "lifecycle"]  # широкие — охват; сужает уже фильтр
 WORLDWIDE = True                 # hire-anywhere — твой жёсткий гейт
 EMPLOYMENT_TYPES = "Full Time"   # строго фултайм (EOR/контракт-оформленные роли не попадут)
 MAX_PAGES = 5                    # вежливый потолок пагинации на запрос
