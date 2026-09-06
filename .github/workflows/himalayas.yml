@@ -18,7 +18,7 @@ jobs:
           python-version: "3.12"
       - run: pip install requests
       - name: run
-        run: python himalayas.py
+        run: python himalayas_radar.py
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
