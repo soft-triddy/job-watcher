@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Оценка новых вакансий под резюме. Общий модуль для radar / browser_radar / himalayas_radar.
-LLM: GitHub Models (бесплатно, токен = встроенный GITHUB_TOKEN; в workflow нужно permissions: models: read).
-Никогда не ломает радар: нет токена / лимит / ошибка -> вакансия уходит без оценки.
+LLM: Gemini API (бесплатный тариф Google AI Studio), OpenAI-совместимый эндпоинт.
+Ключ — секрет репо GEMINI_API_KEY. (GitHub Models закрыт 30.07.2026.)
+Никогда не ломает радар: нет ключа / лимит / ошибка -> вакансия уходит без оценки.
 
 Публичное API:
   score_jobs(jobs, page=None)  -> проставляет job["score"] (dict) или None
@@ -11,11 +12,14 @@ LLM: GitHub Models (бесплатно, токен = встроенный GITHUB
 import html as _html, json, os, re, time
 import requests
 
-MODEL    = os.environ.get("SCORER_MODEL", "openai/gpt-4.1-mini")
-ENDPOINT = "https://models.github.ai/inference/chat/completions"
-TOKEN    = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_MODELS_TOKEN")
+ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+TOKEN    = os.environ.get("GEMINI_API_KEY")
+# цепочка моделей: если модель недоступна (404) или упёрлась в лимит (429) — пробуем следующую
+MODELS   = [m.strip() for m in os.environ.get(
+    "SCORER_MODELS", "gemini-3.8-flash,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-2.5-flash").split(",") if m.strip()]
+MODEL    = MODELS[0]
 PROFILE  = "scoring_profile.md"
-MAX_PER_RUN = int(os.environ.get("SCORER_MAX", "40"))  # 150/день на всё — делим между радарами
+MAX_PER_RUN = int(os.environ.get("SCORER_MAX", "40"))  # потолок оценок за один запуск радара
 JD_CHARS = 9000                                         # ~2.3K токенов; лимит модели 8K на вход
 TIMEOUT  = 30
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -146,33 +150,28 @@ DIAG = []          # первая причина сбоя — уходит ст�
 
 class ScoreError(Exception): pass
 
-_JSON_MODE = [True]
+_M = [0]                                   # индекс текущей модели в цепочке
 def _ask(system, user):
-    body = {"model": MODEL, "temperature": 0, "max_tokens": 200,
-            "messages": [{"role": "system", "content": system},
-                         {"role": "user", "content": user}]}
-    if _JSON_MODE[0]: body["response_format"] = {"type": "json_object"}
-    hdr = {"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json",
-           "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
-    url = ENDPOINT
-    for _ in range(4):                    # редиректы руками: requests превращает POST в GET и теряет тело
-        r = requests.post(url, timeout=60, json=body, headers=hdr, allow_redirects=False)
-        if r.status_code in (301, 302, 303, 307, 308) and r.headers.get("Location"):
-            from urllib.parse import urljoin
-            url = urljoin(url, r.headers["Location"]); continue
-        break
-    if r.status_code == 400 and _JSON_MODE[0] and "response_format" in r.text:
-        _JSON_MODE[0] = False                  # модель не умеет json-режим — просим JSON текстом
-        return _ask(system, user)
-    if r.status_code == 429:
-        raise RuntimeError("rate-limit: " + r.text[:150])
-    if r.status_code >= 400:
-        raise ScoreError(f"HTTP {r.status_code}: {r.text[:200]}")
-    try:
-        return r.json()["choices"][0]["message"]["content"]
-    except Exception:
-        snippet = " ".join((r.text or "<пусто>")[:160].split())
-        raise ScoreError(f"HTTP {r.status_code} {r.headers.get('content-type','?')} {url} :: {snippet}")
+    while _M[0] < len(MODELS):
+        model = MODELS[_M[0]]
+        body = {"model": model, "temperature": 0, "max_tokens": 2000,   # запас: думающие модели тратят токены на рассуждение
+                "messages": [{"role": "system", "content": system},
+                             {"role": "user", "content": user}]}
+        r = requests.post(ENDPOINT, timeout=90, json=body,
+                          headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"})
+        if r.status_code in (404, 429) or (r.status_code == 400 and "model" in r.text.lower()):
+            print(f"scorer: {model} -> HTTP {r.status_code}, пробую следующую модель")
+            _M[0] += 1; continue
+        if r.status_code >= 400:
+            raise ScoreError(f"HTTP {r.status_code} [{model}]: {' '.join(r.text[:200].split())}")
+        try:
+            content = r.json()["choices"][0]["message"]["content"]
+        except Exception:
+            raise ScoreError(f"HTTP {r.status_code} [{model}] не-JSON: {' '.join((r.text or '<пусто>')[:160].split())}")
+        if not content:
+            raise ScoreError(f"[{model}] пустой ответ (finish: {r.json()['choices'][0].get('finish_reason')})")
+        return content
+    raise RuntimeError("все модели из цепочки недоступны или в лимите: " + ", ".join(MODELS))
 
 def diag_line():
     return f"\n\n⚠️ оценщик: {DIAG[0]}" if DIAG else ""
@@ -199,8 +198,8 @@ def parse(raw):
 def score_jobs(jobs, page=None):
     for j in jobs: j["score"] = None
     if not TOKEN:
-        DIAG.append("нет GITHUB_TOKEN в env workflow")
-        print("scorer: нет GITHUB_TOKEN — шлю без оценок"); return jobs
+        DIAG.append("нет GEMINI_API_KEY — добавь секрет в репо")
+        print("scorer: нет GEMINI_API_KEY — шлю без оценок"); return jobs
     system = RUBRIC + "\n\n=== CANDIDATE ===\n" + _profile()
     done = 0
     for j in jobs:
@@ -214,18 +213,18 @@ def score_jobs(jobs, page=None):
             s = parse(_ask(system, user))
         except RuntimeError as e:
             DIAG.append(str(e)[:200])
-            print("scorer: лимит GitHub Models исчерпан — остальные без оценки"); break
+            print("scorer: лимиты исчерпаны — остальные без оценки"); break
         except Exception as e:
             msg = f"{type(e).__name__} {str(e)[:200]}"
             print(f"scorer: {j.get('company')}: {msg}"); s = None
             if not DIAG: DIAG.append(msg)
-            if isinstance(e, ScoreError) and (" 401" in msg or " 403" in msg or " 404" in msg):
+            if isinstance(e, ScoreError) and (" 401" in msg or " 403" in msg):
                 break                          # доступ/модель — дальше бессмысленно
         else:
             if s is None and not DIAG: DIAG.append("модель вернула не-JSON")
         if s: s["title_only"] = not full
         j["score"] = s; done += 1
-        time.sleep(4.5)                       # 15 запросов/мин на бесплатном уровне
+        time.sleep(6)                         # бесплатный тариф: ~10 запросов/мин
     return jobs
 
 # ---------- формат ----------

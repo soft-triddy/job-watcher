@@ -11,5 +11,5 @@ job = {"company": "Test Co", "title": "Growth Marketing Manager (B2B SaaS)", "lo
                        "landing pages, CRO experiments and HubSpot automation (lifecycle stages, lead routing). "
                        "Requirements: 5+ years in B2B SaaS growth, HubSpot, GA4/GTM, strong English.")}
 scorer.score_jobs([job])
-print("token:", "есть" if scorer.TOKEN else "НЕТ", "| model:", scorer.MODEL, "| score:", job["score"])
+print("token:", "есть" if scorer.TOKEN else "НЕТ", "| models:", scorer.MODELS, "| score:", job["score"])
 send("🧪 Тест оценщика\n\n" + scorer.fmt_job(job) + scorer.diag_line())

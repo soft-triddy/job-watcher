@@ -9,7 +9,6 @@ on:
 
 permissions:
   contents: read
-  models: read
 
 jobs:
   run:
@@ -25,4 +24,4 @@ jobs:
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
