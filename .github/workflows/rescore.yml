@@ -1,0 +1,27 @@
+name: rescore
+
+on:
+  push:
+    paths:
+      - rescore_ids.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: run
+        run: python rescore.py
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
