@@ -34,7 +34,13 @@ for (ats, slug), need in want.items():
 
 print(f"найдено {len(jobs)} из {len(ids)}, закрыто/не найдено {len(gone)}")
 scorer.MAX_PER_RUN = max(scorer.MAX_PER_RUN, len(jobs))
-scorer.score_jobs(jobs)
-parts = [f"🔁 Переоценка вакансий из прогона 21:07 ({len(jobs)}):"] + [scorer.fmt_job(j) for j in scorer.rank(jobs)]
-if gone: parts.append("Уже закрыты:\n" + "\n".join("• " + g for g in gone))
-send("\n\n".join(parts) + scorer.diag_line())
+import time
+t0 = time.time()
+for i in range(0, len(jobs), 10):                     # частями: если прогон прервётся, готовое уже придёт
+    batch = jobs[i:i+10]
+    scorer.score_jobs(batch)
+    print(f"пачка {i//10+1}: {time.time()-t0:.0f}s")
+    send("\n\n".join([f"🔁 Переоценка, часть {i//10+1} ({len(batch)}):"] +
+                     [scorer.fmt_job(j) for j in scorer.rank(batch)]) + scorer.diag_line())
+    scorer.DIAG.clear()
+if gone: send("🔁 Уже закрыты:\n" + "\n".join("• " + g for g in gone))

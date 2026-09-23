@@ -151,15 +151,17 @@ DIAG = []          # первая причина сбоя — уходит ст�
 class ScoreError(Exception): pass
 
 _M = [0]                                   # индекс текущей модели в цепочке
+_REASON = ["none"]
 def _ask(system, user):
     while _M[0] < len(MODELS):
         model = MODELS[_M[0]]
         body = {"model": model, "temperature": 0, "max_tokens": 2000,   # запас: думающие модели тратят токены на рассуждение
                 "messages": [{"role": "system", "content": system},
                              {"role": "user", "content": user}]}
+        if _REASON[0]: body["reasoning_effort"] = _REASON[0]   # оценке «размышления» не нужны — так в разы быстрее
         for attempt in range(3):          # 5xx (перегрузка) — временное: две повторные попытки с паузой
             try:
-                r = requests.post(ENDPOINT, timeout=90, json=body,
+                r = requests.post(ENDPOINT, timeout=45, json=body,
                                   headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"})
             except requests.RequestException as e:
                 r = None; err = e
@@ -169,6 +171,9 @@ def _ask(system, user):
             code = r.status_code if r is not None else type(err).__name__
             print(f"scorer: {model} -> {code} (перегрузка), пробую следующую модель")
             _M[0] += 1; continue
+        if r.status_code == 400 and "reasoning" in r.text.lower() and _REASON[0]:
+            _REASON[0] = "low" if _REASON[0] == "none" else None     # модель не принимает — ослабляем/убираем
+            continue
         if r.status_code in (404, 429) or (r.status_code == 400 and "model" in r.text.lower()):
             print(f"scorer: {model} -> HTTP {r.status_code}, пробую следующую модель")
             _M[0] += 1; continue
@@ -234,7 +239,7 @@ def score_jobs(jobs, page=None):
             if s is None and not DIAG: DIAG.append("модель вернула не-JSON")
         if s: s["title_only"] = not full
         j["score"] = s; done += 1
-        time.sleep(6)                         # бесплатный тариф: ~10 запросов/мин
+        time.sleep(4)                         # бесплатный тариф: запас по запросам в минуту
     return jobs
 
 # ---------- формат ----------
