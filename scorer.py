@@ -43,14 +43,21 @@ dull = how unappealing the role is for her (0 = dream, 10 = soul-crushing), per 
   Growth/Demand Gen/Inbound hands-on at B2B SaaS: 0-3. Digital Marketing Manager: 3-5.
   MarOps/CRM/Lifecycle: 4-6. Anything in the dull/unwanted list: 7-10.
 hire = can she be hired from Kyrgyzstan as remote contractor/B2B or via worldwide EOR?
-  green: worldwide/anywhere/any timezone, contractor OK, or CIS/Central Asia allowed.
-  yellow: not stated, or region-limited without explicit residency (e.g. "EMEA", "CET overlap", "Europe").
+  green: ONLY if the text explicitly says worldwide/anywhere/any location, contractors/B2B welcome, or allows
+    CIS/Central Asia. Never green by default or because the role "sounds remote".
+  yellow: remote but region-limited without explicit residency (e.g. "EMEA", "Europe", "CET overlap"), or the
+    text is silent on where she can be hired from.
   red: needs residency/work permit in specific countries, US/UK/EU-only payroll, hybrid, office, relocation required.
+  The Location field is a hard signal: if it names a specific city or country (e.g. "United States", "London",
+  "Toronto") and the text does not explicitly say remote-worldwide, hire is red for US/UK/Canada/Australia and
+  at best yellow for anywhere else.
 grade: down = junior/associate/coordinator/specialist-level scope; up = Head/Director/VP owning a big team or
   budget beyond her scale; ok otherwise (manager/senior/lead, small team).
 blocker: the single most important hard gap if one exists (e.g. "Meta/TikTok media buying", "SQL/BI engineering",
   "B2C retention CRM", "native English", "10+ years leadership"); "" if none.
-stop: set only if the COMPANY's core business is crypto/web3, betting/gambling/iGaming or game development.
+stop: set only on explicit evidence in the text that the COMPANY's core business is crypto/web3 (tokens,
+  blockchain, DeFi, exchange), betting/gambling/iGaming (casino, sportsbook) or game development (studio making
+  games). AI, analytics, devtools, observability, adtech or fintech are NOT stop. When unsure, leave "".
 resume: which resume version fits this vacancy best.
 If only the title is available, still answer; be conservative (fit and hire toward the middle)."""
 
@@ -228,6 +235,18 @@ def parse(raw):
     if out["fit"] is None or out["dull"] is None: return None
     return out
 
+WW = re.compile(r"worldwide|anywhere|global|any location|any timezone|remote\s*\(?ww|\bww\b", re.I)
+HARD_RED = re.compile(r"\b(united states|usa|u\.s\.|us|united kingdom|uk|england|london|canada|toronto|"
+                      r"vancouver|australia|sydney|new york|san francisco|seattle|bellevue|austin|boston|chicago)\b", re.I)
+
+def _guard_remote(job, s):
+    """Жёсткая проверка ремоута по полю локации — модели тут верим меньше, чем полю."""
+    loc = (job.get("location") or "").strip()
+    if not loc or WW.search(loc): return s
+    if HARD_RED.search(loc): s["hire"] = "red"
+    elif s["hire"] == "green" and not re.search(r"\bremote\b", loc, re.I): s["hire"] = "yellow"
+    return s
+
 def score_jobs(jobs, page=None):
     for j in jobs: j["score"] = None
     if not TOKEN:
@@ -258,7 +277,7 @@ def score_jobs(jobs, page=None):
                 break                          # доступ/модель — дальше бессмысленно
         else:
             if s is None and not DIAG: DIAG.append("модель вернула не-JSON")
-        if s: s["title_only"] = not full; score_jobs._fails = 0
+        if s: s["title_only"] = not full; score_jobs._fails = 0; _guard_remote(j, s)
         j["score"] = s; done += 1
         time.sleep(4)                         # бесплатный тариф: запас по запросам в минуту
     return jobs

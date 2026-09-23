@@ -40,7 +40,11 @@ NEG_ROLE = ["market research analyst","stock market","supermarket","capital mark
            "engineer","account executive","partner","deployment","event","influencer",
            "talent acquisition","cpo",
            "crypto","web3","blockchain","affiliate","copywriter","producer",
-           "data scien","account manager","account supervisor"]
+           "data scien","account manager","account supervisor",
+           # 2026-09-23: продажи, креатив, младшие грейды, «общие» заявки
+           "sales","account strategist","curation","studio manager","creative","consultant",
+           "representative","coordinator","assistant","junior","praktikant","media buyer",
+           "operative","expression of interest","general application"]
 
 # формат/гео — выкидываем по ЗАГОЛОВКУ + ЛОКАЦИИ вместе (тип работы и штат часто в локации!)
 NEG_GEO_SUB = ["hybrid"]
@@ -67,6 +71,8 @@ def is_marketing(title, location=""):
     # 1) не та роль — по заголовку
     if any(n in t for n in NEG_ROLE): return False
     if re.search(r"\bpr\b", t): return False            # PR как целое слово
+    if re.search(r"\bintern(ship)?\b", t): return False  # стажировка, но не «international»
+    if "associate" in t and "associate director" not in t: return False   # младший грейд
     # 2) это вообще маркетинг? — по заголовку
     if not any(k in t for k in KW): return False
     # 3) формат/гео — по заголовку И локации вместе
