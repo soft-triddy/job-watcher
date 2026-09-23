@@ -1,120 +1,28 @@
-[1/118] AgileFluent: browser custom  jobs= mk= 
-[2/118] Allformance: check   jobs= mk= сайт не открылся
-[3/118] AtBay: api Greenhouse atbayjobs jobs=35 mk=0 
-[4/118] BostonGene: browser custom  jobs= mk= 
-[5/118] Cloudaware: linkedin   jobs= mk= карьерная страница не найдена
-[6/118] Cognigy: api Greenhouse cognigy jobs=0 mk=0 
-[7/118] Criteo: check   jobs= mk= сайт не открылся
-[8/118] DataNever Lies: browser custom  jobs= mk= 
-[9/118] Databricks: browser custom  jobs= mk= 
-[10/118] Dbrain: linkedin   jobs= mk= карьерная страница не найдена
-[11/118] Delightex: linkedin   jobs= mk= карьерная страница не найдена
-[12/118] DonateOpen: browser custom  jobs= mk= 
-[13/118] Duolingo: api Greenhouse duolingo jobs=83 mk=1 
-[14/118] Dwelly: api Greenhouse dwelly jobs=22 mk=1 
-[15/118] eBay: check   jobs= mk= сайт не открылся
-[16/118] Ecoplatform: linkedin   jobs= mk= карьерная страница не найдена
-[17/118] Elementaree: linkedin   jobs= mk= карьерная страница не найдена
-[18/118] Elly Analytics: browser custom  jobs= mk= 
-[19/118] EMEX: linkedin   jobs= mk= карьерная страница не найдена
-[20/118] Enhesa: api Greenhouse enhesa jobs=12 mk=1 
-[21/118] Ennabl: browser custom  jobs= mk= 
-[22/118] Enty.io: linkedin   jobs= mk= карьерная страница не найдена
-[23/118] Factorial: browser Factorial  jobs= mk= 
-[24/118] Formlabs: browser custom  jobs= mk= 
-[25/118] Garage IT: browser custom  jobs= mk= 
-[26/118] Gaviti: browser custom  jobs= mk= 
-[27/118] Geeklama: linkedin   jobs= mk= карьерная страница не найдена
-[28/118] Genestack: api Breezy genestack-ltd jobs=7 mk=0 
-[29/118] ornament: check   jobs= mk= сайт не открылся
-[30/118] GoStudent: linkedin   jobs= mk= карьерная страница не найдена
-[31/118] Hirehire: api Ashby hirehire jobs=5 mk=0 
-[32/118] Sally - AI Sales Representative: linkedin   jobs= mk= карьерная страница не найдена
-[33/118] ifarm: browser custom  jobs= mk= 
-[34/118] Itransition Group: browser custom  jobs= mk= 
-[35/118] KateMedia: linkedin   jobs= mk= карьерная страница не найдена
-[36/118] Kewazo: linkedin   jobs= mk= карьерная страница не найдена
-[37/118] Liepa Limited: check   jobs= mk= сайт не открылся
-[38/118] Mento.vc: linkedin   jobs= mk= карьерная страница не найдена
-[39/118] Mirantis: api SmartRecruiters Mirantis jobs=96 mk=1 
-[40/118] Mitek: api Lever miteksystems-2 jobs=7 mk=0 
-[41/118] Moloco: api Greenhouse moloco jobs=43 mk=5 
-[42/118] Movchan's Group: linkedin   jobs= mk= карьерная страница не найдена
-[43/118] NeuraLoom: check   jobs= mk= сайт не открылся
-[44/118] Nuanu: linkedin   jobs= mk= карьерная страница не найдена
-[45/118] OCSiAl: browser custom  jobs= mk= 
-[46/118] OneSoil: linkedin   jobs= mk= карьерная страница не найдена
-[47/118] Orion Innovation: browser custom  jobs= mk= 
-[48/118] Overhood: linkedin   jobs= mk= карьерная страница не найдена
-[49/118] Parloa: browser Notion  jobs= mk= 
-[50/118] PharmBonus: linkedin   jobs= mk= карьерная страница не найдена
-[51/118] Pipedrive: browser custom  jobs= mk= 
-[52/118] Pixellu: linkedin   jobs= mk= карьерная страница не найдена
-[53/118] Pixel Point: browser Notion  jobs= mk= 
-[54/118] Preply: browser custom  jobs= mk= 
-[55/118] Qdrant: linkedin   jobs= mk= карьерная страница не найдена
-[56/118] Realytics: browser custom  jobs= mk= 
-[57/118] Remedy Logic: browser custom  jobs= mk= 
-[58/118] Rork: browser custom  jobs= mk= 
-[59/118] Sanas: browser Rippling  jobs= mk= Rippling: слаг не подобрался
-[60/118] SEMA Software: browser custom  jobs= mk= 
-[61/118] Simple Life: browser Teamtailor  jobs= mk= Teamtailor: слаг не подобрался
-[62/118] SODA.Auto: linkedin   jobs= mk= карьерная страница не найдена
-[63/118] Stackadapt: api Greenhouse stackadapt jobs=69 mk=4 
-[64/118] Superhuman: api Greenhouse superhuman jobs=0 mk=0 
-[65/118] Synthflow AI: browser custom  jobs= mk= 
-[66/118] Tabula: linkedin   jobs= mk= карьерная страница не найдена
-[67/118] Telnyx: api Greenhouse telnyx54 jobs=56 mk=0 
-[68/118] Tempo Software: api Ashby tempo jobs=9 mk=0 
-[69/118] Teralytics: linkedin   jobs= mk= карьерная страница не найдена
-[70/118] Visaright: browser custom  jobs= mk= 
-[71/118] Wayvee: linkedin   jobs= mk= карьерная страница не найдена
-[72/118] Wonder Family: check   jobs= mk= сайт не открылся
-[73/118] Yolla: linkedin   jobs= mk= карьерная страница не найдена
-[74/118] Zeroavia: check   jobs= mk= сайт не открылся
-[75/118] Zesty: browser Comeet  jobs= mk= 
-[76/118] Refocus: browser custom  jobs= mk= 
-[77/118] Unleashing AI: linkedin   jobs= mk= нет сайта
-[78/118] Imperfect Tech: browser YC  jobs= mk= 
-[79/118] SLSBMB: linkedin   jobs= mk= карьерная страница не найдена
-[80/118] Brickell Digital: linkedin   jobs= mk= карьерная страница не найдена
-[81/118] Zarta: linkedin   jobs= mk= нет сайта
-[82/118] Green Growth: linkedin   jobs= mk= нет сайта
-[83/118] Grintern: check   jobs= mk= сайт не открылся
-[84/118] Placy: browser custom  jobs= mk= 
-[85/118] Victa: linkedin   jobs= mk= нет сайта
-[86/118] RED: linkedin   jobs= mk= нет сайта
-[87/118] CURVES: linkedin   jobs= mk= карьерная страница не найдена
-[88/118] DataDome: check   jobs= mk= сайт не открылся
-[89/118] DeckRobot: linkedin   jobs= mk= карьерная страница не найдена
-[90/118] DialLink: browser custom  jobs= mk= 
-[91/118] Doge Flat: check   jobs= mk= сайт не открылся
-[92/118] DoubleCloud: browser Breezy  jobs= mk= Breezy: слаг не подобрался
-[93/118] Everhour: linkedin   jobs= mk= карьерная страница не найдена
-[94/118] Fundraise Up: browser custom  jobs= mk= 
-[95/118] Headroom Inc.: linkedin   jobs= mk= карьерная страница не найдена
-[96/118] Immcore: check   jobs= mk= сайт не открылся
-[97/118] Insense: linkedin   jobs= mk= карьерная страница не найдена
-[98/118] Linked Helper: linkedin   jobs= mk= карьерная страница не найдена
-[99/118] Lunchelub: browser custom  jobs= mk= 
-[100/118] Maildoso: linkedin   jobs= mk= карьерная страница не найдена
-[101/118] MarfaTech: browser custom  jobs= mk= 
-[102/118] Minders studio: check   jobs= mk= сайт не открылся
-[103/118] Product Science: linkedin   jobs= mk= карьерная страница не найдена
-[104/118] Pygmation At: check   jobs= mk= сайт не открылся
-[105/118] Relogate: browser custom  jobs= mk= 
-[106/118] Servers.com: linkedin   jobs= mk= карьерная страница не найдена
-[107/118] SIDESTREAM: browser Join  jobs= mk= 
-[108/118] Slidespiel: browser custom  jobs= mk= 
-[109/118] Spiry: browser custom  jobs= mk= 
-[110/118] Teleperformance: browser custom  jobs= mk= 
-[111/118] Temporal: browser custom  jobs= mk= 
-[112/118] whoosh: browser custom  jobs= mk= 
-[113/118] Xometry: api Greenhouse xometry jobs=235 mk=1 
-[114/118] Yandex: browser custom  jobs= mk= 
-[115/118] Zalando: browser custom  jobs= mk= 
-[116/118] ox: browser custom  jobs= mk= 
-[117/118] Rhino: linkedin   jobs= mk= нет сайта
-[118/118] QIC digital hub: browser custom  jobs= mk= 
+[1/26] Qdrant: api Ashby qdrant.tech jobs=7 mk=0 
+[2/26] Insense: api Teamtailor insense.na jobs=3 mk=0 
+[3/26] Servers.com: api Breezy servers-com jobs=0 mk=0 
+[4/26] GoStudent: api Greenhouse gostudent jobs=31 mk=0 
+[5/26] DataDome: api Greenhouse ddome jobs=14 mk=0 
+[6/26] Superhuman: api Greenhouse grammarly jobs=0 mk=0 
+[7/26] Cognigy: api Workable cognigy jobs=0 mk=0 
+[8/26] Pixellu: browser custom  jobs= mk= 
+[9/26] Product Science: browser custom  jobs= mk= 
+[10/26] Criteo: api Workday criteo.wd3.myworkdayjobs.com/Criteo_Career_Site jobs=71 mk=8 
+[11/26] eBay: api Workday ebay.wd5.myworkdayjobs.com/apply jobs=146 mk=4 
+[12/26] Zeroavia: browser custom  jobs= mk= 
+[13/26] Allformance: check   jobs= mk= сайт не открылся
+[14/26] ornament: check   jobs= mk= сайт не открылся
+[15/26] Liepa Limited: check   jobs= mk= сайт не открылся
+[16/26] NeuraLoom: check   jobs= mk= сайт не открылся
+[17/26] Wonder Family: check   jobs= mk= сайт не открылся
+[18/26] Grintern: check   jobs= mk= сайт не открылся
+[19/26] Doge Flat: check   jobs= mk= сайт не открылся
+[20/26] Immcore: check   jobs= mk= сайт не открылся
+[21/26] Minders studio: check   jobs= mk= сайт не открылся
+[22/26] Pygmation At: check   jobs= mk= сайт не открылся
+[23/26] Cloudaware: linkedin   jobs= mk= карьерная страница не найдена
+[24/26] Everhour: browser custom  jobs= mk= 
+[25/26] Linked Helper: browser custom  jobs= mk= 
+[26/26] Maildoso: linkedin   jobs= mk= карьерная страница не найдена
 
-Итого: {'browser': 47, 'check': 14, 'api': 15, 'linkedin': 42}
+Итого: {'api': 9, 'browser': 5, 'check': 10, 'linkedin': 2}
