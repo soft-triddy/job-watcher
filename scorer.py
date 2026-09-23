@@ -171,8 +171,9 @@ def _ask(system, user):
             code = r.status_code if r is not None else type(err).__name__
             print(f"scorer: {model} -> {code} (перегрузка), пробую следующую модель")
             _M[0] += 1; continue
-        if r.status_code == 400 and "reasoning" in r.text.lower() and _REASON[0]:
-            _REASON[0] = "low" if _REASON[0] == "none" else None     # модель не принимает — ослабляем/убираем
+        if r.status_code == 400 and _REASON[0]:
+            print(f"scorer: {model} не принял reasoning_effort={_REASON[0]} — убираю параметр")
+            _REASON[0] = None                  # Gemini отвечает общим INVALID_ARGUMENT — просто убираем параметр
             continue
         if r.status_code in (404, 429) or (r.status_code == 400 and "model" in r.text.lower()):
             print(f"scorer: {model} -> HTTP {r.status_code}, пробую следующую модель")
