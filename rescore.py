@@ -40,7 +40,7 @@ for i in range(0, len(jobs), 10):                     # частями: если
     batch = jobs[i:i+10]
     scorer.score_jobs(batch)
     print(f"пачка {i//10+1}: {time.time()-t0:.0f}s")
-    send("\n\n".join([f"🔁 Переоценка, часть {i//10+1} ({len(batch)}):"] +
+    send("\n\n".join([f"🔁 Переоценка Criteo+eBay, часть {i//10+1} ({len(batch)}):"] +
                      [scorer.fmt_job(j) for j in scorer.rank(batch)]) + scorer.diag_line())
     scorer.DIAG.clear()
 if gone: send("🔁 Уже закрыты:\n" + "\n".join("• " + g for g in gone))

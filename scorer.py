@@ -152,31 +152,49 @@ class ScoreError(Exception): pass
 
 _M = [0]                                   # индекс текущей модели в цепочке
 _REASON = ["none"]
+_LAST = {}                                 # модель -> последний код ответа (для диагностики)
+
+def _post(model, body):
+    """Один запрос с повторами: 5xx (перегрузка) и 429 (минутный лимит) — временные, ждём и повторяем."""
+    r = None
+    for attempt in range(3):
+        try:
+            r = requests.post(ENDPOINT, timeout=45, json=body,
+                              headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"})
+        except requests.RequestException as e:
+            r = None; _LAST[model] = type(e).__name__
+        if r is not None:
+            _LAST[model] = r.status_code
+            if r.status_code < 500 and r.status_code != 429: return r
+        if attempt < 2:
+            wait = (20, 40)[attempt]
+            if r is not None and r.status_code == 429:
+                m = re.search(r'retry(?:Delay|_delay)?\W+(\d+)', r.text or "", re.I)
+                if m: wait = min(int(m.group(1)) + 1, 90)
+            time.sleep(wait)
+    return r
+
 def _ask(system, user):
-    while _M[0] < len(MODELS):
+    rounds = 0
+    while True:
+        if _M[0] >= len(MODELS):             # все в лимите — минута паузы и заново с первой модели
+            rounds += 1
+            if rounds > 1:
+                raise RuntimeError("все модели в лимите: " + ", ".join(f"{m}={_LAST.get(m,'?')}" for m in MODELS))
+            print("scorer: все модели в лимите, пауза 60с"); time.sleep(60); _M[0] = 0
         model = MODELS[_M[0]]
-        body = {"model": model, "temperature": 0, "max_tokens": 2000,   # запас: думающие модели тратят токены на рассуждение
+        body = {"model": model, "temperature": 0, "max_tokens": 2000,
                 "messages": [{"role": "system", "content": system},
                              {"role": "user", "content": user}]}
-        if _REASON[0]: body["reasoning_effort"] = _REASON[0]   # оценке «размышления» не нужны — так в разы быстрее
-        for attempt in range(3):          # 5xx (перегрузка) — временное: две повторные попытки с паузой
-            try:
-                r = requests.post(ENDPOINT, timeout=45, json=body,
-                                  headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"})
-            except requests.RequestException as e:
-                r = None; err = e
-            if r is not None and r.status_code < 500: break
-            if attempt < 2: time.sleep((5, 15)[attempt])
-        if r is None or r.status_code >= 500:
-            code = r.status_code if r is not None else type(err).__name__
-            print(f"scorer: {model} -> {code} (перегрузка), пробую следующую модель")
+        if _REASON[0]: body["reasoning_effort"] = _REASON[0]   # оценке «размышления» не нужны — так быстрее
+        r = _post(model, body)
+        if r is None or r.status_code >= 500 or r.status_code in (404, 429):
+            print(f"scorer: {model} -> {_LAST.get(model)}, пробую следующую модель")
             _M[0] += 1; continue
         if r.status_code == 400 and _REASON[0]:
-            print(f"scorer: {model} не принял reasoning_effort={_REASON[0]} — убираю параметр")
-            _REASON[0] = None                  # Gemini отвечает общим INVALID_ARGUMENT — просто убираем параметр
-            continue
-        if r.status_code in (404, 429) or (r.status_code == 400 and "model" in r.text.lower()):
-            print(f"scorer: {model} -> HTTP {r.status_code}, пробую следующую модель")
+            print(f"scorer: {model} не принял reasoning_effort — убираю параметр")
+            _REASON[0] = None; continue
+        if r.status_code == 400 and "model" in r.text.lower():
             _M[0] += 1; continue
         if r.status_code >= 400:
             raise ScoreError(f"HTTP {r.status_code} [{model}]: {' '.join(r.text[:200].split())}")
@@ -187,7 +205,6 @@ def _ask(system, user):
         if not content:
             raise ScoreError(f"[{model}] пустой ответ (finish: {r.json()['choices'][0].get('finish_reason')})")
         return content
-    raise RuntimeError("все модели из цепочки недоступны или в лимите: " + ", ".join(MODELS))
 
 def diag_line():
     return f"\n\n⚠️ оценщик: {DIAG[0]}" if DIAG else ""
@@ -228,8 +245,11 @@ def score_jobs(jobs, page=None):
         try:
             s = parse(_ask(system, user))
         except RuntimeError as e:
-            DIAG.append(str(e)[:200])
-            print("scorer: лимиты исчерпаны — остальные без оценки"); break
+            if not DIAG: DIAG.append(str(e)[:200])
+            print("scorer: лимиты исчерпаны — эта вакансия без оценки"); s = None
+            fails = getattr(score_jobs, "_fails", 0) + 1; score_jobs._fails = fails
+            if fails >= 3: print("scorer: трижды подряд в лимите — остальные без оценки"); j["score"] = None; break
+            _M[0] = 0
         except Exception as e:
             msg = f"{type(e).__name__} {str(e)[:200]}"
             print(f"scorer: {j.get('company')}: {msg}"); s = None
@@ -238,7 +258,7 @@ def score_jobs(jobs, page=None):
                 break                          # доступ/модель — дальше бессмысленно
         else:
             if s is None and not DIAG: DIAG.append("модель вернула не-JSON")
-        if s: s["title_only"] = not full
+        if s: s["title_only"] = not full; score_jobs._fails = 0
         j["score"] = s; done += 1
         time.sleep(4)                         # бесплатный тариф: запас по запросам в минуту
     return jobs
