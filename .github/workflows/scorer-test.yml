@@ -1,0 +1,28 @@
+name: scorer-test
+
+on:
+  push:
+    paths:
+      - scorer.py
+      - scorer_test.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: run
+        run: python scorer_test.py
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

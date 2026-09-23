@@ -96,7 +96,8 @@ def main():
     def fmt(items, header):
         from scorer import score_jobs, fmt_job, rank
         score_jobs(items)
-        return "\n\n".join([header.rstrip()] + [fmt_job(j, " (via Himalayas)") for j in rank(items)])
+        from scorer import diag_line
+        return "\n\n".join([header.rstrip()] + [fmt_job(j, " (via Himalayas)") for j in rank(items)]) + diag_line()
 
     if dump_all:
         if mk: send(fmt(mk, f"🏔 Himalayas: все текущие ({len(mk)}):\n"))

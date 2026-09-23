@@ -142,18 +142,30 @@ def describe(job, page=None):
     return "", False
 
 # ---------- LLM ----------
+DIAG = []          # первая причина сбоя — уходит строкой в Telegram
+
+class ScoreError(Exception): pass
+
+_JSON_MODE = [True]
 def _ask(system, user):
-    r = requests.post(ENDPOINT, timeout=60,
+    body = {"model": MODEL, "temperature": 0, "max_tokens": 200,
+            "messages": [{"role": "system", "content": system},
+                         {"role": "user", "content": user}]}
+    if _JSON_MODE[0]: body["response_format"] = {"type": "json_object"}
+    r = requests.post(ENDPOINT, timeout=60, json=body,
         headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json",
-                 "Accept": "application/vnd.github+json"},
-        json={"model": MODEL, "temperature": 0, "max_tokens": 200,
-              "response_format": {"type": "json_object"},
-              "messages": [{"role": "system", "content": system},
-                           {"role": "user", "content": user}]})
+                 "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
+    if r.status_code == 400 and _JSON_MODE[0] and "response_format" in r.text:
+        _JSON_MODE[0] = False                  # модель не умеет json-режим — просим JSON текстом
+        return _ask(system, user)
     if r.status_code == 429:
-        raise RuntimeError("rate-limit")
-    r.raise_for_status()
+        raise RuntimeError("rate-limit: " + r.text[:150])
+    if r.status_code >= 400:
+        raise ScoreError(f"HTTP {r.status_code}: {r.text[:200]}")
     return r.json()["choices"][0]["message"]["content"]
+
+def diag_line():
+    return f"\n\n⚠️ оценщик: {DIAG[0]}" if DIAG else ""
 
 def _clamp(v):
     try: return max(0, min(10, int(round(float(v)))))
@@ -177,6 +189,7 @@ def parse(raw):
 def score_jobs(jobs, page=None):
     for j in jobs: j["score"] = None
     if not TOKEN:
+        DIAG.append("нет GITHUB_TOKEN в env workflow")
         print("scorer: нет GITHUB_TOKEN — шлю без оценок"); return jobs
     system = RUBRIC + "\n\n=== CANDIDATE ===\n" + _profile()
     done = 0
@@ -189,10 +202,17 @@ def score_jobs(jobs, page=None):
                 + (f"Job description:\n{text}" if text else "Job description: NOT AVAILABLE (title only)"))
         try:
             s = parse(_ask(system, user))
-        except RuntimeError:
+        except RuntimeError as e:
+            DIAG.append(str(e)[:200])
             print("scorer: лимит GitHub Models исчерпан — остальные без оценки"); break
         except Exception as e:
-            print(f"scorer: {j.get('company')}: {type(e).__name__} {str(e)[:80]}"); s = None
+            msg = f"{type(e).__name__} {str(e)[:200]}"
+            print(f"scorer: {j.get('company')}: {msg}"); s = None
+            if not DIAG: DIAG.append(msg)
+            if isinstance(e, ScoreError) and (" 401" in msg or " 403" in msg or " 404" in msg):
+                break                          # доступ/модель — дальше бессмысленно
+        else:
+            if s is None and not DIAG: DIAG.append("модель вернула не-JSON")
         if s: s["title_only"] = not full
         j["score"] = s; done += 1
         time.sleep(4.5)                       # 15 запросов/мин на бесплатном уровне

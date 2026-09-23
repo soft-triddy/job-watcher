@@ -278,7 +278,8 @@ def main():
                 "(KHTML, like Gecko) Chrome/124 Safari/537.36")).new_page()
             score_jobs(items, page=pg)
             b2.close()
-        return "\n\n".join([header.rstrip()] + [fmt_job(j) for j in rank(items)])
+        from scorer import diag_line
+        return "\n\n".join([header.rstrip()] + [fmt_job(j) for j in rank(items)]) + diag_line()
 
     if dump_all:
         if mk: send(fmt(mk, f"🌐 Браузер: все текущие маркетинг-вакансии ({len(mk)}):\n"))
