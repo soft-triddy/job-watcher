@@ -270,11 +270,15 @@ def main():
     for e in errors[:20]: print("  ⚠",e)
 
     def fmt(items, header):
-        lines=[header]
-        for j in items:
-            loc=f" — {j['location']}" if j.get("location") else ""
-            lines.append(f"• {j['company']}: {j['title']}{loc}\n{j['url']}")
-        return "\n".join(lines)
+        from scorer import score_jobs, fmt_job, rank
+        # описания JS-страниц добираем тем же браузером
+        with sync_playwright() as p2:
+            b2=p2.chromium.launch(args=["--no-sandbox"])
+            pg=b2.new_context(user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/124 Safari/537.36")).new_page()
+            score_jobs(items, page=pg)
+            b2.close()
+        return "\n\n".join([header.rstrip()] + [fmt_job(j) for j in rank(items)])
 
     if dump_all:
         if mk: send(fmt(mk, f"🌐 Браузер: все текущие маркетинг-вакансии ({len(mk)}):\n"))

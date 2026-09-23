@@ -56,7 +56,8 @@ def collect():
                 jobs[g] = {"title": j.get("title"), "company": j.get("companyName"),
                            "url": j.get("applicationLink"), "location": loc_str(j),
                            "slug": j.get("companySlug"), "guid": g,
-                           "cats": " ".join(str(c) for c in cats)}
+                           "cats": " ".join(str(c) for c in cats),
+                           "description": j.get("description") or j.get("excerpt") or ""}
             total = data.get("totalCount", 0)
             got = (page * (data.get("limit") or len(batch)))
             if got >= total: break
@@ -93,11 +94,9 @@ def main():
     print(f"собрано (contractor+worldwide, до фильтра): {len(allj)} | маркетинговых: {len(mk)} | новых: {len(new)}")
 
     def fmt(items, header):
-        lines = [header]
-        for j in items:
-            loc = f" — {j['location']}" if j.get("location") else ""
-            lines.append(f"• {j['company']}: {j['title']}{loc}\n{j['url']} (via Himalayas)")
-        return "\n".join(lines)
+        from scorer import score_jobs, fmt_job, rank
+        score_jobs(items)
+        return "\n\n".join([header.rstrip()] + [fmt_job(j, " (via Himalayas)") for j in rank(items)])
 
     if dump_all:
         if mk: send(fmt(mk, f"🏔 Himalayas: все текущие ({len(mk)}):\n"))

@@ -25,7 +25,7 @@ SLUGS    = "slugs.json"
 TIMEOUT  = 20
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
-VERSION = "radar-2026-09-01d"
+VERSION = "radar-2026-09-23"
 
 # что БЕРЁМ (подстрокой в ЗАГОЛОВКЕ). brand/email/acquisition убраны — не её специализация
 KW = ["market","growth","crm","lifecycle","demand","seo","pmm","martech",
@@ -80,7 +80,10 @@ def is_marketing(title, location=""):
 
 # ---------- slug из URL ----------
 def _seg1(u):
-    p=[x for x in urlparse(u).path.split("/") if x]; return p[0] if p else ""
+    # первый сегмент пути, пропуская локаль (ats.rippling.com/en-GB/netwrix-corporation)
+    p=[x for x in urlparse(u).path.split("/") if x]
+    p=[x for x in p if not re.match(r"^[a-zA-Z]{2}(-[a-zA-Z]{2})?$", x)]
+    return p[0] if p else ""
 def _sub(u):
     return urlparse(u).netloc.split(".")[0]
 
@@ -101,6 +104,9 @@ def slug_from_url(link, ats):
         if "ats.rippling.com" in h: return _seg1(link)
         if "rippling" in h: return _sub(link)
     if ats=="SmartRecruiters" and "smartrecruiters.com" in h: return _seg1(link)
+    if ats=="Workday" and "myworkdayjobs.com" in h:
+        site=_seg1(link)
+        return f"{urlparse(link).netloc.lower()}/{site}" if site else ""
     return ""
 
 # несколько паттернов эмбеда на каждый ATS
@@ -125,27 +131,81 @@ EMBED = {
 JUNK={"www","api","embed","careers","jobs","job","boards","board","for","v0","v1",
       "spi","v3","postings","list","assets","cdn","static","widget","c","o","en"}
 
-def name_guesses(link):
-    h=urlparse(link.lower()).netloc.replace("www.","")
-    labels=[x for x in h.split(".") if x]
+# названия самих ATS и их хостов — НИКОГДА не слаг компании.
+# (баг: jobs.lever.co/Termius -> угадывалось "lever" -> приходили вакансии самого Lever Inc.)
+ATS_WORDS={"lever","greenhouse","ashby","ashbyhq","workable","recruitee","bamboohr","breezy",
+           "smartrecruiters","rippling","teamtailor","pinpoint","pinpointhq","ats","apply",
+           "job-boards","boards-api","hire","hr","talent","people","career","vacancies"}
+LOCALE=re.compile(r"^[a-z]{2}(-[a-z]{2})?$")      # en, en-gb, ru ... — сегменты локали
+
+def _bad_slug(c):
+    return (not c) or c in JUNK or c in ATS_WORDS or bool(LOCALE.match(c))
+
+def _is_ats_host(h):
+    return any(w in h for w in ("lever.co","greenhouse.io","ashbyhq.com","workable.com",
+               "recruitee.com","bamboohr.com","breezy.hr","smartrecruiters.com","rippling.com",
+               "teamtailor.com","pinpointhq.com"))
+
+def name_guesses(link, name=""):
+    """Догадки по домену КОМПАНИИ. С хоста самой ATS ничего не угадываем."""
     out=[]
-    if len(labels)>=2: out.append(labels[-2])   # registrable-ish
-    if labels: out.append(labels[0])            # первый сабдомен
+    h=urlparse(link.lower()).netloc.replace("www.","")
+    if not _is_ats_host(h):
+        labels=[x for x in h.split(".") if x]
+        if len(labels)>=2: out.append(labels[-2])   # registrable-ish
+        if labels: out.append(labels[0])            # первый сабдомен
+    n=re.sub(r"[^a-z0-9 -]","",(name or "").lower()).strip()
+    if n:
+        out += [n.replace(" ",""), n.replace(" ","-")]
     return out
 
-def candidates(link, ats, html):
+def _norm(s): return re.sub(r"[^a-z0-9]","",(s or "").lower())
+
+def _affinity(c, link, name):
+    """Насколько кандидат похож на компанию (0..2). Нужен, чтобы из нескольких
+       эмбедов на странице (ClickHouse -> langfuse) первым пробовать «свой»."""
+    base=_norm(name) or ""
+    h=urlparse(link.lower()).netloc.replace("www.","")
+    labels=[x for x in h.split(".") if x]
+    dom=_norm(labels[-2]) if len(labels)>=2 else ""
+    cc=_norm(c)
+    score=0
+    for ref in (base, dom):
+        if ref and cc and (cc in ref or ref in cc): score+=1
+    return score
+
+def candidates(link, ats, html, name=""):
     cands=[]
     s=slug_from_url(link, ats)
-    if s: cands.append(s)
+    if s: cands += [s]
+    emb=[]
     for pat in EMBED.get(ats,[]):
-        cands += re.findall(pat, html or "", re.I)
-    cands += name_guesses(link)
+        emb += re.findall(pat, html or "", re.I)
+    if ats=="Workday":   # эмбед Workday: хост + сайт, угадывать по имени бессмысленно
+        for host, site in re.findall(r"([\w-]+\.wd\d+\.myworkdayjobs\.com)/(?:[a-z]{2}-[A-Z]{2}/)?([\w-]+)", html or ""):
+            emb.append(f"{host.lower()}/{site}")
+        cands += [c for c in emb if "/" in c]
+        return list(dict.fromkeys(cands))
+    cands += emb
+    cands += name_guesses(link, name)
     seen=set(); out=[]
     for c in cands:
-        c=(c or "").strip().lower()
-        if c and c not in seen and c not in JUNK:
-            seen.add(c); out.append(c)
-    return out
+        c=(c or "").strip()
+        if _bad_slug(c.lower()) or c.lower() in seen: continue
+        seen.add(c.lower()); out.append(c)
+    # слаг из URL — первым; остальных сортируем по похожести на компанию (стабильно)
+    head=out[:1] if s and out and out[0].lower()==s.lower() else []
+    tail=out[len(head):]
+    tail.sort(key=lambda c: -_affinity(c, link, name))
+    # чужие эмбеды (0 похожести) пробуем, только если своих нет — но оставляем в конце
+    res=[]
+    for c in head+tail:
+        res.append(c)
+        if c!=c.lower(): res.append(c.lower())      # Lever/Ashby бывают регистрозависимы
+    seen=set(); final=[]
+    for c in res:
+        if c not in seen: seen.add(c); final.append(c)
+    return final
 
 # ---------- обработчики: slug -> [{id,title,url,location}] (кидают исключение на не-JSON) ----------
 def _json(url): return requests.get(url, headers=UA, timeout=TIMEOUT).json()
@@ -238,32 +298,69 @@ def h_pinpoint(s):
                     "location": loc})
     return out
 
-HANDLERS={"Greenhouse":h_greenhouse,"Lever":h_lever,"Ashby":h_ashby,"Workable":h_workable,
+# Workday: публичный JSON (тот же, что дёргает их собственная страница).
+# slug = "tenant.wdN.myworkdayjobs.com/SiteName". Вакансий у крупных тысячи, поэтому
+# спрашиваем поиском по нашим же ключевикам — фильтр потом всё равно отсеет лишнее.
+WD_QUERIES=["marketing","growth","demand","crm","seo","lifecycle","digital","performance","martech"]
+def h_workday(s):
+    host, site = s.split("/",1)
+    tenant = host.split(".")[0]
+    api=f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
+    out={}; ok=False
+    for q in WD_QUERIES:
+        off=0
+        while off<200:
+            r=requests.post(api, json={"appliedFacets":{},"limit":20,"offset":off,"searchText":q},
+                            headers={**UA,"Content-Type":"application/json","Accept":"application/json"},
+                            timeout=TIMEOUT)
+            d=r.json(); ok=True                   # не-JSON -> исключение -> кандидат отсеется
+            posts=d.get("jobPostings") or []
+            for j in posts:
+                path=j.get("externalPath") or ""
+                if not path: continue
+                out[path]={"id":path,"title":j.get("title"),
+                           "url":f"https://{host}/{site}{path}","location":j.get("locationsText","")}
+            off+=20
+            if off>=(d.get("total") or 0) or not posts: break
+    if not ok: raise ValueError("workday: нет ответа")
+    return list(out.values())
+
+HANDLERS={"Workday":h_workday,"Greenhouse":h_greenhouse,"Lever":h_lever,"Ashby":h_ashby,"Workable":h_workable,
           "Recruitee":h_recruitee,"BambooHR":h_bamboohr,"Breezy":h_breezy,
           "SmartRecruiters":h_smartrecruiters,"Rippling":h_rippling,"Teamtailor":h_teamtailor,"Pinpoint":h_pinpoint}
 
-def fetch_company(link, ats, cache):
-    """Возвращает (slug, jobs) либо (None, None). Пробует кандидатов, берёт первый с вакансиями."""
+def fetch_company(link, ats, cache, name=""):
+    """Возвращает (slug, jobs) либо (None, None).
+       Порядок: свои кандидаты (похожие на компанию) -> чужие эмбеды только если своих нет."""
     key=f"{ats}|{link}"
-    if cache.get(key):
-        try: return cache[key], HANDLERS[ats](cache[key])
+    cached=cache.get(key)
+    if cached and _bad_slug(cached.lower()):
+        cache.pop(key, None); cached=None          # старый битый слаг (lever/ats/en-gb) — выкидываем
+    if cached:
+        try: return cached, HANDLERS[ats](cached)
         except Exception: pass  # закешированный slug протух — резолвим заново
     html=""
     if not slug_from_url(link, ats):
         try: html=requests.get(link, headers=UA, timeout=TIMEOUT).text
         except Exception: html=""
-    first_valid=None
-    for slug in candidates(link, ats, html):
+    own_valid=None; foreign_hit=None
+    from_url=(slug_from_url(link, ats) or "").lower()
+    for slug in candidates(link, ats, html, name):
+        mine = slug.lower()==from_url or _affinity(slug, link, name)>0
         try:
             jobs=HANDLERS[ats](slug)      # кинет исключение если не JSON
         except Exception:
             continue
-        if jobs:                          # непустой ответ — этот slug точно верный
-            cache[key]=slug; return slug, jobs
-        if first_valid is None:           # валидный, но пустой — запомним на всякий
-            first_valid=(slug, jobs)
-    if first_valid:
-        cache[key]=first_valid[0]; return first_valid
+        if mine:
+            if jobs: cache[key]=slug; return slug, jobs
+            if own_valid is None: own_valid=(slug, jobs)
+        elif foreign_hit is None:
+            foreign_hit=(slug, jobs)      # чужой эмбед — запасной вариант
+    for hit in (own_valid, foreign_hit):
+        if hit:
+            if hit is foreign_hit:
+                print(f"  ? {name}: слаг '{hit[0]}' не похож на компанию — проверь руками")
+            cache[key]=hit[0]; return hit
     return None, None
 
 def send(text):
@@ -325,14 +422,14 @@ def main():
         if lk in seen_links: continue      # компания-дубль в списке
         seen_links.add(lk)
         try:
-            slug,js=fetch_company(link,ats,slugs)
+            slug,js=fetch_company(link,ats,slugs,name)
         except Exception as e:
             errors.append(f"{name}: {type(e).__name__} {str(e)[:50]}"); continue
         if not slug or js is None:
             errors.append(f"{name}: не удалось определить рабочий slug ({ats})"); continue
         for j in js:
             if not j.get("title") or not j.get("url"): continue
-            jobs.append({**j,"company":name,"jid":f"{ats}:{slug}:{j.get('id')}"})
+            jobs.append({**j,"company":name,"jid":f"{ats}:{slug}:{j.get('id')}","ats":ats,"slug":slug})
         time.sleep(0.2)
 
     uniq={}
@@ -349,11 +446,9 @@ def main():
     for e in errors[:20]: print("  ⚠",e)
 
     def fmt(items, header):
-        lines=[header]
-        for j in items:
-            loc=f" — {j['location']}" if j.get("location") else ""
-            lines.append(f"• {j['company']}: {j['title']}{loc}\n{j['url']}")
-        return "\n".join(lines)
+        from scorer import score_jobs, fmt_job, rank
+        score_jobs(items)
+        return "\n\n".join([header.rstrip()] + [fmt_job(j) for j in rank(items)])
 
     if dump_all:
         if mk: send(fmt(mk, f"📋 Все текущие маркетинг-вакансии ({len(mk)}):\n"))
