@@ -152,9 +152,15 @@ def _ask(system, user):
             "messages": [{"role": "system", "content": system},
                          {"role": "user", "content": user}]}
     if _JSON_MODE[0]: body["response_format"] = {"type": "json_object"}
-    r = requests.post(ENDPOINT, timeout=60, json=body,
-        headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json",
-                 "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
+    hdr = {"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json",
+           "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
+    url = ENDPOINT
+    for _ in range(4):                    # редиректы руками: requests превращает POST в GET и теряет тело
+        r = requests.post(url, timeout=60, json=body, headers=hdr, allow_redirects=False)
+        if r.status_code in (301, 302, 303, 307, 308) and r.headers.get("Location"):
+            from urllib.parse import urljoin
+            url = urljoin(url, r.headers["Location"]); continue
+        break
     if r.status_code == 400 and _JSON_MODE[0] and "response_format" in r.text:
         _JSON_MODE[0] = False                  # модель не умеет json-режим — просим JSON текстом
         return _ask(system, user)
@@ -162,7 +168,11 @@ def _ask(system, user):
         raise RuntimeError("rate-limit: " + r.text[:150])
     if r.status_code >= 400:
         raise ScoreError(f"HTTP {r.status_code}: {r.text[:200]}")
-    return r.json()["choices"][0]["message"]["content"]
+    try:
+        return r.json()["choices"][0]["message"]["content"]
+    except Exception:
+        snippet = " ".join((r.text or "<пусто>")[:160].split())
+        raise ScoreError(f"HTTP {r.status_code} {r.headers.get('content-type','?')} {url} :: {snippet}")
 
 def diag_line():
     return f"\n\n⚠️ оценщик: {DIAG[0]}" if DIAG else ""
