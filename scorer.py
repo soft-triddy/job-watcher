@@ -157,8 +157,18 @@ def _ask(system, user):
         body = {"model": model, "temperature": 0, "max_tokens": 2000,   # запас: думающие модели тратят токены на рассуждение
                 "messages": [{"role": "system", "content": system},
                              {"role": "user", "content": user}]}
-        r = requests.post(ENDPOINT, timeout=90, json=body,
-                          headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"})
+        for attempt in range(3):          # 5xx (перегрузка) — временное: две повторные попытки с паузой
+            try:
+                r = requests.post(ENDPOINT, timeout=90, json=body,
+                                  headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"})
+            except requests.RequestException as e:
+                r = None; err = e
+            if r is not None and r.status_code < 500: break
+            if attempt < 2: time.sleep((5, 15)[attempt])
+        if r is None or r.status_code >= 500:
+            code = r.status_code if r is not None else type(err).__name__
+            print(f"scorer: {model} -> {code} (перегрузка), пробую следующую модель")
+            _M[0] += 1; continue
         if r.status_code in (404, 429) or (r.status_code == 400 and "model" in r.text.lower()):
             print(f"scorer: {model} -> HTTP {r.status_code}, пробую следующую модель")
             _M[0] += 1; continue
