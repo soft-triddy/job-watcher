@@ -79,5 +79,10 @@
  "Greenhouse|https://job-boards.greenhouse.io/ddome": "ddome",
  "Teamtailor|https://insense.na.teamtailor.com/jobs": "insense.na",
  "Breezy|https://servers-com.breezy.hr/": "servers-com",
- "Greenhouse|https://www.xometry.com/careers/": "xometry"
+ "Greenhouse|https://www.xometry.com/careers/": "xometry",
+ "Ashby|https://clickhouse.com/company/careers": "clickhouse",
+ "Rippling|https://ats.rippling.com/en-GB/netwrix-corporation/jobs?page=0": "netwrix",
+ "Workday|https://careers.semrush.com/jobs/": "semrush.wd5.myworkdayjobs.com/semrushcareers",
+ "Lever|https://jobs.lever.co/Termius/": "Termius",
+ "Breezy|https://aura-devices.breezy.hr/": "aura-devices"
 }
