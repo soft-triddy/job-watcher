@@ -244,7 +244,7 @@ def score_jobs(jobs, page=None):
     return jobs
 
 # ---------- формат ----------
-HIRE  = {"green": "🟢 найм", "yellow": "🟡 найм", "red": "🔴 найм"}
+HIRE  = {"green": "🟢 ремоут", "yellow": "🟡 ремоут", "red": "🔴 ремоут"}
 GRADE = {"down": "⬇️ грейд", "ok": "✅ грейд", "up": "⬆️ грейд"}
 STOP  = {"crypto": "крипта", "betting": "беттинг", "gamedev": "геймдев"}
 
