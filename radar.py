@@ -98,7 +98,8 @@ def slug_from_url(link, ats):
     if ats=="Recruitee" and "recruitee.com" in h: return _sub(link)
     if ats=="BambooHR" and "bamboohr.com" in h: return _sub(link)
     if ats=="Breezy" and "breezy.hr" in h: return _sub(link)
-    if ats=="Teamtailor" and "teamtailor.com" in h: return _sub(link)
+    if ats=="Teamtailor" and "teamtailor.com" in h:     # insense.na.teamtailor.com -> insense.na
+        return urlparse(link.lower()).netloc.split(".teamtailor.com")[0]
     if ats=="Pinpoint" and "pinpointhq.com" in h: return _sub(link)
     if ats=="Rippling":
         if "ats.rippling.com" in h: return _seg1(link)

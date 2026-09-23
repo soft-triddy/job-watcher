@@ -137,9 +137,14 @@ def probe_api(ats, url, html, name):
         if not mine and foreign is None: foreign = hit
     return own or foreign or (None, 0, 0)
 
-def analyse(name, site):
+def analyse(name, site, careers_override=""):
     row = {"Name": name, "Site": site, "Careers": "", "ATS": "", "Slug": "",
            "Bucket": "", "Jobs": "", "Marketing": "", "Note": ""}
+    if careers_override:                       # карьерная страница известна — не ищем
+        h, f = get(careers_override)
+        careers, careers_html = (f or careers_override), (h or "")
+        row["Careers"] = careers
+        return _classify(row, name, careers, careers_html)
     if not site:
         row.update(Bucket="linkedin", Note="нет сайта"); return row
     home, home_final = get(site)
@@ -172,7 +177,9 @@ def analyse(name, site):
         else:
             row.update(Bucket="linkedin", Note="карьерная страница не найдена"); return row
     row["Careers"] = careers
+    return _classify(row, name, careers, careers_html)
 
+def _classify(row, name, careers, careers_html):
     ats, is_api = detect(careers + " " + careers_html)
     if not ats:                                   # JS-страница — слушаем сеть
         r = render(careers)
@@ -201,7 +208,7 @@ def main():
     for i, r in enumerate(rows, 1):
         name, site = r["Name"].strip(), norm_site(r.get("Site"))
         if only and name not in only: continue
-        try: res = analyse(name, site)
+        try: res = analyse(name, site, (r.get("Careers") or "").strip())
         except Exception as e:
             res = {"Name": name, "Site": site, "Bucket": "check", "Note": f"{type(e).__name__}"}
         out.append(res)
