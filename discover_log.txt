@@ -1,8 +1,7 @@
-[1/6] Audius: browser custom  jobs= mk= 
-[2/6] Pianity: check   jobs= mk= сайт не открылся
-[3/6] Sound: linkedin   jobs= mk= карьерная страница не найдена
-[4/6] Tune.FM: browser custom  jobs= mk= 
-[5/6] Sona: browser custom  jobs= mk= 
-[6/6] Medallion: linkedin   jobs= mk= карьерная страница не найдена
+[1/5] Discogs: browser custom  jobs= mk= 
+[2/5] DistroKid: api Greenhouse distrokid jobs=0 mk=0 
+[3/5] Anghami: api Breezy anghami jobs=0 mk=0 
+[4/5] POSH: browser custom  jobs= mk= 
+[5/5] Vermillio: browser JazzHR  jobs= mk= 
 
-Итого: {'browser': 3, 'check': 1, 'linkedin': 2}
+Итого: {'browser': 3, 'api': 2}
