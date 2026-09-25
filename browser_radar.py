@@ -13,8 +13,8 @@ from urllib.parse import urljoin, urlparse
 # переиспользуем фильтр и отправку из основного радара (единый источник правил)
 from radar import is_marketing, send, load
 
-IN_FILE = "browser_companies.csv"
-STATE   = "seen_browser.json"
+IN_FILE = os.environ.get("BROWSER_COMPANIES", "browser_companies.csv")
+STATE   = os.environ.get("BROWSER_STATE", "seen_browser.json")
 WAIT_MS = 4000          # сколько ждать дозагрузку вакансий после открытия
 NAV_TIMEOUT = 30000
 

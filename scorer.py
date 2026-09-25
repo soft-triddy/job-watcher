@@ -253,6 +253,8 @@ def score_jobs(jobs, page=None):
         DIAG.append("нет GEMINI_API_KEY — добавь секрет в репо")
         print("scorer: нет GEMINI_API_KEY — шлю без оценок"); return jobs
     system = RUBRIC + "\n\n=== CANDIDATE ===\n" + _profile()
+    if os.environ.get("SCORER_CONTEXT"):
+        system += "\n\n=== CONTEXT FOR THIS BATCH ===\n" + os.environ["SCORER_CONTEXT"]
     done = 0
     for j in jobs:
         if done >= MAX_PER_RUN:

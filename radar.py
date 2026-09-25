@@ -19,9 +19,10 @@ except ImportError:
 
 TG_TOKEN = os.environ.get("TG_TOKEN")
 TG_CHAT  = os.environ.get("TG_CHAT")
-IN_FILE  = "radar_companies.csv"
-STATE    = "seen.json"
-SLUGS    = "slugs.json"
+IN_FILE  = os.environ.get("RADAR_COMPANIES", "radar_companies.csv")
+STATE    = os.environ.get("RADAR_STATE", "seen.json")
+SLUGS    = os.environ.get("RADAR_SLUGS", "slugs.json")
+TAG      = os.environ.get("RADAR_TAG", "")          # префикс сообщений, напр. "🎵 Музтех · "
 TIMEOUT  = 20
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
@@ -371,6 +372,7 @@ def fetch_company(link, ats, cache, name=""):
     return None, None
 
 def send(text):
+    if TAG: text = TAG + text
     if not (TG_TOKEN and TG_CHAT):
         print("!! Нет TG_TOKEN/TG_CHAT. Сообщение не отправлено:\n"+text[:300]); return False
     ok=True
