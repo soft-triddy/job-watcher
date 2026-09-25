@@ -1,27 +1,148 @@
 Name,Site,Careers,ATS,Slug,Bucket,Jobs,Marketing,Note
-Qdrant,https://qdrant.tech,https://jobs.ashbyhq.com/qdrant.tech,Ashby,qdrant.tech,api,7,0,
-Insense,https://insense.pro,https://insense.na.teamtailor.com/jobs,Teamtailor,insense.na,api,3,0,
-Servers.com,https://servers.com,https://servers-com.breezy.hr/,Breezy,servers-com,api,0,0,
-GoStudent,https://gostudent.org,https://www.gostudent.org/en-gb/all-jobs/,Greenhouse,gostudent,api,31,0,
-DataDome,https://datadome.co,https://job-boards.greenhouse.io/ddome,Greenhouse,ddome,api,14,0,
-Superhuman,https://superhuman.com,https://job-boards.greenhouse.io/grammarly,Greenhouse,grammarly,api,0,0,
-Cognigy,https://cognigy.com,https://careers.cognigy.com/,Workable,cognigy,api,0,0,
-Pixellu,https://pixellu.com,https://careers.pixellu.com,custom,,browser,,,
-Product Science,https://productscience.ai,https://www.productscience.ai/jobs,custom,,browser,,,
-Criteo,https://criteo.com,https://careers.criteo.com/en/jobs/,Workday,criteo.wd3.myworkdayjobs.com/Criteo_Career_Site,api,71,8,
-eBay,https://ebay.com,https://jobs.ebayinc.com/us/en/remote,Workday,ebay.wd5.myworkdayjobs.com/apply,api,146,4,
-Zeroavia,https://zeroavia.com,https://careers.zeroavia.com/search-jobs/,custom,,browser,,,
-Allformance,https://allformance.com/jobs,,,,check,,,сайт не открылся
-ornament,https://getornament.com,,,,check,,,сайт не открылся
-Liepa Limited,https://liepa.ltd,,,,check,,,сайт не открылся
-NeuraLoom,https://neuraloom.ai,,,,check,,,сайт не открылся
-Wonder Family,https://wonderfamily.com,,,,check,,,сайт не открылся
-Grintern,https://grintern.ru,,,,check,,,сайт не открылся
-Doge Flat,https://dogeflat.com,,,,check,,,сайт не открылся
-Immcore,https://immcore.com,,,,check,,,сайт не открылся
-Minders studio,https://minders.studio,,,,check,,,сайт не открылся
-Pygmation At,https://pygmalion.ai,,,,check,,,сайт не открылся
-Cloudaware,https://cloudaware.com,,,,linkedin,,,карьерная страница не найдена
-Everhour,https://everhour.com,https://everhour.com/careers,custom,,browser,,,
-Linked Helper,https://linkedhelper.com,https://www.linkedhelper.com/careers,custom,,browser,,,
-Maildoso,https://maildoso.com,,,,linkedin,,,карьерная страница не найдена
+ai|coustics,https://ai-coustics.com,https://join.com/companies/ai-coustics,Join,,browser,,,
+Albums,https://www.albums.app/en,,,,check,,,сайт не открылся
+ALLOY,https://www.alloy.music,,,,linkedin,,,карьерная страница не найдена
+Alphabeats,https://www.listenalphabeats.com,,,,check,,,сайт не открылся
+Amuse,https://www.amuse.io/en,https://careers.amuse.io/,Teamtailor,,browser,,,Teamtailor: слаг не подобрался
+Anghami,https://www.anghami.com,,,,check,,,сайт не открылся
+Anotherblock,https://anotherblock.com,,,,check,,,сайт не открылся
+Anthems Music,https://anthems.fm/home,https://anthems.fm/careers,custom,,browser,,,
+ARK,https://myarkapp.com,,,,linkedin,,,карьерная страница не найдена
+Artelize,https://artelize.com,,,,linkedin,,,карьерная страница не найдена
+Artist Growth,https://www.artistgrowth.com,,,,linkedin,,,карьерная страница не найдена
+ArtMaster,,,,,linkedin,,,нет сайта
+Audiohook,https://www.audiohook.com,https://jobs.ashbyhq.com/audiohook,Ashby,audiohook,api,11,1,
+Audiology,https://audiology.media,https://katzdigital.com/careers-at-katz/,custom,,browser,,,
+Audiomob,https://audiomob.com,https://audiomob.com/careers,Greenhouse,audiomob,api,4,0,
+AudioShake,https://www.audioshake.ai,https://www.audioshake.ai/careers,custom,,browser,,,
+AudioStack,https://audiostack.ai,https://apply.workable.com/audiostack/,Workable,audiostack,api,2,0,
+Audiotool,https://www.audiotool.com,,,,linkedin,,,карьерная страница не найдена
+Audoo,https://www.audoo.com,https://www.audoo.com/careers,custom,,browser,,,
+AWAL,https://www.awal.com,,,,linkedin,,,карьерная страница не найдена
+Base For Music,https://www.baseformusic.com/en,,,,check,,,сайт не открылся
+Baton,https://baton.media,,,,linkedin,,,карьерная страница не найдена
+Beam for Music,https://beamformusic.com,,,,linkedin,,,карьерная страница не найдена
+BeatConnect,https://www.beatconnect.com,https://www.beatconnect.com/careers,custom,,browser,,,
+Beatdapp,https://beatdapp.com,,,,linkedin,,,карьерная страница не найдена
+Beatoven.ai,https://www.beatoven.ai,,,,linkedin,,,карьерная страница не найдена
+Blokur,https://www.blokur.com,https://www.blokur.com/join-us/,custom,,browser,,,
+Bolero,https://www.boleromusic.com,,,,linkedin,,,карьерная страница не найдена
+Boomy,https://boomy.com,https://boomy.com/careers,custom,,browser,,,
+Breakr,https://www.breakr.app,,,,linkedin,,,карьерная страница не найдена
+Bronze,https://bronze.ai,https://bronze.ai/careers/,custom,,browser,,,
+CD Baby,https://cdbaby.com,https://cdbaby.com/careers/,Greenhouse,cdbabyjobs,api,0,0,
+Chartex,https://chartex.com,,,,linkedin,,,карьерная страница не найдена
+Closer Music,https://closermusic.com,,,,linkedin,,,карьерная страница не найдена
+Cogs AI,https://www.cogs-ai.com,https://www.cogs-ai.com/careers,custom,,browser,,,
+Condense,https://condense.live,,,,check,,,сайт не открылся
+Connected,https://www.connectedartists.com,,,,linkedin,,,карьерная страница не найдена
+Creative Covenant,https://thecovenantcreative.com,,,,linkedin,,,карьерная страница не найдена
+CRESQA,https://cresqa.com,,,,linkedin,,,карьерная страница не найдена
+Ctrl+Reach,https://www.ctrlreach.co,,,,linkedin,,,карьерная страница не найдена
+Dice,https://dice.fm,https://dice.fm/jobs,Greenhouse,dicefm-careers,api,12,0,
+Discogs,https://www.discogs.com,,,,check,,,сайт не открылся
+DistroKid,https://distrokid.com,,,,check,,,сайт не открылся
+Ditto Music,https://dittomusic.com/en,https://press.dittomusic.com/creative-burnout-at-all-time-high-86-of-artists-report-mental-strain,custom,,browser,,,
+Duetti,https://duetti.co,https://jobs.lever.co/duetti,Lever,duetti,api,9,0,
+EDGE Sound Research,https://www.edgesoundresearch.com,,,,linkedin,,,карьерная страница не найдена
+EngineEars,https://engineears.com/for-all,https://engineears.com/for-all,Dover,,browser,,,
+EVEN,https://www.even.biz,,,,linkedin,,,карьерная страница не найдена
+Fave,https://faveforfans.com,https://faveforfans.com/careers,custom,,browser,,,
+Forte,https://fortelessons.com,,,,linkedin,,,карьерная страница не найдена
+FUGA,https://fuga.com,https://fuga.com/jobs/,Greenhouse,fuga,api,2,0,
+Giide,https://www.giide.com,,,,linkedin,,,карьерная страница не найдена
+Groover,https://groover.co/en,https://www.welcometothejungle.com/en/companies/groover,Notion,,browser,,,
+Halbestunde,https://halbestunde.com,,,,linkedin,,,карьерная страница не найдена
+Hangout FM (prev. Turntable LIVE),https://www.hangout.fm,,,,linkedin,,,карьерная страница не найдена
+Hawkr,https://www.hawkrlive.com,,,,linkedin,,,карьерная страница не найдена
+Highnote,https://www.highnote.fm,,,,linkedin,,,карьерная страница не найдена
+Hook,https://www.hookworld.io,,,,check,,,сайт не открылся
+Hook,https://hookmusic.com,https://hookmusic.com/careers,Ashby,hookmusic,api,4,0,
+Horus Music,https://www.horusmusic.global,https://www.horusmusic.global/careers/,custom,,browser,,,
+HustleSasa,https://hustlesasa.com,,,,linkedin,,,карьерная страница не найдена
+IDOL,https://idol.io,https://idol.io/jobs/,custom,,browser,,,
+Indify,https://www.indify.io,,,,check,,,сайт не открылся
+Killphonic Rights,https://direct.killphonicrights.com,,,,linkedin,,,карьерная страница не найдена
+Komi,https://komi.io,https://komi.io/jobs,custom,,browser,,,
+Labelcamp,https://labelcamp.io,,,,linkedin,,,карьерная страница не найдена
+Labelgrid,https://labelgrid.com,,,,linkedin,,,карьерная страница не найдена
+La Cupula Music,https://www.lacupulamusic.com,,,,linkedin,,,карьерная страница не найдена
+LANDR,https://www.landr.com,https://www.landr.com/careers,custom,,browser,,,
+Laylo,https://laylo.com,https://laylo.com/careers,custom,,browser,,,
+Levellr,https://www.levellr.com,https://jobs.levellr.com/,custom,,browser,,,
+Longform.ai,https://longform.ai,,,,check,,,сайт не открылся
+Magroove,https://artists.magroove.com,,,,check,,,сайт не открылся
+Masterchannel,https://masterchannel.ai,https://masterchannel.ai/careers,custom,,browser,,,
+MasterExchange,https://www.masterexchange.com,,,,check,,,сайт не открылся
+Mellomanic,https://mellomanic.com,,,,linkedin,,,карьерная страница не найдена
+Merchbar,https://www.merchbar.com,https://www.merchbar.com/about/careers,custom,,browser,,,
+MNGRS.AI,https://www.mngrs.ai,,,,linkedin,,,карьерная страница не найдена
+Mogul,https://www.usemogul.com,,,,linkedin,,,карьерная страница не найдена
+Moises,https://moises.ai,https://music.ai/careers/,BambooHR,moises,api,3,0,
+Mood,https://www.musicofourdesire.com,,,,check,,,сайт не открылся
+Moombix,https://www.moombix.com,,,,linkedin,,,карьерная страница не найдена
+Musical AI,https://www.wearemusical.ai,,,,linkedin,,,карьерная страница не найдена
+Musimap,https://www.musimap.com,https://www.musimap.com/careers,custom,,browser,,,
+Musiversal,https://www.musiversal.com,https://musiversal.applytojob.com/,JazzHR,,browser,,,
+Nexro,https://www.nexro.io,,,,linkedin,,,карьерная страница не найдена
+Nitrility,https://www.nitrility.com,,,,linkedin,,,карьерная страница не найдена
+ODD,https://oddballism.com/en-us,,,,linkedin,,,карьерная страница не найдена
+ONCE.app,https://www.once.app,https://once.app/careers,custom,,browser,,,
+ONErpm,https://onerpm.com,https://onerpm.rippling-ats.com/,custom,,browser,,,
+Overtune,https://www.overtune.com,,,,linkedin,,,карьерная страница не найдена
+Pex,https://pex.com,https://pex.com/careers/,custom,,browser,,,
+Pibox,https://pibox.com,https://pibox.notion.site/We-re-hiring-more-details-for-positions-soon-1371db9d241c80beae24cc1e73490b96,Notion,,browser,,,
+Podcastle,https://podcastle.ai,https://async.com/careers,custom,,browser,,,
+POSH,https://posh.vip,,,,check,,,сайт не открылся
+PUSH.fm,https://push.fm,,,,check,,,сайт не открылся
+Rap Tech Studios,https://www.raptech.co,https://www.raptech.co/careers,custom,,browser,,,
+Reactional Music,https://reactionalmusic.com,https://reactionalmusic.com/careers,custom,,browser,,,
+Revoize,https://revoize.com,,,,linkedin,,,карьерная страница не найдена
+Riffusion,https://www.riffusion.com,https://www.flowmusic.app/career,custom,,browser,,,
+Ringo,https://www.thisisringo.com,,,,linkedin,,,карьерная страница не найдена
+RouteNote,https://routenote.com,http://routenote.com/careers/,Notion,,browser,,,
+Saarey,https://www.saareymusic.com,https://www.saareymusic.com/,Wellfound,,browser,,,
+Seat Unique,https://www.seatunique.com,https://www.seatunique.com/careers,custom,,browser,,,
+Sesh,,,,,linkedin,,,нет сайта
+Setmixer,https://www.setmixer.com,,,,linkedin,,,карьерная страница не найдена
+Showcase,https://www.showcasedaily.com,,,,check,,,сайт не открылся
+Sirius,https://www.sirius.video,https://join.com/companies/sirius,Join,,browser,,,
+Slingshot,https://slingshot.fm,,,,linkedin,,,карьерная страница не найдена
+Softside,https://beta.softsidemerch.com,,,,linkedin,,,карьерная страница не найдена
+Songclip,https://www.songclip.com,,,,linkedin,,,карьерная страница не найдена
+SongPush,https://www.songpush.com,,,,linkedin,,,карьерная страница не найдена
+Sonomo,https://www.sonomo.com,https://www.sonomo.com/join-us,custom,,browser,,,
+SonoSuite,https://sonosuite.com/en,https://sonosuite.com/join-us,custom,,browser,,,
+SONOTELLER.AI,https://sonoteller.ai,https://sonoteller.ai/careers,custom,,browser,,,
+SoundBirth,https://www.sound-birth.com,,,,check,,,сайт не открылся
+Soundcharts,https://soundcharts.com,,,,linkedin,,,карьерная страница не найдена
+Soundful,https://soundful.com,,,,linkedin,,,карьерная страница не найдена
+SoundGate,https://soundgate.ai,https://soundgate.ai/careers/,custom,,browser,,,
+Soundrop,https://soundrop.com,,,,linkedin,,,карьерная страница не найдена
+Soundtrack Your Brand,https://www.soundtrackyourbrand.com,https://careers.soundtrack.io/,Teamtailor,,browser,,,Teamtailor: слаг не подобрался
+Splice,https://splice.com,https://splice.com/worklife,Greenhouse,splice,api,6,0,
+SPOKE,https://www.spoke.world,,,,linkedin,,,карьерная страница не найдена
+Stanly,https://www.stanlyapp.com,,,,check,,,сайт не открылся
+Starmony,https://www.starmony.io,,,,linkedin,,,карьерная страница не найдена
+Stationhead,https://www.stationhead.com,https://www.stationhead.com/careers,custom,,browser,,,
+Strm,https://www.strmmusic.ai/en,,,,linkedin,,,карьерная страница не найдена
+SUBMIX,https://www.submix.io,,,,linkedin,,,карьерная страница не найдена
+Symphonic,https://symphonic.com,https://symphonic.com/careers/,BambooHR,symphonicdist,api,3,0,
+SymphonyOS,https://www.symphonyos.co,,,,linkedin,,,карьерная страница не найдена
+SYNCHTANK,https://www.synchtank.com,,,,linkedin,,,карьерная страница не найдена
+The Orchard,https://www.theorchard.com,https://www.theorchard.com/careers/,custom,,browser,,,
+The Pack,https://partofthepack.com,,,,linkedin,,,карьерная страница не найдена
+Too Lost,https://toolost.com,,,,check,,,сайт не открылся
+Tracklib,https://www.tracklib.com,https://careers.tracklib.com/,Teamtailor,tracklib,api,0,0,
+TuneCore,https://www.tunecore.com,https://www.tunecore.com/careers,custom,,browser,,,
+Udio,https://www.udio.com,https://job-boards.greenhouse.io/udio,Greenhouse,udio,api,5,0,
+Unchained Music,https://www.unchainedmusic.io,,,,linkedin,,,карьерная страница не найдена
+Unhurd,https://www.unhurd.co.uk,,,,linkedin,,,карьерная страница не найдена
+Un:Hurd Music,https://www.unhurdmusic.com,,,,linkedin,,,карьерная страница не найдена
+UnitedMasters,https://unitedmasters.com,https://unitedmasters.com/en/careers,Greenhouse,unitedmasterstranslation,api,18,0,
+Upsound,https://upsound.com,,,,linkedin,,,карьерная страница не найдена
+Vermillio,https://www.vermillio.com,,,,check,,,сайт не открылся
+Volta,https://www.volta-xr.com,,,,linkedin,,,карьерная страница не найдена
+Wondercraft,https://www.wondercraft.ai,,,,linkedin,,,карьерная страница не найдена
+Xceed,https://xceed.me/en,https://xceed.factorialhr.com/,Factorial,,browser,,,
+Yoto,https://us.yotoplay.com,https://careers.yotoplay.com/en,Teamtailor,yoto,api,6,0,
