@@ -20,6 +20,9 @@ MODELS   = [m.strip() for m in os.environ.get(
 MODEL    = MODELS[0]
 PROFILE  = "scoring_profile.md"
 MAX_PER_RUN = int(os.environ.get("SCORER_MAX", "40"))  # потолок оценок за один запуск радара
+BUDGET   = int(os.environ.get("SCORER_BUDGET", "900"))  # сек на ВСЕ оценки за запуск (15 мин), дальше шлём без оценки
+PER_JOB  = int(os.environ.get("SCORER_PER_JOB", "120")) # сек на одну вакансию, включая повторы
+_DL = [0.0]                                            # дедлайн текущей вакансии
 JD_CHARS = 9000                                         # ~2.3K токенов; лимит модели 8K на вход
 TIMEOUT  = 30
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -164,31 +167,34 @@ _LAST = {}                                 # модель -> последний 
 def _post(model, body):
     """Один запрос с повторами: 5xx (перегрузка) и 429 (минутный лимит) — временные, ждём и повторяем."""
     r = None
-    for attempt in range(3):
+    for attempt in range(2):
+        if time.time() > _DL[0]: return r   # время на вакансию вышло — не ждём
         try:
-            r = requests.post(ENDPOINT, timeout=45, json=body,
+            r = requests.post(ENDPOINT, timeout=40, json=body,
                               headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"})
         except requests.RequestException as e:
             r = None; _LAST[model] = type(e).__name__
         if r is not None:
             _LAST[model] = r.status_code
             if r.status_code < 500 and r.status_code != 429: return r
-        if attempt < 2:
-            wait = (20, 40)[attempt]
+        if attempt < 1:
+            wait = 10
             if r is not None and r.status_code == 429:
                 m = re.search(r'retry(?:Delay|_delay)?\W+(\d+)', r.text or "", re.I)
-                if m: wait = min(int(m.group(1)) + 1, 90)
-            time.sleep(wait)
+                wait = min(int(m.group(1)) + 1, 30) if m else 20
+            time.sleep(max(0, min(wait, _DL[0] - time.time())))
     return r
 
 def _ask(system, user):
     rounds = 0
     while True:
+        if time.time() > _DL[0]:
+            raise TimeoutError("время на вакансию вышло: " + ", ".join(f"{m}={_LAST.get(m,'?')}" for m in MODELS))
         if _M[0] >= len(MODELS):             # все в лимите — минута паузы и заново с первой модели
             rounds += 1
             if rounds > 1:
                 raise RuntimeError("все модели в лимите: " + ", ".join(f"{m}={_LAST.get(m,'?')}" for m in MODELS))
-            print("scorer: все модели в лимите, пауза 60с"); time.sleep(60); _M[0] = 0
+            print("scorer: все модели в лимите, пауза 30с"); time.sleep(max(0, min(30, _DL[0]-time.time()))); _M[0] = 0
         model = MODELS[_M[0]]
         body = {"model": model, "temperature": 0, "max_tokens": 2000,
                 "messages": [{"role": "system", "content": system},
@@ -255,16 +261,23 @@ def score_jobs(jobs, page=None):
     system = RUBRIC + "\n\n=== CANDIDATE ===\n" + _profile()
     if os.environ.get("SCORER_CONTEXT"):
         system += "\n\n=== CONTEXT FOR THIS BATCH ===\n" + os.environ["SCORER_CONTEXT"]
-    done = 0
+    done = 0; t_end = time.time() + BUDGET
     for j in jobs:
         if done >= MAX_PER_RUN:
             print(f"scorer: потолок {MAX_PER_RUN} за запуск — остальные без оценки"); break
+        if time.time() > t_end:
+            DIAG.append(f"вышло время на оценки ({BUDGET // 60} мин) — остальные без оценки")
+            print("scorer: бюджет времени исчерпан — остальные без оценки"); break
         text, full = describe(j, page)
+        _DL[0] = min(t_end, time.time() + PER_JOB)
         user = (f"Company: {j.get('company','')}\nTitle: {j.get('title','')}\n"
                 f"Location: {j.get('location','')}\n\n"
                 + (f"Job description:\n{text}" if text else "Job description: NOT AVAILABLE (title only)"))
         try:
             s = parse(_ask(system, user))
+        except TimeoutError as e:
+            if not DIAG: DIAG.append(str(e)[:200])
+            print(f"scorer: {j.get('company')}: {e}"); s = None   # модель не сбрасываем — следующая вакансия начнёт со следующей
         except RuntimeError as e:
             if not DIAG: DIAG.append(str(e)[:200])
             print("scorer: лимиты исчерпаны — эта вакансия без оценки"); s = None

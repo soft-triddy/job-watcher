@@ -37,10 +37,12 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       # первый запуск: сразу присылаем все текущие вакансии (с оценками), дальше только новые
       - name: api
+        timeout-minutes: 30
         run: |
           if [ -f seen_music.json ]; then python radar.py; else python radar.py --all; fi
       - name: browser
         if: always()
+        timeout-minutes: 50
         run: |
           if [ -f seen_music_browser.json ]; then python browser_radar.py; else python browser_radar.py --all; fi
       - name: save state
