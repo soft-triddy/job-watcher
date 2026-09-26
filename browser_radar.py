@@ -221,6 +221,10 @@ def scrape(page, link):
     # структурированного нет вообще — только тогда DOM-фолбэк
     return [j for j in extract_from_dom(page, link) if _looks_like_job(j)]
 
+def _norm_url(u):
+    p=urlparse((u or "").strip().lower())
+    return (p.netloc.replace("www.","")+p.path).rstrip("/")
+
 def main():
     dump_all = "--all" in sys.argv
     print(f"=== browser_radar | режим: {'ВСЕ текущие' if dump_all else 'только новые'} ===")
@@ -249,8 +253,10 @@ def main():
                 errors.append(f"{name}: {type(e).__name__} {str(e)[:50]}"); found=[]
             page.close()
             if not found: empty+=1
+            base=_norm_url(link)
             for j in found:
                 if not j.get("title") or not j.get("url"): continue
+                if _norm_url(j["url"])==base: continue    # ссылка на саму карьерную страницу = заголовок раздела, не вакансия
                 jobs.append({**j,"company":name,"jid":j["url"]})
             if i%20==0: print(f"  ...{i}/{len(companies)}")
         browser.close()
