@@ -1,6 +1,6 @@
 # Job Radar
 
-A personal job-search pipeline that watches ~330 company career pages and a remote-jobs board,
+A personal job-search pipeline that watches ~350 company career pages and a remote-jobs board,
 keeps only the marketing roles I actually want, scores each new vacancy against my resumes,
 and sends the result to Telegram. Runs entirely on GitHub Actions, costs nothing.
 
