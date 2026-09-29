@@ -1,89 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-Job Radar. Каждый запуск:
-  1) читает radar_companies.csv (Name, Link, ATS)
-  2) по поддержанным ATS тянет текущие вакансии через публичные JSON API
-  3) оставляет только маркетинговые (RU+EN ключевые слова)
-  4) сравнивает с прошлым запуском (seen.json) и шлёт НОВЫЕ в Telegram
-Первый запуск не спамит: запоминает текущее и шлёт короткую сводку.
-Резолвер slug устойчивый: пробует несколько кандидатов и проверяет их живым запросом.
+API-радар: компании на ATS с публичным JSON API (Greenhouse, Lever, Ashby, Workable, Recruitee,
+BambooHR, Breezy, SmartRecruiters, Rippling, Teamtailor, Pinpoint, Workday).
+Список — lists/radar_companies.csv (Name, Link, ATS). Код компании в ATS (slug) подбирается сам
+и проверяется живым запросом; найденные кешируются в state/slugs.json.
 """
-import csv, json, os, re, sys, time
+import csv, os, re, sys, time
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
-try:
-    import requests
-except ImportError:
-    sys.exit("Нет requests. В Replit: Shell -> pip install requests")
+import requests
+from core import UA, TIMEOUT, is_marketing, load, save, report
 
-TG_TOKEN = os.environ.get("TG_TOKEN")
-TG_CHAT  = os.environ.get("TG_CHAT")
-IN_FILE  = os.environ.get("RADAR_COMPANIES", "radar_companies.csv")
-STATE    = os.environ.get("RADAR_STATE", "seen.json")
-SLUGS    = os.environ.get("RADAR_SLUGS", "slugs.json")
-TAG      = os.environ.get("RADAR_TAG", "")          # префикс сообщений, напр. "🎵 Музтех · "
-TIMEOUT  = 20
-UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                    "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
-VERSION = "radar-2026-09-23"
-
-# что БЕРЁМ (подстрокой в ЗАГОЛОВКЕ). brand/email/acquisition убраны — не её специализация
-KW = ["market","growth","crm","lifecycle","demand","seo","pmm","martech",
-      "paid","performance","digital"]
-
-# роль не та — выкидываем по ЗАГОЛОВКУ (подстрокой)
-NEG_ROLE = ["market research analyst","stock market","supermarket","capital market",
-           "brand","email","smm","social media","content","analyst","analytics",
-           "design","product marketing","business development","public relations",
-           "corporate communications","integration",
-           "recruiter","community","customer success","product manager","acquisition",
-           "engineer","account executive","partner","deployment","event","influencer",
-           "talent acquisition","cpo",
-           "crypto","web3","blockchain","affiliate","copywriter","producer",
-           "data scien","account manager","account supervisor",
-           # 2026-09-23: продажи, креатив, младшие грейды, «общие» заявки
-           "sales","account strategist","curation","studio manager","creative","consultant",
-           "representative","coordinator","assistant","junior","praktikant","media buyer",
-           "operative","expression of interest","general application"]
-
-# формат/гео — выкидываем по ЗАГОЛОВКУ + ЛОКАЦИИ вместе (тип работы и штат часто в локации!)
-NEG_GEO_SUB = ["hybrid"]
-NEG_GEO_WORD = ["us","usa"]
-
-# US-only отсев: полные названия штатов (georgia НЕ баним — это ещё и страна СНГ)
-US_STATE_FULL = ["alabama","alaska","arizona","arkansas","california","colorado",
- "connecticut","delaware","florida","hawaii","idaho","illinois","indiana","iowa",
- "kansas","kentucky","louisiana","maine","maryland","massachusetts","michigan",
- "minnesota","mississippi","missouri","montana","nebraska","nevada","new hampshire",
- "new jersey","new mexico","new york","north carolina","north dakota","ohio","oklahoma",
- "oregon","pennsylvania","rhode island","south carolina","south dakota","tennessee",
- "texas","utah","vermont","virginia","washington","west virginia","wisconsin","wyoming"]
-
-# двухбуквенные коды штатов; исключены пересечения со странами:
-# CA(Канада) DE(Германия) MD(Молдова) AZ(Азербайджан) AL(Албания) IN(Индия)
-US_STATE_CODE = {"AK","AR","CO","CT","FL","HI","IA","ID","IL","KS","KY","LA","MA","ME",
- "MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA",
- "RI","SC","SD","TN","TX","UT","VA","VT","WA","WI","WV","WY","DC"}
-
-def is_marketing(title, location=""):
-    raw_t = title or ""
-    t = raw_t.lower()
-    # 1) не та роль — по заголовку
-    if any(n in t for n in NEG_ROLE): return False
-    if re.search(r"\bpr\b", t): return False            # PR как целое слово
-    if re.search(r"\bintern(ship)?\b", t): return False  # стажировка, но не «international»
-    if "associate" in t and "associate director" not in t: return False   # младший грейд
-    # 2) это вообще маркетинг? — по заголовку
-    if not any(k in t for k in KW): return False
-    # 3) формат/гео — по заголовку И локации вместе
-    raw_blob = raw_t + " " + (location or "")
-    blob = raw_blob.lower()
-    if any(n in blob for n in NEG_GEO_SUB): return False           # hybrid
-    if any(re.search(r"\b"+w+r"\b", blob) for w in NEG_GEO_WORD): return False   # us / usa
-    if any(re.search(r"\b"+re.escape(s)+r"\b", blob) for s in US_STATE_FULL): return False
-    if any(tok in US_STATE_CODE for tok in re.findall(r"\b[A-Z]{2}\b", raw_blob)): return False
-    return True
+IN_FILE = os.environ.get("RADAR_COMPANIES", "lists/radar_companies.csv")
+STATE   = os.environ.get("RADAR_STATE", "state/seen.json")
+SLUGS   = os.environ.get("RADAR_SLUGS", "state/slugs.json")
+LABEL   = os.environ.get("RADAR_LABEL", "🆕 ATS")
 
 # ---------- slug из URL ----------
 def _seg1(u):
@@ -371,106 +303,36 @@ def fetch_company(link, ats, cache, name=""):
             cache[key]=hit[0]; return hit
     return None, None
 
-def send(text):
-    if TAG: text = TAG + text
-    if not (TG_TOKEN and TG_CHAT):
-        print("!! Нет TG_TOKEN/TG_CHAT. Сообщение не отправлено:\n"+text[:300]); return False
-    ok=True
-    for chunk in _chunks(text, 3800):
-        try:
-            r=requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
-                            json={"chat_id":TG_CHAT,"text":chunk,"disable_web_page_preview":True},
-                            timeout=TIMEOUT).json()
-        except Exception as e:
-            print("!! Telegram: сеть/ошибка:",e); ok=False; continue
-        if not r.get("ok"):
-            print(f"!! Telegram отклонил: {r.get('error_code')} {r.get('description')}"); ok=False
-    if ok: print("Telegram: отправлено ✓")
-    return ok
-
-def _chunks(text, limit):
-    """Режем по границам строк: строка (=вакансия с её ссылкой) не разрывается.
-       Если одна строка длиннее лимита — только тогда режем её жёстко."""
-    out=[]; cur=""
-    for line in text.split("\n"):
-        piece = (cur + "\n" + line) if cur else line
-        if len(piece) <= limit:
-            cur = piece
-        else:
-            if cur: out.append(cur)
-            if len(line) <= limit:
-                cur = line
-            else:                       # аварийный случай: сверхдлинная одиночная строка
-                for i in range(0, len(line), limit):
-                    out.append(line[i:i+limit])
-                cur = ""
-    if cur: out.append(cur)
-    return out
-
-def load(path,default):
-    try: return json.load(open(path,encoding="utf-8"))
-    except Exception: return default
-
 def main():
-    dump_all = "--all" in sys.argv
-    print(f"=== {VERSION} | режим: {'ВСЕ текущие' if dump_all else 'только новые'} ===")
-    print(f"фильтр: роль-бан {len(NEG_ROLE)} | hybrid(гео) в бане: {'hybrid' in NEG_GEO_SUB} | "
-          f"штатов(полных): {len(US_STATE_FULL)}")
-    companies=[]
-    with open(IN_FILE,encoding="utf-8-sig") as f:
-        for r in csv.DictReader(f): companies.append(r)
-    seen_existed=os.path.exists(STATE)
-    seen=load(STATE,{}); slugs=load(SLUGS,{})
+    companies=list(csv.DictReader(open(IN_FILE, encoding="utf-8-sig")))
+    seen=load(STATE, {}); slugs=load(SLUGS, {})
+    print(f"=== API-радар | {len(companies)} компаний | {'--all' if '--all' in sys.argv else 'только новые'} ===")
 
-    jobs=[]; skipped=0; errors=[]; seen_links=set()
+    jobs={}; skipped=0; errors=[]; seen_links=set()
     for r in companies:
         name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
         ats=(r.get("ATS") or "").strip()
         if ats not in HANDLERS: skipped+=1; continue
-        lk=link.lower().rstrip("/").strip()
-        if lk in seen_links: continue      # компания-дубль в списке
+        lk=link.lower().rstrip("/")
+        if lk in seen_links: continue                      # дубль в списке
         seen_links.add(lk)
         try:
-            slug,js=fetch_company(link,ats,slugs,name)
+            slug, js = fetch_company(link, ats, slugs, name)
         except Exception as e:
             errors.append(f"{name}: {type(e).__name__} {str(e)[:50]}"); continue
         if not slug or js is None:
-            errors.append(f"{name}: не удалось определить рабочий slug ({ats})"); continue
+            errors.append(f"{name}: не подобрался slug ({ats})"); continue
         for j in js:
-            if not j.get("title") or not j.get("url"): continue
-            jobs.append({**j,"company":name,"jid":f"{ats}:{slug}:{j.get('id')}","ats":ats,"slug":slug})
+            if j.get("title") and j.get("url"):
+                jid=f"{ats}:{slug}:{j.get('id')}"
+                jobs[jid]={**j, "company":name, "jid":jid, "ats":ats, "slug":slug}
         time.sleep(0.2)
+    save(SLUGS, slugs)
 
-    uniq={}
-    for j in jobs: uniq[j["jid"]]=j
-    jobs=list(uniq.values())
-    mk=[j for j in jobs if is_marketing(j["title"], j.get("location",""))]
-    new=[j for j in mk if j["jid"] not in seen]
-    for j in mk: seen[j["jid"]]=j["title"]
-    json.dump(seen,open(STATE,"w",encoding="utf-8"),ensure_ascii=False,indent=1)
-    json.dump(slugs,open(SLUGS,"w",encoding="utf-8"),ensure_ascii=False,indent=1)
-
-    print(f"компаний: {len(companies)} | опрошено ATS: {len(companies)-skipped} | пропущено: {skipped}")
-    print(f"вакансий: {len(jobs)} | маркетинговых: {len(mk)} | новых: {len(new)} | не срослось: {len(errors)}")
-    for e in errors[:20]: print("  ⚠",e)
-
-    def fmt(items, header):
-        from scorer import score_jobs, fmt_job, rank
-        score_jobs(items)
-        from scorer import diag_line
-        return "\n\n".join([header.rstrip()] + [fmt_job(j) for j in rank(items)]) + diag_line()
-
-    if dump_all:
-        if mk: send(fmt(mk, f"📋 Все текущие маркетинг-вакансии ({len(mk)}):\n"))
-        else:  send("📋 Сейчас маркетинговых вакансий не найдено.")
-        print(f"Режим --all: отправлено {len(mk)}."); return
-    if not seen_existed:
-        send(f"✅ Радар включён. Слежу за {len(mk)} маркетинговыми вакансиями в {len(HANDLERS)} типах ATS. "
-             f"Дальше только новые."); print("Первый запуск: сводка отправлена."); return
-    if new:
-        send(fmt(new, f"🆕 Новые маркетинг-вакансии ({len(new)}):\n")); print(f"Отправлено новых: {len(new)}")
-    else:
-        print("Новых нет.")
+    mk=[j for j in jobs.values() if is_marketing(j["title"], j.get("location",""))]
+    print(f"опрошено: {len(companies)-skipped} | без ATS: {skipped} | вакансий: {len(jobs)} | ошибок: {len(errors)}")
+    for e in errors[:20]: print("  ⚠", e)
+    report(mk, seen, STATE, label=LABEL)
 
 if __name__=="__main__":
     main()

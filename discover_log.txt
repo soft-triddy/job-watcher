@@ -1,7 +1,0 @@
-[1/5] Discogs: browser custom  jobs= mk= 
-[2/5] DistroKid: api Greenhouse distrokid jobs=0 mk=0 
-[3/5] Anghami: api Breezy anghami jobs=0 mk=0 
-[4/5] POSH: browser custom  jobs= mk= 
-[5/5] Vermillio: browser JazzHR  jobs= mk= 
-
-Итого: {'browser': 3, 'api': 2}

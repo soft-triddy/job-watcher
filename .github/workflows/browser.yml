@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add seen_browser.json 2>/dev/null || true
+          git add state/seen_browser.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "no changes to save"; exit 0
           fi

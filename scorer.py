@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Оценка новых вакансий под резюме. Общий модуль для radar / browser_radar / himalayas_radar.
-LLM: Gemini API (бесплатный тариф Google AI Studio), OpenAI-совместимый эндпоинт.
-Ключ — секрет репо GEMINI_API_KEY. (GitHub Models закрыт 30.07.2026.)
-Никогда не ломает радар: нет ключа / лимит / ошибка -> вакансия уходит без оценки.
+Оценка вакансий под резюме: какое резюме подходит, «прохожу» и «уныло» из 10, флаги ремоута,
+грейда, главного блокера и стоп-индустрии. LLM — Gemini API (бесплатный тариф), OpenAI-совместимый
+эндпоинт, ключ в секрете GEMINI_API_KEY. Профиль кандидата — scoring_profile.md.
+Никогда не ломает радар: нет ключа / лимит / таймаут -> вакансия уходит без оценки,
+а причина — строкой ⚠️ в конце сообщения.
 
 Публичное API:
   score_jobs(jobs, page=None)  -> проставляет job["score"] (dict) или None
@@ -17,16 +18,14 @@ TOKEN    = os.environ.get("GEMINI_API_KEY")
 # цепочка моделей: если модель недоступна (404) или упёрлась в лимит (429) — пробуем следующую
 MODELS   = [m.strip() for m in os.environ.get(
     "SCORER_MODELS", "gemini-3.8-flash,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-2.5-flash").split(",") if m.strip()]
-MODEL    = MODELS[0]
 PROFILE  = "scoring_profile.md"
 MAX_PER_RUN = int(os.environ.get("SCORER_MAX", "40"))  # потолок оценок за один запуск радара
 BUDGET   = int(os.environ.get("SCORER_BUDGET", "900"))  # сек на ВСЕ оценки за запуск (15 мин), дальше шлём без оценки
 PER_JOB  = int(os.environ.get("SCORER_PER_JOB", "120")) # сек на одну вакансию, включая повторы
 _DL = [0.0]                                            # дедлайн текущей вакансии
-JD_CHARS = 9000                                         # ~2.3K токенов; лимит модели 8K на вход
+JD_CHARS = 9000                                         # обрезаем длинные описания — до сути хватает
 TIMEOUT  = 30
-UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                    "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
+from core import UA
 
 RESUMES = {"growth": "Growth", "digital": "Digital", "gops": "Growth Ops",
            "mops": "MarOps", "crm": "CRM"}

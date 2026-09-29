@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 Разовый разведчик карьерных страниц (запуск вручную в GitHub Actions).
-Для каждой компании из discover_input.csv (Name, Site):
+Для каждой компании из discover/input.csv (Name, Site, Careers — если карьерная страница уже известна):
   1) открывает сайт, ищет ссылку на карьеру (careers/jobs/vacancies/join...) + пробует типовые пути;
   2) определяет ATS по HTML и финальному URL;
   3) если ATS не видно в статике — рендерит страницу Playwright и слушает сетевые запросы
      (там видно boards-api.greenhouse.io, api.ashbyhq.com и т.п.);
   4) для ATS с публичным API — подбирает слаг и ДЕЛАЕТ живой запрос через обработчики radar.py,
      считает вакансии и маркетинговые вакансии.
-Выход: discover_result.csv — одна строка на компанию с корзиной:
+Выход: discover/result.csv — одна строка на компанию с корзиной:
   api      -> в radar_companies.csv
   browser  -> в browser_companies.csv
   linkedin -> карьерной страницы нет / только LinkedIn
@@ -17,9 +17,10 @@
 import csv, re, sys, time
 from urllib.parse import urljoin, urlparse
 import requests
-from radar import HANDLERS, candidates, is_marketing, _affinity, slug_from_url, UA
+from core import UA, is_marketing
+from radar import HANDLERS, candidates, _affinity, slug_from_url
 
-IN_FILE, OUT_FILE = "discover_input.csv", "discover_result.csv"
+IN_FILE, OUT_FILE = "discover/input.csv", "discover/result.csv"
 TIMEOUT = 20
 
 # ---- сигнатуры ATS (подстрока в URL/HTML/сетевых запросах -> ATS) ----

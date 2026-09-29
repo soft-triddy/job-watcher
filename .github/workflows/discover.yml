@@ -1,11 +1,11 @@
 name: discover
 
-# Разовый поиск карьерных страниц. Стартует сам, когда меняется discover_input.csv,
+# Поиск карьерных страниц для новых компаний. Стартует сам, когда меняется discover/input.csv,
 # или вручную (Run workflow).
 on:
   push:
     paths:
-      - discover_input.csv
+      - discover/input.csv
   workflow_dispatch:
     inputs:
       only:
@@ -28,13 +28,13 @@ jobs:
       - run: pip install requests playwright
       - run: python -m playwright install --with-deps chromium
       - name: run
-        run: python discover.py ${{ github.event.inputs.only }} 2>&1 | tee discover_log.txt
+        run: python discover.py ${{ github.event.inputs.only }} 2>&1 | tee discover/log.txt
       - name: save result
         if: always()
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add discover_result.csv discover_log.txt 2>/dev/null || true
+          git add discover/result.csv discover/log.txt 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "no changes to save"; exit 0
           fi

@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Himalayas как источник вакансий (Фаза 1 — слой 1).
-Гейт: worldwide-friendly (hire-anywhere) + employment_type + твои роли.
-Фильтр маркетинга и отправку берёт из radar.py (единый источник правил).
-CIS-скоринг (слой 2) будет отдельной фазой — здесь его НЕТ.
-Схема API из первоисточника: github.com/Himalayas-App/remote-jobs-api  (ключ не нужен)
+Himalayas: публичный API вакансий (без ключа, схема — github.com/Himalayas-App/remote-jobs-api).
+Берём только worldwide + Full Time по широким запросам, дальше — общий фильтр маркетинга.
+Крипто-компании отсекаются по категориям Himalayas.
 """
-import json, os, sys, time
+import os, time
+
 import requests
-from radar import is_marketing, send, load
+from core import is_marketing, load, report
 
 BASE  = "https://himalayas.app/jobs/api/search"
-STATE = "seen_himalayas.json"
+STATE = os.environ.get("HIMALAYAS_STATE", "state/seen_himalayas.json")
 
 # --- настройки гейта (правишь тут) ---
 QUERIES = ["marketing", "growth", "demand", "seo", "crm", "lifecycle"]  # широкие — охват; сужает уже фильтр
@@ -77,39 +76,12 @@ def _is_crypto_company(job):
     return any(t in blob for t in CRYPTO_TERMS)
 
 def main():
-    dump_all = "--all" in sys.argv
-    print(f"=== himalayas | режим: {'ВСЕ текущие' if dump_all else 'только новые'} | "
-          f"worldwide={WORLDWIDE} type={EMPLOYMENT_TYPES} ===")
-    seen_existed = os.path.exists(STATE)
     seen = load(STATE, {})
-
     allj = collect()
     mk = [j for j in allj if j.get("title") and j.get("url")
-          and not _is_crypto_company(j)
-          and is_marketing(j["title"], j.get("location", ""))]
-    new = [j for j in mk if j["guid"] not in seen]
-    for j in mk: seen[j["guid"]] = j["title"]
-    json.dump(seen, open(STATE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-
-    print(f"собрано (contractor+worldwide, до фильтра): {len(allj)} | маркетинговых: {len(mk)} | новых: {len(new)}")
-
-    def fmt(items, header):
-        from scorer import score_jobs, fmt_job, rank
-        score_jobs(items)
-        from scorer import diag_line
-        return "\n\n".join([header.rstrip()] + [fmt_job(j, " (via Himalayas)") for j in rank(items)]) + diag_line()
-
-    if dump_all:
-        if mk: send(fmt(mk, f"🏔 Himalayas: все текущие ({len(mk)}):\n"))
-        else:  send("🏔 Himalayas: маркетинговых worldwide-вакансий не найдено.")
-        return
-    if not seen_existed:
-        send(f"🏔 Himalayas-радар включён. Слежу за {len(mk)} worldwide-вакансиями. Дальше только новые.")
-        print("Первый запуск: сводка отправлена."); return
-    if new:
-        send(fmt(new, f"🏔 Новые вакансии (Himalayas, {len(new)}):\n")); print(f"Отправлено новых: {len(new)}")
-    else:
-        print("Новых нет.")
+          and not _is_crypto_company(j) and is_marketing(j["title"], j.get("location", ""))]
+    print(f"=== Himalayas | собрано (worldwide, {EMPLOYMENT_TYPES}): {len(allj)} ===")
+    report(mk, seen, STATE, label="🏔 Himalayas", key="guid", suffix=" (via Himalayas)")
 
 if __name__ == "__main__":
     main()

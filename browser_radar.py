@@ -1,22 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Браузерный проход по JS-страницам, которые API-радар не берёт.
-Рендерит каждую карьерную страницу настоящим браузером (Playwright), достаёт вакансии из:
-  (1) JSON-ответов, которые страница сама подгружает (часто там и лежит список),
-  (2) структурированных данных JobPosting (JSON-LD) в коде страницы.
-Фильтр маркетинга и отправку в Telegram берёт из radar.py — правила в одном месте.
-Бесплатно: только Playwright + разбор, никаких платных LLM.
+Браузерный радар: карьерные страницы без публичного API. Каждую открывает настоящим Chromium
+(Playwright) и достаёт вакансии из (1) JSON-ответов, которые подгружает сама страница,
+(2) разметки JobPosting (JSON-LD), (3) при их отсутствии — из ссылок на странице.
+Chromium работает в отдельном процессе: завис сайт дольше PER_SITE секунд — процесс убиваем
+и идём к следующей компании. Список — lists/browser_companies.csv (Name, Link).
 """
-import csv, json, os, re, sys, time
+import contextlib, csv, json, os, re, sys, time
 from urllib.parse import urljoin, urlparse
 
-# переиспользуем фильтр и отправку из основного радара (единый источник правил)
-from radar import is_marketing, send, load
+from core import is_marketing, load, report
 
-IN_FILE = os.environ.get("BROWSER_COMPANIES", "browser_companies.csv")
-STATE   = os.environ.get("BROWSER_STATE", "seen_browser.json")
+IN_FILE = os.environ.get("BROWSER_COMPANIES", "lists/browser_companies.csv")
+STATE   = os.environ.get("BROWSER_STATE", "state/seen_browser.json")
+LABEL   = os.environ.get("BROWSER_LABEL", "🌐 Браузер")
 WAIT_MS = 4000          # сколько ждать дозагрузку вакансий после открытия
 NAV_TIMEOUT = 30000
+PER_SITE = 75           # сек на одну компанию; дольше — процесс убиваем, компанию пропускаем
+UA_STR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+          "(KHTML, like Gecko) Chrome/124 Safari/537.36")
 
 TITLE_KEYS = ["title","name","jobtitle","position","text","role","vacancyname","jobopeningname","headline"]
 URL_KEYS   = ["url","absolute_url","hostedurl","joburl","applyurl","apply_url","link",
@@ -230,9 +232,6 @@ def _norm_url(u):
     return (p.netloc.replace("www.","")+p.path).rstrip("/")
 
 # ---------- изоляция: браузер в дочернем процессе, зависший сайт = убить и продолжить ----------
-PER_SITE = 75          # сек на одну компанию; дольше — процесс убиваем, компанию пропускаем
-UA_STR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-          "(KHTML, like Gecko) Chrome/124 Safari/537.36")
 
 def worker(start):
     """Режим --worker N: обходит компании с N-й, по строке JSON на компанию в stdout."""
@@ -293,58 +292,26 @@ def run_isolated(companies):
     return jobs, errors, empty
 
 
+@contextlib.contextmanager
+def _description_page():
+    """Страница Playwright, чтобы оценщик мог дочитать описания JS-вакансий."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b=p.chromium.launch(args=["--no-sandbox"])
+        page=b.new_context(user_agent=UA_STR).new_page(); page.set_default_timeout(15000)
+        try: yield page
+        finally: b.close()
+
 def main():
-    dump_all = "--all" in sys.argv
-    print(f"=== browser_radar | режим: {'ВСЕ текущие' if dump_all else 'только новые'} ===")
-
-    companies=[]
-    with open(IN_FILE, encoding="utf-8-sig") as f:
-        for r in csv.DictReader(f): companies.append(r)
-
-    seen_existed=os.path.exists(STATE)
+    companies=list(csv.DictReader(open(IN_FILE, encoding="utf-8-sig")))
     seen=load(STATE, {})
-
+    print(f"=== браузерный радар | {len(companies)} компаний | {'--all' if '--all' in sys.argv else 'только новые'} ===")
     jobs, errors, empty = run_isolated(companies)
-
-    # дедуп по url
-    uniq={}
-    for j in jobs: uniq[j["jid"]]=j
-    jobs=list(uniq.values())
-
+    jobs={j["jid"]: j for j in jobs}.values()               # дедуп по url
     mk=[j for j in jobs if is_marketing(j["title"], j.get("location",""))]
-    new=[j for j in mk if j["jid"] not in seen]
-    for j in mk: seen[j["jid"]]=j["title"]
-    json.dump(seen, open(STATE,"w",encoding="utf-8"), ensure_ascii=False, indent=1)
-
-    print(f"компаний: {len(companies)} | пусто (ничего не достали): {empty} | ошибок: {len(errors)}")
-    print(f"вакансий: {len(jobs)} | маркетинговых: {len(mk)} | новых: {len(new)}")
-    for e in errors[:20]: print("  ⚠",e)
-
-    def fmt(items, header):
-        from scorer import score_jobs, fmt_job, rank
-        # описания JS-страниц добираем тем же браузером
-        from playwright.sync_api import sync_playwright
-        with sync_playwright() as p2:
-            b2=p2.chromium.launch(args=["--no-sandbox"])
-            pg=b2.new_context(user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/124 Safari/537.36")).new_page()
-            pg.set_default_timeout(15000)
-            score_jobs(items, page=pg)
-            b2.close()
-        from scorer import diag_line
-        return "\n\n".join([header.rstrip()] + [fmt_job(j) for j in rank(items)]) + diag_line()
-
-    if dump_all:
-        if mk: send(fmt(mk, f"🌐 Браузер: все текущие маркетинг-вакансии ({len(mk)}):\n"))
-        else:  send("🌐 Браузер: маркетинговых вакансий не найдено.")
-        return
-    if not seen_existed:
-        send(f"🌐 Браузерный радар включён. Слежу за {len(mk)} вакансиями на JS-страницах. Дальше только новые.")
-        print("Первый запуск: сводка отправлена."); return
-    if new:
-        send(fmt(new, f"🌐 Новые вакансии (браузер, {len(new)}):\n")); print(f"Отправлено новых: {len(new)}")
-    else:
-        print("Новых нет.")
+    print(f"пусто: {empty} | ошибок: {len(errors)} | вакансий: {len(jobs)}")
+    for e in errors[:20]: print("  ⚠", e)
+    report(mk, seen, STATE, label=LABEL, page_factory=_description_page)
 
 if __name__=="__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "--worker": worker(int(sys.argv[2]))
