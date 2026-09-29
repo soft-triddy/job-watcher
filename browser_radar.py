@@ -192,12 +192,13 @@ def extract_from_dom(page, base):
 
 def scrape(page, link):
     """Открываем страницу, собираем JSON-ответы + JSON-LD, возвращаем список вакансий."""
-    captured=[]
+    captured=[]; resps=[]
     def on_response(resp):
         try:
-            ct=(resp.headers or {}).get("content-type","")
-            if "json" in ct.lower():
-                captured.append(resp.json())
+            h=resp.headers or {}
+            ct=h.get("content-type","").lower()
+            if "json" in ct and "stream" not in ct:
+                resps.append(resp)          # в обработчике тело не читаем — это может повиснуть
         except Exception:
             pass
     page.on("response", on_response)
@@ -209,6 +210,9 @@ def scrape(page, link):
     try: html=page.content()
     except Exception: html=""
     page.remove_listener("response", on_response)
+    for resp in resps[:40]:
+        try: captured.append(resp.json())
+        except Exception: pass
 
     best=[]
     for data in captured:
@@ -225,6 +229,70 @@ def _norm_url(u):
     p=urlparse((u or "").strip().lower())
     return (p.netloc.replace("www.","")+p.path).rstrip("/")
 
+# ---------- изоляция: браузер в дочернем процессе, зависший сайт = убить и продолжить ----------
+PER_SITE = 75          # сек на одну компанию; дольше — процесс убиваем, компанию пропускаем
+UA_STR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+          "(KHTML, like Gecko) Chrome/124 Safari/537.36")
+
+def worker(start):
+    """Режим --worker N: обходит компании с N-й, по строке JSON на компанию в stdout."""
+    companies=[r for r in csv.DictReader(open(IN_FILE, encoding="utf-8-sig"))]
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        browser=p.chromium.launch(args=["--no-sandbox"])
+        ctx=browser.new_context(user_agent=UA_STR)
+        for i in range(start, len(companies)):
+            link=(companies[i].get("Link") or "").strip()
+            print(json.dumps({"i":i,"start":1}), flush=True)
+            found=[]; err=""
+            if link:
+                page=ctx.new_page(); page.set_default_timeout(15000)
+                try: found=scrape(page, link)
+                except Exception as e: err=f"{type(e).__name__} {str(e)[:50]}"
+                try: page.close()
+                except Exception: pass
+            print(json.dumps({"i":i,"found":found,"err":err}, ensure_ascii=False), flush=True)
+        browser.close()
+
+def run_isolated(companies):
+    import subprocess, selectors
+    jobs=[]; errors=[]; empty=0; i=0; n=len(companies)
+    while i < n:
+        proc=subprocess.Popen([sys.executable, __file__, "--worker", str(i)],
+                              stdout=subprocess.PIPE, text=True, bufsize=1, start_new_session=True)
+        sel=selectors.DefaultSelector(); sel.register(proc.stdout, selectors.EVENT_READ)
+        cur=i; t0=time.time(); stuck=False
+        while True:
+            if not sel.select(timeout=max(1, PER_SITE-(time.time()-t0))):
+                if time.time()-t0 >= PER_SITE: stuck=True; break
+                continue
+            line=proc.stdout.readline()
+            if not line: break                              # воркер закончил или упал
+            try: msg=json.loads(line)
+            except Exception: continue
+            if msg.get("start"): cur=msg["i"]; t0=time.time(); continue
+            r=companies[msg["i"]]; name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
+            found=msg.get("found") or []
+            if msg.get("err"): errors.append(f"{name}: {msg['err']}")
+            if not found: empty+=1
+            base=_norm_url(link)
+            for j in found:
+                if not j.get("title") or not j.get("url"): continue
+                if _norm_url(j["url"])==base: continue      # ссылка на саму карьерную страницу = заголовок, не вакансия
+                jobs.append({**j,"company":name,"jid":j["url"]})
+            print(f"  [{msg['i']+1}/{n}] {name}: {len(found)} за {time.time()-t0:.0f}с", flush=True)
+            cur=msg["i"]+1
+        if stuck:
+            name=(companies[cur].get("Name") or "").strip()
+            print(f"  !! [{cur+1}/{n}] {name}: завис > {PER_SITE}с — убиваю браузер, иду дальше", flush=True)
+            errors.append(f"{name}: завис > {PER_SITE}с"); empty+=1; cur+=1
+        try: os.killpg(proc.pid, 9)                        # убиваем воркер вместе с его Chromium
+        except Exception: proc.kill()
+        proc.wait()
+        i = cur if cur > i else i+1                         # страховка от вечного цикла
+    return jobs, errors, empty
+
+
 def main():
     dump_all = "--all" in sys.argv
     print(f"=== browser_radar | режим: {'ВСЕ текущие' if dump_all else 'только новые'} ===")
@@ -236,30 +304,7 @@ def main():
     seen_existed=os.path.exists(STATE)
     seen=load(STATE, {})
 
-    from playwright.sync_api import sync_playwright
-    jobs=[]; errors=[]; empty=0
-    with sync_playwright() as p:
-        browser=p.chromium.launch(args=["--no-sandbox"])
-        ctx=browser.new_context(user_agent=(
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/124 Safari/537.36"))
-        for i,r in enumerate(companies,1):
-            name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
-            if not link: continue
-            page=ctx.new_page()
-            try:
-                found=scrape(page, link)
-            except Exception as e:
-                errors.append(f"{name}: {type(e).__name__} {str(e)[:50]}"); found=[]
-            page.close()
-            if not found: empty+=1
-            base=_norm_url(link)
-            for j in found:
-                if not j.get("title") or not j.get("url"): continue
-                if _norm_url(j["url"])==base: continue    # ссылка на саму карьерную страницу = заголовок раздела, не вакансия
-                jobs.append({**j,"company":name,"jid":j["url"]})
-            if i%20==0: print(f"  ...{i}/{len(companies)}")
-        browser.close()
+    jobs, errors, empty = run_isolated(companies)
 
     # дедуп по url
     uniq={}
@@ -278,10 +323,12 @@ def main():
     def fmt(items, header):
         from scorer import score_jobs, fmt_job, rank
         # описания JS-страниц добираем тем же браузером
+        from playwright.sync_api import sync_playwright
         with sync_playwright() as p2:
             b2=p2.chromium.launch(args=["--no-sandbox"])
             pg=b2.new_context(user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                 "(KHTML, like Gecko) Chrome/124 Safari/537.36")).new_page()
+            pg.set_default_timeout(15000)
             score_jobs(items, page=pg)
             b2.close()
         from scorer import diag_line
@@ -300,4 +347,5 @@ def main():
         print("Новых нет.")
 
 if __name__=="__main__":
-    main()
+    if len(sys.argv) > 2 and sys.argv[1] == "--worker": worker(int(sys.argv[2]))
+    else: main()
