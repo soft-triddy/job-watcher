@@ -220,6 +220,12 @@ def _synthetic(jobs, base):
         out.append({**j, "url": base.split("#")[0]+"#"+slug, "synthetic": True})
     return out
 
+# в текстовом режиме заголовок считается вакансией, только если в нём есть слово-должность:
+# иначе «Personal growth», «Expert marketplace», «20 paid vacation days» уходят как вакансии
+ROLE_WORD = re.compile(r"\b(manager|lead|head|director|specialist|strategist|marketer|officer|vp|owner|generalist|"
+                       r"менеджер|руководитель|директор|специалист|маркетолог|лид)\b", re.I)
+CLOSED = re.compile(r"\b(closed|filled|закрыт[аоы]?)\b", re.I)
+
 def _text_mode(page, base):
     """Последний шанс для страниц, где вакансии — просто текст (Tilda, Framer, Notion):
        берём короткие заголовки/пункты, которые САМИ проходят маркетинговый фильтр."""
@@ -233,7 +239,7 @@ def _text_mode(page, base):
         for line in t.split("\n"):
             line=_clean(line)
             if not (2 <= len(line.split()) <= 12) or line.lower() in seen: continue
-            if is_marketing(line):
+            if is_marketing(line) and ROLE_WORD.search(line) and not CLOSED.search(line) and not line.endswith((".", "!", "?")):
                 seen.add(line.lower()); out.append({"title": line, "url": base, "location": ""})
     return _synthetic(out, base)
 
