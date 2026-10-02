@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 11:57 UTC",
+ "updated": "2026-10-02 13:14 UTC",
  "label": "🎵 Музтех · ATS",
  "total": 17,
  "broken": 2,
@@ -42,7 +42,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -74,7 +74,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
