@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-02 14:55 UTC",
+ "updated": "2026-10-02 16:32 UTC",
  "label": "🆕 ATS",
  "total": 89,
  "broken": 11,
- "jobs_total": 1822,
+ "jobs_total": 1811,
  "marketing": 39,
  "sources": {
   "10Web": {
@@ -26,7 +26,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -74,7 +74,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (BambooHR)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -106,7 +106,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Rippling)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -178,7 +178,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -274,7 +274,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -298,7 +298,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -306,7 +306,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Rippling)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -354,12 +354,12 @@
    "jobs": 0,
    "err": "не подобрался слаг (Rippling)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
   "Semrush": {
-   "jobs": 23,
+   "jobs": 22,
    "err": "",
    "note": "Workday:semrush.wd5.myworkdayjobs.com/semrushcareers",
    "bad_streak": 0,
@@ -370,7 +370,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -410,7 +410,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Teamtailor)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -423,7 +423,7 @@
    "alerted": false
   },
   "Synthesized": {
-   "jobs": 0,
+   "jobs": 4,
    "err": "",
    "note": "Teamtailor:synthesized",
    "bad_streak": 0,
@@ -466,7 +466,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
    "alerted": true
   },
@@ -599,7 +599,7 @@
    "alerted": false
   },
   "Duolingo": {
-   "jobs": 82,
+   "jobs": 68,
    "err": "",
    "note": "Greenhouse:duolingo",
    "bad_streak": 0,
