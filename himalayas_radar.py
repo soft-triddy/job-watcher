@@ -7,10 +7,13 @@ Himalayas: публичный API вакансий (без ключа, схем�
 import os, time
 
 import requests
-from core import is_marketing, load, report
+from core import is_marketing, near_misses, load, save, report, Health
 
 BASE  = "https://himalayas.app/jobs/api/search"
 STATE = os.environ.get("HIMALAYAS_STATE", "state/seen_himalayas.json")
+HEALTH = "state/health_himalayas.json"
+REJECTED = "state/rejected_himalayas.json"
+LABEL = "🏔 Himalayas"
 
 # --- настройки гейта (правишь тут) ---
 QUERIES = ["marketing", "growth", "demand", "seo", "crm", "lifecycle"]  # широкие — охват; сужает уже фильтр
@@ -22,12 +25,21 @@ TIMEOUT = 30
 UA = {"User-Agent": "job-radar personal use (+telegram alerts)"}
 
 def search(q, page):
+    """429 (лимит) и 5xx — ждём и повторяем; раньше запрос молча обрывался на первой же 429,
+       и всё, что глубже первой страницы, не доходило."""
     params = {"q": q, "sort": "recent", "page": page}
     if WORLDWIDE: params["worldwide"] = "true"
     if EMPLOYMENT_TYPES: params["employment_type"] = EMPLOYMENT_TYPES
-    r = requests.get(BASE, params=params, headers=UA, timeout=TIMEOUT)
+    for attempt in range(4):
+        r = requests.get(BASE, params=params, headers=UA, timeout=TIMEOUT)
+        if r.status_code == 429 or r.status_code >= 500:
+            wait = int(r.headers.get("Retry-After") or 0) or 15 * (attempt + 1)
+            print(f"  … '{q}' p{page}: HTTP {r.status_code}, жду {min(wait, 60)}с")
+            time.sleep(min(wait, 60)); continue
+        r.raise_for_status()
+        return r.json()
     r.raise_for_status()
-    return r.json()
+    raise RuntimeError(f"HTTP {r.status_code} после повторов")
 
 def loc_str(job):
     out = []
@@ -36,18 +48,20 @@ def loc_str(job):
         elif isinstance(x, dict): out.append(x.get("name") or x.get("country") or "")
     return ", ".join(p for p in out if p)
 
-def collect():
+def collect(health):
     jobs = {}
     for q in QUERIES:
-        page = 1
+        page = 1; got_q = 0; err = ""
         while page <= MAX_PAGES:
             try:
                 data = search(q, page)
             except Exception as e:
-                print(f"  !! '{q}' page {page}: {type(e).__name__} {str(e)[:60]}")
+                err = f"стр. {page}: {type(e).__name__} {str(e)[:60]}"
+                print(f"  !! '{q}' {err}")
                 break
             batch = data.get("jobs", [])
             if not batch: break
+            got_q += len(batch)
             for j in batch:
                 g = j.get("guid")
                 if not g: continue
@@ -61,6 +75,7 @@ def collect():
             got = (page * (data.get("limit") or len(batch)))
             if got >= total: break
             page += 1; time.sleep(PAUSE)
+        health.mark(f"запрос «{q}»", jobs=got_q, err=err)
         time.sleep(PAUSE)
     return list(jobs.values())
 
@@ -77,11 +92,14 @@ def _is_crypto_company(job):
 
 def main():
     seen = load(STATE, {})
-    allj = collect()
+    health = Health(HEALTH, LABEL, empty_is_bad=True)
+    allj = collect(health)
     mk = [j for j in allj if j.get("title") and j.get("url")
           and not _is_crypto_company(j) and is_marketing(j["title"], j.get("location", ""))]
-    print(f"=== Himalayas | собрано (worldwide, {EMPLOYMENT_TYPES}): {len(allj)} ===")
-    report(mk, seen, STATE, label="🏔 Himalayas", key="guid", suffix=" (via Himalayas)")
+    save(REJECTED, near_misses([j for j in allj if not _is_crypto_company(j)]))
+    print(f"=== Himalayas | собрано (worldwide, {EMPLOYMENT_TYPES}): {len(allj)} | маркетинг: {len(mk)} ===")
+    report(mk, seen, STATE, label=LABEL, key="guid", suffix=" (via Himalayas)")
+    health.finish({"jobs_total": len(allj), "marketing": len(mk)})
 
 if __name__ == "__main__":
     main()

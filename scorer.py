@@ -102,7 +102,7 @@ def _from_api(job):
     ats, s, jid = job.get("ats"), job.get("slug"), job.get("id")
     if not (ats and s and jid): return ""
     if ats == "Greenhouse":
-        return _strip(_html.unescape(_get_json(f"https://boards-api.greenhouse.io/v1/boards/{s}/jobs/{jid}").get("content", "")))
+        return _strip(_html.unescape(_get_json(("https://boards-api.eu.greenhouse.io/v1/boards/" + s[3:] if s.startswith("eu:") else "https://boards-api.greenhouse.io/v1/boards/" + s) + f"/jobs/{jid}").get("content", "")))
     if ats == "Lever":
         d = _get_json(f"https://api.lever.co/v0/postings/{s}/{jid}")
         parts = [d.get("descriptionPlain", "")] + [

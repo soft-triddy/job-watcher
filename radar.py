@@ -10,12 +10,16 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
 import requests
-from core import UA, TIMEOUT, is_marketing, load, save, report
+from core import UA, TIMEOUT, is_marketing, near_misses, load, save, report, Health
 
 IN_FILE = os.environ.get("RADAR_COMPANIES", "lists/radar_companies.csv")
 STATE   = os.environ.get("RADAR_STATE", "state/seen.json")
 SLUGS   = os.environ.get("RADAR_SLUGS", "state/slugs.json")
 LABEL   = os.environ.get("RADAR_LABEL", "🆕 ATS")
+HEALTH  = os.environ.get("RADAR_HEALTH", "state/health_api.json")
+REJECTED = os.environ.get("RADAR_REJECTED", "state/rejected_api.json")
+# компании, которые API-радар не смог опросить, — браузерный радар подхватит их в тот же день
+FALLBACK = os.environ.get("RADAR_FALLBACK", "state/api_fallback.csv")
 
 # ---------- slug из URL ----------
 def _seg1(u):
@@ -28,7 +32,8 @@ def _sub(u):
 
 def slug_from_url(link, ats):
     h=urlparse(link.lower()).netloc
-    if ats=="Greenhouse" and "greenhouse.io" in h: return _seg1(link)
+    if ats=="Greenhouse" and "greenhouse.io" in h:      # EU-борды живут на отдельном API
+        s=_seg1(link); return (f"eu:{s}" if s and ".eu.greenhouse.io" in h else s)
     if ats=="Lever" and "lever.co" in h: return _seg1(link)
     if ats=="Ashby" and "ashbyhq.com" in h: return _seg1(link)
     if ats=="Workable":
@@ -79,6 +84,7 @@ ATS_WORDS={"lever","greenhouse","ashby","ashbyhq","workable","recruitee","bamboo
 LOCALE=re.compile(r"^[a-z]{2}(-[a-z]{2})?$")      # en, en-gb, ru ... — сегменты локали
 
 def _bad_slug(c):
+    if c.startswith("eu:"): c=c[3:]
     return (not c) or c in JUNK or c in ATS_WORDS or bool(LOCALE.match(c))
 
 def _is_ats_host(h):
@@ -121,6 +127,8 @@ def candidates(link, ats, html, name=""):
     emb=[]
     for pat in EMBED.get(ats,[]):
         emb += re.findall(pat, html or "", re.I)
+    if ats=="Greenhouse":   # эмбед EU-борды: тот же слаг, но через EU API
+        emb = [f"eu:{c}" for c in re.findall(r"(?:job-boards|boards)\.eu\.greenhouse\.io/(?:embed/job_board\?for=)?([\w-]+)", html or "", re.I)] + emb
     if ats=="Workday":   # эмбед Workday: хост + сайт, угадывать по имени бессмысленно
         for host, site in re.findall(r"([\w-]+\.wd\d+\.myworkdayjobs\.com)/(?:[a-z]{2}-[A-Z]{2}/)?([\w-]+)", html or ""):
             emb.append(f"{host.lower()}/{site}")
@@ -148,12 +156,21 @@ def candidates(link, ats, html, name=""):
     return final
 
 # ---------- обработчики: slug -> [{id,title,url,location}] (кидают исключение на не-JSON) ----------
-def _json(url): return requests.get(url, headers=UA, timeout=TIMEOUT).json()
+def _json(url):
+    """GET -> JSON. Любой не-2xx — исключение: иначе 404 «борда не найдена» выглядел бы как
+       «у компании 0 вакансий», и битый слаг жил бы в кеше вечно."""
+    r=requests.get(url, headers=UA, timeout=TIMEOUT)
+    r.raise_for_status()
+    return r.json()
+
+def gh_api(s):
+    return ("https://boards-api.eu.greenhouse.io/v1/boards/"+s[3:]) if s.startswith("eu:") \
+        else ("https://boards-api.greenhouse.io/v1/boards/"+s)
 
 def h_greenhouse(s):
     return [{"id":j.get("id"),"title":j.get("title"),"url":j.get("absolute_url"),
              "location":(j.get("location") or {}).get("name","")}
-            for j in _json(f"https://boards-api.greenhouse.io/v1/boards/{s}/jobs").get("jobs",[])]
+            for j in _json(f"{gh_api(s)}/jobs")["jobs"]]
 def h_lever(s):
     return [{"id":j.get("id"),"title":j.get("text"),"url":j.get("hostedUrl"),
              "location":(j.get("categories") or {}).get("location","")}
@@ -210,6 +227,7 @@ def h_rippling(s):
 
 def h_teamtailor(s):
     r=requests.get(f"https://{s}.teamtailor.com/jobs.rss", headers=UA, timeout=TIMEOUT)
+    r.raise_for_status()
     root=ET.fromstring(r.content)          # не-XML (404) кинет исключение -> кандидат отсеется
     out=[]
     for item in root.iter("item"):
@@ -253,7 +271,7 @@ def h_workday(s):
             r=requests.post(api, json={"appliedFacets":{},"limit":20,"offset":off,"searchText":q},
                             headers={**UA,"Content-Type":"application/json","Accept":"application/json"},
                             timeout=TIMEOUT)
-            d=r.json(); ok=True                   # не-JSON -> исключение -> кандидат отсеется
+            r.raise_for_status(); d=r.json(); ok=True                   # не-JSON -> исключение -> кандидат отсеется
             posts=d.get("jobPostings") or []
             for j in posts:
                 path=j.get("externalPath") or ""
@@ -278,7 +296,12 @@ def fetch_company(link, ats, cache, name=""):
         cache.pop(key, None); cached=None          # старый битый слаг (lever/ats/en-gb) — выкидываем
     if cached:
         try: return cached, HANDLERS[ats](cached)
-        except Exception: pass  # закешированный slug протух — резолвим заново
+        except (requests.ConnectionError, requests.Timeout):
+            raise                                  # сеть/таймаут — временное, кеш не трогаем
+        except requests.HTTPError as e:
+            code=getattr(e.response, "status_code", 0) or 0
+            if code==429 or code>=500: raise       # ATS лежит/лимит — временное, кеш не трогаем
+        except Exception: pass  # 404 / не-JSON: закешированный slug протух — резолвим заново
     html=""
     if not slug_from_url(link, ats):
         try: html=requests.get(link, headers=UA, timeout=TIMEOUT).text
@@ -306,33 +329,48 @@ def fetch_company(link, ats, cache, name=""):
 def main():
     companies=list(csv.DictReader(open(IN_FILE, encoding="utf-8-sig")))
     seen=load(STATE, {}); slugs=load(SLUGS, {})
+    health=Health(HEALTH, LABEL)
     print(f"=== API-радар | {len(companies)} компаний | {'--all' if '--all' in sys.argv else 'только новые'} ===")
 
-    jobs={}; skipped=0; errors=[]; seen_links=set()
+    jobs={}; skipped=[]; failed=[]; seen_links=set()
     for r in companies:
         name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
         ats=(r.get("ATS") or "").strip()
-        if ats not in HANDLERS: skipped+=1; continue
+        if ats not in HANDLERS:
+            skipped.append(r); health.mark(name, err=f"ATS «{ats or '—'}» не поддерживается"); continue
         lk=link.lower().rstrip("/")
         if lk in seen_links: continue                      # дубль в списке
         seen_links.add(lk)
         try:
             slug, js = fetch_company(link, ats, slugs, name)
         except Exception as e:
-            errors.append(f"{name}: {type(e).__name__} {str(e)[:50]}"); continue
+            slug, js = None, None; err=f"{type(e).__name__} {str(e)[:60]}"
+        else:
+            err="" if slug else f"не подобрался слаг ({ats})"
         if not slug or js is None:
-            errors.append(f"{name}: не подобрался slug ({ats})"); continue
+            print(f"  ⚠ {name}: {err}")
+            health.mark(name, err=err); failed.append(r); continue
+        n=0
         for j in js:
             if j.get("title") and j.get("url"):
                 jid=f"{ats}:{slug}:{j.get('id')}"
-                jobs[jid]={**j, "company":name, "jid":jid, "ats":ats, "slug":slug}
+                jobs[jid]={**j, "company":name, "jid":jid, "ats":ats, "slug":slug}; n+=1
+        health.mark(name, jobs=n, note=f"{ats}:{slug}")
         time.sleep(0.2)
     save(SLUGS, slugs)
 
-    mk=[j for j in jobs.values() if is_marketing(j["title"], j.get("location",""))]
-    print(f"опрошено: {len(companies)-skipped} | без ATS: {skipped} | вакансий: {len(jobs)} | ошибок: {len(errors)}")
-    for e in errors[:20]: print("  ⚠", e)
+    # то, что API не смог опросить, отдаём браузерному радару (он идёт позже в тот же день)
+    os.makedirs(os.path.dirname(FALLBACK) or ".", exist_ok=True)
+    with open(FALLBACK, "w", encoding="utf-8", newline="") as f:
+        w=csv.writer(f); w.writerow(["Name","Link"])
+        for r in failed+skipped: w.writerow([(r.get("Name") or "").strip(), (r.get("Link") or "").strip()])
+
+    alljobs=list(jobs.values())
+    mk=[j for j in alljobs if is_marketing(j["title"], j.get("location",""))]
+    save(REJECTED, near_misses(alljobs))
+    print(f"опрошено: {len(companies)-len(skipped)} | без ATS: {len(skipped)} | вакансий: {len(jobs)} | не опросились: {len(failed)}")
     report(mk, seen, STATE, label=LABEL)
+    health.finish({"jobs_total": len(jobs), "marketing": len(mk)})
 
 if __name__=="__main__":
     main()

@@ -49,6 +49,21 @@ https://jobs.example.com/123
 - **Music-tech radar** (`music.yml`) — the same API + browser radars on a separate list of music-tech
   companies, with its own state and a scoring tweak for the industry.
 
+## Source health
+
+Every radar writes `state/health_*.json`: for each company (or Himalayas query) — how many
+vacancies it returned this run, the error if any, how many runs in a row it has been broken and
+when it last worked. Telegram gets one message with everything that is broken on the first run,
+then only when a source has been broken 3 runs in a row, and when it recovers.
+`state/rejected_*.json` lists titles that look like marketing but were cut by the filter, with the
+rule that cut them — to check the filter isn't too greedy.
+
+Companies the API radar could not read (bad slug, ATS down, unsupported ATS) go to
+`state/api_fallback.csv`, and the browser radar checks them the same day.
+
+New vacancies are marked as seen only after Telegram accepts the message, so a failed send
+re-delivers them on the next run instead of losing them.
+
 ## Repository layout
 
 ```text

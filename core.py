@@ -3,7 +3,7 @@
 Общее ядро всех радаров: фильтр «это маркетинговая вакансия для меня», отправка в Telegram,
 состояние (что уже видели) и единая логика отчёта «первый запуск / --all / только новые».
 """
-import json, os, re, sys
+import json, os, re, sys, time
 
 import requests
 
@@ -51,24 +51,46 @@ US_STATE_CODE = {"AK","AR","CO","CT","FL","HI","IA","ID","IL","KS","KY","LA","MA
  "MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA",
  "RI","SC","SD","TN","TX","UT","VA","VT","WA","WI","WV","WY","DC"}
 
-def is_marketing(title, location=""):
+def classify(title, location=""):
+    """"" = подходит; иначе — короткая причина отказа (для отчёта «что отсеяли»)."""
     raw_t = title or ""
     t = raw_t.lower()
     # 1) не та роль — по заголовку
-    if any(n in t for n in NEG_ROLE): return False
-    if re.search(r"\bpr\b", t): return False            # PR как целое слово
-    if re.search(r"\bintern(ship)?\b", t): return False  # стажировка, но не «international»
-    if "associate" in t and "associate director" not in t: return False   # младший грейд
+    for n in NEG_ROLE:
+        if n in t: return f"роль: {n}"
+    if re.search(r"\bpr\b", t): return "роль: pr"
+    if re.search(r"\bintern(ship)?\b", t): return "роль: intern"
+    if "associate" in t and "associate director" not in t: return "роль: associate"
     # 2) это вообще маркетинг? — по заголовку
-    if not any(k in t for k in KW): return False
+    if not any(k in t for k in KW): return "не маркетинг"
     # 3) формат/гео — по заголовку И локации вместе
     raw_blob = raw_t + " " + (location or "")
     blob = raw_blob.lower()
-    if any(n in blob for n in NEG_GEO_SUB): return False           # hybrid
-    if any(re.search(r"\b"+w+r"\b", blob) for w in NEG_GEO_WORD): return False   # us / usa
-    if any(re.search(r"\b"+re.escape(s)+r"\b", blob) for s in US_STATE_FULL): return False
-    if any(tok in US_STATE_CODE for tok in re.findall(r"\b[A-Z]{2}\b", raw_blob)): return False
-    return True
+    for n in NEG_GEO_SUB:
+        if n in blob: return f"гео: {n}"
+    for w in NEG_GEO_WORD:
+        if re.search(r"\b"+w+r"\b", blob): return f"гео: {w}"
+    for st in US_STATE_FULL:
+        if re.search(r"\b"+re.escape(st)+r"\b", blob): return f"гео: {st}"
+    for tok in re.findall(r"\b[A-Z]{2}\b", raw_blob):
+        if tok in US_STATE_CODE: return f"гео: {tok}"
+    return ""
+
+def is_marketing(title, location=""):
+    return classify(title, location) == ""
+
+def near_misses(jobs):
+    """Вакансии с маркетинговым словом в тайтле, которые фильтр всё-таки отсеял, — с причиной.
+       Пишутся в state/rejected_*.json, чтобы было видно, не режет ли фильтр лишнее."""
+    out = []
+    for j in jobs:
+        t = (j.get("title") or "").lower()
+        if not any(k in t for k in KW): continue
+        why = classify(j.get("title"), j.get("location", ""))
+        if why:
+            out.append({"company": j.get("company", ""), "title": j.get("title"),
+                        "location": j.get("location", ""), "why": why, "url": j.get("url")})
+    return sorted(out, key=lambda x: (x["why"], x["company"] or ""))
 
 def send(text):
     if not (TG_TOKEN and TG_CHAT):
@@ -121,28 +143,99 @@ def report(mk, seen, state_path, *, label, key="jid", suffix="", page_factory=No
        label  — подпись источника в сообщениях, напр. "🌐 Браузер";
        key    — поле-идентификатор вакансии;
        page_factory — для JS-страниц: контекст-менеджер, отдающий страницу Playwright для описаний.
-       Режимы: --all (все текущие), первый запуск (только сводка), обычный (только новые)."""
+       Режимы: --all (все текущие), первый запуск (только сводка), обычный (только новые).
+       Новые вакансии попадают в seen ТОЛЬКО после того, как Telegram их принял:
+       упала отправка — в следующий прогон они придут снова, а не пропадут."""
     dump_all = "--all" in sys.argv
     first_run = not os.path.exists(state_path)
     new = [j for j in mk if j[key] not in seen]
-    for j in mk: seen[j[key]] = j["title"]
-    save(state_path, seen)
     print(f"маркетинговых: {len(mk)} | новых: {len(new)}")
 
     def render(items, header):
         from scorer import score_jobs, fmt_job, rank, diag_line
         if page_factory:
-            with page_factory() as page: score_jobs(items, page=page)
+            try:
+                with page_factory() as page: score_jobs(items, page=page)
+            except Exception as e:               # браузер для описаний не поднялся — оцениваем без него
+                print("!! страница для описаний:", type(e).__name__, str(e)[:100])
+                score_jobs(items)
         else:
             score_jobs(items)
         return "\n\n".join([header] + [fmt_job(j, suffix) for j in rank(items)]) + diag_line()
 
+    def mark(items):
+        for j in items: seen[j[key]] = j["title"]
+        save(state_path, seen)
+
     if dump_all:
-        send(render(mk, f"{label}: все текущие маркетинг-вакансии ({len(mk)}):") if mk
-             else f"{label}: маркетинговых вакансий сейчас нет.")
+        ok = send(render(mk, f"{label}: все текущие маркетинг-вакансии ({len(mk)}):") if mk
+                  else f"{label}: маркетинговых вакансий сейчас нет.")
+        mark(mk if ok else [j for j in mk if j not in new])
     elif first_run:
         send(f"{label}: радар включён, слежу за {len(mk)} вакансиями. Дальше только новые.")
+        mark(mk)
     elif new:
-        send(render(new, f"{label}: новые вакансии ({len(new)}):"))
+        try:
+            ok = send(render(new, f"{label}: новые вакансии ({len(new)}):"))
+        except Exception as e:                   # что угодно сломалось при оценке/отправке
+            print("!! отчёт не собрался:", type(e).__name__, str(e)[:200])
+            ok = send(f"{label}: новые вакансии ({len(new)}), без оценок (сбой: {type(e).__name__}):\n\n"
+                      + "\n\n".join(f"• {j.get('company','')}: {j['title']}\n{j.get('url','')}" for j in new))
+        if ok: mark(new)
+        else: print("!! Telegram не принял — новые НЕ помечены виденными, придут в следующий раз")
     else:
         print("Новых нет.")
+
+
+# ---------- здоровье источников ----------
+ALERT_AFTER = 3          # столько прогонов подряд источник «сломан» — шлём предупреждение (один раз)
+
+class Health:
+    """Что опросилось в этом прогоне: по каждой компании/запросу — сколько вакансий и какая ошибка.
+       Пишется в state/health_*.json (коммитится ботом, видно в репо). Telegram:
+       при первом запуске — полный список того, что сейчас не опрашивается;
+       дальше — только когда источник ломается ALERT_AFTER прогонов подряд (и когда чинится).
+       empty_is_bad=True — ноль вакансий тоже считается поломкой (браузер: страница без вакансий
+       почти всегда значит, что скрапер её не понял)."""
+    def __init__(self, path, label, empty_is_bad=False):
+        self.path, self.label, self.empty_is_bad = path, label, empty_is_bad
+        self.first = not os.path.exists(path)
+        self.prev = load(path, {}).get("sources", {})
+        self.cur = {}
+
+    def mark(self, name, jobs=0, err="", note=""):
+        bad = bool(err) or (self.empty_is_bad and not jobs)
+        p = self.prev.get(name, {})
+        today = time.strftime("%Y-%m-%d")
+        self.cur[name] = {"jobs": jobs, "err": err or ("0 вакансий" if bad else ""),
+                          "note": note,
+                          "bad_streak": (p.get("bad_streak", 0) + 1) if bad else 0,
+                          "last_ok": today if not bad else p.get("last_ok", ""),
+                          "alerted": bool(bad and p.get("alerted"))}
+
+    def bad(self):
+        return {k: v for k, v in self.cur.items() if v["bad_streak"]}
+
+    def finish(self, extra=None):
+        bad = self.bad()
+        if self.first:
+            for v in bad.values(): v["alerted"] = True
+        broke = {k: v for k, v in bad.items() if v["bad_streak"] >= ALERT_AFTER and not v["alerted"]}
+        for v in broke.values(): v["alerted"] = True
+        fixed = [k for k, v in self.cur.items() if not v["bad_streak"] and self.prev.get(k, {}).get("alerted")]
+        save(self.path, {"updated": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()),
+                         "label": self.label, "total": len(self.cur), "broken": len(bad),
+                         **(extra or {}), "sources": self.cur})
+        line = lambda k, v: f"• {k} — {v['err']}" + (f" (ок был {v['last_ok']})" if v.get("last_ok") else "")
+        if self.first:
+            if bad:
+                send(f"🩺 {self.label}: сейчас не опрашиваются {len(bad)} из {len(self.cur)}:\n"
+                     + "\n".join(line(k, v) for k, v in sorted(bad.items())))
+            return
+        msg = []
+        if broke:
+            msg.append(f"🩺 {self.label}: перестали опрашиваться ({ALERT_AFTER}+ прогона подряд):\n"
+                       + "\n".join(line(k, v) for k, v in sorted(broke.items())))
+        if fixed:
+            msg.append(f"✅ {self.label}: снова работают: " + ", ".join(sorted(fixed)))
+        if msg: send("\n\n".join(msg))

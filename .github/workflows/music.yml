@@ -22,6 +22,12 @@ jobs:
       RADAR_COMPANIES: lists/music_radar_companies.csv
       RADAR_STATE: state/seen_music.json
       RADAR_SLUGS: state/slugs_music.json
+      RADAR_HEALTH: state/health_music_api.json
+      RADAR_REJECTED: state/rejected_music_api.json
+      RADAR_FALLBACK: state/api_fallback_music.csv
+      BROWSER_EXTRA: state/api_fallback_music.csv
+      BROWSER_HEALTH: state/health_music_browser.json
+      BROWSER_REJECTED: state/rejected_music_browser.json
       BROWSER_COMPANIES: lists/music_browser_companies.csv
       BROWSER_STATE: state/seen_music_browser.json
       SCORER_CONTEXT: >-
@@ -51,7 +57,7 @@ jobs:
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add state/seen_music.json state/seen_music_browser.json state/slugs_music.json 2>/dev/null || true
+          git add state/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "no changes to save"; exit 0
           fi

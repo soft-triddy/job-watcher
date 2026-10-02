@@ -9,11 +9,16 @@ Chromium работает в отдельном процессе: завис с�
 import contextlib, csv, json, os, re, sys, time
 from urllib.parse import urljoin, urlparse
 
-from core import is_marketing, load, report
+from core import is_marketing, near_misses, load, save, report, Health
 
 IN_FILE = os.environ.get("BROWSER_COMPANIES", "lists/browser_companies.csv")
 STATE   = os.environ.get("BROWSER_STATE", "state/seen_browser.json")
 LABEL   = os.environ.get("BROWSER_LABEL", "🌐 Браузер")
+HEALTH  = os.environ.get("BROWSER_HEALTH", "state/health_browser.json")
+REJECTED = os.environ.get("BROWSER_REJECTED", "state/rejected_browser.json")
+# компании, которые API-радар сегодня не смог опросить (пишет radar.py) — проверяем их тоже
+EXTRA   = os.environ.get("BROWSER_EXTRA", "state/api_fallback.csv")
+FROM_API = "↪ "         # пометка в отчёте здоровья: компания пришла из API-радара
 WAIT_MS = 4000          # сколько ждать дозагрузку вакансий после открытия
 NAV_TIMEOUT = 30000
 PER_SITE = 75           # сек на одну компанию; дольше — процесс убиваем, компанию пропускаем
@@ -60,17 +65,28 @@ def _job_from_dict(d, base_url):
     loc = _as_text(_first(d, LOC_KEYS) or "")
     return {"title": title.strip(), "url": url, "location": loc}
 
+def _quality(jobs, base_url):
+    """Сколько элементов похожи на вакансии: своя ссылка (не сама страница) или локация.
+       Массив без ссылок и локаций — это меню, список cookie-вендоров, фильтры, а не вакансии."""
+    base=_norm_url(base_url); urls=set(); q=0
+    for j in jobs:
+        u=_norm_url(j.get("url"))
+        if (u and u!=base and u not in urls) or j.get("location"): q+=1
+        urls.add(u)
+    return q
+
 def extract_from_json(obj, base_url):
-    """Ищем в JSON самый крупный массив «похожих на вакансии» словарей."""
-    best = []
+    """Ищем в JSON массив словарей, больше всего похожий на список вакансий."""
+    best = []; best_q = 0
     def walk(x):
-        nonlocal best
+        nonlocal best, best_q
         if isinstance(x, list):
             if x and all(isinstance(e, dict) for e in x):
                 cand = [_job_from_dict(e, base_url) for e in x]
                 cand = [c for c in cand if c]
-                if len(cand) > len(best):
-                    best = cand
+                q = _quality(cand, base_url)
+                if (q, len(cand)) > (best_q, len(best)):
+                    best, best_q = cand, q
             for e in x: walk(e)
         elif isinstance(x, dict):
             for v in x.values(): walk(v)
@@ -147,6 +163,7 @@ def _text_is_jobish(text):
         if low.startswith(p): return False
     if len(t) < 8 or len(t) > 140: return False      # слишком коротко/длинно — не тайтл
     if len(t.split()) > 16: return False              # это уже абзац, не заголовок
+    if len(t.split()) < 2: return False               # «Marketing» — фильтр отдела, не вакансия
     return True
 
 def _dom_candidates(anchors, base):
@@ -212,20 +229,25 @@ def scrape(page, link):
     try: html=page.content()
     except Exception: html=""
     page.remove_listener("response", on_response)
-    for resp in resps[:40]:
+    # сначала ответы, похожие на API вакансий; аналитика и прочее — потом
+    jobish=re.compile(r"job|career|vacanc|position|opening|posting|role|recruit|ats", re.I)
+    resps.sort(key=lambda r: 0 if jobish.search(r.url or "") else 1)
+    for resp in resps[:60]:
         try: captured.append(resp.json())
         except Exception: pass
 
-    best=[]
+    best=[]; best_q=0
     for data in captured:
-        got=extract_from_json(data, link)
-        if len(got)>len(best): best=got
+        got=extract_from_json(data, link); q=_quality(got, link)
+        if (q, len(got))>(best_q, len(best)): best, best_q = got, q
     ld=extract_jsonld(html, link)
-    if len(ld)>len(best): best=ld
-    if best:                                       # структурированные данные ЕСТЬ — доверяем им
+    if len(ld)>len(best): best, best_q = ld, len(ld)
+    # структурированным данным доверяем, только если они правда похожи на вакансии
+    # (раньше любой крупный JSON-массив — меню, cookie-вендоры — глушил DOM, и вакансии терялись)
+    if best and best_q >= max(1, len(best)//2):
         return [j for j in best if _looks_like_job(j)]
-    # структурированного нет вообще — только тогда DOM-фолбэк
-    return [j for j in extract_from_dom(page, link) if _looks_like_job(j)]
+    dom=[j for j in extract_from_dom(page, link) if _looks_like_job(j)]
+    return dom or [j for j in best if _looks_like_job(j)]
 
 def _norm_url(u):
     p=urlparse((u or "").strip().lower())
@@ -233,9 +255,20 @@ def _norm_url(u):
 
 # ---------- изоляция: браузер в дочернем процессе, зависший сайт = убить и продолжить ----------
 
+def load_companies():
+    """Основной список + то, что сегодня не смог опросить API-радар (без дублей)."""
+    rows=[r for r in csv.DictReader(open(IN_FILE, encoding="utf-8-sig"))]
+    have={_norm_url(r.get("Link")) for r in rows} | {(r.get("Name") or "").strip().lower() for r in rows}
+    if EXTRA and os.path.exists(EXTRA):
+        for r in csv.DictReader(open(EXTRA, encoding="utf-8-sig")):
+            name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
+            if not link or _norm_url(link) in have or name.lower() in have: continue
+            have.add(_norm_url(link)); rows.append({"Name": FROM_API+name, "Link": link})
+    return rows
+
 def worker(start):
     """Режим --worker N: обходит компании с N-й, по строке JSON на компанию в stdout."""
-    companies=[r for r in csv.DictReader(open(IN_FILE, encoding="utf-8-sig"))]
+    companies=load_companies()
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         browser=p.chromium.launch(args=["--no-sandbox"])
@@ -253,7 +286,7 @@ def worker(start):
             print(json.dumps({"i":i,"found":found,"err":err}, ensure_ascii=False), flush=True)
         browser.close()
 
-def run_isolated(companies):
+def run_isolated(companies, health):
     import subprocess, selectors
     jobs=[]; errors=[]; empty=0; i=0; n=len(companies)
     while i < n:
@@ -273,18 +306,20 @@ def run_isolated(companies):
             r=companies[msg["i"]]; name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
             found=msg.get("found") or []
             if msg.get("err"): errors.append(f"{name}: {msg['err']}")
-            if not found: empty+=1
-            base=_norm_url(link)
+            base=_norm_url(link); kept=0
             for j in found:
                 if not j.get("title") or not j.get("url"): continue
                 if _norm_url(j["url"])==base: continue      # ссылка на саму карьерную страницу = заголовок, не вакансия
-                jobs.append({**j,"company":name,"jid":j["url"]})
+                jobs.append({**j,"company":name.removeprefix(FROM_API),"jid":j["url"]}); kept+=1
+            if not kept: empty+=1
+            health.mark(name, jobs=kept, err=msg.get("err") or "")
             print(f"  [{msg['i']+1}/{n}] {name}: {len(found)} за {time.time()-t0:.0f}с", flush=True)
             cur=msg["i"]+1
         if stuck:
             name=(companies[cur].get("Name") or "").strip()
             print(f"  !! [{cur+1}/{n}] {name}: завис > {PER_SITE}с — убиваю браузер, иду дальше", flush=True)
-            errors.append(f"{name}: завис > {PER_SITE}с"); empty+=1; cur+=1
+            errors.append(f"{name}: завис > {PER_SITE}с"); empty+=1
+            health.mark(name, err=f"завис > {PER_SITE}с"); cur+=1
         try: os.killpg(proc.pid, 9)                        # убиваем воркер вместе с его Chromium
         except Exception: proc.kill()
         proc.wait()
@@ -303,15 +338,19 @@ def _description_page():
         finally: b.close()
 
 def main():
-    companies=list(csv.DictReader(open(IN_FILE, encoding="utf-8-sig")))
+    companies=load_companies()
     seen=load(STATE, {})
-    print(f"=== браузерный радар | {len(companies)} компаний | {'--all' if '--all' in sys.argv else 'только новые'} ===")
-    jobs, errors, empty = run_isolated(companies)
-    jobs={j["jid"]: j for j in jobs}.values()               # дедуп по url
+    health=Health(HEALTH, LABEL, empty_is_bad=True)
+    extra=sum(1 for r in companies if r["Name"].startswith(FROM_API))
+    print(f"=== браузерный радар | {len(companies)} компаний (из них {extra} от API-радара) | {'--all' if '--all' in sys.argv else 'только новые'} ===")
+    jobs, errors, empty = run_isolated(companies, health)
+    jobs=list({j["jid"]: j for j in jobs}.values())         # дедуп по url
     mk=[j for j in jobs if is_marketing(j["title"], j.get("location",""))]
+    save(REJECTED, near_misses(jobs))
     print(f"пусто: {empty} | ошибок: {len(errors)} | вакансий: {len(jobs)}")
     for e in errors[:20]: print("  ⚠", e)
     report(mk, seen, STATE, label=LABEL, page_factory=_description_page)
+    health.finish({"jobs_total": len(jobs), "marketing": len(mk)})
 
 if __name__=="__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "--worker": worker(int(sys.argv[2]))
