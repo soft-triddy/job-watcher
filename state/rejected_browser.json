@@ -161,13 +161,6 @@
   "url": "https://nordsecurity.com/careers/b8e2b24e-4e15-4b88-919a-79c9c46f2429/"
  },
  {
-  "company": "RedCore",
-  "title": "HYBRID Performance Marketing Manager Middle Armenia, Cyprus, Georgia, Poland, Portugal, Romania, Serbia",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://redcore.group/vacancy/tag-5030/"
- },
- {
   "company": "Soft2Bet",
   "title": "CRM Manager",
   "location": "New Jersey, United States",
@@ -225,7 +218,7 @@
  },
  {
   "company": "Unlimit",
-  "title": "Business Growth / Senior Account Manager (Acquiring)",
+  "title": "Business Growth / Senior Account Manager (Acquiring) HONG KONG OFFICE ACCOUNT MANAGEMENT ACQUIRING ONSITE",
   "location": "",
   "why": "роль: account manager",
   "url": "https://jobs.lever.co/unlimit/296197b1-ce36-43e3-9f58-05084ff3b235"
@@ -371,11 +364,25 @@
   "url": "https://krisp.ai/jobs/senior-brand-communications-manager/"
  },
  {
+  "company": "Andersen",
+  "title": "Inbound Business Development Manager (USA)",
+  "location": "",
+  "why": "роль: business development",
+  "url": "https://people-andersenlab.com/vacancy/2510350"
+ },
+ {
   "company": "Infomediji",
   "title": "Business Development Manager - Japan Growth Apply now ↗",
   "location": "",
   "why": "роль: business development",
   "url": "https://infomediji.com/careers/open-position/2712671"
+ },
+ {
+  "company": "Unlimit",
+  "title": "Business Development Manager, Peru LIMA BUSINESS GROWTH REMOTE",
+  "location": "",
+  "why": "роль: business development",
+  "url": "https://jobs.lever.co/unlimit/fc6e68e0-8e59-4a3c-a365-e2362dd641ed"
  },
  {
   "company": "Semrush",
@@ -583,23 +590,16 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Mountain View, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "West Coast - United States",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -618,9 +618,16 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Mountain View, California",
+  "location": "Remote - California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "San Francisco, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -791,6 +798,27 @@
   "url": "https://adapty.io/careers/growth-product-manager-cs-team/"
  },
  {
+  "company": "Fundraise Up",
+  "title": "Product Manager, Campaign pages Armenia Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737502005/?gh_jid=4737502005"
+ },
+ {
+  "company": "Fundraise Up",
+  "title": "Product Manager, Campaign Pages Turkey Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737508005/?gh_jid=4737508005"
+ },
+ {
+  "company": "Fundraise Up",
+  "title": "Product Manager, Campaign Pages Cyprus Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737503005/?gh_jid=4737503005"
+ },
+ {
   "company": "Databricks",
   "title": "Director, Product Marketing, AI",
   "location": "San Francisco, California",
@@ -880,12 +908,5 @@
   "location": "",
   "why": "роль: sales",
   "url": "https://join.com/companies/sidestream/16720440"
- },
- {
-  "company": "Yandex",
-  "title": "Growth and sales",
-  "location": "",
-  "why": "роль: sales",
-  "url": "https://yandex.com/jobs/vacancies?professions=bis-dev-manager&professions=client-manager&professions=on-site-sales-manager-rent&professions=partner-manager&professions=pre-sales-manager&professions=realtor&professions=sales-bis-dev-manager&professions=sales-client-manager&professions=sales-manager&professions=sales-partner-manager&professions=sales-project-manager&professions=sales-support-manager&professions=tele-market-manager"
  }
 ]
