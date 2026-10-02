@@ -16,19 +16,19 @@ REJECTED = "state/rejected_himalayas.json"
 LABEL = "🏔 Himalayas"
 
 # --- настройки гейта (правишь тут) ---
-QUERIES = ["marketing", "growth", "demand", "seo", "crm", "lifecycle"]  # широкие — охват; сужает уже фильтр
-WORLDWIDE = True                 # hire-anywhere — твой жёсткий гейт
-EMPLOYMENT_TYPES = "Full Time"   # строго фултайм (EOR/контракт-оформленные роли не попадут)
+QUERIES = ["marketing", "growth", "demand", "seo", "crm"]  # широкие — охват; сужает уже фильтр
+# два прохода: вакансии «откуда угодно» + вакансии, открытые для Кыргызстана (регион/страна в списке)
+SCOPES = {"мир": {"worldwide": "true"}, "KG": {"country": "KG"}}
+EMPLOYMENT_TYPES = "Full Time,Contractor"   # контрактор — это как раз её формат найма
 MAX_PAGES = 5                    # вежливый потолок пагинации на запрос
 PAUSE = 1.0                      # пауза между запросами (rate limit 429)
 TIMEOUT = 30
 UA = {"User-Agent": "job-radar personal use (+telegram alerts)"}
 
-def search(q, page):
+def search(q, page, scope):
     """429 (лимит) и 5xx — ждём и повторяем; раньше запрос молча обрывался на первой же 429,
        и всё, что глубже первой страницы, не доходило."""
-    params = {"q": q, "sort": "recent", "page": page}
-    if WORLDWIDE: params["worldwide"] = "true"
+    params = {"q": q, "sort": "recent", "page": page, **SCOPES[scope]}
     if EMPLOYMENT_TYPES: params["employment_type"] = EMPLOYMENT_TYPES
     for attempt in range(4):
         r = requests.get(BASE, params=params, headers=UA, timeout=TIMEOUT)
@@ -50,11 +50,11 @@ def loc_str(job):
 
 def collect(health):
     jobs = {}
-    for q in QUERIES:
+    for scope, q in [(sc, q) for sc in SCOPES for q in QUERIES]:
         page = 1; got_q = 0; err = ""
         while page <= MAX_PAGES:
             try:
-                data = search(q, page)
+                data = search(q, page, scope)
             except Exception as e:
                 err = f"стр. {page}: {type(e).__name__} {str(e)[:60]}"
                 print(f"  !! '{q}' {err}")
@@ -75,7 +75,7 @@ def collect(health):
             got = (page * (data.get("limit") or len(batch)))
             if got >= total: break
             page += 1; time.sleep(PAUSE)
-        health.mark(f"запрос «{q}»", jobs=got_q, err=err)
+        health.mark(f"{scope}: «{q}»", jobs=got_q, err=err)
         time.sleep(PAUSE)
     return list(jobs.values())
 
@@ -97,7 +97,7 @@ def main():
     mk = [j for j in allj if j.get("title") and j.get("url")
           and not _is_crypto_company(j) and is_marketing(j["title"], j.get("location", ""))]
     save(REJECTED, near_misses([j for j in allj if not _is_crypto_company(j)]))
-    print(f"=== Himalayas | собрано (worldwide, {EMPLOYMENT_TYPES}): {len(allj)} | маркетинг: {len(mk)} ===")
+    print(f"=== Himalayas | собрано (мир + KG, {EMPLOYMENT_TYPES}): {len(allj)} | маркетинг: {len(mk)} ===")
     report(mk, seen, STATE, label=LABEL, key="guid", suffix=" (via Himalayas)")
     health.finish({"jobs_total": len(allj), "marketing": len(mk)})
 
