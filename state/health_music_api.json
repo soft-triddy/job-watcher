@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-02 15:30 UTC",
+ "updated": "2026-10-02 16:34 UTC",
  "label": "🎵 Музтех · ATS",
  "total": 17,
  "broken": 2,
- "jobs_total": 83,
+ "jobs_total": 82,
  "marketing": 1,
  "sources": {
   "Anghami": {
@@ -42,12 +42,12 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 3,
+   "bad_streak": 4,
    "last_ok": "",
    "alerted": true
   },
   "Dice": {
-   "jobs": 11,
+   "jobs": 10,
    "err": "",
    "note": "Greenhouse:dicefm-careers",
    "bad_streak": 0,
@@ -74,7 +74,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 3,
+   "bad_streak": 4,
    "last_ok": "",
    "alerted": true
   },

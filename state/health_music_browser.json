@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-02 15:36 UTC",
+ "updated": "2026-10-02 16:41 UTC",
  "label": "🎵 Музтех · Браузер",
  "total": 49,
- "broken": 0,
- "jobs_total": 76,
- "marketing": 7,
+ "broken": 1,
+ "jobs_total": 68,
+ "marketing": 6,
  "sources": {
   "ai|coustics": {
    "jobs": 8,
@@ -105,15 +105,15 @@
   "EngineEars": {
    "jobs": 1,
    "err": "",
-   "note": "json",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Fave": {
-   "jobs": 5,
+   "jobs": 1,
    "err": "",
-   "note": "json",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -135,9 +135,9 @@
    "alerted": false
   },
   "Komi": {
-   "jobs": 2,
+   "jobs": 1,
    "err": "",
-   "note": "json",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -145,7 +145,7 @@
   "LANDR": {
    "jobs": 1,
    "err": "",
-   "note": "json",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -223,10 +223,10 @@
    "alerted": false
   },
   "Pibox": {
-   "jobs": 1,
-   "err": "",
-   "note": "текстовый режим, маркетинг: 0",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-10-02",
    "alerted": false
   },
