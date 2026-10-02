@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-02 11:24 UTC",
+ "updated": "2026-10-02 14:55 UTC",
  "label": "🆕 ATS",
  "total": 89,
  "broken": 11,
- "jobs_total": 1827,
- "marketing": 36,
+ "jobs_total": 1822,
+ "marketing": 39,
  "sources": {
   "10Web": {
    "jobs": 0,
@@ -26,7 +26,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -74,12 +74,12 @@
    "jobs": 0,
    "err": "не подобрался слаг (BambooHR)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
   "AppQuantum": {
-   "jobs": 1,
+   "jobs": 0,
    "err": "",
    "note": "Pinpoint:appquantum",
    "bad_streak": 0,
@@ -106,7 +106,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Rippling)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -143,7 +143,7 @@
    "alerted": false
   },
   "ClickHouse": {
-   "jobs": 194,
+   "jobs": 195,
    "err": "",
    "note": "Ashby:clickhouse",
    "bad_streak": 0,
@@ -178,7 +178,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -263,7 +263,7 @@
    "alerted": false
   },
   "Joom": {
-   "jobs": 17,
+   "jobs": 18,
    "err": "",
    "note": "Workable:joom",
    "bad_streak": 0,
@@ -274,7 +274,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -298,7 +298,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Workday)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -306,7 +306,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Rippling)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -354,12 +354,12 @@
    "jobs": 0,
    "err": "не подобрался слаг (Rippling)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
   "Semrush": {
-   "jobs": 25,
+   "jobs": 23,
    "err": "",
    "note": "Workday:semrush.wd5.myworkdayjobs.com/semrushcareers",
    "bad_streak": 0,
@@ -370,7 +370,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -410,7 +410,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Teamtailor)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -466,7 +466,7 @@
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -503,7 +503,7 @@
    "alerted": false
   },
   "Wheely": {
-   "jobs": 35,
+   "jobs": 33,
    "err": "",
    "note": "Greenhouse:wheely",
    "bad_streak": 0,
@@ -527,7 +527,7 @@
    "alerted": false
   },
   "ZeptoLab": {
-   "jobs": 3,
+   "jobs": 2,
    "err": "",
    "note": "Workable:zeptolab",
    "bad_streak": 0,
@@ -551,7 +551,7 @@
    "alerted": false
   },
   "inDrive": {
-   "jobs": 132,
+   "jobs": 135,
    "err": "",
    "note": "Pinpoint:indrive",
    "bad_streak": 0,
@@ -671,7 +671,7 @@
    "alerted": false
   },
   "Xometry": {
-   "jobs": 237,
+   "jobs": 234,
    "err": "",
    "note": "Greenhouse:xometry",
    "bad_streak": 0,
@@ -711,7 +711,7 @@
    "alerted": false
   },
   "DataDome": {
-   "jobs": 15,
+   "jobs": 14,
    "err": "",
    "note": "Greenhouse:ddome",
    "bad_streak": 0,
