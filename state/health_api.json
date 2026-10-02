@@ -1,0 +1,722 @@
+{
+ "updated": "2026-10-02 11:24 UTC",
+ "label": "🆕 ATS",
+ "total": 89,
+ "broken": 11,
+ "jobs_total": 1827,
+ "marketing": 36,
+ "sources": {
+  "10Web": {
+   "jobs": 0,
+   "err": "",
+   "note": "BambooHR:10web",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "ABBYY": {
+   "jobs": 7,
+   "err": "",
+   "note": "Greenhouse:abbyy",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Acronis": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Workday)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Action1": {
+   "jobs": 45,
+   "err": "",
+   "note": "Workable:action1",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Ahrefs": {
+   "jobs": 16,
+   "err": "",
+   "note": "Greenhouse:ahrefsjobs",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "AI Digital": {
+   "jobs": 37,
+   "err": "",
+   "note": "Recruitee:aidigital",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "airSlate": {
+   "jobs": 13,
+   "err": "",
+   "note": "Lever:airslate",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "AppFollow": {
+   "jobs": 3,
+   "err": "",
+   "note": "Lever:appfollow",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Appodeal": {
+   "jobs": 0,
+   "err": "не подобрался слаг (BambooHR)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "AppQuantum": {
+   "jobs": 1,
+   "err": "",
+   "note": "Pinpoint:appquantum",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Avride": {
+   "jobs": 66,
+   "err": "",
+   "note": "Greenhouse:avride",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Behavox": {
+   "jobs": 25,
+   "err": "",
+   "note": "Greenhouse:behavox",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Binarly": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Rippling)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Birch": {
+   "jobs": 0,
+   "err": "",
+   "note": "Workable:birch",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Bumble": {
+   "jobs": 0,
+   "err": "",
+   "note": "Lever:bumbleinc",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Chattermill": {
+   "jobs": 1,
+   "err": "",
+   "note": "Ashby:chattermill",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Clay": {
+   "jobs": 4,
+   "err": "",
+   "note": "Workable:clayglobal",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "ClickHouse": {
+   "jobs": 194,
+   "err": "",
+   "note": "Ashby:clickhouse",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "CloudLinux": {
+   "jobs": 77,
+   "err": "",
+   "note": "Workable:cloudlinux-1",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "CRITICAL REFLEX": {
+   "jobs": 0,
+   "err": "",
+   "note": "BambooHR:criticalreflex",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "DBeaver": {
+   "jobs": 8,
+   "err": "",
+   "note": "Greenhouse:dbeaver",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "EPAM": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Workday)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "EWA Learn Languages": {
+   "jobs": 0,
+   "err": "",
+   "note": "BambooHR:appewa",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Flo Health": {
+   "jobs": 25,
+   "err": "",
+   "note": "Greenhouse:flohealth",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Hexens": {
+   "jobs": 2,
+   "err": "",
+   "note": "BambooHR:hexens",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Higgsfield AI": {
+   "jobs": 79,
+   "err": "",
+   "note": "Ashby:higgsfieldai",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "HomeBuddy": {
+   "jobs": 0,
+   "err": "",
+   "note": "Workable:homebuddy",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Humanoid AI": {
+   "jobs": 103,
+   "err": "",
+   "note": "Ashby:humanoid",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "HumanSignal": {
+   "jobs": 49,
+   "err": "",
+   "note": "Greenhouse:humansignal",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Intento": {
+   "jobs": 1,
+   "err": "",
+   "note": "Recruitee:intento",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "InvestEngine": {
+   "jobs": 13,
+   "err": "",
+   "note": "Teamtailor:investengine",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Inworld AI": {
+   "jobs": 19,
+   "err": "",
+   "note": "Ashby:inworld-ai",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Joom": {
+   "jobs": 17,
+   "err": "",
+   "note": "Workable:joom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "LeverX": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Workday)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Lokalise": {
+   "jobs": 4,
+   "err": "",
+   "note": "Greenhouse:lokalise",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Luminai": {
+   "jobs": 15,
+   "err": "",
+   "note": "Ashby:luminai",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Monetha": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Workday)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Netwrix": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Rippling)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Object First": {
+   "jobs": 7,
+   "err": "",
+   "note": "Greenhouse:objectfirsts",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "PropellerAds": {
+   "jobs": 4,
+   "err": "",
+   "note": "BambooHR:adtechholding",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "RemoFirst": {
+   "jobs": 0,
+   "err": "",
+   "note": "Lever:remofirst",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Replika": {
+   "jobs": 4,
+   "err": "",
+   "note": "Teamtailor:replika",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Ruby Labs": {
+   "jobs": 24,
+   "err": "",
+   "note": "Ashby:ruby-labs",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Scentbird": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Rippling)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Semrush": {
+   "jobs": 25,
+   "err": "",
+   "note": "Workday:semrush.wd5.myworkdayjobs.com/semrushcareers",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Smartcat": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Greenhouse)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Social Discovery Group": {
+   "jobs": 48,
+   "err": "",
+   "note": "Breezy:social-discovery-ventures",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Spines.com": {
+   "jobs": 0,
+   "err": "",
+   "note": "Workable:spines",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Sumsub": {
+   "jobs": 36,
+   "err": "",
+   "note": "Teamtailor:sumsub",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "SuperAnnotate": {
+   "jobs": 4,
+   "err": "",
+   "note": "Lever:superannotate",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Syncle": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Teamtailor)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Synder": {
+   "jobs": 1,
+   "err": "",
+   "note": "BambooHR:synder",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Synthesized": {
+   "jobs": 0,
+   "err": "",
+   "note": "Teamtailor:synthesized",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Teleport": {
+   "jobs": 24,
+   "err": "",
+   "note": "Ashby:goteleport",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Termius": {
+   "jobs": 2,
+   "err": "",
+   "note": "Lever:Termius",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "The Soul Publishing": {
+   "jobs": 25,
+   "err": "",
+   "note": "Workable:thesoul-publishing-1",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "TraceAir": {
+   "jobs": 1,
+   "err": "",
+   "note": "Recruitee:traceair",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Veeam": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Greenhouse)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Virtuozzo": {
+   "jobs": 0,
+   "err": "",
+   "note": "Workable:virtuozzo",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Voyagu": {
+   "jobs": 6,
+   "err": "",
+   "note": "Breezy:voyagu",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Wallarm": {
+   "jobs": 0,
+   "err": "",
+   "note": "Recruitee:wallarm",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Wayy": {
+   "jobs": 1,
+   "err": "",
+   "note": "Breezy:wayy-llc",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Wheely": {
+   "jobs": 35,
+   "err": "",
+   "note": "Greenhouse:wheely",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "White Circle": {
+   "jobs": 21,
+   "err": "",
+   "note": "Ashby:whitecircle",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Wrike": {
+   "jobs": 60,
+   "err": "",
+   "note": "Greenhouse:wrike",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "ZeptoLab": {
+   "jobs": 3,
+   "err": "",
+   "note": "Workable:zeptolab",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "AURA Devices": {
+   "jobs": 0,
+   "err": "",
+   "note": "Breezy:aura-devices",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Novakid": {
+   "jobs": 1,
+   "err": "",
+   "note": "Recruitee:novakidteachers",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "inDrive": {
+   "jobs": 132,
+   "err": "",
+   "note": "Pinpoint:indrive",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Praktika.ai": {
+   "jobs": 3,
+   "err": "",
+   "note": "Teamtailor:praktika",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Noom": {
+   "jobs": 10,
+   "err": "",
+   "note": "Greenhouse:noomgrowth",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Planner 5D": {
+   "jobs": 6,
+   "err": "",
+   "note": "Lever:planner5d",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Datafold": {
+   "jobs": 3,
+   "err": "",
+   "note": "Ashby:datafold",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "AtBay": {
+   "jobs": 38,
+   "err": "",
+   "note": "Greenhouse:atbayjobs",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Duolingo": {
+   "jobs": 82,
+   "err": "",
+   "note": "Greenhouse:duolingo",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Dwelly": {
+   "jobs": 23,
+   "err": "",
+   "note": "Greenhouse:dwelly",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Enhesa": {
+   "jobs": 13,
+   "err": "",
+   "note": "Greenhouse:enhesa",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Genestack": {
+   "jobs": 7,
+   "err": "",
+   "note": "Breezy:genestack-ltd",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Hirehire": {
+   "jobs": 5,
+   "err": "",
+   "note": "Ashby:hirehire",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Mirantis": {
+   "jobs": 91,
+   "err": "",
+   "note": "SmartRecruiters:Mirantis",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Mitek": {
+   "jobs": 8,
+   "err": "",
+   "note": "Lever:miteksystems-2",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Telnyx": {
+   "jobs": 54,
+   "err": "",
+   "note": "Greenhouse:telnyx54",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Tempo Software": {
+   "jobs": 9,
+   "err": "",
+   "note": "Ashby:tempo",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Xometry": {
+   "jobs": 237,
+   "err": "",
+   "note": "Greenhouse:xometry",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Qdrant": {
+   "jobs": 7,
+   "err": "",
+   "note": "Ashby:qdrant.tech",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Insense": {
+   "jobs": 4,
+   "err": "",
+   "note": "Teamtailor:insense.na",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Servers.com": {
+   "jobs": 0,
+   "err": "",
+   "note": "Breezy:servers-com",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "GoStudent": {
+   "jobs": 26,
+   "err": "",
+   "note": "Greenhouse:gostudent",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "DataDome": {
+   "jobs": 15,
+   "err": "",
+   "note": "Greenhouse:ddome",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  }
+ }
+}
