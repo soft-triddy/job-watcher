@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-02 16:20 UTC",
+ "updated": "2026-10-02 17:25 UTC",
  "label": "🌐 Браузер",
  "total": 196,
- "broken": 4,
- "jobs_total": 2541,
- "marketing": 74,
+ "broken": 3,
+ "jobs_total": 2566,
+ "marketing": 72,
  "sources": {
   "Accel Club": {
    "jobs": 8,
@@ -74,7 +74,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "json-без-ссылок",
-   "bad_streak": 4,
+   "bad_streak": 5,
    "last_ok": "",
    "alerted": true
   },
@@ -226,7 +226,7 @@
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 4,
+   "bad_streak": 5,
    "last_ok": "",
    "alerted": true
   },
@@ -407,9 +407,9 @@
    "alerted": false
   },
   "Innowise": {
-   "jobs": 1,
+   "jobs": 41,
    "err": "",
-   "note": "текстовый режим, маркетинг: 0",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -751,9 +751,9 @@
    "alerted": false
   },
   "WayRay": {
-   "jobs": 2,
+   "jobs": 1,
    "err": "",
-   "note": "json",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -799,9 +799,9 @@
    "alerted": false
   },
   "Unlimit": {
-   "jobs": 12,
+   "jobs": 10,
    "err": "",
-   "note": "dom",
+   "note": "json",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -1039,7 +1039,7 @@
    "alerted": false
   },
   "Formlabs": {
-   "jobs": 217,
+   "jobs": 218,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
@@ -1183,9 +1183,9 @@
    "alerted": false
   },
   "Refocus": {
-   "jobs": 13,
+   "jobs": 1,
    "err": "",
-   "note": "dom",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -1330,7 +1330,7 @@
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 4,
+   "bad_streak": 5,
    "last_ok": "",
    "alerted": true
   },
@@ -1455,10 +1455,10 @@
    "alerted": false
   },
   "Loóna": {
-   "jobs": 0,
-   "err": "завис > 75с",
-   "note": "",
-   "bad_streak": 1,
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
@@ -1567,7 +1567,7 @@
    "alerted": false
   },
   "↪ Veeam": {
-   "jobs": 18,
+   "jobs": 19,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
