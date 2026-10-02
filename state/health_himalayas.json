@@ -1,0 +1,58 @@
+{
+ "updated": "2026-10-02 11:29 UTC",
+ "label": "🏔 Himalayas",
+ "total": 6,
+ "broken": 0,
+ "jobs_total": 313,
+ "marketing": 50,
+ "sources": {
+  "запрос «marketing»": {
+   "jobs": 99,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "запрос «growth»": {
+   "jobs": 99,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "запрос «demand»": {
+   "jobs": 15,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "запрос «seo»": {
+   "jobs": 57,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "запрос «crm»": {
+   "jobs": 100,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "запрос «lifecycle»": {
+   "jobs": 32,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  }
+ }
+}
