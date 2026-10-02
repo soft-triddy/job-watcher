@@ -38,8 +38,8 @@ https://jobs.example.com/123
 - **Browser radar** (`browser_radar.py`) — Playwright opens pages that have no public API and reads
   jobs from the page's own JSON requests, JSON-LD `JobPosting`, or links. Chromium runs in a worker
   process; a site that hangs longer than 75 s is killed and skipped instead of stalling the run.
-- **Himalayas** (`himalayas_radar.py`) — worldwide, full-time roles via the public Himalayas API,
-  crypto companies dropped by category.
+- **Himalayas** (`himalayas_radar.py`) — two passes over the public Himalayas API: worldwide roles and roles
+  open to Kyrgyzstan (`country=KG`), full-time or contractor; crypto companies dropped by category.
 - **Filter** (`core.py`) — title must look like marketing/growth/CRM/SEO, and must not be sales,
   brand, content, analytics, junior grades, hybrid, or US-only.
 - **Scorer** (`scorer.py`) — for each *new* vacancy fetches the full description (ATS API, JSON-LD

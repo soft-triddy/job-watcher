@@ -14,8 +14,10 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
                     "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
 
 # что БЕРЁМ (подстрокой в ЗАГОЛОВКЕ). brand/email/acquisition убраны — не её специализация
-KW = ["market","growth","crm","lifecycle","demand","seo","pmm","martech",
-      "paid","performance","digital"]
+# 2026-10-02: lifecycle убран (не её профиль); + inbound, hubspot, campaign; + русские
+KW = ["market","growth","crm","demand","seo","pmm","martech",
+      "paid","performance","digital","inbound","hubspot","campaign",
+      "маркет","перформанс","лидген","интернет-маркет","продвижени"]
 
 # роль не та — выкидываем по ЗАГОЛОВКУ (подстрокой)
 NEG_ROLE = ["market research analyst","stock market","supermarket","capital market",
@@ -28,9 +30,12 @@ NEG_ROLE = ["market research analyst","stock market","supermarket","capital mark
            "crypto","web3","blockchain","affiliate","copywriter","producer",
            "data scien","account manager","account supervisor",
            # 2026-09-23: продажи, креатив, младшие грейды, «общие» заявки
-           "sales","account strategist","curation","studio manager","creative","consultant",
+           "account strategist","curation","studio manager","creative","consultant",
            "representative","coordinator","assistant","junior","praktikant","media buyer",
-           "operative","expression of interest","general application"]
+           "operative","expression of interest","general application",
+           # 2026-10-02: русские аналоги того же
+           "аналитик","дизайн","продаж","контент","копирайт","стажер","стажёр","ассистент",
+           "рекрут","бренд","smm-","таргетолог","младш"]
 
 # формат/гео — выкидываем по ЗАГОЛОВКУ + ЛОКАЦИИ вместе (тип работы и штат часто в локации!)
 NEG_GEO_SUB = ["hybrid"]
@@ -59,6 +64,7 @@ def classify(title, location=""):
     for n in NEG_ROLE:
         if n in t: return f"роль: {n}"
     if re.search(r"\bpr\b", t): return "роль: pr"
+    if re.search(r"\bsales\b", t): return "роль: sales"     # словом: Salesforce/wholesale не режем
     if re.search(r"\bintern(ship)?\b", t): return "роль: intern"
     if "associate" in t and "associate director" not in t: return "роль: associate"
     # 2) это вообще маркетинг? — по заголовку
