@@ -1,0 +1,146 @@
+{
+ "updated": "2026-10-02 11:57 UTC",
+ "label": "🎵 Музтех · ATS",
+ "total": 17,
+ "broken": 2,
+ "jobs_total": 83,
+ "marketing": 1,
+ "sources": {
+  "Anghami": {
+   "jobs": 0,
+   "err": "",
+   "note": "Breezy:anghami",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Audiohook": {
+   "jobs": 11,
+   "err": "",
+   "note": "Ashby:audiohook",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Audiomob": {
+   "jobs": 5,
+   "err": "",
+   "note": "Greenhouse:audiomob",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "AudioStack": {
+   "jobs": 2,
+   "err": "",
+   "note": "Workable:audiostack",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "CD Baby": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Greenhouse)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Dice": {
+   "jobs": 11,
+   "err": "",
+   "note": "Greenhouse:dicefm-careers",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "DistroKid": {
+   "jobs": 1,
+   "err": "",
+   "note": "Greenhouse:distrokid",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Duetti": {
+   "jobs": 9,
+   "err": "",
+   "note": "Lever:duetti",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "FUGA": {
+   "jobs": 0,
+   "err": "не подобрался слаг (Greenhouse)",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Hook": {
+   "jobs": 4,
+   "err": "",
+   "note": "Ashby:hookmusic",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Moises": {
+   "jobs": 3,
+   "err": "",
+   "note": "BambooHR:moises",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Splice": {
+   "jobs": 7,
+   "err": "",
+   "note": "Greenhouse:splice",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Symphonic": {
+   "jobs": 1,
+   "err": "",
+   "note": "BambooHR:symphonicdist",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Tracklib": {
+   "jobs": 0,
+   "err": "",
+   "note": "Teamtailor:tracklib",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Udio": {
+   "jobs": 5,
+   "err": "",
+   "note": "Greenhouse:udio",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "UnitedMasters": {
+   "jobs": 18,
+   "err": "",
+   "note": "Greenhouse:unitedmasterstranslation",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Yoto": {
+   "jobs": 7,
+   "err": "",
+   "note": "Teamtailor:yoto",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  }
+ }
+}

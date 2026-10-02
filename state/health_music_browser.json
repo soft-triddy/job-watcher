@@ -1,0 +1,402 @@
+{
+ "updated": "2026-10-02 12:03 UTC",
+ "label": "🎵 Музтех · Браузер",
+ "total": 49,
+ "broken": 35,
+ "jobs_total": 76,
+ "marketing": 6,
+ "sources": {
+  "ai|coustics": {
+   "jobs": 8,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Amuse": {
+   "jobs": 4,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Anthems Music": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Audiology": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "AudioShake": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Audoo": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "BeatConnect": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Blokur": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Boomy": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Bronze": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Cogs AI": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Discogs": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "EngineEars": {
+   "jobs": 1,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Fave": {
+   "jobs": 5,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Horus Music": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "IDOL": {
+   "jobs": 5,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Komi": {
+   "jobs": 2,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "LANDR": {
+   "jobs": 1,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Laylo": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Levellr": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Masterchannel": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Merchbar": {
+   "jobs": 20,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Musimap": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Musiversal": {
+   "jobs": 3,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "ONCE.app": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "ONErpm": {
+   "jobs": 15,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Pex": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Pibox": {
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "POSH": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Rap Tech Studios": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Reactional Music": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Riffusion": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "RouteNote": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Seat Unique": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Sirius": {
+   "jobs": 8,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Sonomo": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "SonoSuite": {
+   "jobs": 1,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "SONOTELLER.AI": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "SoundGate": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Soundtrack Your Brand": {
+   "jobs": 4,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Stationhead": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "The Orchard": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "TuneCore": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Vermillio": {
+   "jobs": 3,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
+  },
+  "Xceed": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Audius": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "Tune.FM": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "↪ CD Baby": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  },
+  "↪ FUGA": {
+   "jobs": 0,
+   "err": "0 вакансий",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": true
+  }
+ }
+}
