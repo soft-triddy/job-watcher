@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-02 11:55 UTC",
+ "updated": "2026-10-02 13:39 UTC",
  "label": "🌐 Браузер",
  "total": 196,
  "broken": 94,
- "jobs_total": 2448,
- "marketing": 64,
+ "jobs_total": 2443,
+ "marketing": 63,
  "sources": {
   "Accel Club": {
    "jobs": 8,
@@ -42,7 +42,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -50,7 +50,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -66,7 +66,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -74,7 +74,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -106,7 +106,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -130,7 +130,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -154,7 +154,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -178,7 +178,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -202,7 +202,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -210,7 +210,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -226,7 +226,7 @@
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -234,7 +234,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -242,7 +242,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -250,7 +250,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -258,7 +258,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -266,7 +266,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -282,7 +282,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -314,7 +314,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -322,7 +322,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -346,7 +346,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -354,7 +354,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -362,12 +362,12 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
   "Grid Dynamics": {
-   "jobs": 229,
+   "jobs": 224,
    "err": "",
    "note": "",
    "bad_streak": 0,
@@ -378,7 +378,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -386,7 +386,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -394,7 +394,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -410,7 +410,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -426,7 +426,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -442,7 +442,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -474,7 +474,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -490,7 +490,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -498,7 +498,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -506,7 +506,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -546,7 +546,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -562,7 +562,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -570,7 +570,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -578,7 +578,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -586,7 +586,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -594,7 +594,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -602,7 +602,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -618,7 +618,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -626,7 +626,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -642,7 +642,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -650,7 +650,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -690,7 +690,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -698,7 +698,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -714,7 +714,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -722,7 +722,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -730,7 +730,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -738,7 +738,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -762,7 +762,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -770,7 +770,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -794,7 +794,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -834,7 +834,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -850,7 +850,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -866,7 +866,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -882,7 +882,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -906,7 +906,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -935,7 +935,7 @@
    "alerted": false
   },
   "Nord Security": {
-   "jobs": 134,
+   "jobs": 133,
    "err": "",
    "note": "",
    "bad_streak": 0,
@@ -967,7 +967,7 @@
    "alerted": false
   },
   "Krisp": {
-   "jobs": 16,
+   "jobs": 17,
    "err": "",
    "note": "",
    "bad_streak": 0,
@@ -986,7 +986,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1002,12 +1002,12 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
   "Databricks": {
-   "jobs": 873,
+   "jobs": 871,
    "err": "",
    "note": "",
    "bad_streak": 0,
@@ -1018,7 +1018,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1026,7 +1026,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1039,7 +1039,7 @@
    "alerted": false
   },
   "Formlabs": {
-   "jobs": 216,
+   "jobs": 218,
    "err": "",
    "note": "",
    "bad_streak": 0,
@@ -1050,7 +1050,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1058,7 +1058,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1082,7 +1082,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1106,7 +1106,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1122,7 +1122,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1130,7 +1130,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1170,7 +1170,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1178,7 +1178,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1210,7 +1210,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1226,7 +1226,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1242,7 +1242,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1258,7 +1258,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1266,7 +1266,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1290,7 +1290,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1306,7 +1306,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1330,7 +1330,7 @@
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1338,7 +1338,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1346,7 +1346,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1354,7 +1354,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1370,7 +1370,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1378,7 +1378,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1386,7 +1386,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1394,7 +1394,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1410,7 +1410,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1418,15 +1418,15 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
   "Fluently": {
    "jobs": 0,
-   "err": "0 вакансий",
+   "err": "завис > 75с",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1434,7 +1434,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1448,9 +1448,9 @@
   },
   "Jet Admin": {
    "jobs": 0,
-   "err": "завис > 75с",
+   "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1458,7 +1458,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1482,7 +1482,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1498,7 +1498,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1514,7 +1514,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
@@ -1554,7 +1554,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "",
    "alerted": true
   },
