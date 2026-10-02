@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "47 6 * * *"      # 12:47 Бишкек, между API- и браузерным радаром
   workflow_dispatch:
+    inputs:
+      all:
+        description: "Слепок: прислать ВСЕ текущие подходящие вакансии с оценками, а не только новые"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -12,11 +17,14 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 150
     env:
       TG_TOKEN: ${{ secrets.TG_TOKEN }}
       TG_CHAT: ${{ secrets.TG_CHAT }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ALL: ${{ github.event.inputs.all }}
+      SCORER_MAX: ${{ github.event.inputs.all == 'true' && '250' || '40' }}
+      SCORER_BUDGET: ${{ github.event.inputs.all == 'true' && '2700' || '900' }}
       RADAR_LABEL: "🎵 Музтех · ATS"
       BROWSER_LABEL: "🎵 Музтех · Браузер"
       RADAR_COMPANIES: lists/music_radar_companies.csv
@@ -44,14 +52,14 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       # первый запуск: сразу присылаем все текущие вакансии (с оценками), дальше только новые
       - name: api
-        timeout-minutes: 30
-        run: |
-          if [ -f state/seen_music.json ]; then python radar.py; else python radar.py --all; fi
-      - name: browser
-        if: always()
         timeout-minutes: 50
         run: |
-          if [ -f state/seen_music_browser.json ]; then python browser_radar.py; else python browser_radar.py --all; fi
+          if [ -f state/seen_music.json ] && [ "$ALL" != "true" ]; then python radar.py; else python radar.py --all; fi
+      - name: browser
+        if: always()
+        timeout-minutes: 80
+        run: |
+          if [ -f state/seen_music_browser.json ] && [ "$ALL" != "true" ]; then python browser_radar.py; else python browser_radar.py --all; fi
       - name: save state
         if: always()
         run: |

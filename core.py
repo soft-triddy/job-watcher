@@ -172,7 +172,20 @@ def report(mk, seen, state_path, *, label, key="jid", suffix="", page_factory=No
                 score_jobs(items)
         else:
             score_jobs(items)
-        return "\n\n".join([header] + [fmt_job(j, suffix) for j in rank(items)]) + diag_line()
+        ranked = rank(items)
+        if not dump_all:
+            return "\n\n".join([header] + [fmt_job(j, suffix) for j in ranked]) + diag_line()
+        # слепок (--all): подходящие — полностью, остальное (стоп-индустрия, красный ремоут,
+        # «прохожу» ≤ 3, без оценки) — коротким списком в конце, чтобы не тонуть в нём
+        def good(j):
+            sc = j.get("score")
+            return bool(sc) and not sc.get("stop") and sc["hire"] != "red" and sc["fit"] >= 4
+        top = [j for j in ranked if good(j)]; rest = [j for j in ranked if not good(j)]
+        parts = [f"{header}\n\nподходят: {len(top)} · остальное: {len(rest)}"] + [fmt_job(j, suffix) for j in top]
+        if rest:
+            parts.append("— остальное (стоп / 🔴 ремоут / прохожу ≤ 3 / без оценки) —\n" + "\n".join(
+                f"• {j.get('company','')}: {j['title']} {j.get('url','')}" for j in rest))
+        return "\n\n".join(parts) + diag_line()
 
     def mark(items):
         for j in items: seen[j[key]] = j["title"]
