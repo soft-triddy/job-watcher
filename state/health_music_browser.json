@@ -1,15 +1,15 @@
 {
- "updated": "2026-10-02 13:19 UTC",
+ "updated": "2026-10-02 15:36 UTC",
  "label": "🎵 Музтех · Браузер",
  "total": 49,
- "broken": 35,
+ "broken": 0,
  "jobs_total": 76,
- "marketing": 6,
+ "marketing": 7,
  "sources": {
   "ai|coustics": {
    "jobs": 8,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -17,95 +17,95 @@
   "Amuse": {
    "jobs": 4,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Anthems Music": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Audiology": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "AudioShake": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Audoo": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "BeatConnect": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Blokur": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Boomy": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Bronze": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Cogs AI": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Discogs": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "EngineEars": {
    "jobs": 1,
    "err": "",
-   "note": "",
+   "note": "json",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -113,23 +113,23 @@
   "Fave": {
    "jobs": 5,
    "err": "",
-   "note": "",
+   "note": "json",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Horus Music": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "IDOL": {
    "jobs": 5,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -137,7 +137,7 @@
   "Komi": {
    "jobs": 2,
    "err": "",
-   "note": "",
+   "note": "json",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
@@ -145,258 +145,258 @@
   "LANDR": {
    "jobs": 1,
    "err": "",
-   "note": "",
+   "note": "json",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Laylo": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Levellr": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Masterchannel": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Merchbar": {
    "jobs": 20,
    "err": "",
-   "note": "",
+   "note": "json",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Musimap": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Musiversal": {
    "jobs": 3,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "ONCE.app": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "ONErpm": {
    "jobs": 15,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Pex": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Pibox": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "POSH": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Rap Tech Studios": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Reactional Music": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Riffusion": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "RouteNote": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Seat Unique": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Sirius": {
    "jobs": 8,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Sonomo": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "SonoSuite": {
    "jobs": 1,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "SONOTELLER.AI": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "SoundGate": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Soundtrack Your Brand": {
    "jobs": 4,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Stationhead": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "The Orchard": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "TuneCore": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Vermillio": {
    "jobs": 3,
    "err": "",
-   "note": "",
+   "note": "dom",
    "bad_streak": 0,
    "last_ok": "2026-10-02",
    "alerted": false
   },
   "Xceed": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Audius": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "Tune.FM": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "↪ CD Baby": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   },
   "↪ FUGA": {
-   "jobs": 0,
-   "err": "0 вакансий",
-   "note": "",
-   "bad_streak": 2,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-02",
+   "alerted": false
   }
  }
 }
