@@ -184,9 +184,20 @@ def _dom_candidates(anchors, base):
         out.append({"title":title, "url":url, "location":""})
     return out
 
+# сторонние сервисы на странице (аналитика, cookie-баннеры, чаты, CDN): их JSON — не вакансии.
+# (2026-10-02: «EngineEars: Hubspot Web (Actions)» — это список интеграций Segment)
+THIRD_PARTY = re.compile(r"segment\.(com|io)|cookiebot|cookieyes|onetrust|cookielaw|cookiepro|hotjar|"
+                         r"google|gstatic|doubleclick|yandex|facebook|intercom|hubspot|hs-scripts|hsforms|"
+                         r"sentry|amplitude|mixpanel|clarity\.ms|tiktok|linkedin|twitter|cloudflareinsights|"
+                         r"framer\.com/anonymous|tildaapi|ipapi|geolocation|cdn\.|jsdelivr|unpkg", re.I)
+STATIC = re.compile(r"\.(js|mjs|css|json|png|jpe?g|svg|webp|gif|woff2?|ico)(\?|$)", re.I)
+
 def _looks_like_job(j):
     url=(j.get("url") or "").lower()
     if any(b in url for b in URL_BAN):        # блог/статья/новость по URL — не вакансия
+        return False
+    host=urlparse(url).netloc
+    if STATIC.search(urlparse(url).path) or THIRD_PARTY.search(host):   # файл/скрипт стороннего сервиса
         return False
     return True
 
@@ -269,6 +280,7 @@ def scrape(page, link, dbg=None):
     page.remove_listener("response", on_response)
     resps.sort(key=lambda r: 0 if JOB_API.search(r.url or "") else 1)   # API вакансий — первыми
     for resp in resps[:60]:
+        if THIRD_PARTY.search(urlparse(resp.url or "").netloc): continue   # аналитика, cookie, чаты
         try: captured.append((resp.url or "", resp.json()))
         except Exception: pass
     base=_norm_url(link)
