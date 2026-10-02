@@ -5,6 +5,10 @@ on:
     - cron: "17 7 * * *"
   workflow_dispatch:
     inputs:
+      all:
+        description: "Слепок: прислать ВСЕ текущие подходящие вакансии с оценками, а не только новые"
+        type: boolean
+        default: false
       diag:
         description: "Диагностика вместо обычного прогона: 'broken' = все сломанные (основной + музтех), или имена через запятую. Пусто = обычный прогон."
         required: false
@@ -16,7 +20,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,7 +30,8 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       - name: run
         run: |
-          if [ -z "$DIAG" ]; then python browser_radar.py
+          if [ -z "$DIAG" ] && [ "$ALL" = "true" ]; then python browser_radar.py --all
+          elif [ -z "$DIAG" ]; then python browser_radar.py
           elif [ "$DIAG" = "broken" ]; then python browser_radar.py --diag
           else python browser_radar.py --diag "$DIAG"; fi
         env:
@@ -34,6 +39,9 @@ jobs:
           TG_CHAT: ${{ secrets.TG_CHAT }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DIAG: ${{ github.event.inputs.diag }}
+          ALL: ${{ github.event.inputs.all }}
+          SCORER_MAX: ${{ github.event.inputs.all == 'true' && '250' || '40' }}
+          SCORER_BUDGET: ${{ github.event.inputs.all == 'true' && '2700' || '900' }}
       - name: save state
         if: always()
         run: |

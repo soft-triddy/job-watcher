@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 5 * * *"
   workflow_dispatch:
+    inputs:
+      all:
+        description: "Слепок: прислать ВСЕ текущие подходящие вакансии с оценками, а не только новые"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -11,7 +16,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -19,11 +24,14 @@ jobs:
           python-version: "3.12"
       - run: pip install requests
       - name: run
-        run: python radar.py
+        run: if [ "$ALL" = "true" ]; then python radar.py --all; else python radar.py; fi
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ALL: ${{ github.event.inputs.all }}
+          SCORER_MAX: ${{ github.event.inputs.all == 'true' && '250' || '40' }}
+          SCORER_BUDGET: ${{ github.event.inputs.all == 'true' && '2700' || '900' }}
       - name: save state
         if: always()
         run: |
