@@ -209,8 +209,9 @@ def extract_from_dom(page, base):
         heads=[]
     return [{"title":_clean(h),"url":base,"location":""} for h in heads if _text_is_jobish(h)]
 
-def scrape(page, link):
-    """Открываем страницу, собираем JSON-ответы + JSON-LD, возвращаем список вакансий."""
+def scrape(page, link, dbg=None):
+    """Открываем страницу, собираем JSON-ответы + JSON-LD, возвращаем список вакансий.
+       dbg (dict) — режим диагностики: туда складываются подробности, почему вышло столько."""
     captured=[]; resps=[]
     def on_response(resp):
         try:
@@ -229,6 +230,14 @@ def scrape(page, link):
     try: html=page.content()
     except Exception: html=""
     page.remove_listener("response", on_response)
+    if dbg is not None:
+        try: dbg.update(final_url=page.url, page_title=page.title())
+        except Exception: pass
+        dbg.update(html_len=len(html), json_responses=[r.url[:150] for r in resps][:25])
+        try:
+            dbg["iframes"]=[f.url[:150] for f in page.frames if f.url and f.url!="about:blank"][1:10]
+            dbg["text_head"]=" ".join(page.inner_text("body").split())[:600]
+        except Exception: pass
     # сначала ответы, похожие на API вакансий; аналитика и прочее — потом
     jobish=re.compile(r"job|career|vacanc|position|opening|posting|role|recruit|ats", re.I)
     resps.sort(key=lambda r: 0 if jobish.search(r.url or "") else 1)
@@ -244,6 +253,11 @@ def scrape(page, link):
     if len(ld)>len(best): best, best_q = ld, len(ld)
     # структурированным данным доверяем, только если они правда похожи на вакансии
     # (раньше любой крупный JSON-массив — меню, cookie-вендоры — глушил DOM, и вакансии терялись)
+    if dbg is not None:
+        dom_dbg=[j for j in extract_from_dom(page, link) if _looks_like_job(j)]
+        dbg.update(structured=len(best), structured_quality=best_q, jsonld=len(ld),
+                   structured_sample=[j["title"][:80] for j in best[:6]],
+                   dom=len(dom_dbg), dom_sample=[f'{j["title"][:70]} -> {j["url"][:90]}' for j in dom_dbg[:8]])
     if best and best_q >= max(1, len(best)//2):
         return [j for j in best if _looks_like_job(j)]
     dom=[j for j in extract_from_dom(page, link) if _looks_like_job(j)]
@@ -352,6 +366,50 @@ def main():
     report(mk, seen, STATE, label=LABEL, page_factory=_description_page)
     health.finish({"jobs_total": len(jobs), "marketing": len(mk)})
 
+MUSIC = {"IN_FILE": "lists/music_browser_companies.csv", "EXTRA": "state/api_fallback_music.csv",
+         "HEALTH": "state/health_music_browser.json"}
+
+def diag(names):
+    """--diag [broken | имена через запятую]: подробно разбирает страницы и пишет
+       state/diag_browser.json (+ state/diag_music_browser.json). Вакансии не шлёт, seen не трогает.
+       broken (по умолчанию) — все, что в отчётах здоровья основного и музтех-радара числятся сломанными."""
+    global IN_FILE, EXTRA, HEALTH
+    names = (names or "broken").strip()
+    runs = [("state/diag_browser.json", {})]
+    if names == "broken": runs.append(("state/diag_music_browser.json", MUSIC))
+    from playwright.sync_api import sync_playwright
+    import signal
+    def _alarm(*_): raise TimeoutError(f"завис > {PER_SITE}с")
+    with sync_playwright() as p:
+        browser=p.chromium.launch(args=["--no-sandbox"])
+        ctx=browser.new_context(user_agent=UA_STR)
+        for out_path, env in runs:
+            for k, v in env.items(): globals()[k] = v
+            companies=load_companies()
+            if names != "broken": want={n.strip().lower() for n in names.split(",") if n.strip()}
+            else:
+                h=load(HEALTH, {}).get("sources", {})
+                want={k.removeprefix(FROM_API).lower() for k,v in h.items() if v.get("bad_streak")}
+            todo=[r for r in companies if r["Name"].removeprefix(FROM_API).lower() in want]
+            print(f"=== диагностика {IN_FILE}: {len(todo)} компаний ===", flush=True)
+            out={}
+            for r in todo:
+                name=r["Name"]; link=(r.get("Link") or "").strip(); d={"link":link}; t0=time.time()
+                page=ctx.new_page(); page.set_default_timeout(15000)
+                signal.signal(signal.SIGALRM, _alarm); signal.alarm(PER_SITE)
+                try:
+                    found=scrape(page, link, d); d["found"]=len(found)
+                    d["found_sample"]=[f'{j["title"][:70]} -> {j["url"][:90]}' for j in found[:6]]
+                except Exception as e:
+                    d["error"]=f"{type(e).__name__} {str(e)[:120]}"
+                signal.alarm(0); d["sec"]=round(time.time()-t0)
+                try: page.close()
+                except Exception: pass
+                out[name]=d; save(out_path, out)          # сохраняем по ходу: таймаут шага не съест результат
+                print(f"  {name}: {d.get('found')} за {d['sec']}с", flush=True)
+        browser.close()
+
 if __name__=="__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "--worker": worker(int(sys.argv[2]))
+    elif len(sys.argv) > 1 and sys.argv[1] == "--diag": diag(sys.argv[2] if len(sys.argv) > 2 else "")
     else: main()
