@@ -46,6 +46,8 @@ https://jobs.example.com/123
   or rendered page) and asks Gemini for a strict JSON verdict. Remote status is double-checked in code
   against the location field. Hard time budget per vacancy and per run; if the model is down, the
   vacancy is still delivered, marked "no score", with the reason at the bottom of the message.
+- **MBW Jobs** (`mbw_radar.py`) — the Music Business Worldwide job board via its public WordPress
+  REST API (company, location, remote flag, full description); runs inside the music-tech radar.
 - **Music-tech radar** (`music.yml`) — the same API + browser radars on a separate list of music-tech
   companies, with its own state and a scoring tweak for the industry.
 
