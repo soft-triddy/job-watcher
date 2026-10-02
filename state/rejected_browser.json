@@ -134,17 +134,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "PPC Expert · Senior NordVPN Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/5ec55e95-18e0-4d94-b343-ff6c27efffa9/"
- },
- {
-  "company": "Nord Security",
   "title": "PPC Expert · Senior NordVPN Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/9a167a40-9500-4a72-8ebb-1de7b5d80559/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "PPC Expert · Senior NordVPN Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "гео: hybrid",
+  "url": "https://nordsecurity.com/careers/5ec55e95-18e0-4d94-b343-ff6c27efffa9/"
  },
  {
   "company": "Nord Security",
@@ -232,17 +232,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Affiliate Account Director Saily Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/5ff4fed3-1a85-46b6-9728-cc848cd4045a/"
- },
- {
-  "company": "Nord Security",
   "title": "Affiliate Account Director Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: affiliate",
   "url": "https://nordsecurity.com/careers/9404baa1-6602-4fbe-b1a4-91d4db673d96/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Affiliate Account Director Saily Warsaw Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: affiliate",
+  "url": "https://nordsecurity.com/careers/5ff4fed3-1a85-46b6-9728-cc848cd4045a/"
  },
  {
   "company": "Nord Security",
@@ -260,17 +260,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Affiliate Marketing Manager · Mid-Senior · B2B Nord B2B Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/2aaaf4aa-d217-4cec-98df-17c0cf582e05/"
- },
- {
-  "company": "Nord Security",
   "title": "Affiliate Marketing Manager · Mid-Senior · B2B Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: affiliate",
   "url": "https://nordsecurity.com/careers/60f89846-3de5-40b9-8bd8-3dee5f5688f9/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Affiliate Marketing Manager · Mid-Senior · B2B Nord B2B Warsaw Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: affiliate",
+  "url": "https://nordsecurity.com/careers/2aaaf4aa-d217-4cec-98df-17c0cf582e05/"
  },
  {
   "company": "Gismart",
@@ -554,17 +554,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Web Designer · Mid-Senior · Marketing Design Team NordVPN Poland Remote Design",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/74727e71-5ac2-4588-92a6-b345c3bb7a39/"
- },
- {
-  "company": "Nord Security",
   "title": "Web Designer · Mid-Senior · Marketing Design Team NordVPN Vilnius Hybrid Design",
   "location": "",
   "why": "роль: design",
   "url": "https://nordsecurity.com/careers/0ac04922-cc35-46a1-9388-09eb0650a1b7/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Web Designer · Mid-Senior · Marketing Design Team NordVPN Poland Remote Design",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://nordsecurity.com/careers/74727e71-5ac2-4588-92a6-b345c3bb7a39/"
  },
  {
   "company": "Monetha",
@@ -590,6 +590,13 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Remote - California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "San Francisco, California",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
@@ -604,13 +611,6 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Mountain View, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "Remote - New York",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
@@ -618,9 +618,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
+  "location": "Mountain View, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
  },
  {
   "company": "Databricks",
@@ -820,17 +820,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · AI Security Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/e6809c4c-8faf-41e6-b944-863e5eaf3e31/"
- },
- {
-  "company": "Nord Security",
   "title": "Product Marketing Manager · AI Security Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://nordsecurity.com/careers/39e1f928-11f1-45fd-9c99-b32d0793ae62/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Product Marketing Manager · AI Security Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://nordsecurity.com/careers/e6809c4c-8faf-41e6-b944-863e5eaf3e31/"
  },
  {
   "company": "Nord Security",
