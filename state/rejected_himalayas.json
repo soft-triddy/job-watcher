@@ -1,5 +1,12 @@
 [
  {
+  "company": "Customer.io",
+  "title": "Mid-Market Account Executive, EMEA",
+  "location": "Afghanistan, Albania, Algeria, Andorra, Angola, Antarctica, Armenia, Austria, Azerbaijan, Bahrain, Belarus, Belgium, Benin, Bosnia and Herzegovina, Botswana, Bouvet Island, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cameroon, Central African Republic, Chad, Comoros, Congo, Congo, The Democratic Republic of the, Cook Islands, Croatia, Curaçao, Cyprus, Czechia, Côte d'Ivoire, Denmark, Djibouti, Egypt, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Faroe Islands, Finland, France, French Guiana, French Southern Territories, Gabon, Gambia, Georgia, Germany, Ghana, Gibraltar, Greece, Greenland, Guadeloupe, Guernsey, Guinea, Guinea-Bissau, Heard Island and McDonald Islands, Holy See (Vatican City State), Hungary, Iceland, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jersey, Jordan, Kazakhstan, Kenya, Kosovo, Kuwait, Kyrgyzstan, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg, Madagascar, Malawi, Mali, Malta, Martinique, Mauritania, Mauritius, Mayotte, Moldova, Monaco, Montenegro, Morocco, Mozambique, Namibia, Netherlands, Niger, Nigeria, North Macedonia, Norway, Oman, Palestine, State of, Poland, Portugal, Qatar, Romania, Russian Federation, Rwanda, Réunion, Saint Barthélemy, Saint Helena, Ascension and Tristan da Cunha, Saint Martin (French part), Saint Pierre and Miquelon, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Sint Maarten (Dutch part), Slovakia, Slovenia, Somalia, South Africa, South Sudan, Spain, Sudan, Svalbard and Jan Mayen, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Tanzania, Togo, Tunisia, Turkey, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United Kingdom, Uzbekistan, Western Sahara, Yemen, Zambia, Zimbabwe, Åland Islands",
+  "why": "роль: account executive",
+  "url": "https://himalayas.app/companies/customer-io/jobs/mid-market-account-executive-emea"
+ },
+ {
   "company": "Interdependence Public Relations",
   "title": "Account Executive, Integrated Marketing and Strategy",
   "location": "",
@@ -26,13 +33,6 @@
   "location": "",
   "why": "роль: account manager",
   "url": "https://himalayas.app/companies/jumpfactor/jobs/senior-digital-marketing-account-manager"
- },
- {
-  "company": "Ansira",
-  "title": "Account Supervisor, Client Growth",
-  "location": "",
-  "why": "роль: account supervisor",
-  "url": "https://himalayas.app/companies/ansira/jobs/account-supervisor-client-growth"
  },
  {
   "company": "Genesis",
@@ -63,11 +63,11 @@
   "url": "https://himalayas.app/companies/revpanda/jobs/affiliate-performance-specialist-cro"
  },
  {
-  "company": "MD Finance",
-  "title": "Marketing Data Analyst",
+  "company": "Scentbird",
+  "title": "Marketing Analyst",
   "location": "",
   "why": "роль: analyst",
-  "url": "https://himalayas.app/companies/md-finance/jobs/marketing-data-analyst"
+  "url": "https://himalayas.app/companies/scentbird/jobs/marketing-analyst"
  },
  {
   "company": "TechInsights",
@@ -77,6 +77,13 @@
   "url": "https://himalayas.app/companies/techinsights/jobs/ai-market-intelligence-senior-analyst"
  },
  {
+  "company": "Tameson",
+  "title": "Marketing Analytics Specialist - Paid Acquisition",
+  "location": "",
+  "why": "роль: analytics",
+  "url": "https://himalayas.app/companies/tameson/jobs/marketing-analytics-specialist-paid-acquisition"
+ },
+ {
   "company": "NightOwl Consulting",
   "title": "Reverse Mortgage Marketing Assistant",
   "location": "",
@@ -84,11 +91,18 @@
   "url": "https://himalayas.app/companies/nightowl-consulting/jobs/reverse-mortgage-marketing-assistant-9989444057"
  },
  {
-  "company": "Sortitt",
-  "title": "Growth & Outreach Associate",
+  "company": "Red Sky",
+  "title": "Market Growth & Brand Builder (Marketing/Growth/Performance)",
   "location": "",
-  "why": "роль: associate",
-  "url": "https://himalayas.app/companies/sortitt/jobs/growth-outreach-associate"
+  "why": "роль: brand",
+  "url": "https://himalayas.app/companies/red-sky/jobs/market-growth-brand-builder-marketing-growth-performance"
+ },
+ {
+  "company": "Revpanda",
+  "title": "Marketing Manager – Brand & Organic Growth",
+  "location": "",
+  "why": "роль: brand",
+  "url": "https://himalayas.app/companies/revpanda/jobs/marketing-manager-brand-organic-growth"
  },
  {
   "company": "Red Sky",
@@ -119,69 +133,6 @@
   "url": "https://himalayas.app/companies/canonical/jobs/content-marketing-team-manager"
  },
  {
-  "company": "EWOR GmbH",
-  "title": "Space Tech Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/space-tech-content-marketing-manager-100-remote-m-f-d"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "Renewable Energy Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/renewable-energy-content-marketing-manager-100-remote-m-f-d-4421122992"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "MedTech Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/medtech-content-marketing-manager-100-remote-m-f-d-2721852520"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "AI Research Lab Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/ai-research-lab-content-marketing-manager-100-remote-m-f-d-8816904457"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "DevTools Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/devtools-content-marketing-manager-100-remote-m-f-d"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "HealthTech Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/healthtech-content-marketing-manager-100-remote-m-f-d-5418378336"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "Logistics Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/logistics-content-marketing-manager-100-remote-m-f-d-3477184492"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "Industrial Tech Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/industrial-tech-content-marketing-manager-100-remote-m-f-d"
- },
- {
-  "company": "EWOR GmbH",
-  "title": "Fintech Content Marketing Manager (100 % remote) (m/f/d)",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://himalayas.app/companies/ewor-gmbh/jobs/fintech-content-marketing-manager-100-remote-m-f-d-7705493548"
- },
- {
   "company": "Fresh Prints",
   "title": "Content Growth Strategist",
   "location": "",
@@ -203,25 +154,11 @@
   "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/marketing-coordinator-6525653296"
  },
  {
-  "company": "NightOwl Consulting",
-  "title": "Marketing Operator & Program Coordinator",
-  "location": "",
-  "why": "роль: coordinator",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-operator-program-coordinator-6560348630"
- },
- {
   "company": "Trafilea",
   "title": "Sr Creative Operations Manager, Paid ads",
   "location": "",
   "why": "роль: creative",
   "url": "https://himalayas.app/companies/trafilea-com/jobs/sr-creative-operations-manager-paid-ads"
- },
- {
-  "company": "Vana Foundation",
-  "title": "Creative Marketing Specialist",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://himalayas.app/companies/vana-foundation/jobs/creative-marketing-specialist"
  },
  {
   "company": "Aline",
@@ -238,11 +175,11 @@
   "url": "https://himalayas.app/companies/rsi-security/jobs/customer-success-manager-client-growth-engagement"
  },
  {
-  "company": "KultreMedia LLC",
-  "title": "KM - Graphic & Web Designer (Paid Ads, Funnels & Motion)",
+  "company": "Boldin",
+  "title": "Marketing Designer",
   "location": "",
   "why": "роль: design",
-  "url": "https://himalayas.app/companies/kultremedia-llc/jobs/km-graphic-web-designer-paid-ads-funnels-motion"
+  "url": "https://himalayas.app/companies/boldin/jobs/marketing-designer"
  },
  {
   "company": "Replika",
@@ -266,13 +203,6 @@
   "url": "https://himalayas.app/companies/mgid/jobs/senior-email-lifecycle-marketing-manager"
  },
  {
-  "company": "MGID",
-  "title": "Email & Lifecycle Marketing Manager",
-  "location": "",
-  "why": "роль: email",
-  "url": "https://himalayas.app/companies/mgid/jobs/email-lifecycle-marketing-manager"
- },
- {
   "company": "Alpaca",
   "title": "Senior Software Engineer New Markets - EU",
   "location": "",
@@ -285,13 +215,6 @@
   "location": "",
   "why": "роль: engineer",
   "url": "https://himalayas.app/companies/project-management-institute-inc/jobs/ai-engineer-marketing"
- },
- {
-  "company": "InGenius Prep",
-  "title": "Digital and Event Marketing Specialist",
-  "location": "",
-  "why": "роль: event",
-  "url": "https://himalayas.app/companies/ingenius-prep/jobs/digital-and-event-marketing-specialist"
  },
  {
   "company": "Careerxtra",
@@ -313,6 +236,13 @@
   "location": "",
   "why": "роль: media buyer",
   "url": "https://himalayas.app/companies/peak-21/jobs/media-buyer-paid-social-search"
+ },
+ {
+  "company": "Flowmingo",
+  "title": "Marketing Growth Business Partner",
+  "location": "",
+  "why": "роль: partner",
+  "url": "https://himalayas.app/companies/flowmingo/jobs/marketing-growth-business-partner"
  },
  {
   "company": "Replika",
