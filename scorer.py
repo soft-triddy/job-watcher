@@ -247,7 +247,10 @@ HARD_RED = re.compile(r"\b(united states|usa|u\.s\.|us|united kingdom|uk|england
 def _guard_remote(job, s):
     """Жёсткая проверка ремоута по полю локации — модели тут верим меньше, чем полю."""
     loc = (job.get("location") or "").strip()
+    if re.search(r"kyrgyz|кыргыз|киргиз", loc, re.I):   # Кыргызстан прямо в списке разрешённых стран
+        s["hire"] = "green"; return s
     if not loc or WW.search(loc): return s
+    if re.match(r"\d+ стран", loc): return s            # длинный список стран — одному «UK» в нём не верим
     if HARD_RED.search(loc): s["hire"] = "red"
     elif s["hire"] == "green" and not re.search(r"\bremote\b", loc, re.I): s["hire"] = "yellow"
     return s
@@ -302,7 +305,9 @@ GRADE = {"down": "⬇️ грейд", "ok": "✅ грейд", "up": "⬆️ гр
 STOP  = {"crypto": "крипта", "betting": "беттинг", "gamedev": "геймдев"}
 
 def fmt_job(j, suffix=""):
-    loc = f" — {j['location']}" if j.get("location") else ""
+    l = j.get("location") or ""
+    if len(l) > 80: l = l[:77].rsplit(",", 1)[0] + "…"     # любые длинные локации — не простынёй
+    loc = f" — {l}" if l else ""
     head = f"• {j['company']}: {j['title']}{loc}"
     s = j.get("score")
     if not s:

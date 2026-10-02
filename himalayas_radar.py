@@ -42,11 +42,16 @@ def search(q, page, scope):
     raise RuntimeError(f"HTTP {r.status_code} после повторов")
 
 def loc_str(job):
+    """Короткая строка локации. Himalayas часто перечисляет 100+ стран — в сообщение это не годится:
+       сворачиваем в «N стран, есть Кыргызстан» / «N стран: A, B, C…»."""
     out = []
     for x in (job.get("locationRestrictions") or []):
         if isinstance(x, str): out.append(x)
         elif isinstance(x, dict): out.append(x.get("name") or x.get("country") or "")
-    return ", ".join(p for p in out if p)
+    out = [p for p in out if p]
+    if len(out) <= 4: return ", ".join(out)
+    if any("kyrgyz" in p.lower() for p in out): return f"{len(out)} стран, есть Кыргызстан"
+    return f"{len(out)} стран: " + ", ".join(out[:3]) + "…"
 
 def collect(health):
     jobs = {}
