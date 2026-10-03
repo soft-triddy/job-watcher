@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-02 16:41 UTC",
+ "updated": "2026-10-03 12:10 UTC",
  "label": "🎵 Музтех · Браузер",
  "total": 49,
  "broken": 1,
- "jobs_total": 68,
- "marketing": 6,
+ "jobs_total": 69,
+ "marketing": 7,
  "sources": {
   "ai|coustics": {
    "jobs": 8,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Amuse": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Anthems Music": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Audiology": {
@@ -35,7 +35,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "AudioShake": {
@@ -43,7 +43,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Audoo": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "BeatConnect": {
@@ -59,7 +59,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Blokur": {
@@ -67,7 +67,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Boomy": {
@@ -75,7 +75,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Bronze": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Cogs AI": {
@@ -91,7 +91,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Discogs": {
@@ -99,7 +99,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "EngineEars": {
@@ -107,7 +107,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Fave": {
@@ -115,7 +115,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Horus Music": {
@@ -123,7 +123,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "IDOL": {
@@ -131,7 +131,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Komi": {
@@ -139,7 +139,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "LANDR": {
@@ -147,7 +147,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Laylo": {
@@ -155,7 +155,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Levellr": {
@@ -163,7 +163,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Masterchannel": {
@@ -171,7 +171,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Merchbar": {
@@ -179,7 +179,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Musimap": {
@@ -187,7 +187,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Musiversal": {
@@ -195,7 +195,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "ONCE.app": {
@@ -203,15 +203,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "ONErpm": {
-   "jobs": 15,
+   "jobs": 16,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Pex": {
@@ -219,14 +219,14 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Pibox": {
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "2026-10-02",
    "alerted": false
   },
@@ -235,7 +235,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Rap Tech Studios": {
@@ -243,7 +243,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Reactional Music": {
@@ -251,7 +251,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Riffusion": {
@@ -259,7 +259,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "RouteNote": {
@@ -267,7 +267,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Seat Unique": {
@@ -275,7 +275,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Sirius": {
@@ -283,7 +283,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Sonomo": {
@@ -291,7 +291,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "SonoSuite": {
@@ -299,7 +299,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "SONOTELLER.AI": {
@@ -307,7 +307,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "SoundGate": {
@@ -315,7 +315,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Soundtrack Your Brand": {
@@ -323,7 +323,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Stationhead": {
@@ -331,7 +331,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "The Orchard": {
@@ -339,7 +339,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "TuneCore": {
@@ -347,7 +347,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Vermillio": {
@@ -355,7 +355,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Xceed": {
@@ -363,7 +363,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Audius": {
@@ -371,7 +371,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "Tune.FM": {
@@ -379,7 +379,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "↪ CD Baby": {
@@ -387,7 +387,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
   "↪ FUGA": {
@@ -395,7 +395,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   }
  }
