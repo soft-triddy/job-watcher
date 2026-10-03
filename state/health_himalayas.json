@@ -1,89 +1,89 @@
 {
- "updated": "2026-10-02 15:51 UTC",
+ "updated": "2026-10-03 14:22 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
- "jobs_total": 299,
- "marketing": 58,
+ "jobs_total": 330,
+ "marketing": 66,
  "sources": {
   "мир: «marketing»": {
-   "jobs": 87,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-02",
-   "alerted": false
-  },
-  "мир: «growth»": {
-   "jobs": 84,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-02",
-   "alerted": false
-  },
-  "мир: «demand»": {
-   "jobs": 15,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-02",
-   "alerted": false
-  },
-  "мир: «seo»": {
-   "jobs": 76,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-02",
-   "alerted": false
-  },
-  "мир: «crm»": {
    "jobs": 99,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
-  "KG: «marketing»": {
-   "jobs": 87,
+  "мир: «growth»": {
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
-  "KG: «growth»": {
-   "jobs": 84,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-02",
-   "alerted": false
-  },
-  "KG: «demand»": {
+  "мир: «demand»": {
    "jobs": 18,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
-  "KG: «seo»": {
-   "jobs": 76,
+  "мир: «seo»": {
+   "jobs": 82,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
    "alerted": false
   },
-  "KG: «crm»": {
+  "мир: «crm»": {
+   "jobs": 100,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "KG: «marketing»": {
    "jobs": 99,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-02",
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "KG: «growth»": {
+   "jobs": 100,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "KG: «demand»": {
+   "jobs": 21,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "KG: «seo»": {
+   "jobs": 82,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "KG: «crm»": {
+   "jobs": 100,
+   "err": "",
+   "note": "",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
    "alerted": false
   }
  }

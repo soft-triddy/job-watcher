@@ -8,20 +8,6 @@
  },
  {
   "company": "Interdependence Public Relations",
-  "title": "Account Executive, Integrated Marketing and Strategy",
-  "location": "",
-  "why": "роль: account executive",
-  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/account-executive-integrated-marketing-and-strategy"
- },
- {
-  "company": "Interdependence Public Relations",
-  "title": "Account Executive, Influencer Marketing & Event Management",
-  "location": "",
-  "why": "роль: account executive",
-  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/account-executive-influencer-marketing-event-management"
- },
- {
-  "company": "Interdependence Public Relations",
   "title": "Enterprise Account Executive - SEO",
   "location": "",
   "why": "роль: account executive",
@@ -33,6 +19,13 @@
   "location": "",
   "why": "роль: account manager",
   "url": "https://himalayas.app/companies/jumpfactor/jobs/senior-digital-marketing-account-manager"
+ },
+ {
+  "company": "Ansira",
+  "title": "Account Supervisor, Client Growth",
+  "location": "",
+  "why": "роль: account supervisor",
+  "url": "https://himalayas.app/companies/ansira/jobs/account-supervisor-client-growth"
  },
  {
   "company": "Genesis",
@@ -63,13 +56,6 @@
   "url": "https://himalayas.app/companies/revpanda/jobs/affiliate-performance-specialist-cro"
  },
  {
-  "company": "Scentbird",
-  "title": "Marketing Analyst",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://himalayas.app/companies/scentbird/jobs/marketing-analyst"
- },
- {
   "company": "TechInsights",
   "title": "AI Market Intelligence Senior Analyst",
   "location": "",
@@ -77,11 +63,25 @@
   "url": "https://himalayas.app/companies/techinsights/jobs/ai-market-intelligence-senior-analyst"
  },
  {
-  "company": "Tameson",
-  "title": "Marketing Analytics Specialist - Paid Acquisition",
+  "company": "TransPerfect",
+  "title": "Digital Analytics Engineer",
   "location": "",
   "why": "роль: analytics",
-  "url": "https://himalayas.app/companies/tameson/jobs/marketing-analytics-specialist-paid-acquisition"
+  "url": "https://himalayas.app/companies/transperfect/jobs/digital-analytics-engineer"
+ },
+ {
+  "company": "NightOwl Consulting",
+  "title": "Marketing Assistant",
+  "location": "",
+  "why": "роль: assistant",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-assistant"
+ },
+ {
+  "company": "NightOwl Consulting",
+  "title": "CRM Assistant (with Insellerate Experience)",
+  "location": "",
+  "why": "роль: assistant",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/crm-assistant-with-insellerate-experience"
  },
  {
   "company": "NightOwl Consulting",
@@ -140,6 +140,13 @@
   "url": "https://himalayas.app/companies/freshprintsshop/jobs/content-growth-strategist"
  },
  {
+  "company": "NightOwl Consulting",
+  "title": "Marketing Content Creator",
+  "location": "",
+  "why": "роль: content",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-content-creator"
+ },
+ {
   "company": "Recruitee",
   "title": "Content Marketing Writer",
   "location": "",
@@ -152,6 +159,27 @@
   "location": "",
   "why": "роль: coordinator",
   "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/marketing-coordinator-6525653296"
+ },
+ {
+  "company": "NightOwl Consulting",
+  "title": "Marketing Coordinator",
+  "location": "",
+  "why": "роль: coordinator",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-coordinator"
+ },
+ {
+  "company": "NightOwl Consulting",
+  "title": "Marketing Copywriter",
+  "location": "",
+  "why": "роль: copywriter",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-copywriter"
+ },
+ {
+  "company": "Peggy",
+  "title": "Creative Performance Lead",
+  "location": "",
+  "why": "роль: creative",
+  "url": "https://himalayas.app/companies/peggy/jobs/creative-performance-lead"
  },
  {
   "company": "Trafilea",
@@ -173,13 +201,6 @@
   "location": "",
   "why": "роль: customer success",
   "url": "https://himalayas.app/companies/rsi-security/jobs/customer-success-manager-client-growth-engagement"
- },
- {
-  "company": "Boldin",
-  "title": "Marketing Designer",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://himalayas.app/companies/boldin/jobs/marketing-designer"
  },
  {
   "company": "Replika",
@@ -217,6 +238,13 @@
   "url": "https://himalayas.app/companies/project-management-institute-inc/jobs/ai-engineer-marketing"
  },
  {
+  "company": "Aerofoils GmbH",
+  "title": "AI-Driven Digital Systems & Integration Manager (all gender)",
+  "location": "",
+  "why": "роль: integration",
+  "url": "https://himalayas.app/companies/aerofoils-gmbh/jobs/ai-driven-digital-systems-integration-manager-all-gender"
+ },
+ {
   "company": "Careerxtra",
   "title": "Junior Performance Marketer – Adult RTB (Europe)",
   "location": "",
@@ -243,6 +271,20 @@
   "location": "",
   "why": "роль: partner",
   "url": "https://himalayas.app/companies/flowmingo/jobs/marketing-growth-business-partner"
+ },
+ {
+  "company": "Virtual Identity",
+  "title": "Senior Account Director Digital Solutions / Client Partner (m/f/x)",
+  "location": "",
+  "why": "роль: partner",
+  "url": "https://himalayas.app/companies/virtual-identity/jobs/senior-account-director-digital-solutions-client-partner-m-f-x"
+ },
+ {
+  "company": "WESTMEDIA AGENCY",
+  "title": "Affiliate Marketer & Promo Partner (Remote, Commission-Based)",
+  "location": "",
+  "why": "роль: partner",
+  "url": "https://himalayas.app/companies/westmedia-agency/jobs/affiliate-marketer-promo-partner-remote-commission-based"
  },
  {
   "company": "Replika",
@@ -285,5 +327,12 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://himalayas.app/companies/project-management-institute-inc/jobs/director-strategic-product-marketing"
+ },
+ {
+  "company": "Tiugo Technologies",
+  "title": "Senior Product Marketing Manager",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://himalayas.app/companies/tiugo/jobs/senior-product-marketing-manager"
  }
 ]
