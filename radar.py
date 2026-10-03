@@ -25,7 +25,7 @@ FALLBACK = os.environ.get("RADAR_FALLBACK", "state/api_fallback.csv")
 def _seg1(u):
     # первый сегмент пути, пропуская локаль (ats.rippling.com/en-GB/netwrix-corporation)
     p=[x for x in urlparse(u).path.split("/") if x]
-    p=[x for x in p if not re.match(r"^[a-zA-Z]{2}(-[a-zA-Z]{2})?$", x)]
+    p=[x for x in p if not LOCALE.match(x.lower())]
     return p[0] if p else ""
 def _sub(u):
     return urlparse(u).netloc.split(".")[0]
@@ -292,8 +292,6 @@ def fetch_company(link, ats, cache, name=""):
        Порядок: свои кандидаты (похожие на компанию) -> чужие эмбеды только если своих нет."""
     key=f"{ats}|{link}"
     cached=cache.get(key)
-    if cached and _bad_slug(cached.lower()):
-        cache.pop(key, None); cached=None          # старый битый слаг (lever/ats/en-gb) — выкидываем
     if cached:
         try: return cached, HANDLERS[ats](cached)
         except (requests.ConnectionError, requests.Timeout):
@@ -302,12 +300,12 @@ def fetch_company(link, ats, cache, name=""):
             code=getattr(e.response, "status_code", 0) or 0
             if code==429 or code>=500: raise       # ATS лежит/лимит — временное, кеш не трогаем
         except Exception: pass  # 404 / не-JSON: закешированный slug протух — резолвим заново
-    html=""
-    if not slug_from_url(link, ats):
-        try: html=requests.get(link, headers=UA, timeout=TIMEOUT).text
-        except Exception: html=""
-    own_valid=None; foreign_hit=None
     from_url=(slug_from_url(link, ats) or "").lower()
+    html=""
+    if not from_url:
+        try: html=requests.get(link, headers=UA, timeout=TIMEOUT).text
+        except Exception: pass
+    own_valid=None; foreign_hit=None
     for slug in candidates(link, ats, html, name):
         mine = slug.lower()==from_url or _affinity(slug, link, name)>0
         try:
@@ -332,22 +330,16 @@ def main():
     health=Health(HEALTH, LABEL)
     print(f"=== API-радар | {len(companies)} компаний | {'--all' if '--all' in sys.argv else 'только новые'} ===")
 
-    jobs={}; skipped=[]; failed=[]; seen_links=set()
+    jobs={}; failed=[]
     for r in companies:
         name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
         ats=(r.get("ATS") or "").strip()
-        if ats not in HANDLERS:
-            skipped.append(r); health.mark(name, err=f"ATS «{ats or '—'}» не поддерживается"); continue
-        lk=link.lower().rstrip("/")
-        if lk in seen_links: continue                      # дубль в списке
-        seen_links.add(lk)
         try:
-            slug, js = fetch_company(link, ats, slugs, name)
+            slug, js = fetch_company(link, ats, slugs, name) if ats in HANDLERS else (None, None)
+            err = "" if slug else (f"не подобрался слаг ({ats})" if ats in HANDLERS else f"ATS «{ats}» не поддерживается")
         except Exception as e:
-            slug, js = None, None; err=f"{type(e).__name__} {str(e)[:60]}"
-        else:
-            err="" if slug else f"не подобрался слаг ({ats})"
-        if not slug or js is None:
+            slug, err = None, f"{type(e).__name__} {str(e)[:60]}"
+        if not slug:
             print(f"  ⚠ {name}: {err}")
             health.mark(name, err=err); failed.append(r); continue
         n=0
@@ -360,15 +352,14 @@ def main():
     save(SLUGS, slugs)
 
     # то, что API не смог опросить, отдаём браузерному радару (он идёт позже в тот же день)
-    os.makedirs(os.path.dirname(FALLBACK) or ".", exist_ok=True)
     with open(FALLBACK, "w", encoding="utf-8", newline="") as f:
         w=csv.writer(f); w.writerow(["Name","Link"])
-        for r in failed+skipped: w.writerow([(r.get("Name") or "").strip(), (r.get("Link") or "").strip()])
+        for r in failed: w.writerow([(r.get("Name") or "").strip(), (r.get("Link") or "").strip()])
 
     alljobs=list(jobs.values())
     mk=[j for j in alljobs if is_marketing(j["title"], j.get("location",""))]
     save(REJECTED, near_misses(alljobs))
-    print(f"опрошено: {len(companies)-len(skipped)} | без ATS: {len(skipped)} | вакансий: {len(jobs)} | не опросились: {len(failed)}")
+    print(f"компаний: {len(companies)} | вакансий: {len(jobs)} | не опросились: {len(failed)}")
     report(mk, seen, STATE, label=LABEL)
     health.finish({"jobs_total": len(jobs), "marketing": len(mk)})
 

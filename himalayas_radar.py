@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Himalayas: публичный API вакансий (без ключа, схема — github.com/Himalayas-App/remote-jobs-api).
-Берём только worldwide + Full Time по широким запросам, дальше — общий фильтр маркетинга.
+Два прохода (worldwide и открытые для Кыргызстана), Full Time + Contractor, широкие запросы, дальше — общий фильтр маркетинга.
 Крипто-компании отсекаются по категориям Himalayas.
 """
 import os, time
@@ -28,8 +28,7 @@ UA = {"User-Agent": "job-radar personal use (+telegram alerts)"}
 def search(q, page, scope):
     """429 (лимит) и 5xx — ждём и повторяем; раньше запрос молча обрывался на первой же 429,
        и всё, что глубже первой страницы, не доходило."""
-    params = {"q": q, "sort": "recent", "page": page, **SCOPES[scope]}
-    if EMPLOYMENT_TYPES: params["employment_type"] = EMPLOYMENT_TYPES
+    params = {"q": q, "sort": "recent", "page": page, "employment_type": EMPLOYMENT_TYPES, **SCOPES[scope]}
     for attempt in range(4):
         r = requests.get(BASE, params=params, headers=UA, timeout=TIMEOUT)
         if r.status_code == 429 or r.status_code >= 500:

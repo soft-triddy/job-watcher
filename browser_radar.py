@@ -145,7 +145,6 @@ def _site(host):
     return parts[-2] if len(parts)>=2 else (parts[0] if parts else "")
 
 def _in_zone(base_host, url):
-    from urllib.parse import urlparse
     p=urlparse(url.lower()); host=p.netloc; path=p.path
     if any(h in host for h in ATS_HOSTS): return True          # ссылка на ATS-хост = точно вакансия
     if _site(host)!=_site(base_host): return False             # чужой домен (medium/entrepreneur) — нет
@@ -168,7 +167,6 @@ def _text_is_jobish(text):
 
 def _dom_candidates(anchors, base):
     """anchors: список dict {href, text, head}. Возвращает кандидатов-вакансий по ТЕКСТУ."""
-    from urllib.parse import urljoin, urlparse
     base_host=urlparse(base).netloc
     out=[]; seen=set()
     for a in anchors:
@@ -211,14 +209,7 @@ def extract_from_dom(page, base):
         })''')
     except Exception:
         anchors=[]
-    cands=_dom_candidates(anchors, base)
-    if cands: return cands
-    # аварийный запас: голые заголовки без ссылок
-    try:
-        heads = page.eval_on_selector_all("h1,h2,h3", "els => els.map(e => (e.innerText||\"\").trim())")
-    except Exception:
-        heads=[]
-    return [{"title":_clean(h),"url":base,"location":""} for h in heads if _text_is_jobish(h)]
+    return _dom_candidates(anchors, base)
 
 JOB_API = re.compile(r"job|career|vacanc|position|opening|posting|recruit|hiring|requisition", re.I)
 
@@ -292,11 +283,12 @@ def scrape(page, link, dbg=None):
         if got and q==0 and JOB_API.search(rurl) and len(got)>len(nolink): nolink=got
     ld=extract_jsonld(html, link)
     if len(ld)>len(best): best, best_q = ld, len(ld)
-    dom=[j for j in extract_from_dom(page, link) if _looks_like_job(j)]
     with_url=lambda js: [j for j in js if _looks_like_job(j) and _norm_url(j["url"])!=base]
+    dom=with_url(extract_from_dom(page, link))
+    best_ok=with_url(best)
 
-    if best and best_q >= max(1, len(best)//2) and with_url(best): res, mode = with_url(best), "json"
-    elif with_url(dom): res, mode = with_url(dom), "dom"
+    if best_ok and best_q >= max(1, len(best)//2): res, mode = best_ok, "json"
+    elif dom: res, mode = dom, "dom"
     elif nolink: res, mode = _synthetic([j for j in nolink if _looks_like_job(j)], link), "json-без-ссылок"
     else: res, mode = _text_mode(page, link), "текст"
 
@@ -352,7 +344,7 @@ def worker(start):
 
 def run_isolated(companies, health, diag_out=None):
     import subprocess, selectors
-    jobs=[]; errors=[]; empty=0; i=0; n=len(companies)
+    jobs=[]; i=0; n=len(companies)
     while i < n:
         proc=subprocess.Popen([sys.executable, __file__, "--worker", str(i)],
                               stdout=subprocess.PIPE, text=True, bufsize=1, start_new_session=True)
@@ -368,14 +360,8 @@ def run_isolated(companies, health, diag_out=None):
             except Exception: continue
             if msg.get("start"): cur=msg["i"]; t0=time.time(); continue
             r=companies[msg["i"]]; name=(r.get("Name") or "").strip(); link=(r.get("Link") or "").strip()
-            found=msg.get("found") or []
-            if msg.get("err"): errors.append(f"{name}: {msg['err']}")
-            base=_norm_url(link); kept=0; mode=msg.get("mode") or ""
-            for j in found:
-                if not j.get("title") or not j.get("url"): continue
-                if not j.get("synthetic") and _norm_url(j["url"])==base: continue   # ссылка на саму страницу — не вакансия
-                jobs.append({**j,"company":name.removeprefix(FROM_API),"jid":j["url"]}); kept+=1
-            if not kept: empty+=1
+            found=msg.get("found") or []; kept=len(found); mode=msg.get("mode") or ""
+            jobs += [{**j, "company": name.removeprefix(FROM_API), "jid": j["url"]} for j in found]
             # текстовый режим видит только маркетинговые заголовки: 0 там = «маркетинга нет», а не поломка
             if mode=="текст" and not msg.get("err"):
                 health.mark(name, jobs=max(kept,1), note=f"текстовый режим, маркетинг: {kept}")
@@ -390,7 +376,6 @@ def run_isolated(companies, health, diag_out=None):
         if stuck:
             name=(companies[cur].get("Name") or "").strip()
             print(f"  !! [{cur+1}/{n}] {name}: завис > {PER_SITE}с — убиваю браузер, иду дальше", flush=True)
-            errors.append(f"{name}: завис > {PER_SITE}с"); empty+=1
             health.mark(name, err=f"завис > {PER_SITE}с")
             if diag_out is not None: diag_out[name]={"link": (companies[cur].get("Link") or ""), "err": f"завис > {PER_SITE}с"}
             cur+=1
@@ -398,7 +383,7 @@ def run_isolated(companies, health, diag_out=None):
         except Exception: proc.kill()
         proc.wait()
         i = cur if cur > i else i+1                         # страховка от вечного цикла
-    return jobs, errors, empty
+    return jobs
 
 
 @contextlib.contextmanager
@@ -417,12 +402,10 @@ def main():
     health=Health(HEALTH, LABEL, empty_is_bad=True)
     extra=sum(1 for r in companies if r["Name"].startswith(FROM_API))
     print(f"=== браузерный радар | {len(companies)} компаний (из них {extra} от API-радара) | {'--all' if '--all' in sys.argv else 'только новые'} ===")
-    jobs, errors, empty = run_isolated(companies, health)
-    jobs=list({j["jid"]: j for j in jobs}.values())         # дедуп по url
+    jobs=list({j["jid"]: j for j in run_isolated(companies, health)}.values())   # дедуп по url
     mk=[j for j in jobs if is_marketing(j["title"], j.get("location",""))]
     save(REJECTED, near_misses(jobs))
-    print(f"пусто: {empty} | ошибок: {len(errors)} | вакансий: {len(jobs)}")
-    for e in errors[:20]: print("  ⚠", e)
+    print(f"вакансий: {len(jobs)} | не опросились: {len(health.bad())}")
     report(mk, seen, STATE, label=LABEL, page_factory=_description_page)
     health.finish({"jobs_total": len(jobs), "marketing": len(mk)})
 
@@ -433,7 +416,7 @@ def diag(names):
     """--diag [broken | имена через запятую]: подробно разбирает страницы и пишет
        state/diag_browser.json (+ state/diag_music_browser.json для broken). Вакансии не шлёт,
        seen и отчёт здоровья не трогает. Каждая страница — в том же убиваемом воркере, что и обычный прогон."""
-    global IN_FILE, EXTRA, HEALTH
+    global IN_FILE, EXTRA
     names = (names or "broken").strip()
     runs = [("state/diag_browser.json", {})]
     if names == "broken": runs.append(("state/diag_music_browser.json", MUSIC))
