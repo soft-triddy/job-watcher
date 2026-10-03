@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-03 12:59 UTC",
+ "updated": "2026-10-03 20:51 UTC",
  "label": "🌐 Браузер",
- "total": 196,
- "broken": 4,
- "jobs_total": 2538,
- "marketing": 72,
+ "total": 297,
+ "broken": 9,
+ "jobs_total": 3189,
+ "marketing": 127,
  "sources": {
   "Accel Club": {
    "jobs": 8,
@@ -74,7 +74,7 @@
    "jobs": 0,
    "err": "0 вакансий",
    "note": "json-без-ссылок",
-   "bad_streak": 6,
+   "bad_streak": 7,
    "last_ok": "",
    "alerted": true
   },
@@ -226,7 +226,7 @@
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 6,
+   "bad_streak": 7,
    "last_ok": "",
    "alerted": true
   },
@@ -706,7 +706,7 @@
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "2026-10-02",
    "alerted": false
   },
@@ -1007,7 +1007,7 @@
    "alerted": false
   },
   "Databricks": {
-   "jobs": 885,
+   "jobs": 886,
    "err": "",
    "note": "json",
    "bad_streak": 0,
@@ -1103,10 +1103,10 @@
    "alerted": false
   },
   "Pixel Point": {
-   "jobs": 1,
-   "err": "",
-   "note": "текстовый режим, маркетинг: 0",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-10-03",
    "alerted": false
   },
@@ -1330,7 +1330,7 @@
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 6,
+   "bad_streak": 7,
    "last_ok": "",
    "alerted": true
   },
@@ -1423,10 +1423,10 @@
    "alerted": false
   },
   "Fluently": {
-   "jobs": 1,
-   "err": "",
-   "note": "текстовый режим, маркетинг: 0",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-10-03",
    "alerted": false
   },
@@ -1447,10 +1447,10 @@
    "alerted": false
   },
   "Jet Admin": {
-   "jobs": 1,
-   "err": "",
-   "note": "текстовый режим, маркетинг: 0",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-10-03",
    "alerted": false
   },
@@ -1518,10 +1518,818 @@
    "last_ok": "2026-10-03",
    "alerted": false
   },
-  "↪ Appodeal": {
-   "jobs": 14,
+  "3DLOOK": {
+   "jobs": 1,
    "err": "",
    "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "A1QA": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Admixer Technologies": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Affise": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "AgileEngine": {
+   "jobs": 2,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "AIP Tech": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Akveo": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Almaz Capital": {
+   "jobs": 22,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Anki": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "AppMaster.io": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "ATLANT 3D": {
+   "jobs": 5,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Bank of Georgia Group (BOG)": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Beetroot": {
+   "jobs": 3,
+   "err": "",
+   "note": "json",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Ciklum": {
+   "jobs": 2,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Cleveron": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Cognitive Technologies": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Competera": {
+   "jobs": 5,
+   "err": "",
+   "note": "json",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Cossack Labs": {
+   "jobs": 8,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Coupler.io": {
+   "jobs": 2,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 2",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Creatio": {
+   "jobs": 142,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Dataox": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Depositphotos": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "DressX": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Elai.io": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "ELEKS": {
+   "jobs": 1,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Entrust": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "EOS Data Analytics": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "EVO Group": {
+   "jobs": 11,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Fintech Farm": {
+   "jobs": 11,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Firefly Aerospace": {
+   "jobs": 30,
+   "err": "",
+   "note": "json-без-ссылок",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "GetIntent": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Godel Technologies": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Hexact": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Hexlet": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "IBA Group": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "IBA Lithuania": {
+   "jobs": 1,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Innovecs": {
+   "jobs": 8,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Insilico Medicine": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Intellias": {
+   "jobs": 10,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "iSpring": {
+   "jobs": 8,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "ISPSystem": {
+   "jobs": 5,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "JET": {
+   "jobs": 24,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Jusan Mobile": {
+   "jobs": 3,
+   "err": "",
+   "note": "json",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "KeepSolid": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Kilo Health": {
+   "jobs": 34,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Klix.eu": {
+   "jobs": 6,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Lemon AI": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Lingvist": {
+   "jobs": 1,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "MacPaw": {
+   "jobs": 7,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "MakeCommerce (Maksekeskus)": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Mate Academy": {
+   "jobs": 11,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "MobiDev": {
+   "jobs": 1,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Momentus": {
+   "jobs": 13,
+   "err": "",
+   "note": "json",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Monobank": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Montonio": {
+   "jobs": 1,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "N-iX": {
+   "jobs": 6,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Netpeak Group": {
+   "jobs": 1,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "NIX United": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Nortal": {
+   "jobs": 66,
+   "err": "",
+   "note": "json",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Noventiq (Softline intl.)": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Osavul": {
+   "jobs": 9,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "OWOX BI": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Oxagile": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Parallels": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Paysera": {
+   "jobs": 16,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "PeopleForce": {
+   "jobs": 4,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Petcube": {
+   "jobs": 3,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Promobot": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "PromoRepublic": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Promova (Boosters)": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "PROMT": {
+   "jobs": 2,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "R-Pharm": {
+   "jobs": 140,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Readdle": {
+   "jobs": 9,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Reply.io": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Respeecher": {
+   "jobs": 1,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Runa Capital": {
+   "jobs": 22,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "SaM Solutions": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "ScienceSoft": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Scoro": {
+   "jobs": 4,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "SE Ranking": {
+   "jobs": 3,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Selectel": {
+   "jobs": 2,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Sendpulse": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Sigma Software": {
+   "jobs": 8,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Skylum": {
+   "jobs": 2,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "SOC Prime": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Softeq": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "SoftServe": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Spendbase": {
+   "jobs": 8,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Stepik": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Synergy International Systems": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Synesis": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "TEAM International": {
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "Tilda": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Toggl": {
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "TransferGo": {
+   "jobs": 13,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Vention Development": {
+   "jobs": 16,
+   "err": "",
+   "note": "json",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Veriff": {
+   "jobs": 10,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Vinted": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "VisionLabs": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Worksection": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 1",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "Xolo": {
+   "jobs": 8,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-03",
+   "alerted": false
+  },
+  "↪ Appodeal": {
+   "jobs": 1,
+   "err": "",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
    "last_ok": "2026-10-03",
    "alerted": false
