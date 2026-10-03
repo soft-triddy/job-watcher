@@ -575,6 +575,20 @@
  },
  {
   "company": "Databricks",
+  "title": "Manager, Field Engineering - Strategic Digital Native Business",
+  "location": "San Francisco, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859577002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "West Coast - United States",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
+ },
+ {
+  "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "Mountain View, California",
   "why": "роль: engineer",
@@ -583,9 +597,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "West Coast - United States",
+  "location": "San Francisco, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -607,13 +621,6 @@
   "location": "Remote - California",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -680,7 +687,7 @@
  },
  {
   "company": "Temporal",
-  "title": "Senior Software Engineer, Cloud Growth United States",
+  "title": "Senior Software Engineer, Cloud Growth United States (Remote)",
   "location": "",
   "why": "роль: engineer",
   "url": "https://temporal.io/careers/a04c4545-b34e-40d4-b1ac-17f17976e93e"
@@ -798,13 +805,6 @@
   "url": "https://fundraiseup.com/careers/4737508005/?gh_jid=4737508005"
  },
  {
-  "company": "Fundraise Up",
-  "title": "Product Manager, Campaign Pages Cyprus Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://fundraiseup.com/careers/4737503005/?gh_jid=4737503005"
- },
- {
   "company": "Databricks",
   "title": "Director, Product Marketing, AI",
   "location": "San Francisco, California",
@@ -866,6 +866,13 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://temporal.io/careers/66b66d5b-0aaa-4e4a-979f-96e43d846d4a"
+ },
+ {
+  "company": "Refocus",
+  "title": "Recruiter (business growth)",
+  "location": "",
+  "why": "роль: recruiter",
+  "url": "https://refocus.me/hr/vacancies/hr/Recruiter"
  },
  {
   "company": "Cube Dev",
