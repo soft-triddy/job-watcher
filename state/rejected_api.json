@@ -28,13 +28,6 @@
   "url": "https://job-boards.greenhouse.io/humansignal/jobs/6179186004"
  },
  {
-  "company": "Duolingo",
-  "title": "VP of Product, Growth and Monetization",
-  "location": "Pittsburgh, PA",
-  "why": "гео: PA",
-  "url": "https://careers.duolingo.com/jobs/8747077002?gh_jid=8747077002"
- },
- {
   "company": "Ahrefs",
   "title": "Head of Growth/Organic - Letaido",
   "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States",
@@ -79,9 +72,9 @@
  {
   "company": "Duolingo",
   "title": "VP of Product, Growth and Monetization",
-  "location": "New York, NY",
+  "location": "New York, NY; Pittsburgh, PA",
   "why": "гео: new york",
-  "url": "https://careers.duolingo.com/jobs/8747060002?gh_jid=8747060002"
+  "url": "https://careers.duolingo.com/jobs/8747077002?gh_jid=8747077002"
  },
  {
   "company": "Mirantis",
@@ -142,16 +135,9 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "North Bethesda, MD ",
+  "location": "Waltham, MA ",
   "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211444007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Digital Marketing Account Manager ",
-  "location": "Denver, CO ",
-  "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211466007"
  },
  {
   "company": "Xometry",
@@ -163,9 +149,9 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "Waltham, MA ",
+  "location": "North Bethesda, MD ",
   "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211466007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211444007"
  },
  {
   "company": "Xometry",
@@ -173,6 +159,13 @@
   "location": "Los Angeles, CA ",
   "why": "роль: account manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5249149007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Digital Marketing Account Manager ",
+  "location": "Denver, CO ",
+  "why": "роль: account manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
  },
  {
   "company": "AtBay",
@@ -371,6 +364,13 @@
   "url": "https://semrush.wd5.myworkdayjobs.com/semrushcareers/job/United-States---Austin/Digital-Strategy-Consultant--Services-Team_JR100923"
  },
  {
+  "company": "Inworld AI",
+  "title": "Senior Content Marketing Manager - USA",
+  "location": "Mountain View, California, USA",
+  "why": "роль: content",
+  "url": "https://jobs.ashbyhq.com/inworld-ai/c0214d0c-6526-4da3-91d1-cb4623287684"
+ },
+ {
   "company": "Xometry",
   "title": "Copywriter, Performance Marketing",
   "location": "Buenos Aires, Argentina",
@@ -387,16 +387,16 @@
  {
   "company": "Duolingo",
   "title": "Senior Creative Director, Marketing",
-  "location": "London, England",
+  "location": "New York, NY",
   "why": "роль: creative",
-  "url": "https://careers.duolingo.com/jobs/8442934002?gh_jid=8442934002"
+  "url": "https://careers.duolingo.com/jobs/8442932002?gh_jid=8442932002"
  },
  {
   "company": "Duolingo",
   "title": "Senior Creative Director, Marketing",
-  "location": "New York, NY",
+  "location": "London, England",
   "why": "роль: creative",
-  "url": "https://careers.duolingo.com/jobs/8442932002?gh_jid=8442932002"
+  "url": "https://careers.duolingo.com/jobs/8442934002?gh_jid=8442934002"
  },
  {
   "company": "AI Digital",
@@ -604,16 +604,16 @@
  {
   "company": "Wheely",
   "title": "(Senior) Backend Engineer, Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7995783003?gh_jid=7995783003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "Wheely",
   "title": "(Senior) Backend Engineer, Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7995783003?gh_jid=7995783003"
  },
  {
   "company": "inDrive",
@@ -653,16 +653,16 @@
  {
   "company": "Xometry",
   "title": "Partner Growth Specialist, Emerging Partners ",
-  "location": "Dallas, TX",
+  "location": "Waltham, MA",
   "why": "роль: partner",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5222335007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5222332007"
  },
  {
   "company": "Xometry",
   "title": "Partner Growth Specialist, Emerging Partners ",
-  "location": "Waltham, MA",
+  "location": "Dallas, TX",
   "why": "роль: partner",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5222332007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5222335007"
  },
  {
   "company": "Social Discovery Group",
@@ -674,16 +674,9 @@
  {
   "company": "Duolingo",
   "title": "Senior Product Manager, Growth",
-  "location": "Pittsburgh, PA",
+  "location": "New York, NY; Pittsburgh, PA",
   "why": "роль: product manager",
   "url": "https://careers.duolingo.com/jobs/8747171002?gh_jid=8747171002"
- },
- {
-  "company": "Duolingo",
-  "title": "Senior Product Manager, Growth",
-  "location": "New York, NY",
-  "why": "роль: product manager",
-  "url": "https://careers.duolingo.com/jobs/8747275002?gh_jid=8747275002"
  },
  {
   "company": "Higgsfield AI",
