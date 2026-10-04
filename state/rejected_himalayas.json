@@ -71,6 +71,13 @@
  },
  {
   "company": "NightOwl Consulting",
+  "title": "Executive Assistant with Marketing Experience",
+  "location": "",
+  "why": "роль: assistant",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/executive-assistant-with-marketing-experience"
+ },
+ {
+  "company": "NightOwl Consulting",
   "title": "Marketing Assistant",
   "location": "",
   "why": "роль: assistant",
@@ -201,6 +208,13 @@
   "location": "",
   "why": "роль: customer success",
   "url": "https://himalayas.app/companies/rsi-security/jobs/customer-success-manager-client-growth-engagement"
+ },
+ {
+  "company": "NightOwl Consulting",
+  "title": "Digital/ Graphic Designer",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/digital-graphic-designer"
  },
  {
   "company": "Replika",
@@ -334,5 +348,12 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://himalayas.app/companies/tiugo/jobs/senior-product-marketing-manager"
+ },
+ {
+  "company": "TechBiz Global",
+  "title": "Recruiter (On Demand)",
+  "location": "",
+  "why": "роль: recruiter",
+  "url": "https://himalayas.app/companies/techbiz-global/jobs/recruiter-on-demand"
  }
 ]
