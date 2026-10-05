@@ -243,6 +243,8 @@ def h_teamtailor(s):
 
 def h_pinpoint(s):
     d=_json(f"https://{s}.pinpointhq.com/postings.json")
+    if "Head of DEI" in str(d)[:5000]:                   # неизвестный поддомен Pinpoint отдаёт демо-вакансии
+        raise ValueError("pinpoint: демо-доска, а не компания")
     items = d.get("data") if isinstance(d,dict) else d
     if items is None and isinstance(d,dict): items = d.get("postings") or d.get("results") or []
     out=[]
