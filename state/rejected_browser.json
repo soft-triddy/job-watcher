@@ -134,17 +134,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "PPC Expert · Senior NordVPN Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/5ec55e95-18e0-4d94-b343-ff6c27efffa9/"
- },
- {
-  "company": "Nord Security",
   "title": "PPC Expert · Senior NordVPN Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/9a167a40-9500-4a72-8ebb-1de7b5d80559/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "PPC Expert · Senior NordVPN Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "гео: hybrid",
+  "url": "https://nordsecurity.com/careers/5ec55e95-18e0-4d94-b343-ff6c27efffa9/"
  },
  {
   "company": "Nord Security",
@@ -267,13 +267,6 @@
  },
  {
   "company": "Gismart",
-  "title": "Remote Product & Marketing Analyst",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://gismart.com/vacancy/product-marketing-analyst-4/"
- },
- {
-  "company": "Gismart",
   "title": "Kyiv / Remote Marketing Analyst FitMe",
   "location": "",
   "why": "роль: analyst",
@@ -309,17 +302,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
- },
- {
-  "company": "Nord Security",
   "title": "Data Analyst · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: analyst",
   "url": "https://nordsecurity.com/careers/925dfba8-f7d3-4c02-bd6f-205abddf2b37/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: analyst",
+  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
  },
  {
   "company": "Nord Security",
@@ -589,17 +582,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Vilnius / Kaunas Hybrid Design",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/fad1118b-4ec1-45ed-9f71-7b814f6fbc71/"
- },
- {
-  "company": "Nord Security",
   "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Warsaw Hybrid Design",
   "location": "",
   "why": "роль: design",
   "url": "https://nordsecurity.com/careers/96604113-382f-42e5-bb4e-03efeff4c7aa/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Vilnius / Kaunas Hybrid Design",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://nordsecurity.com/careers/fad1118b-4ec1-45ed-9f71-7b814f6fbc71/"
  },
  {
   "company": "Nord Security",
@@ -667,16 +660,23 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
+  "location": "West Coast - United States",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
  },
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "West Coast - United States",
+  "location": "Remote - California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "San Francisco, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -691,13 +691,6 @@
   "location": "Remote - New York",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
  },
  {
   "company": "Databricks",
@@ -875,13 +868,6 @@
   "url": "https://nordsecurity.com/careers/b3efb4fa-4e92-41a1-9a2e-20b32ec255a7/"
  },
  {
-  "company": "Runa Capital",
-  "title": "Senior Partner Marketing Manager",
-  "location": "",
-  "why": "роль: partner",
-  "url": "https://talent.runacap.com/companies/n8n-2-91d84904-994a-4de3-95e6-b6147df914fe/jobs/95101544-senior-partner-marketing-manager#content"
- },
- {
   "company": "Nord Security",
   "title": "PR Manager · Mid-Senior NordVPN Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
@@ -939,7 +925,7 @@
  },
  {
   "company": "Kilo Health",
-  "title": "Product Marketing Manager Remote Marketing",
+  "title": "Product Marketing Manager Vilnius Marketing",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://kilo.co/career/product-marketing-manager/"
@@ -967,24 +953,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · NordLayer Nord B2B Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
- },
- {
-  "company": "Nord Security",
   "title": "Product Marketing Manager · NordLayer Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://nordsecurity.com/careers/068c39f4-c0e5-4fd4-9cd9-b6bf2ed084db/"
  },
  {
-  "company": "Osavul",
-  "title": "Product Marketing Manager",
+  "company": "Nord Security",
+  "title": "Product Marketing Manager · NordLayer Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
-  "url": "https://www.osavul.cloud/careers-osavul/product-marketing-manager"
+  "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
  },
  {
   "company": "Temporal",
