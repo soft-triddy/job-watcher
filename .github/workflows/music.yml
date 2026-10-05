@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 150
     env:
       TG_TOKEN: ${{ secrets.TG_TOKEN }}
