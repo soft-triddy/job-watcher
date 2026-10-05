@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-04 12:53 UTC",
+ "updated": "2026-10-05 15:19 UTC",
  "label": "🎵 Музтех · ATS",
  "total": 17,
  "broken": 2,
- "jobs_total": 80,
+ "jobs_total": 79,
  "marketing": 1,
  "sources": {
   "Anghami": {
@@ -11,7 +11,7 @@
    "err": "",
    "note": "Breezy:anghami",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Audiohook": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "Ashby:audiohook",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Audiomob": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "Greenhouse:audiomob",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "AudioStack": {
@@ -35,14 +35,14 @@
    "err": "",
    "note": "Workable:audiostack",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "CD Baby": {
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 6,
+   "bad_streak": 7,
    "last_ok": "",
    "alerted": true
   },
@@ -51,7 +51,7 @@
    "err": "",
    "note": "Greenhouse:dicefm-careers",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "DistroKid": {
@@ -59,7 +59,7 @@
    "err": "",
    "note": "Greenhouse:distrokid",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Duetti": {
@@ -67,14 +67,14 @@
    "err": "",
    "note": "Lever:duetti",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "FUGA": {
    "jobs": 0,
    "err": "не подобрался слаг (Greenhouse)",
    "note": "",
-   "bad_streak": 6,
+   "bad_streak": 7,
    "last_ok": "",
    "alerted": true
   },
@@ -83,7 +83,7 @@
    "err": "",
    "note": "Ashby:hookmusic",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Moises": {
@@ -91,7 +91,7 @@
    "err": "",
    "note": "BambooHR:moises",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Splice": {
@@ -99,15 +99,15 @@
    "err": "",
    "note": "Greenhouse:splice",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Symphonic": {
-   "jobs": 1,
+   "jobs": 0,
    "err": "",
    "note": "BambooHR:symphonicdist",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Tracklib": {
@@ -115,7 +115,7 @@
    "err": "",
    "note": "Teamtailor:tracklib",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Udio": {
@@ -123,7 +123,7 @@
    "err": "",
    "note": "Greenhouse:udio",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "UnitedMasters": {
@@ -131,7 +131,7 @@
    "err": "",
    "note": "Greenhouse:unitedmasterstranslation",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "Yoto": {
@@ -139,7 +139,7 @@
    "err": "",
    "note": "Teamtailor:yoto",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   }
  }
