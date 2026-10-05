@@ -16,11 +16,11 @@ from core import UA, is_marketing, near_misses, load, save, report, Health
 STATE    = "state/seen_boards.json"
 HEALTH   = "state/health_boards.json"
 REJECTED = "state/rejected_boards.json"
-LABEL    = "📋 DOU · Djinni · Хабр"
+LABEL    = "📋 DOU · Хабр"
 TIMEOUT  = 30
 
 DOU    = ["Marketing", "SEO"]                                   # категории DOU
-DJINNI = ["Marketing"]          # primary_keyword Djinni (SEO и Lead Generation убраны 06.10: шум, iGaming, продажи)
+DJINNI = []                     # Djinni отключён 06.10: украинская доска, с российским паспортом не пройти
 HABR   = ["маркетинг", "marketing", "growth", "CRM", "SEO"]     # поисковые запросы Хабр Карьеры
 HABR_PAGES = 2                                                  # по 25 свежих на запрос
 
