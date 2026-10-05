@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-05 21:10 UTC",
+ "updated": "2026-10-05 21:19 UTC",
  "label": "📋 DOU · Djinni · Хабр",
- "total": 10,
+ "total": 8,
  "broken": 0,
- "jobs_total": 475,
- "marketing": 123,
+ "jobs_total": 281,
+ "marketing": 50,
  "sources": {
   "DOU «Marketing»": {
    "jobs": 25,
@@ -24,22 +24,6 @@
   },
   "Djinni «Marketing»": {
    "jobs": 100,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-05",
-   "alerted": false
-  },
-  "Djinni «SEO»": {
-   "jobs": 100,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-05",
-   "alerted": false
-  },
-  "Djinni «Lead Generation»": {
-   "jobs": 94,
    "err": "",
    "note": "",
    "bad_streak": 0,
