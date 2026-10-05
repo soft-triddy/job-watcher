@@ -166,14 +166,24 @@ def _text_is_jobish(text):
     return True
 
 def _dom_candidates(anchors, base):
-    """anchors: список dict {href, text, head}. Возвращает кандидатов-вакансий по ТЕКСТУ."""
+    """anchors: список dict {href, text, head}. Возвращает кандидатов-вакансий по ТЕКСТУ.
+       Заголовок/строка, повторяющиеся на 3+ разных карточках, — это метка (регион, отдел,
+       «Apply»), а не название вакансии: у Creatio в <h> карточки стоит «Global market»."""
+    from collections import Counter
     base_host=urlparse(base).netloc
+    lines=lambda a: [_clean(x) for x in (a.get("text") or "").split("\n") if _clean(x)]
+    used=[a for a in anchors if (a.get("href") or "").strip()]
+    labels={t for t, n in Counter(t.lower() for a in used
+                                   for t in {_clean(a.get("head"))} | set(lines(a)) if t).items() if n >= 3}
     out=[]; seen=set()
-    for a in anchors:
-        href=(a.get("href") or "").strip()
-        if not href or href.lower().startswith(("javascript:","mailto:","tel:")): continue
-        title = _clean(a.get("head")) or _clean(a.get("text"))   # приоритет вложенному заголовку
-        if not _text_is_jobish(title): continue
+    for a in used:
+        href=a["href"].strip()
+        if href.lower().startswith(("javascript:","mailto:","tel:")): continue
+        head=_clean(a.get("head"))
+        options=([head] if head and head.lower() not in labels else []) + \
+                [l for l in lines(a) if l.lower() not in labels] + [head, _clean(a.get("text"))]
+        title=next((t for t in options if _text_is_jobish(t)), "")
+        if not title: continue
         url = href if href.startswith("http") else urljoin(base, href)
         if not _in_zone(base_host, url): continue     # только карьерная зона / ATS-хосты
         key=(title.lower(), url)
