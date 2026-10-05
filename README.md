@@ -46,8 +46,9 @@ https://jobs.example.com/123
   or rendered page) and asks Gemini for a strict JSON verdict. Remote status is double-checked in code
   against the location field. Hard time budget per vacancy and per run; if the model is down, the
   vacancy is still delivered, marked "no score", with the reason at the bottom of the message.
-- **DOU · Habr Career** (`boards_radar.py`) — CIS job boards, marketing category: DOU
-  official RSS feed, Habr Career's search JSON; every 4 hours, since the feeds only hold the latest 15–20.
+- **Habr Career · hh** (`boards_radar.py`) — CIS job boards, marketing titles: Habr Career's search JSON
+  and the official hh API restricted to every country except Russia (and Ukraine); every 4 hours.
+  DOU and Djinni were dropped on 06.10 (Ukrainian boards). If hh starts demanding a token, add it as `HH_TOKEN`.
 - **MBW Jobs** (`mbw_radar.py`) — the Music Business Worldwide job board via its public WordPress
   REST API (company, location, remote flag, full description); runs inside the music-tech radar.
 - **Music-tech radar** (`music.yml`) — the same API + browser radars on a separate list of music-tech
