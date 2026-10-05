@@ -28,7 +28,9 @@ jobs:
       - run: pip install requests playwright
       - run: python -m playwright install --with-deps chromium
       - name: run
-        run: python discover.py ${{ github.event.inputs.only }} 2>&1 | tee discover/log.txt
+        run: |
+          if [ "$(wc -l < discover/input.csv)" -le 1 ]; then echo "input.csv пуст"; exit 0; fi
+          python discover.py ${{ github.event.inputs.only }} 2>&1 | tee discover/log.txt
       - name: save result
         if: always()
         run: |

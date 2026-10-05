@@ -204,6 +204,8 @@ def _classify(row, name, careers, careers_html):
 
 def main():
     rows = list(csv.DictReader(open(IN_FILE, encoding="utf-8-sig")))
+    if not rows:
+        print("discover/input.csv пуст — нечего искать"); return
     only = sys.argv[1:]                       # можно передать имена для точечного перезапуска
     out = []
     for i, r in enumerate(rows, 1):
