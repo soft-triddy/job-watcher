@@ -76,6 +76,7 @@ himalayas_radar.py   Himalayas radar
 scorer.py            vacancy scoring
 scoring_profile.md   condensed resume profile + preferences the scorer uses
 discover.py          one-off tool: finds careers pages and ATS for a list of new companies
+probe_ats.py         one-off tool: guesses ATS boards by company name for companies the radar can't read
 
 lists/               company lists (radar_*, browser_*, music_*) and LinkedIn watchlists
 state/               what has already been seen, cached ATS slugs (committed by the bot)
