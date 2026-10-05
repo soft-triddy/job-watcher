@@ -16,12 +16,16 @@ import requests
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 TOKEN    = os.environ.get("GEMINI_API_KEY")
 # цепочка моделей: если модель недоступна (404) или упёрлась в лимит (429) — пробуем следующую
+# (gemini-2.5-flash убрана 06.10.2026: отвечает 404)
 MODELS   = [m.strip() for m in os.environ.get(
-    "SCORER_MODELS", "gemini-3.8-flash,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-2.5-flash").split(",") if m.strip()]
+    "SCORER_MODELS", "gemini-3.8-flash,gemini-3.5-flash,gemini-3.5-flash-lite").split(",") if m.strip()]
 PROFILE  = "scoring_profile.md"
 MAX_PER_RUN = int(os.environ.get("SCORER_MAX", "40"))  # потолок оценок за один запуск радара
 BUDGET   = int(os.environ.get("SCORER_BUDGET", "900"))  # сек на ВСЕ оценки за запуск (15 мин), дальше шлём без оценки
 PER_JOB  = int(os.environ.get("SCORER_PER_JOB", "120")) # сек на одну вакансию, включая повторы
+BATCH    = int(os.environ.get("SCORER_BATCH", "8"))     # вакансий в одном запросе к модели
+PER_BATCH = int(os.environ.get("SCORER_PER_BATCH", "240"))  # сек на одну пачку, включая повторы
+BATCH_JD = 3000                                         # описание в пачке короче, чтобы пачка влезла
 _DL = [0.0]                                            # дедлайн текущей вакансии
 JD_CHARS = 9000                                         # обрезаем длинные описания — до сути хватает
 TIMEOUT  = 30
@@ -184,7 +188,7 @@ def _post(model, body):
             time.sleep(max(0, min(wait, _DL[0] - time.time())))
     return r
 
-def _ask(system, user):
+def _ask(system, user, max_tokens=2000):
     rounds = 0
     while True:
         if time.time() > _DL[0]:
@@ -195,7 +199,7 @@ def _ask(system, user):
                 raise RuntimeError("все модели в лимите: " + ", ".join(f"{m}={_LAST.get(m,'?')}" for m in MODELS))
             print("scorer: все модели в лимите, пауза 30с"); time.sleep(max(0, min(30, _DL[0]-time.time()))); _M[0] = 0
         model = MODELS[_M[0]]
-        body = {"model": model, "temperature": 0, "max_tokens": 2000,
+        body = {"model": model, "temperature": 0, "max_tokens": max_tokens,
                 "messages": [{"role": "system", "content": system},
                              {"role": "user", "content": user}]}
         if _REASON[0]: body["reasoning_effort"] = _REASON[0]   # оценке «размышления» не нужны — так быстрее
@@ -231,6 +235,24 @@ def parse(raw):
     if not m: return None
     try: d = json.loads(m.group(0))
     except Exception: return None
+    return parse_obj(d)
+
+def parse_batch(raw, n):
+    """Ответ на пачку: JSON-массив из n объектов с полем "n" (1..n). -> список длины n (None = не разобрали)."""
+    m = re.search(r"\[.*\]", raw or "", re.S)
+    out = [None] * n
+    if not m: return out
+    try: arr = json.loads(m.group(0))
+    except Exception: return out
+    for i, d in enumerate(arr if isinstance(arr, list) else []):
+        if not isinstance(d, dict): continue
+        k = d.get("n", i + 1)
+        try: k = int(k) - 1
+        except Exception: continue
+        if 0 <= k < n and out[k] is None: out[k] = parse_obj(d)
+    return out
+
+def parse_obj(d):
     out = {"resume": d.get("resume") if d.get("resume") in RESUMES else None,
            "fit": _clamp(d.get("fit")), "dull": _clamp(d.get("dull")),
            "hire": d.get("hire") if d.get("hire") in ("green", "yellow", "red") else "yellow",
@@ -255,7 +277,26 @@ def _guard_remote(job, s):
     elif s["hire"] == "green" and not re.search(r"\bremote\b", loc, re.I): s["hire"] = "yellow"
     return s
 
+BATCH_NOTE = ("You will receive several vacancies, each starting with '### n'. Score each one independently "
+              "by the rules above. Output ONLY a JSON array with one object per vacancy, in the same order, "
+              'each object having the same fields plus "n" (the vacancy number). No prose.')
+
+def _user(j, text):
+    return (f"Company: {j.get('company','')}\nTitle: {j.get('title','')}\nLocation: {j.get('location','')}\n\n"
+            + (f"Job description:\n{text}" if text else "Job description: NOT AVAILABLE (title only)"))
+
+def _note(e):
+    msg = f"{type(e).__name__} {str(e)[:200]}" if not isinstance(e, (TimeoutError, RuntimeError)) else str(e)[:200]
+    if not DIAG: DIAG.append(msg)
+    return msg
+
+def _finish(j, s, full):
+    if s: s["title_only"] = not full; _guard_remote(j, s)
+    j["score"] = s
+
 def score_jobs(jobs, page=None):
+    """Оцениваем пачками по BATCH: один запрос к модели на пачку — бесплатный лимит Gemini
+       считается в запросах. Пачка не разобралась — эти вакансии по одной (как раньше)."""
     for j in jobs: j["score"] = None
     if not TOKEN:
         DIAG.append("нет GEMINI_API_KEY — добавь секрет в репо")
@@ -263,40 +304,36 @@ def score_jobs(jobs, page=None):
     system = RUBRIC + "\n\n=== CANDIDATE ===\n" + _profile()
     if os.environ.get("SCORER_CONTEXT"):
         system += "\n\n=== CONTEXT FOR THIS BATCH ===\n" + os.environ["SCORER_CONTEXT"]
-    done = 0; t_end = time.time() + BUDGET
-    for j in jobs:
-        if done >= MAX_PER_RUN:
-            print(f"scorer: потолок {MAX_PER_RUN} за запуск — остальные без оценки"); break
+    t_end = time.time() + BUDGET
+    todo = jobs[:MAX_PER_RUN]
+    if len(jobs) > MAX_PER_RUN: print(f"scorer: потолок {MAX_PER_RUN} за запуск — остальные без оценки")
+    for b in range(0, len(todo), BATCH):
         if time.time() > t_end:
             DIAG.append(f"вышло время на оценки ({BUDGET // 60} мин) — остальные без оценки")
-            print("scorer: бюджет времени исчерпан — остальные без оценки"); break
-        text, full = describe(j, page)
-        _DL[0] = min(t_end, time.time() + PER_JOB)
-        user = (f"Company: {j.get('company','')}\nTitle: {j.get('title','')}\n"
-                f"Location: {j.get('location','')}\n\n"
-                + (f"Job description:\n{text}" if text else "Job description: NOT AVAILABLE (title only)"))
+            print("scorer: бюджет времени исчерпан"); break
+        batch = todo[b:b + BATCH]
+        texts = [describe(j, page) for j in batch]
+        # 1) пачкой
+        _DL[0] = min(t_end, time.time() + PER_BATCH)
+        user = "\n\n".join(f"### {k+1}\n" + _user(j, t[:BATCH_JD]) for k, (j, (t, _)) in enumerate(zip(batch, texts)))
         try:
-            s = parse(_ask(system, user))
-        except TimeoutError as e:
-            if not DIAG: DIAG.append(str(e)[:200])
-            print(f"scorer: {j.get('company')}: {e}"); s = None   # модель не сбрасываем — следующая вакансия начнёт со следующей
-        except RuntimeError as e:
-            if not DIAG: DIAG.append(str(e)[:200])
-            print("scorer: лимиты исчерпаны — эта вакансия без оценки"); s = None
-            fails = getattr(score_jobs, "_fails", 0) + 1; score_jobs._fails = fails
-            if fails >= 3: print("scorer: трижды подряд в лимите — остальные без оценки"); j["score"] = None; break
-            _M[0] = 0
+            got = parse_batch(_ask(system + "\n\n" + BATCH_NOTE, user, max_tokens=600 * len(batch) + 1000), len(batch))
         except Exception as e:
-            msg = f"{type(e).__name__} {str(e)[:200]}"
-            print(f"scorer: {j.get('company')}: {msg}"); s = None
-            if not DIAG: DIAG.append(msg)
-            if isinstance(e, ScoreError) and (" 401" in msg or " 403" in msg):
-                break                          # доступ/модель — дальше бессмысленно
-        else:
-            if s is None and not DIAG: DIAG.append("модель вернула не-JSON")
-        if s: s["title_only"] = not full; score_jobs._fails = 0; _guard_remote(j, s)
-        j["score"] = s; done += 1
-        time.sleep(4)                         # бесплатный тариф: запас по запросам в минуту
+            print(f"scorer: пачка {b // BATCH + 1}: {_note(e)}"); got = [None] * len(batch)
+            if isinstance(e, ScoreError) and (" 401" in str(e) or " 403" in str(e)): break   # ключ/доступ — дальше бессмысленно
+            _M[0] = 0
+        for j, s, (t, full) in zip(batch, got, texts): _finish(j, s, full)
+        # 2) что не разобралось — по одной, пока есть время
+        for j, (t, full) in zip(batch, texts):
+            if j["score"] or time.time() > t_end: continue
+            _DL[0] = min(t_end, time.time() + PER_JOB)
+            try: _finish(j, parse(_ask(system, _user(j, t))), full)
+            except Exception as e:
+                print(f"scorer: {j.get('company')}: {_note(e)}"); _M[0] = 0
+                break                                # модель не отвечает — следующую пачку попробуем снова
+        print(f"scorer: пачка {b // BATCH + 1}: оценено {sum(1 for j in batch if j['score'])}/{len(batch)}", flush=True)
+        time.sleep(4)                                # бесплатный тариф: запас по запросам в минуту
+    if any(j["score"] is None for j in todo) and not DIAG: DIAG.append("модель вернула не-JSON")
     return jobs
 
 # ---------- формат ----------

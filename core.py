@@ -40,6 +40,8 @@ NEG_ROLE = ["market research analyst","stock market","supermarket","capital mark
            # украинские написания (DOU, Djinni)
            "аналітик","асистент","стажист","копірайт","молодш",
            "продуктовый маркетолог","продуктовий маркетолог",
+           # стоп-индустрии прямо в заголовке (06.10: ленты DOU/Djinni полны iGaming)
+           "igaming","i-gaming","casino","betting","gambling","sportsbook","казино","беттинг",
            # колл-центры: «Inbound» у них — входящие звонки (Teleperformance, 2026-10-02)
            "call center","call centre","contact center","customer service","customer support",
            "kundenberater","kundenservice","оператор"]
@@ -73,6 +75,7 @@ def classify(title, location=""):
     if re.search(r"\bpr\b", t): return "роль: pr"
     if re.search(r"\bsales\b", t): return "роль: sales"     # словом: Salesforce/wholesale не режем
     if re.search(r"\bagents?\b", t): return "роль: agent"   # словом: Agentic AI не режем
+    if re.search(r"\badult\b", t): return "роль: adult"     # словом: Adulting App не режем
     if re.search(r"\bintern(ship)?\b", t): return "роль: intern"
     if "associate" in t and "associate director" not in t: return "роль: associate"
     # 2) это вообще маркетинг? — по заголовку

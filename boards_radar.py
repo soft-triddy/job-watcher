@@ -20,7 +20,7 @@ LABEL    = "📋 DOU · Djinni · Хабр"
 TIMEOUT  = 30
 
 DOU    = ["Marketing", "SEO"]                                   # категории DOU
-DJINNI = ["Marketing", "SEO", "Lead Generation"]                # primary_keyword Djinni
+DJINNI = ["Marketing"]          # primary_keyword Djinni (SEO и Lead Generation убраны 06.10: шум, iGaming, продажи)
 HABR   = ["маркетинг", "marketing", "growth", "CRM", "SEO"]     # поисковые запросы Хабр Карьеры
 HABR_PAGES = 2                                                  # по 25 свежих на запрос
 
