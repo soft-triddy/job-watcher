@@ -1,7 +1,7 @@
 name: boards
 
-# DOU + Djinni + Хабр Карьера, категория «маркетинг». В лентах DOU/Djinni только последние
-# 15–20 вакансий, поэтому опрос каждые 4 часа. Первый запуск — слепок всех текущих.
+# Хабр Карьера + hh (только вакансии вне России), маркетинг. Опрос каждые 4 часа.
+# Первый запуск — слепок всех текущих.
 on:
   schedule:
     - cron: "23 */4 * * *"
@@ -36,6 +36,7 @@ jobs:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          HH_TOKEN: ${{ secrets.HH_TOKEN }}
           ALL: ${{ github.event.inputs.all }}
           SCORER_MAX: ${{ github.event.inputs.all == 'true' && '250' || '60' }}
           SCORER_BUDGET: ${{ github.event.inputs.all == 'true' && '1500' || '900' }}

@@ -40,7 +40,7 @@ NEG_ROLE = ["market research analyst","stock market","supermarket","capital mark
            # украинские написания (DOU, Djinni)
            "аналітик","асистент","стажист","копірайт","молодш",
            "продуктовый маркетолог","продуктовий маркетолог",
-           # стоп-индустрии прямо в заголовке (06.10: ленты DOU/Djinni полны iGaming)
+           # стоп-индустрии прямо в заголовке (iGaming частый на досках СНГ)
            "igaming","i-gaming","casino","betting","gambling","sportsbook","казино","беттинг",
            # колл-центры: «Inbound» у них — входящие звонки (Teleperformance, 2026-10-02)
            "call center","call centre","contact center","customer service","customer support",
