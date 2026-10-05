@@ -37,6 +37,9 @@ NEG_ROLE = ["market research analyst","stock market","supermarket","capital mark
            # 2026-10-02: русские аналоги того же
            "аналитик","дизайн","продаж","контент","копирайт","стажер","стажёр","ассистент",
            "рекрут","бренд","smm-","таргетолог","младш",
+           # украинские написания (DOU, Djinni)
+           "аналітик","асистент","стажист","копірайт","молодш",
+           "продуктовый маркетолог","продуктовий маркетолог",
            # колл-центры: «Inbound» у них — входящие звонки (Teleperformance, 2026-10-02)
            "call center","call centre","contact center","customer service","customer support",
            "kundenberater","kundenservice","оператор"]
@@ -173,18 +176,16 @@ def report(mk, seen, state_path, *, label, key="jid", suffix="", page_factory=No
         else:
             score_jobs(items)
         ranked = rank(items)
-        if not dump_all:
-            return "\n\n".join([header] + [fmt_job(j, suffix) for j in ranked]) + diag_line()
-        # слепок (--all): подходящие — полностью, остальное (стоп-индустрия, красный ремоут,
-        # «прохожу» ≤ 3, без оценки) — коротким списком в конце, чтобы не тонуть в нём
-        def good(j):
+        # подходящие — карточкой с оценкой; остальное — одной строкой в конце, чтобы не тонуть в нём.
+        # Без оценки (оценщик упал/лимит) — тоже карточкой: мы не знаем, плохая ли вакансия.
+        def tail(j):
             sc = j.get("score")
-            return bool(sc) and not sc.get("stop") and sc["hire"] != "red" and sc["fit"] >= 4
-        top = [j for j in ranked if good(j)]; rest = [j for j in ranked if not good(j)]
-        parts = [f"{header}\n\nподходят: {len(top)} · остальное: {len(rest)}"] + [fmt_job(j, suffix) for j in top]
+            return bool(sc) and (bool(sc.get("stop")) or sc["hire"] == "red" or sc["fit"] <= 3)
+        top = [j for j in ranked if not tail(j)]; rest = [j for j in ranked if tail(j)]
+        parts = [header] + [fmt_job(j, suffix) for j in top]
         if rest:
-            parts.append("— остальное (стоп / 🔴 ремоут / прохожу ≤ 3 / без оценки) —\n" + "\n".join(
-                f"• {j.get('company','')}: {j['title']} {j.get('url','')}" for j in rest))
+            parts.append(f"— не подходят ({len(rest)}): стоп-индустрия / 🔴 ремоут / прохожу ≤ 3 —\n" + "\n".join(
+                f"• {j.get('company','')}: {j['title']} {j.get('url','')}{suffix}" for j in rest))
         return "\n\n".join(parts) + diag_line()
 
     def mark(items):
