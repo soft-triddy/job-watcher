@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-04 14:49 UTC",
+ "updated": "2026-10-05 18:31 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
- "jobs_total": 332,
- "marketing": 67,
+ "jobs_total": 333,
+ "marketing": 68,
  "sources": {
   "мир: «marketing»": {
    "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "мир: «growth»": {
@@ -19,31 +19,31 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "мир: «demand»": {
-   "jobs": 19,
+   "jobs": 21,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "мир: «seo»": {
-   "jobs": 84,
+   "jobs": 85,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "мир: «crm»": {
-   "jobs": 99,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "KG: «marketing»": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "KG: «growth»": {
@@ -59,31 +59,31 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "KG: «demand»": {
-   "jobs": 22,
+   "jobs": 24,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "KG: «seo»": {
-   "jobs": 84,
+   "jobs": 85,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   },
   "KG: «crm»": {
-   "jobs": 99,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-04",
+   "last_ok": "2026-10-05",
    "alerted": false
   }
  }
