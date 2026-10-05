@@ -86,7 +86,9 @@ def hh(query):
         time.sleep(1)
     return out
 
-SOURCES = [(f"Хабр «{q}»", habr, q) for q in HABR] + [(f"hh «{q}»", hh, q) for q in HH]
+# 06.10: без токена api.hh.ru отвечает серверам GitHub 403 forbidden — hh включается, только когда есть секрет HH_TOKEN
+SOURCES = [(f"Хабр «{q}»", habr, q) for q in HABR] + \
+          ([(f"hh «{q}»", hh, q) for q in HH] if os.environ.get("HH_TOKEN") else [])
 
 def main():
     seen = load(STATE, {})
