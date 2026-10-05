@@ -1,35 +1,11 @@
 {
- "updated": "2026-10-05 21:19 UTC",
- "label": "📋 DOU · Djinni · Хабр",
- "total": 8,
- "broken": 0,
- "jobs_total": 281,
- "marketing": 50,
+ "updated": "2026-10-05 21:30 UTC",
+ "label": "📋 Хабр · hh",
+ "total": 12,
+ "broken": 7,
+ "jobs_total": 132,
+ "marketing": 14,
  "sources": {
-  "DOU «Marketing»": {
-   "jobs": 25,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-05",
-   "alerted": false
-  },
-  "DOU «SEO»": {
-   "jobs": 25,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-05",
-   "alerted": false
-  },
-  "Djinni «Marketing»": {
-   "jobs": 100,
-   "err": "",
-   "note": "",
-   "bad_streak": 0,
-   "last_ok": "2026-10-05",
-   "alerted": false
-  },
   "Хабр «маркетинг»": {
    "jobs": 50,
    "err": "",
@@ -68,6 +44,62 @@
    "note": "",
    "bad_streak": 0,
    "last_ok": "2026-10-05",
+   "alerted": false
+  },
+  "hh «маркетинг»": {
+   "jobs": 0,
+   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "hh «маркетолог»": {
+   "jobs": 0,
+   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "hh «marketing»": {
+   "jobs": 0,
+   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "hh «growth»": {
+   "jobs": 0,
+   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "hh «CRM»": {
+   "jobs": 0,
+   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "hh «SEO»": {
+   "jobs": 0,
+   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
+   "alerted": false
+  },
+  "hh «performance»": {
+   "jobs": 0,
+   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
+   "note": "",
+   "bad_streak": 1,
+   "last_ok": "",
    "alerted": false
   }
  }

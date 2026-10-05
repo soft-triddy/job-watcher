@@ -1,220 +1,10 @@
 [
  {
-  "company": "talentC",
-  "title": "Middle/Senior User Acquisition Manager / Mobile Growth (Mobiversite)",
-  "location": "віддалено",
-  "why": "роль: acquisition",
-  "url": "https://jobs.dou.ua/companies/talentc/vacancies/375519/"
- },
- {
-  "company": "через Djinni",
-  "title": "Mobile App User Acquisition / Performance Marketing Specialist",
-  "location": "",
-  "why": "роль: acquisition",
-  "url": "https://djinni.co/jobs/843219-mobile-app-user-acquisition-performance-marke/"
- },
- {
-  "company": "через Djinni",
-  "title": "Маркетолог / User Acquisition Manager",
-  "location": "",
-  "why": "роль: acquisition",
-  "url": "https://djinni.co/jobs/849907-marketolog-user-acquisition-manager/"
- },
- {
-  "company": "Lead Gun",
-  "title": "Senior SEO Specialist (English SEO / Affiliate Markets)",
-  "location": "$1500–2500, Київ",
-  "why": "роль: affiliate",
-  "url": "https://jobs.dou.ua/companies/lead-gun/vacancies/352278/"
- },
- {
-  "company": "OBRIO",
-  "title": "Data Analyst (Marketing)",
-  "location": "Київ, Варшава (Польща), віддалено",
-  "why": "роль: analyst",
-  "url": "https://jobs.dou.ua/companies/obrio/vacancies/304668/"
- },
- {
   "company": "Лаборатория Касперского",
   "title": "System Analyst / Business Analyst (CRM/Partner Portal/Marketing Platforms)",
   "location": "Remote",
   "why": "роль: analyst",
   "url": "https://career.habr.com/vacancies/1000168188"
- },
- {
-  "company": "EducateMe",
-  "title": "Content Lead (SEO/AEO) — B2B SaaS",
-  "location": "віддалено",
-  "why": "роль: content",
-  "url": "https://jobs.dou.ua/companies/educateme/vacancies/375511/"
- },
- {
-  "company": "через Djinni",
-  "title": "Digital Buying Coordinator",
-  "location": "",
-  "why": "роль: coordinator",
-  "url": "https://djinni.co/jobs/830822-digital-buying-coordinator/"
- },
- {
-  "company": "UPCORN AGENCY",
-  "title": "SEO Copywriter (EN)",
-  "location": "$700–1600, віддалено",
-  "why": "роль: copywriter",
-  "url": "https://jobs.dou.ua/companies/upcorn-agency/vacancies/367290/"
- },
- {
-  "company": "Perla Helsa",
-  "title": "Creative Marketing Specialist (Junior-Middle)",
-  "location": "Київ, віддалено",
-  "why": "роль: creative",
-  "url": "https://jobs.dou.ua/companies/perla-helsa/vacancies/357592/"
- },
- {
-  "company": "через Djinni",
-  "title": "Creative Marketing Lead",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://djinni.co/jobs/851693-creative-marketing-lead/"
- },
- {
-  "company": "через Djinni",
-  "title": "Creative Marketing Manager",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://djinni.co/jobs/851691-creative-marketing-manager/"
- },
- {
-  "company": "через Djinni",
-  "title": "Creative Marketing Specialist",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://djinni.co/jobs/846113-creative-marketing-specialist/"
- },
- {
-  "company": "через Djinni",
-  "title": "Creative Marketing Manager",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://djinni.co/jobs/816924-creative-marketing-manager/"
- },
- {
-  "company": "через Djinni",
-  "title": "Creative Marketing Lead",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://djinni.co/jobs/846589-creative-marketing-lead/"
- },
- {
-  "company": "через Djinni",
-  "title": "Creative Marketing Specialist",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://djinni.co/jobs/851260-creative-marketing-specialist/"
- },
- {
-  "company": "через Djinni",
-  "title": "Marketing Web Designer",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://djinni.co/jobs/846650-marketing-web-designer/"
- },
- {
-  "company": "Rocket Crew Agency",
-  "title": "Email / CRM Marketing Manager",
-  "location": "$4000–7000, за кордоном, віддалено",
-  "why": "роль: email",
-  "url": "https://jobs.dou.ua/companies/rocket-crew-agency/vacancies/375516/"
- },
- {
-  "company": "через Djinni",
-  "title": "Intern Email Marketing Specialist (Warsaw)",
-  "location": "",
-  "why": "роль: email",
-  "url": "https://djinni.co/jobs/851441-intern-email-marketing-specialist-warsaw/"
- },
- {
-  "company": "через Djinni",
-  "title": "Junior Email Marketing Specialist",
-  "location": "",
-  "why": "роль: email",
-  "url": "https://djinni.co/jobs/851195-junior-email-marketing-specialist/"
- },
- {
-  "company": "через Djinni",
-  "title": "CRM Content Manager (Email marketing)",
-  "location": "",
-  "why": "роль: email",
-  "url": "https://djinni.co/jobs/797235-crm-content-manager-email-marketing/"
- },
- {
-  "company": "через Djinni",
-  "title": "CRM Retention Manager (Email marketing)",
-  "location": "",
-  "why": "роль: email",
-  "url": "https://djinni.co/jobs/761565-crm-retention-manager-email-marketing/"
- },
- {
-  "company": "через Djinni",
-  "title": "Intern Email Marketing Specialist (Warsaw)",
-  "location": "",
-  "why": "роль: email",
-  "url": "https://djinni.co/jobs/851147-intern-email-marketing-specialist-warsaw/"
- },
- {
-  "company": "SEOJET",
-  "title": "SEO specialist — iGaming",
-  "location": "віддалено",
-  "why": "роль: igaming",
-  "url": "https://jobs.dou.ua/companies/seojet/vacancies/353389/"
- },
- {
-  "company": "через Djinni",
-  "title": "Influencer Marketing Manager (Mobile Apps)",
-  "location": "",
-  "why": "роль: influencer",
-  "url": "https://djinni.co/jobs/839651-influencer-marketing-manager-mobile-apps/"
- },
- {
-  "company": "через Djinni",
-  "title": "Influencer Marketing Manager",
-  "location": "",
-  "why": "роль: influencer",
-  "url": "https://djinni.co/jobs/851530-influencer-marketing-manager/"
- },
- {
-  "company": "через Djinni",
-  "title": "Influencer Marketing Manager for Tier-1",
-  "location": "",
-  "why": "роль: influencer",
-  "url": "https://djinni.co/jobs/802668-influencer-marketing-manager-for-tier-1/"
- },
- {
-  "company": "SEO 7",
-  "title": "Junior SEO Specialist",
-  "location": "віддалено",
-  "why": "роль: junior",
-  "url": "https://jobs.dou.ua/companies/seo-7/vacancies/374494/"
- },
- {
-  "company": "через Djinni",
-  "title": "Marketing and PR Specialist (Junior, IT)",
-  "location": "",
-  "why": "роль: junior",
-  "url": "https://djinni.co/jobs/828235-marketing-and-pr-specialist-junior-it/"
- },
- {
-  "company": "через Djinni",
-  "title": "Marketing Specialist (Junior)",
-  "location": "",
-  "why": "роль: junior",
-  "url": "https://djinni.co/jobs/828008-marketing-specialist-junior/"
- },
- {
-  "company": "через Djinni",
-  "title": "Marketing Partnerships Coordinator",
-  "location": "",
-  "why": "роль: partner",
-  "url": "https://djinni.co/jobs/851390-marketing-partnerships-coordinator/"
  },
  {
   "company": "Vital Partners",
@@ -224,46 +14,11 @@
   "url": "https://career.habr.com/vacancies/1000167571"
  },
  {
-  "company": "Futurra Group",
-  "title": "Product Marketing Manager",
-  "location": "Київ",
-  "why": "роль: product marketing",
-  "url": "https://jobs.dou.ua/companies/futurra-group/vacancies/375619/"
- },
- {
   "company": "ЛАНИТ",
   "title": "Продуктовый маркетолог / Product marketing manager HR-tech продукта",
   "location": "Москва",
   "why": "роль: product marketing",
   "url": "https://career.habr.com/vacancies/1000168818"
- },
- {
-  "company": "через Djinni",
-  "title": "Product Marketing Lead",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://djinni.co/jobs/851694-product-marketing-lead/"
- },
- {
-  "company": "через Djinni",
-  "title": "Product Marketing Manager",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://djinni.co/jobs/842516-product-marketing-manager/"
- },
- {
-  "company": "через Djinni",
-  "title": "Product Marketing Manager (EdTech)",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://djinni.co/jobs/851185-product-marketing-manager-edtech/"
- },
- {
-  "company": "через Djinni",
-  "title": "Product Marketing Manager",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://djinni.co/jobs/829135-product-marketing-manager/"
  },
  {
   "company": "ANCOR",
@@ -285,13 +40,6 @@
   "location": "Санкт-Петербург",
   "why": "роль: бренд",
   "url": "https://career.habr.com/vacancies/1000168569"
- },
- {
-  "company": "через Djinni",
-  "title": "Маркетолог український fashion-бренд",
-  "location": "",
-  "why": "роль: бренд",
-  "url": "https://djinni.co/jobs/851182-marketolog-ukrayins-kii-fashion-brend/"
  },
  {
   "company": "ANCOR",
