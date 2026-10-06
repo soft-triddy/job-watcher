@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-05 21:30 UTC",
+ "updated": "2026-10-06 06:35 UTC",
  "label": "📋 Хабр · hh",
- "total": 12,
- "broken": 7,
+ "total": 5,
+ "broken": 0,
  "jobs_total": 132,
  "marketing": 14,
  "sources": {
@@ -11,7 +11,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-05",
+   "last_ok": "2026-10-06",
    "alerted": false
   },
   "Хабр «marketing»": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-05",
+   "last_ok": "2026-10-06",
    "alerted": false
   },
   "Хабр «growth»": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-05",
+   "last_ok": "2026-10-06",
    "alerted": false
   },
   "Хабр «CRM»": {
@@ -35,7 +35,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-05",
+   "last_ok": "2026-10-06",
    "alerted": false
   },
   "Хабр «SEO»": {
@@ -43,63 +43,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-05",
-   "alerted": false
-  },
-  "hh «маркетинг»": {
-   "jobs": 0,
-   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
-   "note": "",
-   "bad_streak": 1,
-   "last_ok": "",
-   "alerted": false
-  },
-  "hh «маркетолог»": {
-   "jobs": 0,
-   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
-   "note": "",
-   "bad_streak": 1,
-   "last_ok": "",
-   "alerted": false
-  },
-  "hh «marketing»": {
-   "jobs": 0,
-   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
-   "note": "",
-   "bad_streak": 1,
-   "last_ok": "",
-   "alerted": false
-  },
-  "hh «growth»": {
-   "jobs": 0,
-   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
-   "note": "",
-   "bad_streak": 1,
-   "last_ok": "",
-   "alerted": false
-  },
-  "hh «CRM»": {
-   "jobs": 0,
-   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
-   "note": "",
-   "bad_streak": 1,
-   "last_ok": "",
-   "alerted": false
-  },
-  "hh «SEO»": {
-   "jobs": 0,
-   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
-   "note": "",
-   "bad_streak": 1,
-   "last_ok": "",
-   "alerted": false
-  },
-  "hh «performance»": {
-   "jobs": 0,
-   "err": "RuntimeError HTTP 403 от hh: {\"errors\":[{\"type\":\"forbidden\"}],\"request_id",
-   "note": "",
-   "bad_streak": 1,
-   "last_ok": "",
+   "last_ok": "2026-10-06",
    "alerted": false
   }
  }
