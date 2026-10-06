@@ -49,20 +49,6 @@
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8823880002"
  },
  {
-  "company": "Krisp",
-  "title": "Growth Marketing Head Marketing Yerevan/Europe/UK, Hybrid/Remote",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://krisp.ai/jobs/growth-marketing-head/"
- },
- {
-  "company": "Krisp",
-  "title": "Technical Product Marketer, Developer Products Marketing Armenia, Hybrid",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://krisp.ai/jobs/technical-product-marketer-developer-products/"
- },
- {
   "company": "Nord Security",
   "title": "App Marketing CRO Manager · Mid-Senior Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
@@ -168,27 +154,6 @@
   "url": "https://job-boards.eu.greenhouse.io/soft2bet/jobs/4659010101"
  },
  {
-  "company": "Appodeal",
-  "title": "Executive Team Independent Board Director (Performance AdTech) USA (Remote) / Barcelona, Spain",
-  "location": "",
-  "why": "гео: usa",
-  "url": "https://job-boards.greenhouse.io/appodeal/jobs/5022356008"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Account-Based Marketing Manager USA Remote",
-  "location": "",
-  "why": "гео: usa",
-  "url": "https://fundraiseup.com/careers/4728850005/?gh_jid=4728850005"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Paid Media Manager USA Remote",
-  "location": "",
-  "why": "гео: usa",
-  "url": "https://fundraiseup.com/careers/4730936005/?gh_jid=4730936005"
- },
- {
   "company": "Databricks",
   "title": "Digital Native Hunter Account Executive",
   "location": "Singapore",
@@ -204,7 +169,7 @@
  },
  {
   "company": "Temporal",
-  "title": "Account Executive, Growth - Scale (West) San Francisco, California",
+  "title": "Account Executive, Growth - Scale (West)",
   "location": "",
   "why": "роль: account executive",
   "url": "https://temporal.io/careers/ce519860-6e31-49c2-a4b4-f6e9a92c3f4b"
@@ -225,35 +190,21 @@
  },
  {
   "company": "Nord Security",
-  "title": "Affiliate Account Director Saily Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/9404baa1-6602-4fbe-b1a4-91d4db673d96/"
- },
- {
-  "company": "Nord Security",
-  "title": "Affiliate Account Director Saily Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/5ff4fed3-1a85-46b6-9728-cc848cd4045a/"
- },
- {
-  "company": "Nord Security",
-  "title": "Affiliate Marketing Manager Saily Vilnius / Kaunas Hybrid Marketing & Communications",
+  "title": "Affiliate Marketing Manager",
   "location": "",
   "why": "роль: affiliate",
   "url": "https://nordsecurity.com/careers/00c04d47-0559-43dc-bfb9-7225c14dc1a8/"
  },
  {
   "company": "Nord Security",
-  "title": "Affiliate Marketing Manager Saily Warsaw Hybrid Marketing & Communications",
+  "title": "Affiliate Marketing Manager",
   "location": "",
   "why": "роль: affiliate",
   "url": "https://nordsecurity.com/careers/1d27ebab-fefc-4ebc-9e12-a205eb737488/"
  },
  {
   "company": "Nord Security",
-  "title": "Affiliate Marketing Manager · Mid-Senior · B2B Nord B2B Warsaw Hybrid Marketing & Communications",
+  "title": "Affiliate Marketing Manager · Mid-Senior · B2B",
   "location": "",
   "why": "роль: affiliate",
   "url": "https://nordsecurity.com/careers/2aaaf4aa-d217-4cec-98df-17c0cf582e05/"
@@ -267,31 +218,10 @@
  },
  {
   "company": "Gismart",
-  "title": "Kyiv / Remote Marketing Analyst FitMe",
+  "title": "Marketing Analyst",
   "location": "",
   "why": "роль: analyst",
   "url": "https://gismart.com/vacancy/marketing-analyst/"
- },
- {
-  "company": "Medvidi",
-  "title": "Marketing Data Analyst Poland · Full-time · Middle",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://medvidi.com/careers/co/poland/6F.278/marketing-data-analyst/all"
- },
- {
-  "company": "Medvidi",
-  "title": "Marketing Data Analyst Serbia · Full-time · Middle",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://medvidi.com/careers/co/serbia/6F.278-83.600/marketing-data-analyst/all"
- },
- {
-  "company": "Medvidi",
-  "title": "Marketing Data Analyst Georgia (Tbilisi) · Full-time · Middle",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://medvidi.com/careers/co/georgia-tbilisi/6F.278-49.506/marketing-data-analyst/all"
  },
  {
   "company": "Movavi",
@@ -299,6 +229,13 @@
   "location": "",
   "why": "роль: analyst",
   "url": "https://job.movavi.com/vacancies/senior-marketing-analyst/"
+ },
+ {
+  "company": "Muse Group",
+  "title": "Senior Marketing Analyst",
+  "location": "",
+  "why": "роль: analyst",
+  "url": "https://www.mu.se/positions/position-e1_d60"
  },
  {
   "company": "Nord Security",
@@ -330,14 +267,14 @@
  },
  {
   "company": "Readdle",
-  "title": "Warsaw Berlin Kyiv Odesa Europe Remote Senior Growth Analyst – Spark Team",
+  "title": "Senior Growth Analyst – Spark Team",
   "location": "",
   "why": "роль: analyst",
   "url": "https://readdle.com/careers/4779193101?gh_jid=4779193101"
  },
  {
   "company": "Readdle",
-  "title": "Warsaw Berlin Kyiv Odesa Europe Remote Senior Growth Analyst – Calendars Team",
+  "title": "Senior Growth Analyst – Calendars Team",
   "location": "",
   "why": "роль: analyst",
   "url": "https://readdle.com/careers/4980601101?gh_jid=4980601101"
@@ -364,13 +301,6 @@
   "url": "https://careers.formlabs.com/job/8248490/apply/"
  },
  {
-  "company": "Krisp",
-  "title": "Senior Brand & Communications Manager Marketing US, Remote",
-  "location": "",
-  "why": "роль: brand",
-  "url": "https://krisp.ai/jobs/senior-brand-communications-manager/"
- },
- {
   "company": "MacPaw",
   "title": "Brand Marketing Manager (Setapp)",
   "location": "",
@@ -378,11 +308,11 @@
   "url": "https://macpaw.com/careers/brand-marketing-manager"
  },
  {
-  "company": "Infomediji",
-  "title": "Business Development Manager - Japan Growth Apply now ↗",
+  "company": "MakeCommerce (Maksekeskus)",
+  "title": "Business Development Specialist — US Market (Amazon Marketplace Services).",
   "location": "",
   "why": "роль: business development",
-  "url": "https://infomediji.com/careers/open-position/2712671"
+  "url": "https://make-commerce.com/en/career/business-development-specialist-us-market-amazon-marketplace-services-f57403-en"
  },
  {
   "company": "Nortal",
@@ -448,13 +378,6 @@
   "url": "https://careers.semrush.com/jobs/JR100923_United-States---Utah/"
  },
  {
-  "company": "Emerging Travel Group",
-  "title": "Content Editor Marketing Kazakhstan Remote ETG",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://www.emergingtravel.com/career/positions/108/"
- },
- {
   "company": "Formlabs",
   "title": "Content Marketing Manager",
   "location": "",
@@ -470,7 +393,7 @@
  },
  {
   "company": "Infomediji",
-  "title": "Content Acquisition Manager (US & EU markets) Content Apply now ↗",
+  "title": "Content Acquisition Manager (US & EU markets)",
   "location": "",
   "why": "роль: content",
   "url": "https://infomediji.com/careers/open-position/2244019"
@@ -504,29 +427,22 @@
   "url": "https://spendbase.peopleforce.io/careers/v/235348-marketing-content-writer"
  },
  {
-  "company": "Kilo Health",
-  "title": "Conversion Copywriter Vilnius Marketing",
-  "location": "",
-  "why": "роль: copywriter",
-  "url": "https://kilo.co/career/conversion-copywriter/"
- },
- {
   "company": "Gismart",
-  "title": "Kyiv / Remote Creative Marketing Manager (FitMe) FitMe",
+  "title": "Creative Marketing Manager (FitMe)",
   "location": "",
   "why": "роль: creative",
   "url": "https://gismart.com/vacancy/creative-marketing-manager-fitme/"
  },
  {
   "company": "Gismart",
-  "title": "Kyiv / Remote Creative Marketing Lead Dancebit",
+  "title": "Creative Marketing Lead",
   "location": "",
   "why": "роль: creative",
   "url": "https://gismart.com/vacancy/head-of-creative-production/"
  },
  {
   "company": "Kilo Health",
-  "title": "Performance Creative @ Moerie Vilnius Creative Moerie Full-time",
+  "title": "Performance Creative @ Moerie",
   "location": "",
   "why": "роль: creative",
   "url": "https://kilo.co/career/performance-creative-moerie/"
@@ -546,20 +462,6 @@
   "url": "https://preply.com/en/careers/apply?ashby_jid=f523d3f8-1b3a-4711-a378-2796943d4298&job_title=Senior%20Data%20Scientist%20-%20Marketing&job_team=Data&job_location=London"
  },
  {
-  "company": "Preply",
-  "title": "Senior Data Scientist - Marketing Location: Amsterdam",
-  "location": "",
-  "why": "роль: data scien",
-  "url": "https://preply.com/en/careers/apply?ashby_jid=03377f19-0603-4d08-8243-c3d13b915d37&job_title=Senior%20Data%20Scientist%20-%20Marketing&job_team=Data&job_location=Amsterdam"
- },
- {
-  "company": "Preply",
-  "title": "Senior Data Scientist - Marketing Location: Berlin",
-  "location": "",
-  "why": "роль: data scien",
-  "url": "https://preply.com/en/careers/apply?ashby_jid=4c64e7b5-157a-4b0f-964c-6f49efec6d2f&job_title=Senior%20Data%20Scientist%20-%20Marketing&job_team=Data&job_location=Berlin"
- },
- {
   "company": "Databricks",
   "title": "Sr. Deployment Strategist, FDE - Digital Native Business",
   "location": "San Francisco, California",
@@ -568,24 +470,10 @@
  },
  {
   "company": "Kilo Health",
-  "title": "Creative Performance Designer @Iteractive Remote Creative",
+  "title": "Creative Performance Designer @Iteractive Barcelona Creative Iteractive Full-time Mid",
   "location": "",
   "why": "роль: design",
   "url": "https://kilo.co/career/creative-performance-designer-iteractive/"
- },
- {
-  "company": "Krisp",
-  "title": "Senior Motion Designer Marketing Armenia, Hybrid",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://krisp.ai/jobs/senior-video-motion-designer/"
- },
- {
-  "company": "Nord Security",
-  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Warsaw Hybrid Design",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/96604113-382f-42e5-bb4e-03efeff4c7aa/"
  },
  {
   "company": "Nord Security",
@@ -596,10 +484,10 @@
  },
  {
   "company": "Nord Security",
-  "title": "Web Designer · Mid-Senior · Marketing Design Team NordVPN Vilnius Hybrid Design",
+  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Warsaw Hybrid Design",
   "location": "",
   "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/0ac04922-cc35-46a1-9388-09eb0650a1b7/"
+  "url": "https://nordsecurity.com/careers/96604113-382f-42e5-bb4e-03efeff4c7aa/"
  },
  {
   "company": "Nord Security",
@@ -609,8 +497,15 @@
   "url": "https://nordsecurity.com/careers/74727e71-5ac2-4588-92a6-b345c3bb7a39/"
  },
  {
+  "company": "Nord Security",
+  "title": "Web Designer · Mid-Senior · Marketing Design Team NordVPN Vilnius Hybrid Design",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://nordsecurity.com/careers/0ac04922-cc35-46a1-9388-09eb0650a1b7/"
+ },
+ {
   "company": "Petcube",
-  "title": "Digital Product Designer Ukraine, remote",
+  "title": "Digital Product Designer",
   "location": "",
   "why": "роль: design",
   "url": "https://petcube.com/careers/digital-product-designer-1/"
@@ -623,32 +518,11 @@
   "url": "https://spendbase.peopleforce.io/careers/v/209037-marketing-web-designer-middle"
  },
  {
-  "company": "Veriff",
-  "title": "Graphic Designer Marketing Tallinn",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://www.veriff.com/careers/position/8857654002"
- },
- {
   "company": "Monetha",
   "title": "Email marketer / Email automation specialist",
   "location": "",
   "why": "роль: email",
   "url": "https://www.monetha.io/careers/email-marketer-email-automation-specialist/"
- },
- {
-  "company": "Almaz Capital",
-  "title": "Director / Senior Director, Engineering, Core UX & Growth",
-  "location": "",
-  "why": "роль: engineer",
-  "url": "https://jobs.almazcapital.com/companies/hover/jobs/95309089-director-senior-director-engineering-core-ux-growth#content"
- },
- {
-  "company": "Databricks",
-  "title": "Manager, Field Engineering - Strategic Digital Native Business",
-  "location": "San Francisco, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859577002"
  },
  {
   "company": "Databricks",
@@ -659,17 +533,10 @@
  },
  {
   "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "West Coast - United States",
+  "title": "Manager, Field Engineering - Strategic Digital Native Business",
+  "location": "San Francisco, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859577002"
  },
  {
   "company": "Databricks",
@@ -677,6 +544,13 @@
   "location": "San Francisco, California",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "West Coast - United States",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
  },
  {
   "company": "Databricks",
@@ -691,6 +565,13 @@
   "location": "Remote - New York",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Remote - California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
  },
  {
   "company": "Databricks",
@@ -728,13 +609,6 @@
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8202700002"
  },
  {
-  "company": "Emerging Travel Group",
-  "title": "Senior Python Developer (CRM - AI/LLM) Engineering Kazakhstan Remote ETG",
-  "location": "",
-  "why": "роль: engineer",
-  "url": "https://www.emergingtravel.com/career/positions/142/"
- },
- {
   "company": "Formlabs",
   "title": "Digital Systems Engineer",
   "location": "",
@@ -757,14 +631,14 @@
  },
  {
   "company": "Preply",
-  "title": "Senior Full-stack Engineer - CRM Location: Barcelona",
+  "title": "Senior Full-stack Engineer - CRM",
   "location": "",
   "why": "роль: engineer",
   "url": "https://preply.com/en/careers/apply?ashby_jid=a6cab371-9d79-4240-8767-5f3f0fed3beb&job_title=Senior%20Full-stack%20Engineer%20-%20CRM&job_team=Engineering&job_location=Barcelona"
  },
  {
   "company": "Temporal",
-  "title": "Senior Software Engineer, Cloud Growth United States (Remote)",
+  "title": "Senior Software Engineer, Cloud Growth",
   "location": "",
   "why": "роль: engineer",
   "url": "https://temporal.io/careers/a04c4545-b34e-40d4-b1ac-17f17976e93e"
@@ -791,6 +665,13 @@
   "url": "https://careers.formlabs.com/job/8222244/apply/"
  },
  {
+  "company": "Netcracker",
+  "title": "Marketing Events and Operations Specialist",
+  "location": "",
+  "why": "роль: event",
+  "url": "https://www.netcracker.com/careers/open-positions/marketing-events-and-operations-specialist-8207809"
+ },
+ {
   "company": "Nord Security",
   "title": "Influencer Marketing Manager · Mid · French Market NordVPN Paris Remote Marketing & Communications",
   "location": "",
@@ -803,6 +684,13 @@
   "location": "",
   "why": "роль: influencer",
   "url": "https://nordsecurity.com/careers/66569d2d-e67a-4033-8c33-7cefc154f848/"
+ },
+ {
+  "company": "MakeCommerce (Maksekeskus)",
+  "title": "Junior Amazon Marketplace Specialist",
+  "location": "",
+  "why": "роль: junior",
+  "url": "https://make-commerce.com/en/career/junior-amazon-marketplace-specialist-7fada9-en"
  },
  {
   "company": "Nord Security",
@@ -819,20 +707,6 @@
   "url": "https://nordsecurity.com/careers/a12b2728-a448-4ef3-a0e7-a97415127691/"
  },
  {
-  "company": "Kilo Health",
-  "title": "Senior Media Buyer Remote Marketing",
-  "location": "",
-  "why": "роль: media buyer",
-  "url": "https://kilo.co/career/senior-media-buyer/"
- },
- {
-  "company": "Kilo Health",
-  "title": "Senior Meta Media Buyer Vilnius Marketing",
-  "location": "",
-  "why": "роль: media buyer",
-  "url": "https://kilo.co/career/senior-meta-media-buyer/"
- },
- {
   "company": "Databricks",
   "title": "Event Marketing Manager, 3P & Partner",
   "location": "United States",
@@ -840,15 +714,8 @@
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8638637002"
  },
  {
-  "company": "Infomediji",
-  "title": "Partnership Manager Growth Apply now ↗",
-  "location": "",
-  "why": "роль: partner",
-  "url": "https://infomediji.com/careers/open-position/2390886"
- },
- {
   "company": "Krisp",
-  "title": "Partner Marketing Manager Marketing US, Remote",
+  "title": "Partner Marketing Manager",
   "location": "",
   "why": "роль: partner",
   "url": "https://krisp.ai/jobs/partner-marketing-manager/"
@@ -890,6 +757,34 @@
  },
  {
   "company": "Fundraise Up",
+  "title": "Product Manager, Campaign Pages Georgia Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737504005/?gh_jid=4737504005"
+ },
+ {
+  "company": "Fundraise Up",
+  "title": "Product Manager, Campaign Pages Portugal Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737505005/?gh_jid=4737505005"
+ },
+ {
+  "company": "Fundraise Up",
+  "title": "Product Manager, Campaign Pages Serbia Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737506005/?gh_jid=4737506005"
+ },
+ {
+  "company": "Fundraise Up",
+  "title": "Product Manager, Campaign Pages Spain Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737507005/?gh_jid=4737507005"
+ },
+ {
+  "company": "Fundraise Up",
   "title": "Product Manager, Campaign Pages Turkey Remote",
   "location": "",
   "why": "роль: product manager",
@@ -925,24 +820,10 @@
  },
  {
   "company": "Kilo Health",
-  "title": "Product Marketing Manager Vilnius Marketing",
+  "title": "Product Marketing Manager",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://kilo.co/career/product-marketing-manager/"
- },
- {
-  "company": "Mate Academy",
-  "title": "Product Marketing Manager (R&D APP) Rist Labs Kyiv Hybrid",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://career.mate.academy/jobs/8072093-product-marketing-manager-r-d-app"
- },
- {
-  "company": "Nord Security",
-  "title": "Product Marketing Manager · AI Security Nord B2B Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/39e1f928-11f1-45fd-9c99-b32d0793ae62/"
  },
  {
   "company": "Nord Security",
@@ -953,10 +834,10 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · NordLayer Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "title": "Product Marketing Manager · AI Security Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/068c39f4-c0e5-4fd4-9cd9-b6bf2ed084db/"
+  "url": "https://nordsecurity.com/careers/39e1f928-11f1-45fd-9c99-b32d0793ae62/"
  },
  {
   "company": "Nord Security",
@@ -966,15 +847,22 @@
   "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
  },
  {
+  "company": "Nord Security",
+  "title": "Product Marketing Manager · NordLayer Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://nordsecurity.com/careers/068c39f4-c0e5-4fd4-9cd9-b6bf2ed084db/"
+ },
+ {
   "company": "Temporal",
-  "title": "Senior Staff Product Marketing Engineer, Core and SDKs San Francisco, California",
+  "title": "Senior Staff Product Marketing Engineer, Core and SDKs",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://temporal.io/careers/66b66d5b-0aaa-4e4a-979f-96e43d846d4a"
  },
  {
   "company": "Veriff",
-  "title": "Senior Director of Product Marketing Product Marketing USA (Remote), Spain (Remote), UK (Remote)",
+  "title": "Senior Director of Product Marketing",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://www.veriff.com/careers/position/8626079002"
@@ -994,17 +882,17 @@
   "url": "https://cube-dev.careers-page.com/jobs/98fd7c0c-37f2-4cae-a68f-cef18d93e285"
  },
  {
+  "company": "Altegio",
+  "title": "Senior Sales Manager — Polish Market",
+  "location": "",
+  "why": "роль: sales",
+  "url": "https://altegio.peopleforce.io/careers/v/224102-senior-sales-manager-polish-market"
+ },
+ {
   "company": "SIDESTREAM",
   "title": "Werkstudent*in Sales & Marketing (m/w/d)",
   "location": "",
   "why": "роль: sales",
   "url": "https://join.com/companies/sidestream/16720440"
- },
- {
-  "company": "Veriff",
-  "title": "VP of Revenue Marketing Sales – North America United States",
-  "location": "",
-  "why": "роль: sales",
-  "url": "https://www.veriff.com/careers/position/8857648002"
  }
 ]
