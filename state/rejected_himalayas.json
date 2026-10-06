@@ -21,13 +21,6 @@
   "url": "https://himalayas.app/companies/jumpfactor/jobs/senior-digital-marketing-account-manager"
  },
  {
-  "company": "Ansira",
-  "title": "Account Supervisor, Client Growth",
-  "location": "",
-  "why": "роль: account supervisor",
-  "url": "https://himalayas.app/companies/ansira/jobs/account-supervisor-client-growth"
- },
- {
   "company": "Genesis",
   "title": "Paid Acquisition Lead (Google Ads) — AI Product Launch",
   "location": "",
@@ -35,11 +28,11 @@
   "url": "https://himalayas.app/companies/genesis/jobs/paid-acquisition-lead-google-ads-ai-product-launch"
  },
  {
-  "company": "Bondora",
-  "title": "Senior Affiliate Marketing Manager",
+  "company": "Careerxtra",
+  "title": "Senior Performance Marketer – Adult RTB (Europe/Asia)",
   "location": "",
-  "why": "роль: affiliate",
-  "url": "https://himalayas.app/companies/bondora/jobs/senior-affiliate-marketing-manager"
+  "why": "роль: adult",
+  "url": "https://himalayas.app/companies/careerxtra/jobs/senior-performance-marketer-adult-rtb-europe-asia"
  },
  {
   "company": "Kraymer Art",
@@ -68,13 +61,6 @@
   "location": "",
   "why": "роль: analyst",
   "url": "https://himalayas.app/companies/techinsights/jobs/ai-market-intelligence-senior-analyst"
- },
- {
-  "company": "TransPerfect",
-  "title": "Digital Analytics Engineer",
-  "location": "",
-  "why": "роль: analytics",
-  "url": "https://himalayas.app/companies/transperfect/jobs/digital-analytics-engineer"
  },
  {
   "company": "NightOwl Consulting",
@@ -196,20 +182,6 @@
   "url": "https://himalayas.app/companies/peggy/jobs/creative-performance-lead"
  },
  {
-  "company": "Trafilea",
-  "title": "Sr Creative Operations Manager, Paid ads",
-  "location": "",
-  "why": "роль: creative",
-  "url": "https://himalayas.app/companies/trafilea-com/jobs/sr-creative-operations-manager-paid-ads"
- },
- {
-  "company": "Aline",
-  "title": "Manager, Customer Success (Digital First/Mid-Market)",
-  "location": "",
-  "why": "роль: customer success",
-  "url": "https://himalayas.app/companies/aline/jobs/manager-customer-success-digital-first-mid-market"
- },
- {
   "company": "RSI Security",
   "title": "Customer Success Manager – Client Growth & Engagement",
   "location": "",
@@ -245,6 +217,13 @@
   "url": "https://himalayas.app/companies/mgid/jobs/senior-email-lifecycle-marketing-manager"
  },
  {
+  "company": "MailerLite",
+  "title": "Senior Email Marketing Specialist",
+  "location": "",
+  "why": "роль: email",
+  "url": "https://himalayas.app/companies/mailerlite/jobs/senior-email-marketing-specialist"
+ },
+ {
   "company": "Alpaca",
   "title": "Senior Software Engineer New Markets - EU",
   "location": "",
@@ -252,11 +231,18 @@
   "url": "https://himalayas.app/companies/alpaca/jobs/senior-software-engineer-new-markets-eu"
  },
  {
-  "company": "Aerofoils GmbH",
-  "title": "AI-Driven Digital Systems & Integration Manager (all gender)",
+  "company": "GitLab",
+  "title": "Marketing Expression of Interest Form",
   "location": "",
-  "why": "роль: integration",
-  "url": "https://himalayas.app/companies/aerofoils-gmbh/jobs/ai-driven-digital-systems-integration-manager-all-gender"
+  "why": "роль: expression of interest",
+  "url": "https://himalayas.app/companies/gitlab-com/jobs/marketing-expression-of-interest-form"
+ },
+ {
+  "company": "Seoprofy",
+  "title": "Senior SEO Specialist (iGaming)",
+  "location": "",
+  "why": "роль: igaming",
+  "url": "https://himalayas.app/companies/seoprofy/jobs/senior-seo-specialist-igaming"
  },
  {
   "company": "Careerxtra",
@@ -292,13 +278,6 @@
   "location": "",
   "why": "роль: partner",
   "url": "https://himalayas.app/companies/virtual-identity/jobs/senior-account-director-digital-solutions-client-partner-m-f-x"
- },
- {
-  "company": "WESTMEDIA AGENCY",
-  "title": "Affiliate Marketer & Promo Partner (Remote, Commission-Based)",
-  "location": "",
-  "why": "роль: partner",
-  "url": "https://himalayas.app/companies/westmedia-agency/jobs/affiliate-marketer-promo-partner-remote-commission-based"
  },
  {
   "company": "Replika",
