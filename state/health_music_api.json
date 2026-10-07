@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 13:42 UTC",
+ "updated": "2026-10-07 14:00 UTC",
  "label": "🎵 Музтех · ATS",
  "total": 19,
  "broken": 0,
@@ -11,7 +11,7 @@
    "err": "",
    "note": "Breezy:anghami",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Audiohook": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "Ashby:audiohook",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Audiomob": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "Greenhouse:audiomob",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "AudioStack": {
@@ -35,15 +35,15 @@
    "err": "",
    "note": "Workable:audiostack",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Dice": {
-   "jobs": 10,
+   "jobs": 11,
    "err": "",
    "note": "Greenhouse:dicefm-careers",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "DistroKid": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "Greenhouse:distrokid",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Duetti": {
@@ -59,7 +59,7 @@
    "err": "",
    "note": "Lever:duetti",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Hook": {
@@ -67,7 +67,7 @@
    "err": "",
    "note": "Ashby:hookmusic",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Moises": {
@@ -75,7 +75,7 @@
    "err": "",
    "note": "BambooHR:moises",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Splice": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "Greenhouse:splice",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Symphonic": {
@@ -91,7 +91,7 @@
    "err": "",
    "note": "BambooHR:symphonicdist",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Tracklib": {
@@ -99,7 +99,7 @@
    "err": "",
    "note": "Teamtailor:tracklib",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Udio": {
@@ -107,15 +107,15 @@
    "err": "",
    "note": "Greenhouse:udio",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "UnitedMasters": {
-   "jobs": 24,
+   "jobs": 25,
    "err": "",
    "note": "Greenhouse:unitedmasterstranslation",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Yoto": {
@@ -123,7 +123,7 @@
    "err": "",
    "note": "Teamtailor:yoto",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "The Orchard": {
@@ -131,15 +131,15 @@
    "err": "",
    "note": "Greenhouse:theorchard",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Too Lost": {
-   "jobs": 9,
+   "jobs": 8,
    "err": "",
    "note": "Lever:too-lost",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "POSH": {
@@ -147,15 +147,15 @@
    "err": "",
    "note": "Ashby:posh",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   },
   "Sony Music (AWAL)": {
-   "jobs": 137,
+   "jobs": 136,
    "err": "",
    "note": "Greenhouse:sonymusicentertainment",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-07",
    "alerted": false
   }
  }
