@@ -1,24 +1,10 @@
 [
  {
-  "company": "Customer.io",
-  "title": "Mid-Market Account Executive, EMEA",
-  "location": "149 стран, есть Кыргызстан",
-  "why": "роль: account executive",
-  "url": "https://himalayas.app/companies/customer-io/jobs/mid-market-account-executive-emea"
- },
- {
   "company": "Interdependence Public Relations",
   "title": "Enterprise Account Executive - SEO",
   "location": "",
   "why": "роль: account executive",
   "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/enterprise-account-executive-seo-1115831556"
- },
- {
-  "company": "Jumpfactor",
-  "title": "Senior Digital Marketing Account Manager",
-  "location": "",
-  "why": "роль: account manager",
-  "url": "https://himalayas.app/companies/jumpfactor/jobs/senior-digital-marketing-account-manager"
  },
  {
   "company": "Genesis",
@@ -33,13 +19,6 @@
   "location": "",
   "why": "роль: adult",
   "url": "https://himalayas.app/companies/careerxtra/jobs/senior-performance-marketer-adult-rtb-europe-asia"
- },
- {
-  "company": "Kraymer Art",
-  "title": "Affiliate Marketing Manager",
-  "location": "",
-  "why": "роль: affiliate",
-  "url": "https://himalayas.app/companies/kraymer-art/jobs/affiliate-marketing-manager-4386977218"
  },
  {
   "company": "Revpanda",
@@ -64,6 +43,13 @@
  },
  {
   "company": "NightOwl Consulting",
+  "title": "Reverse Mortgage Marketing Assistant",
+  "location": "",
+  "why": "роль: assistant",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/reverse-mortgage-marketing-assistant-9989444057"
+ },
+ {
+  "company": "NightOwl Consulting",
   "title": "Executive Assistant with Marketing Experience",
   "location": "",
   "why": "роль: assistant",
@@ -71,24 +57,10 @@
  },
  {
   "company": "NightOwl Consulting",
-  "title": "Marketing Assistant",
-  "location": "",
-  "why": "роль: assistant",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-assistant"
- },
- {
-  "company": "NightOwl Consulting",
   "title": "CRM Assistant (with Insellerate Experience)",
   "location": "",
   "why": "роль: assistant",
   "url": "https://himalayas.app/companies/nightowl-consulting/jobs/crm-assistant-with-insellerate-experience"
- },
- {
-  "company": "NightOwl Consulting",
-  "title": "Reverse Mortgage Marketing Assistant",
-  "location": "",
-  "why": "роль: assistant",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/reverse-mortgage-marketing-assistant-9989444057"
  },
  {
   "company": "Red Sky",
@@ -112,6 +84,20 @@
   "url": "https://himalayas.app/companies/red-sky/jobs/business-development-growth-lead-sales-partnerships"
  },
  {
+  "company": "Phiture",
+  "title": "Senior Growth Consultant - PM (Programmatic)",
+  "location": "",
+  "why": "роль: consultant",
+  "url": "https://himalayas.app/companies/phiture/jobs/senior-growth-consultant-pm-programmatic"
+ },
+ {
+  "company": "Phiture",
+  "title": "Senior Growth Consultant - CRM – Maternity Cover",
+  "location": "",
+  "why": "роль: consultant",
+  "url": "https://himalayas.app/companies/phiture/jobs/senior-growth-consultant-crm-maternity-cover"
+ },
+ {
   "company": "ACLED",
   "title": "Digital Content and Marketing Coordinator - REMOTE",
   "location": "",
@@ -131,6 +117,13 @@
   "location": "",
   "why": "роль: content",
   "url": "https://himalayas.app/companies/canonical/jobs/content-marketing-team-manager"
+ },
+ {
+  "company": "Featherless AI",
+  "title": "Content Marketer",
+  "location": "",
+  "why": "роль: content",
+  "url": "https://himalayas.app/companies/featherless-ai/jobs/content-marketer"
  },
  {
   "company": "Fresh Prints",
@@ -168,6 +161,13 @@
   "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-coordinator"
  },
  {
+  "company": "Pivot + Edge",
+  "title": "Marketing Coordinator (Contract)",
+  "location": "",
+  "why": "роль: coordinator",
+  "url": "https://himalayas.app/companies/pivot-edge/jobs/marketing-coordinator-contract"
+ },
+ {
   "company": "NightOwl Consulting",
   "title": "Marketing Copywriter",
   "location": "",
@@ -194,20 +194,6 @@
   "location": "",
   "why": "роль: design",
   "url": "https://himalayas.app/companies/nightowl-consulting/jobs/digital-graphic-designer"
- },
- {
-  "company": "Replika",
-  "title": "Motion Designer, Growth",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://himalayas.app/companies/replika/jobs/motion-designer-growth"
- },
- {
-  "company": "beehiiv",
-  "title": "Senior Product Designer, Growth (global)",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://himalayas.app/companies/beehiiv/jobs/senior-product-designer-growth-global"
  },
  {
   "company": "MGID",
@@ -320,13 +306,6 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://himalayas.app/companies/project-management-institute-inc/jobs/director-strategic-product-marketing"
- },
- {
-  "company": "Tiugo Technologies",
-  "title": "Senior Product Marketing Manager",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://himalayas.app/companies/tiugo/jobs/senior-product-marketing-manager"
  },
  {
   "company": "TechBiz Global",
