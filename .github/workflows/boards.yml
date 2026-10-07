@@ -24,8 +24,8 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: pip install requests
@@ -42,13 +42,4 @@ jobs:
           SCORER_BUDGET: ${{ github.event.inputs.all == 'true' && '1500' || '900' }}
       - name: save state
         if: always()
-        run: |
-          git config user.name "radar-bot"
-          git config user.email "radar-bot@users.noreply.github.com"
-          git add state/ 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "no changes to save"; exit 0
-          fi
-          git commit -m "state boards [skip ci]"
-          git pull --rebase --autostash origin main
-          git push
+        run: bash save_state.sh "state boards [skip ci]" state/

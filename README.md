@@ -80,11 +80,14 @@ scorer.py            vacancy scoring
 scoring_profile.md   condensed resume profile + preferences the scorer uses
 discover.py          one-off tool: finds careers pages and ATS for a list of new companies
 probe_ats.py         one-off tool: guesses ATS boards by company name for companies the radar can't read
+boards_radar.py      Habr Career (+ hh when HH_TOKEN is set)
+mbw_radar.py         Music Business Worldwide job board (runs inside music)
+save_state.sh        commit + push of state from Actions, with retries
 
 lists/               company lists (radar_*, browser_*, music_*) and LinkedIn watchlists
 state/               what has already been seen, cached ATS slugs (committed by the bot)
 discover/            input/output of discover.py
-.github/workflows/   radar, browser, himalayas, music (daily); discover (on demand)
+.github/workflows/   radar, browser, himalayas, music (daily); boards (every 4h); discover, probe (on demand)
 ```
 
 ## Adding companies
