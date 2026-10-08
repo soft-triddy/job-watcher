@@ -70,13 +70,6 @@
   "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6141625004"
  },
  {
-  "company": "Noom",
-  "title": "Senior Growth Marketing Manager",
-  "location": "New York, New York, United States; Princeton, New Jersey, United States",
-  "why": "гео: new jersey",
-  "url": "https://www.noom.com/careers/job-listings/?gh_jid=8140129"
- },
- {
   "company": "AtBay",
   "title": "Senior Digital Marketing Manager, Insurance",
   "location": "New York, New York, United States",
@@ -141,14 +134,14 @@
  },
  {
   "company": "1Password",
-  "title": "Senior Account Executive - Mid Market ,  New York Metro Area -Financial Services",
+  "title": "Senior Account Executive - Commercial (Mid Market) , New York Metro Area ",
   "location": "New York, NY",
   "why": "роль: account executive",
   "url": "https://jobs.ashbyhq.com/1password/8f5bf2e9-1395-4f9a-93b3-f07fc1c95228"
  },
  {
   "company": "1Password",
-  "title": "Account Executive - Mid-Market , Boston",
+  "title": "Account Executive - Commercial (Mid-Market), Northeast",
   "location": "New York, NY",
   "why": "роль: account executive",
   "url": "https://jobs.ashbyhq.com/1password/197457a9-acda-42e7-b23a-3ac11c00dda3"
@@ -196,13 +189,6 @@
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
  },
  {
-  "company": "Xometry",
-  "title": "Account Executive, Marketplace Sales",
-  "location": "Buenos Aires, Argentina",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5181499007"
- },
- {
   "company": "Viseven",
   "title": "Account Manager (Pharma/MarTech domain)",
   "location": "Hanoi",
@@ -233,9 +219,9 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "Denver, CO ",
+  "location": "Los Angeles, CA ",
   "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249149007"
  },
  {
   "company": "Xometry",
@@ -247,13 +233,6 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "North Bethesda, MD ",
-  "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211444007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Digital Marketing Account Manager ",
   "location": "Lexington, KY ",
   "why": "роль: account manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5211469007"
@@ -261,9 +240,16 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "Los Angeles, CA ",
+  "location": "Denver, CO ",
   "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249149007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Digital Marketing Account Manager ",
+  "location": "North Bethesda, MD ",
+  "why": "роль: account manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211444007"
  },
  {
   "company": "Genesis (Studio)",
@@ -540,13 +526,6 @@
  },
  {
   "company": "Ajax Systems",
-  "title": "Business Development Manager Fire Market - France",
-  "location": "Paris",
-  "why": "роль: business development",
-  "url": "https://jobs.lever.co/ajax/7be9dc39-aa6c-45a1-9938-6e101adc4783"
- },
- {
-  "company": "Ajax Systems",
   "title": "Business Development Manager in Spain (electricity wholesale market)",
   "location": "Madrid",
   "why": "роль: business development",
@@ -558,6 +537,13 @@
   "location": "Madrid",
   "why": "роль: business development",
   "url": "https://jobs.lever.co/ajax/9e4c9499-241e-46c9-bbcb-b7304d1184ac"
+ },
+ {
+  "company": "Exadel",
+  "title": "Middle QA Engineer (Capital Markets)",
+  "location": "Brazil",
+  "why": "роль: capital market",
+  "url": "https://job-boards.greenhouse.io/exadelinc/jobs/6218340004"
  },
  {
   "company": "Higgsfield AI",
@@ -673,17 +659,17 @@
  },
  {
   "company": "Genesis (Studio)",
-  "title": "Creative Marketing Specialist",
-  "location": "Kyiv, UA",
-  "why": "роль: creative",
-  "url": "https://gen-tech.breezy.hr/p/d053b2f3a912-creative-marketing-specialist"
- },
- {
-  "company": "Genesis (Studio)",
   "title": "Senior Creative Marketing Manager (Codefinity)",
   "location": "Kyiv, UA",
   "why": "роль: creative",
   "url": "https://gen-tech.breezy.hr/p/0c1df9b12557-senior-creative-marketing-manager-codefinity"
+ },
+ {
+  "company": "OBRIO (Nebula)",
+  "title": "🔥 Middle Creative Marketing Specialist",
+  "location": "Remote – Ukraine",
+  "why": "роль: creative",
+  "url": "https://jobs.ashbyhq.com/OBRIO/18af2ffe-7091-43b4-9e69-19ded57db3bc"
  },
  {
   "company": "OBRIO (Nebula)",
@@ -828,7 +814,7 @@
  {
   "company": "Solidgate",
   "title": "Lead Marketing Designer",
-  "location": "Europe",
+  "location": "Kyiv",
   "why": "роль: design",
   "url": "https://jobs.ashbyhq.com/solidgate/da41e01f-1d76-4509-8bf2-e911f49e07c3"
  },
@@ -859,13 +845,6 @@
   "location": "Almaty, Kazakhstan",
   "why": "роль: email",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/8aba7a89-2871-4e6c-bfb6-22666d0f78e1"
- },
- {
-  "company": "MGID",
-  "title": "Email & Lifecycle Marketing Manager",
-  "location": "Kyiv, Kyivska oblast, Ukraine",
-  "why": "роль: email",
-  "url": "https://careers.mgid.com/o/email-lifecycle-marketing-manager"
  },
  {
   "company": "airSlate",
@@ -966,6 +945,13 @@
   "url": "https://job-boards.eu.greenhouse.io/coherentsolutions/jobs/4874017101"
  },
  {
+  "company": "DataDome",
+  "title": "Senior Frontend Engineer (Full Stack growth path)",
+  "location": "France - Remote",
+  "why": "роль: engineer",
+  "url": "https://job-boards.greenhouse.io/ddome/jobs/8837546002"
+ },
+ {
   "company": "Duolingo",
   "title": "Senior Android Engineer, Client Platform - Application Stability and Performance",
   "location": "New York, NY; Pittsburgh, PA",
@@ -1043,13 +1029,6 @@
   "url": "https://jobs.ashbyhq.com/SKELAR/47d5cb53-b94a-49f0-abfc-b7dd95cb1926"
  },
  {
-  "company": "Sumsub",
-  "title": "Marketing Automation Engineer",
-  "location": "",
-  "why": "роль: engineer",
-  "url": "https://careers.sumsub.com/jobs/8269151-marketing-automation-engineer"
- },
- {
   "company": "Teleport",
   "title": "Senior Backend Engineer - Performance - UK",
   "location": "United Kingdom (Remote)",
@@ -1072,17 +1051,17 @@
  },
  {
   "company": "Wheely",
-  "title": "(Senior) Backend Engineer, Marketplace",
-  "location": "London, England, United Kingdom",
+  "title": "Backend Engineer (Mid/Senior), Marketplace",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7995783003?gh_jid=7995783003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "Wheely",
   "title": "(Senior) Backend Engineer, Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7995783003?gh_jid=7995783003"
  },
  {
   "company": "inDrive",
@@ -1127,6 +1106,13 @@
   "url": "https://careers.investengine.com/jobs/8176302-influencer-marketing-lead"
  },
  {
+  "company": "SKELAR",
+  "title": "Trainee/Junior Influencer Marketing Manager - Duomo",
+  "location": "Warsaw",
+  "why": "роль: influencer",
+  "url": "https://jobs.ashbyhq.com/SKELAR/38e775c8-8944-4805-8028-c23e2fc0bba9"
+ },
+ {
   "company": "Genesis (Studio)",
   "title": "Junior SEO Specialist",
   "location": "Kyiv, UA",
@@ -1164,37 +1150,16 @@
  {
   "company": "Xometry",
   "title": "Partner Growth Specialist, Emerging Partners ",
-  "location": "Waltham, MA",
-  "why": "роль: partner",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5222332007"
- },
- {
-  "company": "Xometry",
-  "title": "Partner Growth Specialist, Emerging Partners ",
   "location": "Dallas, TX",
   "why": "роль: partner",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5222335007"
  },
  {
-  "company": "inDrive",
-  "title": "Senior Digital PR Manager",
-  "location": "Kazakhstan",
-  "why": "роль: pr",
-  "url": "https://indrive.pinpointhq.com/en/postings/1de93975-52da-4245-95d7-cee7b681ca0f"
- },
- {
-  "company": "inDrive",
-  "title": "Senior Digital PR Manager",
-  "location": "Serbia",
-  "why": "роль: pr",
-  "url": "https://indrive.pinpointhq.com/en/postings/26d14d45-b47c-4057-a658-48ef85170b59"
- },
- {
-  "company": "inDrive",
-  "title": "Senior Digital PR Manager",
-  "location": "United Arab Emirates",
-  "why": "роль: pr",
-  "url": "https://indrive.pinpointhq.com/en/postings/0e60f58f-0416-4fd1-a220-e6681962639b"
+  "company": "Xometry",
+  "title": "Partner Growth Specialist, Emerging Partners ",
+  "location": "Waltham, MA",
+  "why": "роль: partner",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5222332007"
  },
  {
   "company": "SKELAR",
@@ -1225,6 +1190,13 @@
   "url": "https://careers.duolingo.com/jobs/8747171002?gh_jid=8747171002"
  },
  {
+  "company": "Haut.AI",
+  "title": "Lead Product Manager, Go-to-Market",
+  "location": "Remote",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/haut-ai/00183a7d-3415-4830-aa6e-bbf9817f6e72"
+ },
+ {
   "company": "Higgsfield AI",
   "title": "Growth Product Manager (PLG)",
   "location": "Almaty, Kazakhstan",
@@ -1237,6 +1209,13 @@
   "location": "Princeton, New Jersey, United States",
   "why": "роль: product manager",
   "url": "https://www.noom.com/careers/job-listings/?gh_jid=8098890"
+ },
+ {
+  "company": "Ruby Labs",
+  "title": "Senior Growth Product Manager",
+  "location": "European Union",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/ruby-labs/d16eca81-ea62-4592-a0cc-5d742c8c1b0f"
  },
  {
   "company": "SKELAR",
@@ -1321,6 +1300,13 @@
   "location": "San Francisco",
   "why": "роль: product marketing",
   "url": "https://jobs.ashbyhq.com/clickhouse/b55850f7-419c-4a27-ac6d-33e46e39c428"
+ },
+ {
+  "company": "DataDome",
+  "title": "Product Marketing Manager",
+  "location": "US - New York City",
+  "why": "роль: product marketing",
+  "url": "https://job-boards.greenhouse.io/ddome/jobs/8408040002"
  },
  {
   "company": "Genesis (Studio)",
