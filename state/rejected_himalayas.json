@@ -7,11 +7,25 @@
   "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/enterprise-account-executive-seo-1115831556"
  },
  {
+  "company": "Jumpfactor",
+  "title": "Senior Digital Marketing Account Manager",
+  "location": "",
+  "why": "роль: account manager",
+  "url": "https://himalayas.app/companies/jumpfactor/jobs/senior-digital-marketing-account-manager"
+ },
+ {
   "company": "Genesis",
   "title": "Paid Acquisition Lead (Google Ads) — AI Product Launch",
   "location": "",
   "why": "роль: acquisition",
   "url": "https://himalayas.app/companies/genesis/jobs/paid-acquisition-lead-google-ads-ai-product-launch"
+ },
+ {
+  "company": "TechBiz Global",
+  "title": "User Acquisition & Performance Marketing Manager – Mobile Apps",
+  "location": "",
+  "why": "роль: acquisition",
+  "url": "https://himalayas.app/companies/techbiz-global/jobs/user-acquisition-performance-marketing-manager-mobile-apps"
  },
  {
   "company": "Careerxtra",
@@ -110,6 +124,13 @@
   "location": "",
   "why": "роль: content",
   "url": "https://himalayas.app/companies/better-collective/jobs/content-manager-writer-sportsbooks-prediction-markets"
+ },
+ {
+  "company": "Canonical",
+  "title": "Content Marketing Manager",
+  "location": "",
+  "why": "роль: content",
+  "url": "https://himalayas.app/companies/canonical/jobs/content-marketing-manager"
  },
  {
   "company": "Canonical",
@@ -217,6 +238,13 @@
   "url": "https://himalayas.app/companies/alpaca/jobs/senior-software-engineer-new-markets-eu"
  },
  {
+  "company": "Customer.io",
+  "title": "Events Marketing Manager, EMEA",
+  "location": "149 стран, есть Кыргызстан",
+  "why": "роль: event",
+  "url": "https://himalayas.app/companies/customer-io/jobs/events-marketing-manager-emea"
+ },
+ {
   "company": "GitLab",
   "title": "Marketing Expression of Interest Form",
   "location": "",
@@ -229,6 +257,13 @@
   "location": "",
   "why": "роль: igaming",
   "url": "https://himalayas.app/companies/seoprofy/jobs/senior-seo-specialist-igaming"
+ },
+ {
+  "company": "Aerofoils GmbH",
+  "title": "AI-Driven Digital Systems & Integration Manager (all gender)",
+  "location": "",
+  "why": "роль: integration",
+  "url": "https://himalayas.app/companies/aerofoils-gmbh/jobs/ai-driven-digital-systems-integration-manager-all-gender"
  },
  {
   "company": "Careerxtra",
@@ -259,20 +294,6 @@
   "url": "https://himalayas.app/companies/flowmingo/jobs/marketing-growth-business-partner"
  },
  {
-  "company": "Virtual Identity",
-  "title": "Senior Account Director Digital Solutions / Client Partner (m/f/x)",
-  "location": "",
-  "why": "роль: partner",
-  "url": "https://himalayas.app/companies/virtual-identity/jobs/senior-account-director-digital-solutions-client-partner-m-f-x"
- },
- {
-  "company": "Replika",
-  "title": "Creative Producer, Growth - Remote",
-  "location": "",
-  "why": "роль: producer",
-  "url": "https://himalayas.app/companies/replika/jobs/creative-producer-growth-remote"
- },
- {
   "company": "Novakid School",
   "title": "Senior Growth Product Manager (Activation & Funnel Innovation) Remote",
   "location": "",
@@ -285,6 +306,13 @@
   "location": "",
   "why": "роль: product manager",
   "url": "https://himalayas.app/companies/pplsi/jobs/senior-product-manager-member-lifecycle-growth"
+ },
+ {
+  "company": "Timeleft",
+  "title": "Growth Product Manager",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://himalayas.app/companies/timeleft/jobs/growth-product-manager"
  },
  {
   "company": "Canonical",
@@ -301,6 +329,13 @@
   "url": "https://himalayas.app/companies/canonical/jobs/product-marketing-lead"
  },
  {
+  "company": "Defuse Labs",
+  "title": "Head of Product Marketing & Growth",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://himalayas.app/companies/defuse-labs/jobs/head-of-product-marketing-growth"
+ },
+ {
   "company": "Project Management Institute, Inc.",
   "title": "Director, Strategic Product Marketing",
   "location": "",
@@ -313,5 +348,12 @@
   "location": "",
   "why": "роль: recruiter",
   "url": "https://himalayas.app/companies/techbiz-global/jobs/recruiter-on-demand"
+ },
+ {
+  "company": "Trafilea",
+  "title": "Marketing Talent Acquisition Sr Recruiter / Lead",
+  "location": "",
+  "why": "роль: recruiter",
+  "url": "https://himalayas.app/companies/trafilea-com/jobs/marketing-talent-acquisition-sr-recruiter-lead"
  }
 ]
