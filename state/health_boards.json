@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-08 06:21 UTC",
+ "updated": "2026-10-08 15:45 UTC",
  "label": "📋 Хабр · hh",
  "total": 5,
  "broken": 0,
- "jobs_total": 127,
- "marketing": 11,
+ "jobs_total": 130,
+ "marketing": 10,
  "sources": {
   "Хабр «маркетинг»": {
    "jobs": 50,
@@ -23,7 +23,7 @@
    "alerted": false
   },
   "Хабр «growth»": {
-   "jobs": 6,
+   "jobs": 8,
    "err": "",
    "note": "",
    "bad_streak": 0,
