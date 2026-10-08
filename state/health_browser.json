@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-06 14:50 UTC",
+ "updated": "2026-10-08 15:13 UTC",
  "label": "🌐 Браузер",
- "total": 301,
+ "total": 300,
  "broken": 5,
- "jobs_total": 3319,
- "marketing": 133,
+ "jobs_total": 3232,
+ "marketing": 147,
  "sources": {
   "Accel Club": {
    "jobs": 8,
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Acronis": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Adapty": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ALPHA Affiliates": {
@@ -35,7 +35,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Apliteni": {
@@ -43,7 +43,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Artec 3D": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Asodesk": {
@@ -59,7 +59,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Autodoc": {
@@ -67,14 +67,14 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Aviasales": {
    "jobs": 0,
    "err": "0 вакансий",
    "note": "json-без-ссылок",
-   "bad_streak": 10,
+   "bad_streak": 11,
    "last_ok": "",
    "alerted": true
   },
@@ -83,7 +83,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "BrainRocket": {
@@ -91,7 +91,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Buddy AI": {
@@ -99,7 +99,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Careerist": {
@@ -107,15 +107,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Centro (Ortnec)": {
-   "jobs": 12,
+   "jobs": 13,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "CodeSignal": {
@@ -123,7 +123,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Colife Global": {
@@ -131,7 +131,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "DataArt": {
@@ -139,7 +139,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Data Driven Lab": {
@@ -147,7 +147,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Easybrain": {
@@ -155,7 +155,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Plurio AI": {
@@ -163,7 +163,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Embacy": {
@@ -171,15 +171,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Emerging Travel Group": {
-   "jobs": 45,
+   "jobs": 46,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ENDGAME": {
@@ -187,15 +187,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "EPAM": {
-   "jobs": 39,
+   "jobs": 15,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Evido": {
@@ -203,7 +203,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Evil Martians": {
@@ -211,14 +211,14 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Evolwe AI": {
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 10,
+   "bad_streak": 11,
    "last_ok": "",
    "alerted": true
   },
@@ -227,7 +227,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Exactly.аi": {
@@ -235,15 +235,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Exante": {
-   "jobs": 23,
+   "jobs": 24,
    "err": "",
    "note": "json-без-ссылок",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Farel": {
@@ -251,7 +251,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Fibery": {
@@ -259,7 +259,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 2",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Fireart Studio": {
@@ -267,7 +267,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Flipper Devices": {
@@ -275,7 +275,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Flowwow": {
@@ -283,15 +283,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Fortis": {
-   "jobs": 2,
+   "jobs": 3,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "FunCorp": {
@@ -299,7 +299,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "G5 Entertainment AB": {
@@ -307,7 +307,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Gero": {
@@ -315,15 +315,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Gismart": {
-   "jobs": 26,
+   "jobs": 24,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Gitlab": {
@@ -331,7 +331,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Glam": {
@@ -339,7 +339,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "GPU AUDIO": {
@@ -347,7 +347,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Gracia AI": {
@@ -355,15 +355,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Grid Dynamics": {
-   "jobs": 226,
+   "jobs": 239,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "i-BrainTech": {
@@ -371,7 +371,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Infomediji": {
@@ -379,15 +379,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Innowise": {
-   "jobs": 41,
+   "jobs": 1,
    "err": "",
-   "note": "dom",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "IntellectoKids": {
@@ -395,7 +395,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Jetbrains": {
@@ -403,7 +403,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "JettyCloud": {
@@ -411,7 +411,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Laoshi": {
@@ -419,7 +419,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Larixon Сlassifieds": {
@@ -427,7 +427,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "LeverX": {
@@ -435,7 +435,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Lovi": {
@@ -443,15 +443,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Medvidi": {
-   "jobs": 69,
+   "jobs": 81,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Meracux": {
@@ -459,7 +459,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "MigRun": {
@@ -467,7 +467,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 2",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Miro": {
@@ -475,7 +475,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Monetha": {
@@ -483,7 +483,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Movavi": {
@@ -491,7 +491,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Muse Group": {
@@ -499,7 +499,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Nexpanse": {
@@ -507,7 +507,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "nGrow": {
@@ -515,7 +515,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Onde": {
@@ -523,7 +523,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "OUTSIDE DIGITAL": {
@@ -531,7 +531,7 @@
    "err": "",
    "note": "json-без-ссылок",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Picsart": {
@@ -539,7 +539,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Async": {
@@ -547,7 +547,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Prisma Labs": {
@@ -555,7 +555,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Qonversion": {
@@ -563,7 +563,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Quantori": {
@@ -571,7 +571,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Renderforest": {
@@ -579,7 +579,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Right Balance": {
@@ -587,15 +587,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
-   "alerted": false
-  },
-  "Semrush": {
-   "jobs": 10,
-   "err": "",
-   "note": "dom",
-   "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Siren Group": {
@@ -603,15 +595,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Soft2Bet": {
-   "jobs": 7,
+   "jobs": 8,
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Softr": {
@@ -619,7 +611,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SPARKLO": {
@@ -627,7 +619,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Splitmetrics": {
@@ -635,15 +627,15 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Spryker": {
    "jobs": 1,
    "err": "",
-   "note": "текстовый режим, маркетинг: 0",
+   "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Symfa": {
@@ -651,7 +643,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "UCRAFT": {
@@ -659,7 +651,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Valiotti Analytics": {
@@ -667,15 +659,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "VIVA": {
-   "jobs": 9,
+   "jobs": 10,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "WayRay": {
@@ -683,7 +675,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Web Design Sun": {
@@ -691,14 +683,14 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SleepDoctor": {
-   "jobs": 1,
-   "err": "",
-   "note": "текстовый режим, маркетинг: 0",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "завис > 75с",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-10-06",
    "alerted": false
   },
@@ -707,7 +699,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ElectroNeek": {
@@ -715,7 +707,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "DigiFabster": {
@@ -723,7 +715,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Unlimit": {
@@ -731,7 +723,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Cube Dev": {
@@ -739,7 +731,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Nil Foundation": {
@@ -747,7 +739,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "FaceApp": {
@@ -755,7 +747,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Welltory": {
@@ -763,7 +755,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Luxoft": {
@@ -771,7 +763,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Exactpro": {
@@ -779,7 +771,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "First Line Software": {
@@ -787,7 +779,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "IZDAT Venture Studio": {
@@ -795,7 +787,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "HypeAuditor": {
@@ -803,7 +795,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Toughbyte": {
@@ -811,23 +803,23 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Gurtam": {
-   "jobs": 4,
+   "jobs": 3,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Mediacube": {
-   "jobs": 8,
+   "jobs": 7,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Revolut": {
@@ -835,7 +827,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Plesk": {
@@ -843,15 +835,15 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Group IB": {
-   "jobs": 33,
+   "jobs": 35,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Percona": {
@@ -859,15 +851,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Nord Security": {
-   "jobs": 131,
+   "jobs": 132,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Netcracker": {
@@ -875,7 +867,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Service Titan": {
@@ -883,7 +875,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Andersen": {
@@ -891,7 +883,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Krisp": {
@@ -899,15 +891,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Flo": {
-   "jobs": 25,
+   "jobs": 24,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Owlcat": {
@@ -915,7 +907,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "AgileFluent": {
@@ -923,7 +915,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "BostonGene": {
@@ -931,15 +923,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Databricks": {
-   "jobs": 887,
+   "jobs": 896,
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "DonateOpen": {
@@ -947,7 +939,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Ennabl": {
@@ -955,23 +947,23 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Factorial": {
-   "jobs": 1,
+   "jobs": 13,
    "err": "",
-   "note": "dom",
+   "note": "текстовый режим, маркетинг: 13",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Formlabs": {
-   "jobs": 221,
+   "jobs": 223,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Garage IT": {
@@ -979,7 +971,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Gaviti": {
@@ -987,7 +979,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Itransition Group": {
@@ -995,7 +987,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "OCSiAl": {
@@ -1003,15 +995,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Parloa": {
-   "jobs": 50,
+   "jobs": 51,
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Pipedrive": {
@@ -1019,7 +1011,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Pixel Point": {
@@ -1027,7 +1019,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Preply": {
@@ -1035,7 +1027,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Realytics": {
@@ -1043,7 +1035,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Remedy Logic": {
@@ -1051,7 +1043,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Sanas": {
@@ -1059,7 +1051,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SEMA Software": {
@@ -1067,7 +1059,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Simple Life": {
@@ -1075,7 +1067,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Synthflow AI": {
@@ -1083,7 +1075,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Visaright": {
@@ -1091,7 +1083,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Zesty": {
@@ -1099,7 +1091,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Refocus": {
@@ -1107,7 +1099,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Imperfect Tech": {
@@ -1115,7 +1107,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "DialLink": {
@@ -1123,7 +1115,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "DoubleCloud": {
@@ -1131,7 +1123,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Fundraise Up": {
@@ -1139,7 +1131,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Lunchelub": {
@@ -1147,7 +1139,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "MarfaTech": {
@@ -1155,7 +1147,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Relogate": {
@@ -1163,7 +1155,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SIDESTREAM": {
@@ -1171,7 +1163,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Slidespiel": {
@@ -1179,7 +1171,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Spiry": {
@@ -1187,7 +1179,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Teleperformance": {
@@ -1195,15 +1187,15 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Temporal": {
-   "jobs": 62,
+   "jobs": 65,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "whoosh": {
@@ -1211,7 +1203,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Yandex": {
@@ -1219,7 +1211,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Zalando": {
@@ -1227,7 +1219,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ox": {
@@ -1235,22 +1227,22 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "QIC digital hub": {
-   "jobs": 8,
+   "jobs": 6,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Superhuman": {
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 10,
+   "bad_streak": 11,
    "last_ok": "",
    "alerted": true
   },
@@ -1259,7 +1251,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Pixellu": {
@@ -1267,7 +1259,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Product Science": {
@@ -1275,7 +1267,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Zeroavia": {
@@ -1283,7 +1275,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Everhour": {
@@ -1291,7 +1283,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Linked Helper": {
@@ -1299,7 +1291,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Akvelon": {
@@ -1307,7 +1299,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Algonova School": {
@@ -1315,7 +1307,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Arctic7": {
@@ -1323,7 +1315,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Aspect App": {
@@ -1331,7 +1323,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Fluently": {
@@ -1339,7 +1331,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Geex Art": {
@@ -1347,7 +1339,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Immigram": {
@@ -1355,7 +1347,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Jet Admin": {
@@ -1363,7 +1355,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Loóna": {
@@ -1371,7 +1363,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Redtrack Technologies LTD": {
@@ -1379,7 +1371,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Scalefinal": {
@@ -1387,7 +1379,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Velvetech": {
@@ -1395,7 +1387,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Yoffix": {
@@ -1403,7 +1395,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Pure": {
@@ -1411,7 +1403,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "YouScan": {
@@ -1419,7 +1411,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "3DLOOK": {
@@ -1427,7 +1419,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "A1QA": {
@@ -1435,7 +1427,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Admixer Technologies": {
@@ -1443,7 +1435,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Affise": {
@@ -1451,7 +1443,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "AgileEngine": {
@@ -1459,7 +1451,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "AIP Tech": {
@@ -1467,7 +1459,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Akveo": {
@@ -1475,15 +1467,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Almaz Capital": {
-   "jobs": 22,
+   "jobs": 20,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Anki": {
@@ -1491,7 +1483,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "AppMaster.io": {
@@ -1499,7 +1491,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ATLANT 3D": {
@@ -1507,7 +1499,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Beetroot": {
@@ -1515,7 +1507,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Ciklum": {
@@ -1523,7 +1515,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Cleveron": {
@@ -1531,7 +1523,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Cognitive Technologies": {
@@ -1539,7 +1531,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Competera": {
@@ -1547,7 +1539,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Cossack Labs": {
@@ -1555,7 +1547,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Coupler.io": {
@@ -1563,15 +1555,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 2",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Creatio": {
-   "jobs": 155,
+   "jobs": 158,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Dataox": {
@@ -1579,7 +1571,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Depositphotos": {
@@ -1587,7 +1579,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "DressX": {
@@ -1595,7 +1587,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Elai.io": {
@@ -1603,7 +1595,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ELEKS": {
@@ -1611,7 +1603,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Entrust": {
@@ -1619,7 +1611,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "EOS Data Analytics": {
@@ -1627,7 +1619,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "EVO Group": {
@@ -1635,7 +1627,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Fintech Farm": {
@@ -1643,15 +1635,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Firefly Aerospace": {
-   "jobs": 29,
+   "jobs": 23,
    "err": "",
    "note": "json-без-ссылок",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "GetIntent": {
@@ -1659,15 +1651,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Godel Technologies": {
-   "jobs": 1,
+   "jobs": 9,
    "err": "",
-   "note": "текстовый режим, маркетинг: 0",
+   "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Hexact": {
@@ -1675,7 +1667,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Hexlet": {
@@ -1683,7 +1675,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "IBA Group": {
@@ -1691,7 +1683,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "IBA Lithuania": {
@@ -1699,15 +1691,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Innovecs": {
-   "jobs": 8,
+   "jobs": 9,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Insilico Medicine": {
@@ -1715,7 +1707,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Intellias": {
@@ -1723,7 +1715,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "iSpring": {
@@ -1731,7 +1723,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ISPSystem": {
@@ -1739,7 +1731,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "JET": {
@@ -1747,7 +1739,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Jusan Mobile": {
@@ -1755,7 +1747,7 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "KeepSolid": {
@@ -1763,15 +1755,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Kilo Health": {
-   "jobs": 38,
+   "jobs": 37,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Klix.eu": {
@@ -1779,7 +1771,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Lemon AI": {
@@ -1787,7 +1779,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Lingvist": {
@@ -1795,7 +1787,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "MacPaw": {
@@ -1803,7 +1795,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "MakeCommerce (Maksekeskus)": {
@@ -1811,7 +1803,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Mate Academy": {
@@ -1819,7 +1811,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "MobiDev": {
@@ -1827,15 +1819,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Momentus": {
-   "jobs": 13,
+   "jobs": 1,
    "err": "",
-   "note": "json",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Monobank": {
@@ -1843,7 +1835,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Montonio": {
@@ -1851,7 +1843,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "N-iX": {
@@ -1859,7 +1851,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Netpeak Group": {
@@ -1867,7 +1859,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "NIX United": {
@@ -1875,15 +1867,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Nortal": {
-   "jobs": 68,
+   "jobs": 1,
    "err": "",
-   "note": "json",
+   "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Noventiq (Softline intl.)": {
@@ -1891,15 +1883,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Osavul": {
-   "jobs": 8,
+   "jobs": 7,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "OWOX BI": {
@@ -1907,7 +1899,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Oxagile": {
@@ -1915,7 +1907,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Parallels": {
@@ -1923,15 +1915,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Paysera": {
-   "jobs": 13,
+   "jobs": 10,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "PeopleForce": {
@@ -1939,7 +1931,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Petcube": {
@@ -1947,7 +1939,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Promobot": {
@@ -1955,7 +1947,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "PromoRepublic": {
@@ -1963,7 +1955,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Promova (Boosters)": {
@@ -1971,7 +1963,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "PROMT": {
@@ -1979,15 +1971,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "R-Pharm": {
-   "jobs": 164,
+   "jobs": 168,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Readdle": {
@@ -1995,7 +1987,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Reply.io": {
@@ -2003,7 +1995,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Respeecher": {
@@ -2011,7 +2003,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Runa Capital": {
@@ -2019,7 +2011,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SaM Solutions": {
@@ -2027,7 +2019,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "ScienceSoft": {
@@ -2035,7 +2027,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Scoro": {
@@ -2043,7 +2035,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SE Ranking": {
@@ -2051,7 +2043,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Selectel": {
@@ -2059,7 +2051,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Sendpulse": {
@@ -2067,7 +2059,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Sigma Software": {
@@ -2075,7 +2067,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Skylum": {
@@ -2083,7 +2075,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SOC Prime": {
@@ -2091,7 +2083,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Softeq": {
@@ -2099,23 +2091,23 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SoftServe": {
-   "jobs": 1,
-   "err": "",
-   "note": "текстовый режим, маркетинг: 0",
-   "bad_streak": 0,
-   "last_ok": "2026-10-06",
-   "alerted": false
-  },
-  "Spendbase": {
-   "jobs": 9,
+   "jobs": 12,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
+   "alerted": false
+  },
+  "Spendbase": {
+   "jobs": 8,
+   "err": "",
+   "note": "dom",
+   "bad_streak": 0,
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Stepik": {
@@ -2123,7 +2115,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Synergy International Systems": {
@@ -2131,7 +2123,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Synesis": {
@@ -2139,14 +2131,14 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "TEAM International": {
    "jobs": 0,
    "err": "завис > 75с",
    "note": "",
-   "bad_streak": 4,
+   "bad_streak": 5,
    "last_ok": "",
    "alerted": true
   },
@@ -2155,23 +2147,23 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Toggl": {
-   "jobs": 0,
-   "err": "завис > 75с",
-   "note": "",
-   "bad_streak": 4,
-   "last_ok": "",
-   "alerted": true
+   "jobs": 1,
+   "err": "",
+   "note": "json-без-ссылок",
+   "bad_streak": 0,
+   "last_ok": "2026-10-08",
+   "alerted": false
   },
   "TransferGo": {
-   "jobs": 13,
+   "jobs": 14,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Vention Development": {
@@ -2179,15 +2171,15 @@
    "err": "",
    "note": "json",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Veriff": {
-   "jobs": 12,
+   "jobs": 11,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Vinted": {
@@ -2195,7 +2187,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "VisionLabs": {
@@ -2203,7 +2195,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Worksection": {
@@ -2211,15 +2203,15 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 1",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Xolo": {
-   "jobs": 7,
+   "jobs": 6,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Appodeal": {
@@ -2227,7 +2219,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Binarly": {
@@ -2235,7 +2227,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Netwrix": {
@@ -2243,15 +2235,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Scentbird": {
-   "jobs": 17,
+   "jobs": 19,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Smartcat": {
@@ -2259,7 +2251,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Syncle": {
@@ -2267,15 +2259,15 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Veeam": {
-   "jobs": 16,
+   "jobs": 19,
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Allformance": {
@@ -2283,7 +2275,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Kewazo": {
@@ -2291,7 +2283,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Delightex": {
@@ -2299,7 +2291,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "EMEX": {
@@ -2307,7 +2299,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "3F Venture": {
@@ -2315,7 +2307,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Acclaim AI": {
@@ -2323,7 +2315,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Altegio": {
@@ -2331,7 +2323,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Nozomi - Digital Health Product Studio": {
@@ -2339,7 +2331,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Prequel": {
@@ -2347,7 +2339,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Diagnocat": {
@@ -2355,7 +2347,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Browsec": {
@@ -2363,7 +2355,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "CS-Cart": {
@@ -2371,7 +2363,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Jivo": {
@@ -2379,7 +2371,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Printify": {
@@ -2387,7 +2379,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "SpeechPro (Speech Technology Center)": {
@@ -2395,7 +2387,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "TemplateMonster": {
@@ -2403,7 +2395,7 @@
    "err": "",
    "note": "текстовый режим, маркетинг: 0",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   },
   "Jome (NewHomesMate)": {
@@ -2411,7 +2403,7 @@
    "err": "",
    "note": "dom",
    "bad_streak": 0,
-   "last_ok": "2026-10-06",
+   "last_ok": "2026-10-08",
    "alerted": false
   }
  }
