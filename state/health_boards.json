@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-08 21:24 UTC",
+ "updated": "2026-10-09 06:23 UTC",
  "label": "📋 Хабр · hh",
  "total": 5,
  "broken": 0,
- "jobs_total": 129,
+ "jobs_total": 131,
  "marketing": 10,
  "sources": {
   "Хабр «маркетинг»": {
@@ -11,7 +11,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-08",
+   "last_ok": "2026-10-09",
    "alerted": false
   },
   "Хабр «marketing»": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-08",
+   "last_ok": "2026-10-09",
    "alerted": false
   },
   "Хабр «growth»": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-08",
+   "last_ok": "2026-10-09",
    "alerted": false
   },
   "Хабр «CRM»": {
@@ -35,7 +35,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-08",
+   "last_ok": "2026-10-09",
    "alerted": false
   },
   "Хабр «SEO»": {
@@ -43,7 +43,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-08",
+   "last_ok": "2026-10-09",
    "alerted": false
   }
  }
