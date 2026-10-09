@@ -15,6 +15,13 @@
  },
  {
   "company": "Databricks",
+  "title": "Director, Technical Marketing",
+  "location": "San Francisco, California",
+  "why": "гео: california",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8860667002"
+ },
+ {
+  "company": "Databricks",
   "title": "Go-To-Market (GTM) Digital Natives Program Leader",
   "location": "San Francisco, California; United States",
   "why": "гео: california",
@@ -103,13 +110,6 @@
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/d8447328-5610-4ce6-953c-9f28ebbab71d/"
- },
- {
-  "company": "Nord Security",
-  "title": "Digital Marketing Project Manager · Mid-Senior · Fixed Term NordVPN Vilnius Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/55e3117a-8c6e-494c-8f32-f050a1d5126a/"
  },
  {
   "company": "Nord Security",
@@ -203,6 +203,13 @@
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8737153002"
  },
  {
+  "company": "Databricks",
+  "title": "Named Hunter Account Executive - Digital Natives",
+  "location": "Austin, Texas; Boston, Massachusetts; Chicago, Illinois; Denver, Colorado; Los Angeles, California; New York City, New York; San Francisco, California; Seattle, Washington",
+  "why": "роль: account executive",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8871486002"
+ },
+ {
   "company": "Temporal",
   "title": "Account Executive, Growth - Scale (West)",
   "location": "",
@@ -232,17 +239,10 @@
  },
  {
   "company": "Nord Security",
-  "title": "Affiliate Marketing Manager",
+  "title": "Affiliate Marketing Manager · Mid-Senior · B2B",
   "location": "",
   "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/00c04d47-0559-43dc-bfb9-7225c14dc1a8/"
- },
- {
-  "company": "Nord Security",
-  "title": "Affiliate Marketing Manager",
-  "location": "",
-  "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/1d27ebab-fefc-4ebc-9e12-a205eb737488/"
+  "url": "https://nordsecurity.com/careers/60f89846-3de5-40b9-8bd8-3dee5f5688f9/"
  },
  {
   "company": "Nord Security",
@@ -250,13 +250,6 @@
   "location": "",
   "why": "роль: affiliate",
   "url": "https://nordsecurity.com/careers/2aaaf4aa-d217-4cec-98df-17c0cf582e05/"
- },
- {
-  "company": "Nord Security",
-  "title": "Affiliate Marketing Manager · Mid-Senior · B2B Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/60f89846-3de5-40b9-8bd8-3dee5f5688f9/"
  },
  {
   "company": "Gismart",
@@ -295,17 +288,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
- },
- {
-  "company": "Nord Security",
   "title": "Data Analyst · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: analyst",
   "url": "https://nordsecurity.com/careers/925dfba8-f7d3-4c02-bd6f-205abddf2b37/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: analyst",
+  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
  },
  {
   "company": "Nord Security",
@@ -362,6 +355,13 @@
   "location": "",
   "why": "роль: business development",
   "url": "https://make-commerce.com/en/career/business-development-specialist-us-market-amazon-marketplace-services-f57403-en"
+ },
+ {
+  "company": "Nortal",
+  "title": "Business Development Manager – Defence (Cyber & Digital)",
+  "location": "Finland",
+  "why": "роль: business development",
+  "url": "https://careers-en-nortal.icims.com/jobs/5863/job"
  },
  {
   "company": "Formlabs",
@@ -449,17 +449,17 @@
  },
  {
   "company": "Preply",
-  "title": "Senior Data Scientist - Marketing Location: Barcelona",
+  "title": "Staff Data Scientist - Marketing Location: Barcelona",
   "location": "",
   "why": "роль: data scien",
-  "url": "https://preply.com/en/careers/apply?ashby_jid=e593140e-1ddc-4ab0-8584-96b26c2132de&job_title=Senior%20Data%20Scientist%20-%20Marketing&job_team=Data&job_location=Barcelona"
+  "url": "https://preply.com/en/careers/apply?ashby_jid=e593140e-1ddc-4ab0-8584-96b26c2132de&job_title=Staff%20Data%20Scientist%20-%20Marketing&job_team=Data&job_location=Barcelona"
  },
  {
   "company": "Preply",
-  "title": "Senior Data Scientist - Marketing Location: London",
+  "title": "Staff Data Scientist - Marketing Location: London",
   "location": "",
   "why": "роль: data scien",
-  "url": "https://preply.com/en/careers/apply?ashby_jid=f523d3f8-1b3a-4711-a378-2796943d4298&job_title=Senior%20Data%20Scientist%20-%20Marketing&job_team=Data&job_location=London"
+  "url": "https://preply.com/en/careers/apply?ashby_jid=f523d3f8-1b3a-4711-a378-2796943d4298&job_title=Staff%20Data%20Scientist%20-%20Marketing&job_team=Data&job_location=London"
  },
  {
   "company": "Databricks",
@@ -477,17 +477,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Vilnius / Kaunas Hybrid Design",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/fad1118b-4ec1-45ed-9f71-7b814f6fbc71/"
- },
- {
-  "company": "Nord Security",
   "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Warsaw Hybrid Design",
   "location": "",
   "why": "роль: design",
   "url": "https://nordsecurity.com/careers/96604113-382f-42e5-bb4e-03efeff4c7aa/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Vilnius / Kaunas Hybrid Design",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://nordsecurity.com/careers/fad1118b-4ec1-45ed-9f71-7b814f6fbc71/"
  },
  {
   "company": "Nord Security",
@@ -520,44 +520,23 @@
  {
   "company": "Databricks",
   "title": "Manager, Field Engineering - Strategic Digital Native Business",
-  "location": "Remote - California; Remote - Colorado; Remote - Oregon; Remote - Washington",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8458032002"
- },
- {
-  "company": "Databricks",
-  "title": "Manager, Field Engineering - Strategic Digital Native Business",
   "location": "San Francisco, California",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859577002"
  },
  {
   "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
+  "title": "Manager, Field Engineering - Strategic Digital Native Business",
+  "location": "Remote - California; Remote - Colorado; Remote - Oregon; Remote - Washington",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8458032002"
  },
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
+  "location": "Mountain View, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - New York",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Seattle, Washington",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
  },
  {
   "company": "Databricks",
@@ -569,9 +548,30 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Mountain View, California",
+  "location": "Seattle, Washington",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "San Francisco, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Remote - New York",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Remote - California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
  },
  {
   "company": "Databricks",
@@ -614,6 +614,20 @@
   "location": "",
   "why": "роль: engineer",
   "url": "https://preply.com/en/careers/apply?ashby_jid=a6cab371-9d79-4240-8767-5f3f0fed3beb&job_title=Senior%20Full-stack%20Engineer%20-%20CRM&job_team=Engineering&job_location=Barcelona"
+ },
+ {
+  "company": "Preply",
+  "title": "Engineering Manager for Martech team",
+  "location": "",
+  "why": "роль: engineer",
+  "url": "https://preply.com/en/careers/apply?ashby_jid=19eb6660-965b-4d11-86b3-1c026b8f5c8f&job_title=Engineering%20Manager%20for%20Martech%20team&job_team=Engineering&job_location=Barcelona"
+ },
+ {
+  "company": "Preply",
+  "title": "Engineering Manager for Martech team",
+  "location": "",
+  "why": "роль: engineer",
+  "url": "https://preply.com/en/careers/apply?ashby_jid=7a82c054-530f-4c97-9439-dfb7a3c19c35&job_title=Engineering%20Manager%20for%20Martech%20team&job_team=Engineering&job_location=Kyiv"
  },
  {
   "company": "Temporal",
@@ -722,6 +736,13 @@
  },
  {
   "company": "Fundraise Up",
+  "title": "Product Manager, Campaign Pages Cyprus Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://fundraiseup.com/careers/4737503005/?gh_jid=4737503005"
+ },
+ {
+  "company": "Fundraise Up",
   "title": "Product Manager, Campaign Pages Georgia Remote",
   "location": "",
   "why": "роль: product manager",
@@ -761,6 +782,13 @@
   "location": "West Coast - United States",
   "why": "роль: product marketing",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8493857002"
+ },
+ {
+  "company": "Flo",
+  "title": "Senior Product Marketing Manager",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://job-boards.greenhouse.io/flohealth/jobs/8016592003?gh_jid=8016592003"
  },
  {
   "company": "Formlabs",
@@ -854,6 +882,13 @@
   "url": "https://www.veriff.com/careers/position/8626079002"
  },
  {
+  "company": "Plurio AI",
+  "title": "Recruiter (Performance & GTM)",
+  "location": "",
+  "why": "роль: recruiter",
+  "url": "https://www.plurio.ai/careers/recruiter-performance-gtm"
+ },
+ {
   "company": "Refocus",
   "title": "Recruiter (business growth)",
   "location": "",
@@ -873,13 +908,6 @@
   "location": "",
   "why": "роль: sales",
   "url": "https://altegio.peopleforce.io/careers/v/224102-senior-sales-manager-polish-market"
- },
- {
-  "company": "SIDESTREAM",
-  "title": "Werkstudent*in Sales & Marketing (m/w/d)",
-  "location": "",
-  "why": "роль: sales",
-  "url": "https://join.com/companies/sidestream/16720440"
  },
  {
   "company": "Nord Security",
