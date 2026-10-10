@@ -162,17 +162,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "PPC Team Lead · B2B Team Nord B2B Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/b8e2b24e-4e15-4b88-919a-79c9c46f2429/"
- },
- {
-  "company": "Nord Security",
   "title": "PPC Team Lead · B2B Team Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/e5758a76-77a0-4b98-9d33-094f30800558/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "PPC Team Lead · B2B Team Nord B2B Warsaw Hybrid Marketing & Communications",
+  "location": "",
+  "why": "гео: hybrid",
+  "url": "https://nordsecurity.com/careers/b8e2b24e-4e15-4b88-919a-79c9c46f2429/"
  },
  {
   "company": "Databricks",
@@ -242,14 +242,14 @@
   "title": "Affiliate Marketing Manager · Mid-Senior · B2B",
   "location": "",
   "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/60f89846-3de5-40b9-8bd8-3dee5f5688f9/"
+  "url": "https://nordsecurity.com/careers/2aaaf4aa-d217-4cec-98df-17c0cf582e05/"
  },
  {
   "company": "Nord Security",
   "title": "Affiliate Marketing Manager · Mid-Senior · B2B",
   "location": "",
   "why": "роль: affiliate",
-  "url": "https://nordsecurity.com/careers/2aaaf4aa-d217-4cec-98df-17c0cf582e05/"
+  "url": "https://nordsecurity.com/careers/60f89846-3de5-40b9-8bd8-3dee5f5688f9/"
  },
  {
   "company": "Gismart",
@@ -257,6 +257,13 @@
   "location": "",
   "why": "роль: analyst",
   "url": "https://gismart.com/vacancy/marketing-analyst/"
+ },
+ {
+  "company": "Medvidi",
+  "title": "Marketing Data Analyst Poland · Full-time · Middle",
+  "location": "",
+  "why": "роль: analyst",
+  "url": "https://medvidi.com/careers/co/poland/6F.278/marketing-data-analyst/all"
  },
  {
   "company": "Medvidi",
@@ -288,17 +295,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Data Analyst · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://nordsecurity.com/careers/925dfba8-f7d3-4c02-bd6f-205abddf2b37/"
- },
- {
-  "company": "Nord Security",
   "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: analyst",
   "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Data Analyst · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: analyst",
+  "url": "https://nordsecurity.com/careers/925dfba8-f7d3-4c02-bd6f-205abddf2b37/"
  },
  {
   "company": "Nord Security",
@@ -490,13 +497,6 @@
   "url": "https://nordsecurity.com/careers/fad1118b-4ec1-45ed-9f71-7b814f6fbc71/"
  },
  {
-  "company": "Nord Security",
-  "title": "Web Designer · Mid-Senior · Marketing Design Team NordVPN Vilnius Hybrid Design",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/0ac04922-cc35-46a1-9388-09eb0650a1b7/"
- },
- {
   "company": "Petcube",
   "title": "Digital Product Designer",
   "location": "",
@@ -534,23 +534,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Mountain View, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "West Coast - United States",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Seattle, Washington",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002"
  },
  {
   "company": "Databricks",
@@ -562,6 +548,13 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Remote - California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "Remote - New York",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
@@ -569,9 +562,16 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
+  "location": "Seattle, Washington",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Mountain View, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
  },
  {
   "company": "Databricks",
@@ -813,13 +813,6 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · AI Security Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/e6809c4c-8faf-41e6-b944-863e5eaf3e31/"
- },
- {
-  "company": "Nord Security",
   "title": "Product Marketing Manager · AI Security Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
@@ -827,10 +820,10 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · NordLayer Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "title": "Product Marketing Manager · AI Security Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/068c39f4-c0e5-4fd4-9cd9-b6bf2ed084db/"
+  "url": "https://nordsecurity.com/careers/e6809c4c-8faf-41e6-b944-863e5eaf3e31/"
  },
  {
   "company": "Nord Security",
@@ -838,6 +831,13 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Product Marketing Manager · NordLayer Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://nordsecurity.com/careers/068c39f4-c0e5-4fd4-9cd9-b6bf2ed084db/"
  },
  {
   "company": "Temporal",
@@ -911,16 +911,16 @@
  },
  {
   "company": "Nord Security",
-  "title": "Social Media Strategist · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: social media",
-  "url": "https://nordsecurity.com/careers/72b1c885-f29e-4db0-a43c-8b6cd69fa614/"
- },
- {
-  "company": "Nord Security",
   "title": "Social Media Strategist · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: social media",
   "url": "https://nordsecurity.com/careers/2e037d57-ee78-49d5-8c41-12b24ae7e51f/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Social Media Strategist · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: social media",
+  "url": "https://nordsecurity.com/careers/72b1c885-f29e-4db0-a43c-8b6cd69fa614/"
  }
 ]
