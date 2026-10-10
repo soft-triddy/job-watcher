@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-09 13:55 UTC",
+ "updated": "2026-10-10 13:11 UTC",
  "label": "🎵 MBW Jobs",
  "total": 1,
  "broken": 0,
  "jobs_total": 52,
- "marketing": 10,
+ "marketing": 9,
  "sources": {
   "доска": {
    "jobs": 52,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-09",
+   "last_ok": "2026-10-10",
    "alerted": false
   }
  }
