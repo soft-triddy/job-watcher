@@ -57,13 +57,6 @@
  },
  {
   "company": "NightOwl Consulting",
-  "title": "Reverse Mortgage Marketing Assistant",
-  "location": "",
-  "why": "роль: assistant",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/reverse-mortgage-marketing-assistant-9989444057"
- },
- {
-  "company": "NightOwl Consulting",
   "title": "Executive Assistant with Marketing Experience",
   "location": "",
   "why": "роль: assistant",
@@ -71,10 +64,24 @@
  },
  {
   "company": "NightOwl Consulting",
+  "title": "Marketing Assistant",
+  "location": "",
+  "why": "роль: assistant",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-assistant"
+ },
+ {
+  "company": "NightOwl Consulting",
   "title": "CRM Assistant (with Insellerate Experience)",
   "location": "",
   "why": "роль: assistant",
   "url": "https://himalayas.app/companies/nightowl-consulting/jobs/crm-assistant-with-insellerate-experience"
+ },
+ {
+  "company": "NightOwl Consulting",
+  "title": "Reverse Mortgage Marketing Assistant",
+  "location": "",
+  "why": "роль: assistant",
+  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/reverse-mortgage-marketing-assistant-9989444057"
  },
  {
   "company": "Red Sky",
@@ -96,6 +103,13 @@
   "location": "",
   "why": "роль: business development",
   "url": "https://himalayas.app/companies/red-sky/jobs/business-development-growth-lead-sales-partnerships"
+ },
+ {
+  "company": "AppTweak",
+  "title": "App Growth Consultant, Senior (EMEA)",
+  "location": "",
+  "why": "роль: consultant",
+  "url": "https://himalayas.app/companies/apptweak/jobs/app-growth-consultant-senior-emea"
  },
  {
   "company": "Phiture",
@@ -238,6 +252,13 @@
   "url": "https://himalayas.app/companies/customer-io/jobs/events-marketing-manager-emea"
  },
  {
+  "company": "GitLab",
+  "title": "Marketing Expression of Interest Form",
+  "location": "",
+  "why": "роль: expression of interest",
+  "url": "https://himalayas.app/companies/gitlab-com/jobs/marketing-expression-of-interest-form"
+ },
+ {
   "company": "Seoprofy",
   "title": "Senior SEO Specialist (iGaming)",
   "location": "",
@@ -278,6 +299,13 @@
   "location": "",
   "why": "роль: partner",
   "url": "https://himalayas.app/companies/flowmingo/jobs/marketing-growth-business-partner"
+ },
+ {
+  "company": "Replika",
+  "title": "Creative Producer, Growth - Remote",
+  "location": "",
+  "why": "роль: producer",
+  "url": "https://himalayas.app/companies/replika/jobs/creative-producer-growth-remote"
  },
  {
   "company": "Novakid School",
@@ -329,6 +357,13 @@
   "url": "https://himalayas.app/companies/project-management-institute-inc/jobs/director-strategic-product-marketing"
  },
  {
+  "company": "Tiugo Technologies",
+  "title": "Senior Product Marketing Manager",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://himalayas.app/companies/tiugo/jobs/senior-product-marketing-manager"
+ },
+ {
   "company": "TechBiz Global",
   "title": "Recruiter (On Demand)",
   "location": "",
@@ -341,5 +376,12 @@
   "location": "",
   "why": "роль: recruiter",
   "url": "https://himalayas.app/companies/trafilea-com/jobs/marketing-talent-acquisition-sr-recruiter-lead"
+ },
+ {
+  "company": "Trafilea",
+  "title": "Social Media Growth Manager",
+  "location": "",
+  "why": "роль: social media",
+  "url": "https://himalayas.app/companies/trafilea-com/jobs/social-media-growth-manager"
  }
 ]
