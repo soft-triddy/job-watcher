@@ -1,17 +1,17 @@
 [
  {
-  "company": "Первый Бит",
-  "title": "Onsite IT Support Engineer for UAE market",
-  "location": "Remote",
-  "why": "роль: engineer",
-  "url": "https://career.habr.com/vacancies/1000169022"
- },
- {
   "company": "Vital Partners",
   "title": "PR-менеджер / Маркетолог",
   "location": "Remote",
   "why": "роль: pr",
   "url": "https://career.habr.com/vacancies/1000167571"
+ },
+ {
+  "company": "СберЗдоровье",
+  "title": "Product Manager (CR1 +маркетинг)",
+  "location": "Москва",
+  "why": "роль: product manager",
+  "url": "https://career.habr.com/vacancies/1000168644"
  },
  {
   "company": "ЛАНИТ",
@@ -21,25 +21,25 @@
   "url": "https://career.habr.com/vacancies/1000168818"
  },
  {
-  "company": "Globus",
-  "title": "Менеджер аналитик CRM кампаний",
+  "company": "ANCOR",
+  "title": "SMM маркетолог",
   "location": "Москва",
-  "why": "роль: аналитик",
-  "url": "https://career.habr.com/vacancies/1000167664"
- },
- {
-  "company": "РГ-СЕРВИС",
-  "title": "Аналитик 1С ERP.УХ по направлению «Управление продажами и маркетингом»",
-  "location": "Москва",
-  "why": "роль: аналитик",
-  "url": "https://career.habr.com/vacancies/1000168929"
+  "why": "роль: smm",
+  "url": "https://career.habr.com/vacancies/1000168558"
  },
  {
   "company": "ANCOR",
-  "title": "Младший growth-маркетолог",
-  "location": "Волгоград",
-  "why": "роль: младш",
-  "url": "https://career.habr.com/vacancies/1000168562"
+  "title": "Менеджер по маркетингу/Бренд-менеджер (full-time, офис)",
+  "location": "Санкт-Петербург",
+  "why": "роль: бренд",
+  "url": "https://career.habr.com/vacancies/1000168571"
+ },
+ {
+  "company": "ANCOR",
+  "title": "Менеджер по маркетингу/Бренд-менеджер (full-time, офис)",
+  "location": "Санкт-Петербург",
+  "why": "роль: бренд",
+  "url": "https://career.habr.com/vacancies/1000168569"
  },
  {
   "company": "ANCOR",
@@ -49,10 +49,38 @@
   "url": "https://career.habr.com/vacancies/1000168561"
  },
  {
+  "company": "ANCOR",
+  "title": "Младший growth-маркетолог",
+  "location": "Волгоград",
+  "why": "роль: младш",
+  "url": "https://career.habr.com/vacancies/1000168562"
+ },
+ {
   "company": "БФТ - Холдинг",
   "title": "Телемаркетолог / Менеджер по продажам",
   "location": "Чебоксары · Remote",
   "why": "роль: продаж",
   "url": "https://career.habr.com/vacancies/1000166940"
+ },
+ {
+  "company": "ANCOR",
+  "title": "Технический продуктовый маркетолог / CRM-маркетолог",
+  "location": "Санкт-Петербург",
+  "why": "роль: продуктовый маркетолог",
+  "url": "https://career.habr.com/vacancies/1000168567"
+ },
+ {
+  "company": "ANCOR",
+  "title": "Технический продуктовый маркетолог / CRM-маркетолог",
+  "location": "Санкт-Петербург",
+  "why": "роль: продуктовый маркетолог",
+  "url": "https://career.habr.com/vacancies/1000168566"
+ },
+ {
+  "company": "ANCOR",
+  "title": "Технический продуктовый маркетолог / CRM-маркетолог",
+  "location": "Нижний Новгород",
+  "why": "роль: продуктовый маркетолог",
+  "url": "https://career.habr.com/vacancies/1000168564"
  }
 ]
