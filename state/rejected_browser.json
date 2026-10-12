@@ -162,17 +162,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "PPC Team Lead · B2B Team Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/e5758a76-77a0-4b98-9d33-094f30800558/"
- },
- {
-  "company": "Nord Security",
   "title": "PPC Team Lead · B2B Team Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/b8e2b24e-4e15-4b88-919a-79c9c46f2429/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "PPC Team Lead · B2B Team Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "гео: hybrid",
+  "url": "https://nordsecurity.com/careers/e5758a76-77a0-4b98-9d33-094f30800558/"
  },
  {
   "company": "Databricks",
@@ -287,13 +287,6 @@
   "url": "https://job.movavi.com/vacancies/senior-marketing-analyst/"
  },
  {
-  "company": "Muse Group",
-  "title": "Senior Marketing Analyst",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://www.mu.se/positions/position-e1_d60"
- },
- {
   "company": "Nord Security",
   "title": "Commercial Strategy Analyst · Junior-Mid · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
@@ -302,17 +295,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: analyst",
-  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
- },
- {
-  "company": "Nord Security",
   "title": "Data Analyst · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: analyst",
   "url": "https://nordsecurity.com/careers/925dfba8-f7d3-4c02-bd6f-205abddf2b37/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: analyst",
+  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
  },
  {
   "company": "Nord Security",
@@ -491,17 +484,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Warsaw Hybrid Design",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/96604113-382f-42e5-bb4e-03efeff4c7aa/"
- },
- {
-  "company": "Nord Security",
   "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Vilnius / Kaunas Hybrid Design",
   "location": "",
   "why": "роль: design",
   "url": "https://nordsecurity.com/careers/fad1118b-4ec1-45ed-9f71-7b814f6fbc71/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Performance Creative Designer · Mid-Senior · B2B Hub Nord B2B Warsaw Hybrid Design",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://nordsecurity.com/careers/96604113-382f-42e5-bb4e-03efeff4c7aa/"
  },
  {
   "company": "Petcube",
@@ -518,18 +511,18 @@
   "url": "https://kilo.co/career/junior-email-marketing-specialist/"
  },
  {
+  "company": "MacPaw",
+  "title": "Senior Email Marketing Specialist (Setapp)",
+  "location": "",
+  "why": "роль: email",
+  "url": "https://macpaw.com/careers/email_marketing_sp"
+ },
+ {
   "company": "Monetha",
   "title": "Email marketer / Email automation specialist",
   "location": "",
   "why": "роль: email",
   "url": "https://www.monetha.io/careers/email-marketer-email-automation-specialist/"
- },
- {
-  "company": "Databricks",
-  "title": "Manager, Field Engineering - Strategic Digital Native Business",
-  "location": "San Francisco, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859577002"
  },
  {
   "company": "Databricks",
@@ -540,17 +533,17 @@
  },
  {
   "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - New York",
+  "title": "Manager, Field Engineering - Strategic Digital Native Business",
+  "location": "San Francisco, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859577002"
  },
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Seattle, Washington",
+  "location": "Remote - California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
  },
  {
   "company": "Databricks",
@@ -562,9 +555,16 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
+  "location": "Seattle, Washington",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Remote - New York",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
  },
  {
   "company": "Databricks",
@@ -576,9 +576,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
+  "location": "San Francisco, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -707,6 +707,13 @@
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8860665002"
  },
  {
+  "company": "Fundraise Up",
+  "title": "Sr. Partnership Manager, HubSpot",
+  "location": "",
+  "why": "роль: partner",
+  "url": "https://fundraiseup.com/careers/4742455005/?gh_jid=4742455005"
+ },
+ {
   "company": "Krisp",
   "title": "Partner Marketing Manager",
   "location": "",
@@ -733,48 +740,6 @@
   "location": "",
   "why": "роль: product manager",
   "url": "https://adapty.io/careers/growth-product-manager-cs-team/"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Product Manager, Campaign pages Armenia Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://fundraiseup.com/careers/4737502005/?gh_jid=4737502005"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Product Manager, Campaign Pages Cyprus Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://fundraiseup.com/careers/4737503005/?gh_jid=4737503005"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Product Manager, Campaign Pages Georgia Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://fundraiseup.com/careers/4737504005/?gh_jid=4737504005"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Product Manager, Campaign Pages Portugal Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://fundraiseup.com/careers/4737505005/?gh_jid=4737505005"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Product Manager, Campaign Pages Serbia Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://fundraiseup.com/careers/4737506005/?gh_jid=4737506005"
- },
- {
-  "company": "Fundraise Up",
-  "title": "Product Manager, Campaign Pages Spain Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://fundraiseup.com/careers/4737507005/?gh_jid=4737507005"
  },
  {
   "company": "Databricks",
@@ -812,18 +777,18 @@
   "url": "https://careers.formlabs.com/job/8248497/apply/"
  },
  {
+  "company": "Fundraise Up",
+  "title": "Senior Product Marketing Manager",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://fundraiseup.com/careers/4741518005/?gh_jid=4741518005"
+ },
+ {
   "company": "Kilo Health",
   "title": "Product Marketing Manager",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://kilo.co/career/product-marketing-manager/"
- },
- {
-  "company": "Nord Security",
-  "title": "Product Marketing Manager · AI Security Nord B2B Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/39e1f928-11f1-45fd-9c99-b32d0793ae62/"
  },
  {
   "company": "Nord Security",
@@ -834,10 +799,10 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · NordLayer Nord B2B Warsaw Hybrid Marketing & Communications",
+  "title": "Product Marketing Manager · AI Security Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
+  "url": "https://nordsecurity.com/careers/39e1f928-11f1-45fd-9c99-b32d0793ae62/"
  },
  {
   "company": "Nord Security",
@@ -845,6 +810,13 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://nordsecurity.com/careers/068c39f4-c0e5-4fd4-9cd9-b6bf2ed084db/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Product Marketing Manager · NordLayer Nord B2B Warsaw Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
  },
  {
   "company": "Temporal",
