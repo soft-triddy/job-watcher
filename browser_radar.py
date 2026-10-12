@@ -237,6 +237,8 @@ def _synthetic(jobs, base):
 ROLE_WORD = re.compile(r"\b(manager|lead|head|director|specialist|strategist|marketer|officer|vp|owner|generalist|"
                        r"менеджер|руководитель|директор|специалист|маркетолог|лид)\b", re.I)
 CLOSED = re.compile(r"\b(closed|filled|закрыт[аоы]?)\b", re.I)
+# разовые сборы (content_sweep.py) подставляют свой фильтр текстового режима вместо маркетингового
+TEXT_MATCH = re.compile(os.environ["TEXT_MATCH"], re.I) if os.environ.get("TEXT_MATCH") else None
 
 def _text_mode(page, base):
     """Последний шанс для страниц, где вакансии — просто текст (Tilda, Framer, Notion):
@@ -251,7 +253,7 @@ def _text_mode(page, base):
         for line in t.split("\n"):
             line=_clean(line)
             if not (2 <= len(line.split()) <= 12) or line.lower() in seen: continue
-            if is_marketing(line) and ROLE_WORD.search(line) and not CLOSED.search(line) and not line.endswith((".", "!", "?")):
+            if (TEXT_MATCH.search(line) if TEXT_MATCH else is_marketing(line)) and ROLE_WORD.search(line) and not CLOSED.search(line) and not line.endswith((".", "!", "?")):
                 seen.add(line.lower()); out.append({"title": line, "url": base, "location": ""})
     return _synthetic(out, base)
 
