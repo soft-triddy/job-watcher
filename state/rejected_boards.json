@@ -1,17 +1,17 @@
 [
  {
+  "company": "Sirius Capital",
+  "title": "Lead Backend Engineer - Market Data (FinTech)",
+  "location": "Ереван",
+  "why": "роль: engineer",
+  "url": "https://career.habr.com/vacancies/1000168936"
+ },
+ {
   "company": "Vital Partners",
   "title": "PR-менеджер / Маркетолог",
   "location": "Remote",
   "why": "роль: pr",
   "url": "https://career.habr.com/vacancies/1000167571"
- },
- {
-  "company": "СберЗдоровье",
-  "title": "Product Manager (CR1 +маркетинг)",
-  "location": "Москва",
-  "why": "роль: product manager",
-  "url": "https://career.habr.com/vacancies/1000168644"
  },
  {
   "company": "ЛАНИТ",
@@ -21,25 +21,11 @@
   "url": "https://career.habr.com/vacancies/1000168818"
  },
  {
-  "company": "ANCOR",
-  "title": "SMM маркетолог",
+  "company": "РГ-СЕРВИС",
+  "title": "Аналитик 1С ERP.УХ по направлению «Управление продажами и маркетингом»",
   "location": "Москва",
-  "why": "роль: smm",
-  "url": "https://career.habr.com/vacancies/1000168558"
- },
- {
-  "company": "ANCOR",
-  "title": "Менеджер по маркетингу/Бренд-менеджер (full-time, офис)",
-  "location": "Санкт-Петербург",
-  "why": "роль: бренд",
-  "url": "https://career.habr.com/vacancies/1000168571"
- },
- {
-  "company": "ANCOR",
-  "title": "Менеджер по маркетингу/Бренд-менеджер (full-time, офис)",
-  "location": "Санкт-Петербург",
-  "why": "роль: бренд",
-  "url": "https://career.habr.com/vacancies/1000168569"
+  "why": "роль: аналитик",
+  "url": "https://career.habr.com/vacancies/1000168929"
  },
  {
   "company": "ANCOR",
@@ -82,5 +68,12 @@
   "location": "Нижний Новгород",
   "why": "роль: продуктовый маркетолог",
   "url": "https://career.habr.com/vacancies/1000168564"
+ },
+ {
+  "company": "ЛАНИТ",
+  "title": "Продуктовый маркетолог-стажер",
+  "location": "Москва",
+  "why": "роль: стажер",
+  "url": "https://career.habr.com/vacancies/1000169193"
  }
 ]
