@@ -1,32 +1,32 @@
 {
- "updated": "2026-10-13 12:02 UTC",
+ "updated": "2026-10-13 19:23 UTC",
  "label": "📋 Хабр · hh",
  "total": 5,
- "broken": 3,
- "jobs_total": 97,
- "marketing": 6,
+ "broken": 0,
+ "jobs_total": 128,
+ "marketing": 9,
  "sources": {
   "Хабр «маркетинг»": {
-   "jobs": 0,
-   "err": "HTTPError 502 Server Error: Bad Gateway for url: https://career.habr.c",
+   "jobs": 50,
+   "err": "",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 0,
    "last_ok": "2026-10-13",
    "alerted": false
   },
   "Хабр «marketing»": {
-   "jobs": 0,
-   "err": "ReadTimeout HTTPSConnectionPool(host='career.habr.com', port=443): Read ",
+   "jobs": 50,
+   "err": "",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 0,
    "last_ok": "2026-10-13",
    "alerted": false
   },
   "Хабр «growth»": {
-   "jobs": 0,
-   "err": "ReadTimeout HTTPSConnectionPool(host='career.habr.com', port=443): Read ",
+   "jobs": 7,
+   "err": "",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 0,
    "last_ok": "2026-10-13",
    "alerted": false
   },
