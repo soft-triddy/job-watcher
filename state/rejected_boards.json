@@ -1,5 +1,12 @@
 [
  {
+  "company": "IBS",
+  "title": "Инженер по нагрузочному тестированию (JMeter) / Performance QA Engineer",
+  "location": "Remote",
+  "why": "роль: engineer",
+  "url": "https://career.habr.com/vacancies/1000168590"
+ },
+ {
   "company": "Sirius Capital",
   "title": "Lead Backend Engineer - Market Data (FinTech)",
   "location": "Ереван",
@@ -14,11 +21,18 @@
   "url": "https://career.habr.com/vacancies/1000168644"
  },
  {
-  "company": "ANCOR",
-  "title": "SMM маркетолог",
+  "company": "Солар",
+  "title": "Product Marketing Manager",
   "location": "Москва",
-  "why": "роль: smm",
-  "url": "https://career.habr.com/vacancies/1000168558"
+  "why": "роль: product marketing",
+  "url": "https://career.habr.com/vacancies/1000167222"
+ },
+ {
+  "company": "Globus",
+  "title": "Менеджер аналитик CRM кампаний",
+  "location": "Москва",
+  "why": "роль: аналитик",
+  "url": "https://career.habr.com/vacancies/1000167664"
  },
  {
   "company": "РГ-СЕРВИС",
@@ -26,68 +40,5 @@
   "location": "Москва",
   "why": "роль: аналитик",
   "url": "https://career.habr.com/vacancies/1000168929"
- },
- {
-  "company": "ANCOR",
-  "title": "Менеджер по маркетингу/Бренд-менеджер (full-time, офис)",
-  "location": "Санкт-Петербург",
-  "why": "роль: бренд",
-  "url": "https://career.habr.com/vacancies/1000168571"
- },
- {
-  "company": "ANCOR",
-  "title": "Менеджер по маркетингу/Бренд-менеджер (full-time, офис)",
-  "location": "Санкт-Петербург",
-  "why": "роль: бренд",
-  "url": "https://career.habr.com/vacancies/1000168569"
- },
- {
-  "company": "ANCOR",
-  "title": "Младший growth-маркетолог",
-  "location": "Москва",
-  "why": "роль: младш",
-  "url": "https://career.habr.com/vacancies/1000168561"
- },
- {
-  "company": "ANCOR",
-  "title": "Младший growth-маркетолог",
-  "location": "Волгоград",
-  "why": "роль: младш",
-  "url": "https://career.habr.com/vacancies/1000168562"
- },
- {
-  "company": "БФТ - Холдинг",
-  "title": "Телемаркетолог / Менеджер по продажам",
-  "location": "Чебоксары · Remote",
-  "why": "роль: продаж",
-  "url": "https://career.habr.com/vacancies/1000166940"
- },
- {
-  "company": "ANCOR",
-  "title": "Технический продуктовый маркетолог / CRM-маркетолог",
-  "location": "Санкт-Петербург",
-  "why": "роль: продуктовый маркетолог",
-  "url": "https://career.habr.com/vacancies/1000168567"
- },
- {
-  "company": "ANCOR",
-  "title": "Технический продуктовый маркетолог / CRM-маркетолог",
-  "location": "Санкт-Петербург",
-  "why": "роль: продуктовый маркетолог",
-  "url": "https://career.habr.com/vacancies/1000168566"
- },
- {
-  "company": "ANCOR",
-  "title": "Технический продуктовый маркетолог / CRM-маркетолог",
-  "location": "Нижний Новгород",
-  "why": "роль: продуктовый маркетолог",
-  "url": "https://career.habr.com/vacancies/1000168564"
- },
- {
-  "company": "ЛАНИТ",
-  "title": "Продуктовый маркетолог-стажер",
-  "location": "Москва",
-  "why": "роль: стажер",
-  "url": "https://career.habr.com/vacancies/1000169193"
  }
 ]
