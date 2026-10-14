@@ -105,6 +105,13 @@
   "url": "https://himalayas.app/companies/red-sky/jobs/business-development-growth-lead-sales-partnerships"
  },
  {
+  "company": "Hard Rock Digital",
+  "title": "Manager - CRM Casino",
+  "location": "",
+  "why": "роль: casino",
+  "url": "https://himalayas.app/companies/hard-rock-digital/jobs/manager-crm-casino"
+ },
+ {
   "company": "AppTweak",
   "title": "App Growth Consultant, Mid-level (EMEA)",
   "location": "",
@@ -210,13 +217,6 @@
   "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-coordinator"
  },
  {
-  "company": "Pivot + Edge",
-  "title": "Marketing Coordinator (Contract)",
-  "location": "",
-  "why": "роль: coordinator",
-  "url": "https://himalayas.app/companies/pivot-edge/jobs/marketing-coordinator-contract"
- },
- {
   "company": "NightOwl Consulting",
   "title": "Marketing Copywriter",
   "location": "",
@@ -278,6 +278,13 @@
   "location": "149 стран, есть Кыргызстан",
   "why": "роль: event",
   "url": "https://himalayas.app/companies/customer-io/jobs/events-marketing-manager-emea"
+ },
+ {
+  "company": "Enjoy Gaming LLC",
+  "title": "Head of Marketing (B2B iGaming)",
+  "location": "",
+  "why": "роль: igaming",
+  "url": "https://himalayas.app/companies/enjoy-gaming-llc/jobs/head-of-marketing-b2b-igaming"
  },
  {
   "company": "Seoprofy",
@@ -364,18 +371,18 @@
   "url": "https://himalayas.app/companies/jivpad/jobs/product-marketing-manager"
  },
  {
-  "company": "Project Management Institute, Inc.",
-  "title": "Director, Strategic Product Marketing",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://himalayas.app/companies/project-management-institute-inc/jobs/director-strategic-product-marketing"
- },
- {
   "company": "VuMedi",
   "title": "Director of Product Marketing",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://himalayas.app/companies/vumedi/jobs/director-of-product-marketing"
+ },
+ {
+  "company": "Interdependence Public Relations",
+  "title": "Digital Account Executive, Public Relations",
+  "location": "",
+  "why": "роль: public relations",
+  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/digital-account-executive-public-relations"
  },
  {
   "company": "TechBiz Global",
