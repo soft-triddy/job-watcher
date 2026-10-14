@@ -46,8 +46,9 @@ fit = realistic chance to pass screening and do the job well, judged by hard req
   Missing a must-have skill/experience listed in "NOT in experience" costs a lot. 8-10 strong match, 5-7 partial,
   0-4 weak. Do not reward keyword overlap alone.
 dull = how unappealing the role is for her (0 = dream, 10 = soul-crushing), per the Preferences section.
-  Growth/Demand Gen/Inbound hands-on at B2B SaaS: 0-3. Digital Marketing Manager: 3-5.
-  MarOps/CRM/Lifecycle: 4-6. Anything in the dull/unwanted list: 7-10.
+  Growth/Inbound/Organic growth with SEO/website at the core, hands-on at B2B SaaS: 0-3. MarOps/HubSpot/automation: 3-5.
+  Digital/Marketing Manager generalist: 3-5 if SEO/website-led, 5-7 if paid-social/SMM-led. SEO Specialist (junior/
+  middle): 6-7. Demand Gen/PPC/CRM/Lifecycle: 5-7. Anything in the dull/unwanted list: 7-10.
 hire = can she be hired from Kyrgyzstan as remote contractor/B2B or via worldwide EOR?
   green: ONLY if the text explicitly says worldwide/anywhere/any location, contractors/B2B welcome, or allows
     CIS/Central Asia. Never green by default or because the role "sounds remote".
