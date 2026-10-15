@@ -233,23 +233,9 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "Lexington, KY ",
-  "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211469007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Digital Marketing Account Manager ",
   "location": "North Bethesda, MD ",
   "why": "роль: account manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5211444007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Digital Marketing Account Manager ",
-  "location": "Waltham, MA ",
-  "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211466007"
  },
  {
   "company": "Xometry",
@@ -264,6 +250,20 @@
   "location": "Los Angeles, CA ",
   "why": "роль: account manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5249149007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Digital Marketing Account Manager ",
+  "location": "Waltham, MA ",
+  "why": "роль: account manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211466007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Digital Marketing Account Manager ",
+  "location": "Lexington, KY ",
+  "why": "роль: account manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211469007"
  },
  {
   "company": "Genesis (Studio)",
@@ -378,6 +378,13 @@
   "url": "https://jobs.ashbyhq.com/SKELAR/db212928-7639-4f86-a67b-ce5e4e31bf7f"
  },
  {
+  "company": "SKELAR",
+  "title": "Junior Marketing Analyst - Leaply",
+  "location": "Any of our Offices (Kyiv / Lviv / Warsaw)",
+  "why": "роль: analyst",
+  "url": "https://jobs.ashbyhq.com/SKELAR/48234b40-9954-462d-b736-7c222915f8bf"
+ },
+ {
   "company": "Social Discovery Group",
   "title": "Senior Marketing analyst",
   "location": "Worldwide",
@@ -406,6 +413,13 @@
   "url": "https://jobs.ashbyhq.com/higgsfieldai/ab7c3f96-4fb1-45f3-8558-300ec64bee5e"
  },
  {
+  "company": "Orion Innovation",
+  "title": "Marketing Cloud Mobile Technical Specialist / Mobile & Analytics - Hibrido (CDMX)",
+  "location": "Mexico City, Mexico City, Mexico",
+  "why": "роль: analytics",
+  "url": "https://www.orioninc.com/careers/job/?gh_jid=4721816006"
+ },
+ {
   "company": "AI Digital",
   "title": "Growth Associate (Boston, MA)",
   "location": "Atlanta, Georgia, United States",
@@ -425,13 +439,6 @@
   "location": "Atlanta, Georgia, United States",
   "why": "роль: associate",
   "url": "https://aidigital.recruitee.com/o/growth-associate-phoenix-az"
- },
- {
-  "company": "AI Digital",
-  "title": "Growth Associate (Las Vegas, NV)",
-  "location": "Atlanta, Georgia, United States",
-  "why": "роль: associate",
-  "url": "https://aidigital.recruitee.com/o/growth-associate-las-vegas-nv"
  },
  {
   "company": "AI Digital",
@@ -532,18 +539,18 @@
   "url": "https://semrush.wd5.myworkdayjobs.com/semrushcareers/job/United-States---Austin/Digital-Strategy-Consultant--Services-Team_JR100923"
  },
  {
-  "company": "C Teleport",
-  "title": "Marketing Content Specialist",
-  "location": "",
-  "why": "роль: content",
-  "url": "https://careers.cteleport.com/jobs/8302693-marketing-content-specialist"
- },
- {
   "company": "HerculesAI",
   "title": "Senior Content Writer, SEO/AEO",
   "location": "San Francisco",
   "why": "роль: content",
   "url": "https://jobs.ashbyhq.com/hercules/ea2ed629-f8d0-44ee-9e0e-05d7f8065aaa"
+ },
+ {
+  "company": "Insense",
+  "title": "Sr. B2B Content Marketing",
+  "location": "",
+  "why": "роль: content",
+  "url": "https://insense.na.teamtailor.com/jobs/720130-sr-b2b-content-marketing"
  },
  {
   "company": "Inworld AI",
@@ -954,16 +961,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "inDrive",
@@ -1195,6 +1202,13 @@
   "location": "San Francisco",
   "why": "роль: product marketing",
   "url": "https://jobs.ashbyhq.com/clickhouse/b55850f7-419c-4a27-ac6d-33e46e39c428"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Principal Product Marketing Manager - United States ",
+  "location": "United States",
+  "why": "роль: product marketing",
+  "url": "https://jobs.ashbyhq.com/clickhouse/bdad5644-3c80-4b7f-b5a2-aacd5ef3e5d1"
  },
  {
   "company": "DataDome",
