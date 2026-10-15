@@ -64,13 +64,6 @@
  },
  {
   "company": "NightOwl Consulting",
-  "title": "Reverse Mortgage Marketing Assistant",
-  "location": "",
-  "why": "роль: assistant",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/reverse-mortgage-marketing-assistant-9989444057"
- },
- {
-  "company": "NightOwl Consulting",
   "title": "Executive Assistant with Marketing Experience",
   "location": "",
   "why": "роль: assistant",
@@ -217,6 +210,13 @@
   "url": "https://himalayas.app/companies/nightowl-consulting/jobs/marketing-coordinator"
  },
  {
+  "company": "Pivot + Edge",
+  "title": "Marketing Coordinator (Contract)",
+  "location": "",
+  "why": "роль: coordinator",
+  "url": "https://himalayas.app/companies/pivot-edge/jobs/marketing-coordinator-contract"
+ },
+ {
   "company": "NightOwl Consulting",
   "title": "Marketing Copywriter",
   "location": "",
@@ -273,11 +273,25 @@
   "url": "https://himalayas.app/companies/six-figure-consulting/jobs/gtm-engineer-email-marketing-operations-manager"
  },
  {
+  "company": "Alpaca",
+  "title": "Senior Software Engineer New Markets - EU",
+  "location": "",
+  "why": "роль: engineer",
+  "url": "https://himalayas.app/companies/alpaca/jobs/senior-software-engineer-new-markets-eu"
+ },
+ {
   "company": "Customer.io",
   "title": "Events Marketing Manager, EMEA",
   "location": "149 стран, есть Кыргызстан",
   "why": "роль: event",
   "url": "https://himalayas.app/companies/customer-io/jobs/events-marketing-manager-emea"
+ },
+ {
+  "company": "Nuitée",
+  "title": "Marketing Director, PR & Events",
+  "location": "",
+  "why": "роль: event",
+  "url": "https://himalayas.app/companies/nuitee/jobs/marketing-director-pr-events"
  },
  {
   "company": "Enjoy Gaming LLC",
