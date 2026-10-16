@@ -1,12 +1,5 @@
 [
  {
-  "company": "Sirius Capital",
-  "title": "Lead Backend Engineer - Market Data (FinTech)",
-  "location": "Ереван",
-  "why": "роль: engineer",
-  "url": "https://career.habr.com/vacancies/1000168936"
- },
- {
   "company": "Первый Бит",
   "title": "Onsite IT Support Engineer for UAE market",
   "location": "Remote",
@@ -19,13 +12,6 @@
   "location": "Remote",
   "why": "роль: pr",
   "url": "https://career.habr.com/vacancies/1000167571"
- },
- {
-  "company": "СберЗдоровье",
-  "title": "Product Manager (CR1 +маркетинг)",
-  "location": "Москва",
-  "why": "роль: product manager",
-  "url": "https://career.habr.com/vacancies/1000168644"
  },
  {
   "company": "ЛАНИТ",
@@ -49,17 +35,17 @@
   "url": "https://career.habr.com/vacancies/1000167664"
  },
  {
-  "company": "РГ-СЕРВИС",
-  "title": "Аналитик 1С ERP.УХ по направлению «Управление продажами и маркетингом»",
-  "location": "Москва",
-  "why": "роль: аналитик",
-  "url": "https://career.habr.com/vacancies/1000168929"
- },
- {
   "company": "БФТ - Холдинг",
   "title": "Телемаркетолог / Менеджер по продажам",
   "location": "Чебоксары · Remote",
   "why": "роль: продаж",
   "url": "https://career.habr.com/vacancies/1000166940"
+ },
+ {
+  "company": "Группа Астра",
+  "title": "Продуктовый маркетолог (Серверный портфель)",
+  "location": "Москва · Remote",
+  "why": "роль: продуктовый маркетолог",
+  "url": "https://career.habr.com/vacancies/1000169290"
  }
 ]
