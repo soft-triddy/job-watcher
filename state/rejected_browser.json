@@ -57,13 +57,6 @@
  },
  {
   "company": "Nord Security",
-  "title": "App Marketing CRO Manager · Mid-Senior Saily Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/d3d8099f-c5e7-4d1a-a52a-ad874fc254bf/"
- },
- {
-  "company": "Nord Security",
   "title": "App Store Optimization Specialist · Mid-Senior NordVPN Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
@@ -141,17 +134,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Paid Social Specialist · Mid-Senior · Saily Saily Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/b6df5ff9-7fb1-45ec-9816-8747d5b728d1/"
- },
- {
-  "company": "Nord Security",
   "title": "Paid Social Specialist · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/dde0e935-449f-4ba7-9f98-da69ae275122/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Paid Social Specialist · Mid-Senior · Saily Saily Warsaw Hybrid Marketing & Communications",
+  "location": "",
+  "why": "гео: hybrid",
+  "url": "https://nordsecurity.com/careers/b6df5ff9-7fb1-45ec-9816-8747d5b728d1/"
  },
  {
   "company": "Nord Security",
@@ -252,27 +245,6 @@
   "url": "https://temporal.io/careers/ce519860-6e31-49c2-a4b4-f6e9a92c3f4b"
  },
  {
-  "company": "Nord Security",
-  "title": "National Account Manager · Indirect Sales Channel · Mid-Senior NordVPN France Remote Marketing & Communications",
-  "location": "",
-  "why": "роль: account manager",
-  "url": "https://nordsecurity.com/careers/e1b006c2-dc0c-43d1-b32c-6c36e60dbedf/"
- },
- {
-  "company": "Nord Security",
-  "title": "Retail Account Manager · Indirect Sales · Mid NordVPN Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: account manager",
-  "url": "https://nordsecurity.com/careers/dbeaa3d3-65c2-40c5-8cb3-66509c412a27/"
- },
- {
-  "company": "Nord Security",
-  "title": "Retail Account Manager · Indirect Sales · Mid NordVPN Poland Remote Marketing & Communications",
-  "location": "",
-  "why": "роль: account manager",
-  "url": "https://nordsecurity.com/careers/c833a8d4-3034-4948-8509-b0de76055440/"
- },
- {
   "company": "Unlimit",
   "title": "Business Growth / Senior Account Manager (Acquiring)",
   "location": "",
@@ -312,7 +284,7 @@
   "title": "SENIOR MARKETING ANALYST",
   "location": "",
   "why": "роль: analyst",
-  "url": "https://job.movavi.com/vacancies/senior-marketing-analyst/"
+  "url": "http://job.movavi.com/vacancies/senior-marketing-analyst/"
  },
  {
   "company": "Muse Group",
@@ -411,6 +383,13 @@
   "location": "",
   "why": "роль: business development",
   "url": "https://make-commerce.com/en/career/business-development-specialist-us-market-amazon-marketplace-services-f57403-en"
+ },
+ {
+  "company": "Nortal",
+  "title": "Business Development Manager – Defence (Cyber & Digital)",
+  "location": "Finland",
+  "why": "роль: business development",
+  "url": "https://careers-en-nortal.icims.com/jobs/5863/job"
  },
  {
   "company": "Formlabs",
@@ -533,14 +512,14 @@
  },
  {
   "company": "Preply",
-  "title": "Staff Data Scientist - Paid Marketing Optimization Location: London",
+  "title": "Staff Data Scientist - Paid Marketing Optimization",
   "location": "",
   "why": "роль: data scien",
   "url": "https://preply.com/en/careers/apply?ashby_jid=64abe943-b897-4c31-93f1-90d4cb1b6ce0&job_title=Staff%20Data%20Scientist%20-%20Paid%20Marketing%20Optimization&job_team=Data&job_location=London"
  },
  {
   "company": "Preply",
-  "title": "Staff Data Scientist - Paid Marketing Optimization Location: Barcelona",
+  "title": "Staff Data Scientist - Paid Marketing Optimization",
   "location": "",
   "why": "роль: data scien",
   "url": "https://preply.com/en/careers/apply?ashby_jid=cfb54a73-ce09-418f-8d77-9dc3883ab7ed&job_title=Staff%20Data%20Scientist%20-%20Paid%20Marketing%20Optimization&job_team=Data&job_location=Barcelona"
@@ -574,13 +553,6 @@
   "url": "https://nordsecurity.com/careers/3b81f583-2e0f-41f7-b93e-401265ed62a0/"
  },
  {
-  "company": "Petcube",
-  "title": "Digital Product Designer",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://petcube.com/careers/digital-product-designer-1/"
- },
- {
   "company": "Kilo Health",
   "title": "Junior Email Marketing Specialist",
   "location": "",
@@ -595,11 +567,11 @@
   "url": "https://www.monetha.io/careers/email-marketer-email-automation-specialist/"
  },
  {
-  "company": "Databricks",
-  "title": "Manager, Field Engineering - Strategic Digital Native Business",
-  "location": "Remote - California; Remote - Colorado; Remote - Oregon; Remote - Washington",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8458032002"
+  "company": "Nord Security",
+  "title": "Customer Retention Manager (Email Marketing) · Junior-Mid NordVPN Vilnius Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: email",
+  "url": "https://nordsecurity.com/careers/64c0a54a-ec40-4e6d-af8a-6db1a2007caf/"
  },
  {
   "company": "Databricks",
@@ -610,10 +582,10 @@
  },
  {
   "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "West Coast - United States",
+  "title": "Manager, Field Engineering - Strategic Digital Native Business",
+  "location": "Remote - California; Remote - Colorado; Remote - Oregon; Remote - Washington",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8458032002"
  },
  {
   "company": "Databricks",
@@ -625,9 +597,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - New York",
+  "location": "San Francisco, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -639,9 +611,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
+  "location": "Remote - New York",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
  },
  {
   "company": "Databricks",
@@ -649,6 +621,13 @@
   "location": "Mountain View, California",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "West Coast - United States",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
  },
  {
   "company": "Databricks",
@@ -742,6 +721,13 @@
   "url": "https://www.netcracker.com/careers/open-positions/marketing-events-and-operations-specialist-8207809"
  },
  {
+  "company": "Service Titan",
+  "title": "Senior Manager, Field Events & Marketing",
+  "location": "",
+  "why": "роль: event",
+  "url": "https://servicetitan.wd1.myworkdayjobs.com/ServiceTitan/job/US-Remote/Senior-Manager--Field-Events---Marketing_JR115658"
+ },
+ {
   "company": "Nord Security",
   "title": "Influencer Marketing Manager · Mid-Senior Nord Security Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
@@ -819,6 +805,13 @@
   "url": "https://www.qic.digital/careers/senior-product-manager-marketplace"
  },
  {
+  "company": "Service Titan",
+  "title": "Staff Product Manager, Marketing Platform",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://servicetitan.wd1.myworkdayjobs.com/ServiceTitan/job/US-Remote/Group-Product-Manager_JR114921"
+ },
+ {
   "company": "Sigma Software",
   "title": "PROJECT/PRODUCT MANAGER (DIGITAL TRANSFORMATION)",
   "location": "",
@@ -876,17 +869,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · AI Security Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://nordsecurity.com/careers/e6809c4c-8faf-41e6-b944-863e5eaf3e31/"
- },
- {
-  "company": "Nord Security",
   "title": "Product Marketing Manager · AI Security Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: product marketing",
   "url": "https://nordsecurity.com/careers/39e1f928-11f1-45fd-9c99-b32d0793ae62/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Product Marketing Manager · AI Security Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://nordsecurity.com/careers/e6809c4c-8faf-41e6-b944-863e5eaf3e31/"
  },
  {
   "company": "Nord Security",
@@ -936,13 +929,6 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://temporal.io/careers/1e0c3405-1d30-408e-92b0-bc4885e8921e"
- },
- {
-  "company": "Veeam",
-  "title": "Product Marketing Director, Veeam Intelligent ResOps",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://careers.veeam.com/job/san-jose/product-marketing-director-veeam-intelligent-resops/22681/99393834992"
  },
  {
   "company": "Veriff",
