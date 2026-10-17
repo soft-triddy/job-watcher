@@ -597,9 +597,16 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
+  "location": "Mountain View, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "West Coast - United States",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
  },
  {
   "company": "Databricks",
@@ -618,16 +625,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Mountain View, California",
+  "location": "San Francisco, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "West Coast - United States",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -693,6 +693,13 @@
   "url": "https://temporal.io/careers/a04c4545-b34e-40d4-b1ac-17f17976e93e"
  },
  {
+  "company": "Veeam",
+  "title": "Senior Software Engineer, Performance Engineering",
+  "location": "",
+  "why": "роль: engineer",
+  "url": "https://careers.veeam.com/job/san-jose/senior-software-engineer-performance-engineering/22681/101910102960"
+ },
+ {
   "company": "Databricks",
   "title": "Sr. Event Marketing Manager, Field Programming",
   "location": "United States",
@@ -705,6 +712,13 @@
   "location": "",
   "why": "роль: event",
   "url": "https://careers.formlabs.com/job/8260824/apply/"
+ },
+ {
+  "company": "Formlabs",
+  "title": "Event Marketing Manager",
+  "location": "",
+  "why": "роль: event",
+  "url": "https://careers.formlabs.com/job/8294497/apply/"
  },
  {
   "company": "Formlabs",
@@ -733,6 +747,13 @@
   "location": "",
   "why": "роль: influencer",
   "url": "https://nordsecurity.com/careers/66569d2d-e67a-4033-8c33-7cefc154f848/"
+ },
+ {
+  "company": "Veeam",
+  "title": "Field Marketing Intern - Summer 2027",
+  "location": "",
+  "why": "роль: intern",
+  "url": "https://careers.veeam.com/job/virginia/field-marketing-intern-summer-2027/22681/102045463696"
  },
  {
   "company": "MakeCommerce (Maksekeskus)",
@@ -817,6 +838,13 @@
   "location": "",
   "why": "роль: product manager",
   "url": "https://career.sigma.software/vacancy/project-product-manager-2/"
+ },
+ {
+  "company": "Almaz Capital",
+  "title": "Product Marketing Manager",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://jobs.almazcapital.com/companies/minut/jobs/97243417-product-marketing-manager#content"
  },
  {
   "company": "Databricks",
@@ -929,6 +957,20 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://temporal.io/careers/1e0c3405-1d30-408e-92b0-bc4885e8921e"
+ },
+ {
+  "company": "Veeam",
+  "title": "Product Marketing Director, DataAI Privacy",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://careers.veeam.com/job/san-jose/product-marketing-director-dataai-privacy/22681/99393836144"
+ },
+ {
+  "company": "Veeam",
+  "title": "Product Marketing Director, Velocity",
+  "location": "",
+  "why": "роль: product marketing",
+  "url": "https://careers.veeam.com/job/united-states/product-marketing-director-velocity/22681/98437155184"
  },
  {
   "company": "Veriff",
