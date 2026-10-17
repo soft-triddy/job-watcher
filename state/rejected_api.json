@@ -85,6 +85,13 @@
  },
  {
   "company": "Duolingo",
+  "title": "Senior Director of Performance Marketing",
+  "location": "New York, NY",
+  "why": "гео: new york",
+  "url": "https://careers.duolingo.com/jobs/8895215002?gh_jid=8895215002"
+ },
+ {
+  "company": "Duolingo",
   "title": "Senior Performance Marketing Manager",
   "location": "New York, NY",
   "why": "гео: new york",
@@ -191,16 +198,16 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "North Bethesda, MD",
+  "location": "Lexington, KY",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
  },
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Lexington, KY",
+  "location": "North Bethesda, MD",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
  },
  {
   "company": "Xometry",
@@ -240,23 +247,23 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "Los Angeles, CA ",
-  "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249149007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Digital Marketing Account Manager ",
-  "location": "North Bethesda, MD ",
-  "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211444007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Digital Marketing Account Manager ",
   "location": "Waltham, MA ",
   "why": "роль: account manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5211466007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Digital Marketing Account Manager ",
+  "location": "Denver, CO ",
+  "why": "роль: account manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Digital Marketing Account Manager ",
+  "location": "Los Angeles, CA ",
+  "why": "роль: account manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249149007"
  },
  {
   "company": "Xometry",
@@ -268,9 +275,9 @@
  {
   "company": "Xometry",
   "title": "Senior Digital Marketing Account Manager ",
-  "location": "Denver, CO ",
+  "location": "North Bethesda, MD ",
   "why": "роль: account manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5211444007"
  },
  {
   "company": "Genesis (Studio)",
@@ -670,6 +677,13 @@
   "location": "Remote job",
   "why": "роль: curation",
   "url": "https://aidigital.recruitee.com/o/senior-marketing-manager-smart-supply-ad-curation"
+ },
+ {
+  "company": "1Password",
+  "title": "Senior Digital Customer Success Campaign Manager",
+  "location": "Remote (United States | Canada)",
+  "why": "роль: customer success",
+  "url": "https://jobs.ashbyhq.com/1password/6639ae84-8af4-4dfb-931c-bdce0704e5e3"
  },
  {
   "company": "Duolingo",
@@ -1092,6 +1106,34 @@
   "url": "https://betterme.breezy.hr/p/72fe543fd48e-junior-growth-product-manager-style"
  },
  {
+  "company": "ClickHouse",
+  "title": "Principal Product Manager, Billing & Marketplaces",
+  "location": "Europe",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/clickhouse/66b11644-d1d7-4cbb-9351-194b81ad34aa"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Senior Product Manager, Billing & Marketplaces",
+  "location": "United States",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/clickhouse/e966d4cd-3373-43fe-879d-876e854b8a86"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Senior Product Manager, Billing & Marketplaces",
+  "location": "Europe",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/clickhouse/dc0ec843-13a4-4032-9992-7e7a924228c8"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Principal Product Manager, Billing & Marketplaces",
+  "location": "United States",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/clickhouse/dab5bb2b-db63-49b4-b839-684dc4743675"
+ },
+ {
   "company": "Duolingo",
   "title": "Senior Product Manager, Growth",
   "location": "New York, NY; Pittsburgh, PA",
@@ -1104,13 +1146,6 @@
   "location": "Remote",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/haut-ai/00183a7d-3415-4830-aa6e-bbf9817f6e72"
- },
- {
-  "company": "Higgsfield AI",
-  "title": "Growth Product Manager (PLG)",
-  "location": "Almaty, Kazakhstan",
-  "why": "роль: product manager",
-  "url": "https://jobs.ashbyhq.com/higgsfieldai/737eeadc-2ac9-4625-891c-c268bb56368c"
  },
  {
   "company": "Noom",
@@ -1139,13 +1174,6 @@
   "location": "Kyiv",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/SKELAR/36b3d6a7-ea0c-4f98-a7c1-d0ed92155315"
- },
- {
-  "company": "Sumsub",
-  "title": "Product Manager (Growth)",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://careers.sumsub.com/jobs/8456327-product-manager-growth"
  },
  {
   "company": "1Password",
@@ -1314,6 +1342,13 @@
   "location": "Kyiv",
   "why": "роль: product marketing",
   "url": "https://jobs.ashbyhq.com/SKELAR/a1a235d3-9077-415e-88e8-55296a37bdf9"
+ },
+ {
+  "company": "Semrush",
+  "title": "Global Head of Product Marketing PLG (Marketing Team)",
+  "location": "United Kingdom",
+  "why": "роль: product marketing",
+  "url": "https://semrush.wd5.myworkdayjobs.com/semrushcareers/job/United-Kingdom/Global-Head-of-Product-Marketing-PLG--Marketing-Team-_JR100969"
  },
  {
   "company": "airSlate",
