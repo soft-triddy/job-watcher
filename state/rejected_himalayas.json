@@ -231,20 +231,6 @@
   "url": "https://himalayas.app/companies/rsi-security/jobs/customer-success-manager-client-growth-engagement"
  },
  {
-  "company": "NightOwl Consulting",
-  "title": "Digital/ Graphic Designer",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/digital-graphic-designer"
- },
- {
-  "company": "Altus Digital",
-  "title": "Salesforce Marketing Cloud (SFMC) Email Specialist",
-  "location": "",
-  "why": "роль: email",
-  "url": "https://himalayas.app/companies/altus-digital/jobs/salesforce-marketing-cloud-sfmc-email-specialist"
- },
- {
   "company": "MailerLite",
   "title": "Senior Email Marketing Manager",
   "location": "",
@@ -266,18 +252,18 @@
   "url": "https://himalayas.app/companies/six-figure-consulting/jobs/gtm-engineer-email-marketing-operations-manager"
  },
  {
-  "company": "Nuitée",
-  "title": "Marketing Director, PR & Events",
-  "location": "",
-  "why": "роль: event",
-  "url": "https://himalayas.app/companies/nuitee/jobs/marketing-director-pr-events"
- },
- {
   "company": "Enjoy Gaming LLC",
   "title": "Head of Marketing (B2B iGaming)",
   "location": "",
   "why": "роль: igaming",
   "url": "https://himalayas.app/companies/enjoy-gaming-llc/jobs/head-of-marketing-b2b-igaming"
+ },
+ {
+  "company": "Seoprofy",
+  "title": "Senior SEO Specialist (iGaming)",
+  "location": "",
+  "why": "роль: igaming",
+  "url": "https://himalayas.app/companies/seoprofy/jobs/senior-seo-specialist-igaming"
  },
  {
   "company": "Aerofoils GmbH",
@@ -315,6 +301,13 @@
   "url": "https://himalayas.app/companies/monetizemore/jobs/performance-marketing-partner"
  },
  {
+  "company": "Time Doctor",
+  "title": "Growth Product Manager",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://himalayas.app/companies/time-doctor/jobs/growth-product-manager"
+ },
+ {
   "company": "Timeleft",
   "title": "Growth Product Manager",
   "location": "",
@@ -348,20 +341,6 @@
   "location": "",
   "why": "роль: product marketing",
   "url": "https://himalayas.app/companies/jivpad/jobs/product-marketing-manager"
- },
- {
-  "company": "VuMedi",
-  "title": "Director of Product Marketing",
-  "location": "",
-  "why": "роль: product marketing",
-  "url": "https://himalayas.app/companies/vumedi/jobs/director-of-product-marketing"
- },
- {
-  "company": "Interdependence Public Relations",
-  "title": "Digital Account Executive, Public Relations",
-  "location": "",
-  "why": "роль: public relations",
-  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/digital-account-executive-public-relations"
  },
  {
   "company": "TechBiz Global",

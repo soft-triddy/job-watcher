@@ -1,89 +1,89 @@
 {
- "updated": "2026-10-17 13:00 UTC",
+ "updated": "2026-10-18 13:20 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
- "jobs_total": 314,
- "marketing": 76,
+ "jobs_total": 374,
+ "marketing": 79,
  "sources": {
   "мир: «marketing»": {
-   "jobs": 75,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "мир: «growth»": {
-   "jobs": 89,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "мир: «demand»": {
-   "jobs": 26,
+   "jobs": 28,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "мир: «seo»": {
-   "jobs": 93,
+   "jobs": 96,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "мир: «crm»": {
-   "jobs": 99,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "KG: «marketing»": {
-   "jobs": 75,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "KG: «growth»": {
-   "jobs": 89,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "KG: «demand»": {
-   "jobs": 27,
+   "jobs": 29,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "KG: «seo»": {
-   "jobs": 93,
+   "jobs": 96,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   },
   "KG: «crm»": {
-   "jobs": 99,
+   "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-17",
+   "last_ok": "2026-10-18",
    "alerted": false
   }
  }
