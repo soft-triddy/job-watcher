@@ -29,7 +29,7 @@ NEG_ROLE = ["stock market","supermarket","capital market","money market","labor 
            "account executive","representative","business development","sdr","bdr",
            "customer success","customer service","customer support","call center","call centre",
            "contact center","kundenberater","kundenservice","оператор",
-           "data scien","product manager","design","дизайн","cpo",
+           "data scien","product manager","product owner","architect","moderator","design","дизайн","cpo",
            "intern","internship","praktikant","стажер","стажёр","стажист",
            "expression of interest","general application"]
 
