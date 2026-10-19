@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-18 13:20 UTC",
+ "updated": "2026-10-19 16:31 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
- "jobs_total": 374,
- "marketing": 79,
+ "jobs_total": 378,
+ "marketing": 80,
  "sources": {
   "мир: «marketing»": {
    "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "мир: «growth»": {
@@ -19,23 +19,23 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "мир: «demand»": {
-   "jobs": 28,
+   "jobs": 26,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "мир: «seo»": {
-   "jobs": 96,
+   "jobs": 98,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "мир: «crm»": {
@@ -43,7 +43,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "KG: «marketing»": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "KG: «growth»": {
@@ -59,23 +59,23 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "KG: «demand»": {
-   "jobs": 29,
+   "jobs": 27,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "KG: «seo»": {
-   "jobs": 96,
+   "jobs": 98,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   },
   "KG: «crm»": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-18",
+   "last_ok": "2026-10-19",
    "alerted": false
   }
  }
