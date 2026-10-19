@@ -13,38 +13,29 @@ TIMEOUT  = 20
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
 
-# что БЕРЁМ (подстрокой в ЗАГОЛОВКЕ). brand/email/acquisition убраны — не её специализация
-# 2026-10-02: lifecycle убран (не её профиль); + inbound, hubspot, campaign; + русские
-KW = ["market","growth","crm","demand","seo","pmm","martech",
-      "paid","performance","digital","inbound marketing","head of inbound","inbound manager",
-      "inbound lead","inbound growth","hubspot","campaign",
-      "маркет","перформанс","лидген","интернет-маркет","продвижени"]
+# что БЕРЁМ (подстрокой в ЗАГОЛОВКЕ).
+# 2026-10-19: фильтр по хотелкам снят — берём ЛЮБУЮ маркетинговую роль: бренд, контент, SMM, email,
+# lifecycle, PR, product marketing, любой грейд, любая индустрия. Отсекаем только не-маркетинг и гео.
+KW = ["market","growth","crm","demand","seo","pmm","martech","paid","performance","digital",
+      "inbound","hubspot","campaign","brand","content","email","e-mail","smm","social media",
+      "lifecycle","retention","acquisition","product marketing","communications","public relations",
+      "pr manager","pr specialist","pr lead","pr-","copywrit","influencer","affiliate","community",
+      "маркет","перформанс","лидген","продвижени","бренд","контент","смм","smm","таргет","копирайт",
+      "пиар","коммуникац"]
 
-# роль не та — выкидываем по ЗАГОЛОВКУ (подстрокой)
-NEG_ROLE = ["market research analyst","stock market","supermarket","capital market",
-           "brand","email","smm","social media","content","analyst","analytics",
-           "design","product marketing","business development","public relations",
-           "corporate communications","integration",
-           "recruiter","community","customer success","product manager","acquisition",
-           "engineer","account executive","partner","deployment","event","influencer",
-           "talent acquisition","cpo",
-           "crypto","web3","blockchain","affiliate","copywriter","producer",
-           "data scien","account manager","account supervisor",
-           # 2026-09-23: продажи, креатив, младшие грейды, «общие» заявки
-           "account strategist","curation","studio manager","creative","consultant",
-           "representative","coordinator","assistant","junior","praktikant","media buyer",
-           "operative","expression of interest","general application",
-           # 2026-10-02: русские аналоги того же
-           "аналитик","дизайн","продаж","контент","копирайт","стажер","стажёр","ассистент",
-           "рекрут","бренд","smm-","таргетолог","младш",
-           # украинские написания (DOU, Djinni)
-           "аналітик","асистент","стажист","копірайт","молодш",
-           "продуктовый маркетолог","продуктовий маркетолог",
-           # стоп-индустрии прямо в заголовке (iGaming частый на досках СНГ)
-           "igaming","i-gaming","casino","betting","gambling","sportsbook","казино","беттинг",
-           # колл-центры: «Inbound» у них — входящие звонки (Teleperformance, 2026-10-02)
-           "call center","call centre","contact center","customer service","customer support",
-           "kundenberater","kundenservice","оператор"]
+# не маркетинговая ФУНКЦИЯ (или ложное срабатывание «market») — выкидываем по ЗАГОЛОВКУ
+NEG_ROLE = ["stock market","supermarket","capital market","money market","labor market","labour market",
+           "recruiter","talent acquisition","рекрут",
+           "account executive","representative","business development","sdr","bdr",
+           "customer success","customer service","customer support","call center","call centre",
+           "contact center","kundenberater","kundenservice","оператор",
+           "data scien","product manager","design","дизайн","cpo",
+           "intern","internship","praktikant","стажер","стажёр","стажист",
+           "expression of interest","general application"]
+
+# инженер — не маркетинг, кроме маркетинговых инженерных ролей (это как раз её профиль)
+ENG_OK = ["marketing engineer","marketing automation engineer","martech engineer","marketing technolog",
+          "marketing operations engineer","growth marketing engineer"]
 
 # формат/гео — выкидываем по ЗАГОЛОВКУ + ЛОКАЦИИ вместе (тип работы и штат часто в локации!)
 NEG_GEO_SUB = ["hybrid"]
@@ -69,15 +60,21 @@ def classify(title, location=""):
     """"" = подходит; иначе — короткая причина отказа (для отчёта «что отсеяли»)."""
     raw_t = title or ""
     t = raw_t.lower()
-    # 1) не та роль — по заголовку
+    mkt = ("marketing" in t) or ("маркет" in t)
+    # 1) не маркетинговая функция — по заголовку
     for n in NEG_ROLE:
+        if n == "intern":
+            if re.search(r"\bintern(ship)?s?\b", t): return "роль: intern"
+            continue
+        if n in ("sdr", "bdr", "cpo"):
+            if re.search(r"\b"+n+r"\b", t): return f"роль: {n}"
+            continue
         if n in t: return f"роль: {n}"
-    if re.search(r"\bpr\b", t): return "роль: pr"
-    if re.search(r"\bsales\b", t): return "роль: sales"     # словом: Salesforce/wholesale не режем
+    if ("engineer" in t or "developer" in t or "инженер" in t or "разработчик" in t) \
+            and not any(k in t for k in ENG_OK): return "роль: engineer"
+    # продажи — только если в заголовке нет маркетинга («Sales & Marketing Manager» берём)
+    if (re.search(r"\bsales\b", t) or "продаж" in t) and not mkt: return "роль: sales"
     if re.search(r"\bagents?\b", t): return "роль: agent"   # словом: Agentic AI не режем
-    if re.search(r"\badult\b", t): return "роль: adult"     # словом: Adulting App не режем
-    if re.search(r"\bintern(ship)?\b", t): return "роль: intern"
-    if "associate" in t and "associate director" not in t: return "роль: associate"
     # 2) это вообще маркетинг? — по заголовку
     if not any(k in t for k in KW): return "не маркетинг"
     # 3) формат/гео — по заголовку И локации вместе
@@ -183,11 +180,11 @@ def report(mk, seen, state_path, *, label, key="jid", suffix="", page_factory=No
         # Без оценки (оценщик упал/лимит) — тоже карточкой: мы не знаем, плохая ли вакансия.
         def tail(j):
             sc = j.get("score")
-            return bool(sc) and (bool(sc.get("stop")) or sc["hire"] == "red" or sc["fit"] <= 3)
+            return bool(sc) and sc["hire"] == "red"
         top = [j for j in ranked if not tail(j)]; rest = [j for j in ranked if tail(j)]
         parts = [header] + [fmt_job(j, suffix) for j in top]
         if rest:
-            parts.append(f"— не подходят ({len(rest)}): стоп-индустрия / 🔴 ремоут / прохожу ≤ 3 —\n" + "\n".join(
+            parts.append(f"— 🔴 ремоут, скорее всего не наймут из KG ({len(rest)}) —\n" + "\n".join(
                 f"• {j.get('company','')}: {j['title']} {j.get('url','')}{suffix}" for j in rest))
         return "\n\n".join(parts) + diag_line()
 

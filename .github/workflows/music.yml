@@ -38,11 +38,6 @@ jobs:
       BROWSER_REJECTED: state/rejected_music_browser.json
       BROWSER_COMPANIES: lists/music_browser_companies.csv
       BROWSER_STATE: state/seen_music_browser.json
-      SCORER_CONTEXT: >-
-        All vacancies in this batch are at music-tech companies. Music-tech is the candidate's personal dream
-        industry: here she also welcomes CRM/Lifecycle and English-language roles, so lower "dull" by about 2
-        compared with the same role elsewhere (never below 0). Crypto/web3 music companies are acceptable here:
-        never set stop="crypto" in this batch (betting and gamedev stop still apply). Fit and remote rules stay exactly the same.
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6

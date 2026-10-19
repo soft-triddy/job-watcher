@@ -1,13 +1,12 @@
 # Job Radar
 
 A personal job-search pipeline that watches ~350 company career pages and a remote-jobs board,
-keeps only the marketing roles I actually want, scores each new vacancy against my resumes,
+keeps every remote marketing role, picks which of my resumes fits each new vacancy,
 and sends the result to Telegram. Runs entirely on GitHub Actions, costs nothing.
 
 ```text
 • Acme: Growth Marketing Manager — Remote
-  📄 Growth · fit 7/10 · dull 2/10
-  🟢 remote · ✅ grade · ⚠️ Meta/TikTok buying
+  📄 Growth · 🟢 remote
 https://jobs.example.com/123
 ```
 
@@ -25,7 +24,7 @@ https://jobs.example.com/123
               seen-state → only new vacancies
                           │
                           ▼
-              scorer (Gemini): which resume, fit, dull, remote, grade, blocker
+              scorer (Gemini): which resume, remote
                           │
                           ▼
                        Telegram
@@ -39,9 +38,9 @@ https://jobs.example.com/123
   jobs from the page's own JSON requests, JSON-LD `JobPosting`, or links. Chromium runs in a worker
   process; a site that hangs longer than 75 s is killed and skipped instead of stalling the run.
 - **Himalayas** (`himalayas_radar.py`) — two passes over the public Himalayas API: worldwide roles and roles
-  open to Kyrgyzstan (`country=KG`), full-time or contractor; crypto companies dropped by category.
-- **Filter** (`core.py`) — title must look like marketing/growth/CRM/SEO, and must not be sales,
-  brand, content, analytics, junior grades, hybrid, or US-only.
+  open to Kyrgyzstan (`country=KG`), full-time or contractor.
+- **Filter** (`core.py`) — any marketing role (any grade, any industry); cuts only non-marketing functions
+  (engineering, sales, recruiting, support, design, internships), hybrid and US-only.
 - **Scorer** (`scorer.py`) — for each *new* vacancy fetches the full description (ATS API, JSON-LD
   or rendered page) and asks Gemini for a strict JSON verdict. Remote status is double-checked in code
   against the location field. Hard time budget per vacancy and per run; if the model is down, the

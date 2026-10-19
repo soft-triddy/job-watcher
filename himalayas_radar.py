@@ -99,8 +99,8 @@ def main():
     health = Health(HEALTH, LABEL, empty_is_bad=True)
     allj = collect(health)
     mk = [j for j in allj if j.get("title") and j.get("url")
-          and not _is_crypto_company(j) and is_marketing(j["title"], j.get("location", ""))]
-    save(REJECTED, near_misses([j for j in allj if not _is_crypto_company(j)]))
+          and is_marketing(j["title"], j.get("location", ""))]       # 2026-10-19: крипту больше не режем
+    save(REJECTED, near_misses(allj))
     print(f"=== Himalayas | собрано (мир + KG, {EMPLOYMENT_TYPES}): {len(allj)} | маркетинг: {len(mk)} ===")
     report(mk, seen, STATE, label=LABEL, key="guid", suffix=" (via Himalayas)")
     health.finish({"jobs_total": len(allj), "marketing": len(mk)})

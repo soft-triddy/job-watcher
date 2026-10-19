@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Оценка вакансий под резюме: какое резюме подходит, «прохожу» и «уныло» из 10, флаги ремоута,
-грейда, главного блокера и стоп-индустрии. LLM — Gemini API (бесплатный тариф), OpenAI-совместимый
+Оценка вакансий: какое резюме отправить и флаг ремоута (можно ли нанять из KG). LLM — Gemini API (бесплатный тариф), OpenAI-совместимый
 эндпоинт, ключ в секрете GEMINI_API_KEY. Профиль кандидата — scoring_profile.md.
 Никогда не ломает радар: нет ключа / лимит / таймаут -> вакансия уходит без оценки,
 а причина — строкой ⚠️ в конце сообщения.
@@ -34,21 +33,17 @@ from core import UA
 RESUMES = {"growth": "Growth", "digital": "Digital", "gops": "Growth Ops",
            "mops": "MarOps", "crm": "CRM"}
 
-RUBRIC = """You score a job vacancy for the candidate below. Output ONLY a JSON object, no prose:
+# 2026-10-19: оценки «прохожу/уныло», грейд, блокер и стоп-индустрии сняты. Осталось два вопроса:
+# какое резюме отправить и можно ли её нанять удалённо из Кыргызстана.
+RUBRIC = """You classify a job vacancy for the candidate below. Output ONLY a JSON object, no prose:
 {"resume": one of ["growth","digital","gops","mops","crm"],
- "fit": 0-10, "dull": 0-10,
- "hire": "green"|"yellow"|"red",
- "grade": "down"|"ok"|"up",
- "blocker": "" or max 4 words in English,
- "stop": "" or one of ["crypto","betting","gamedev"]}
+ "hire": "green"|"yellow"|"red"}
 
-fit = realistic chance to pass screening and do the job well, judged by hard requirements vs real experience.
-  Missing a must-have skill/experience listed in "NOT in experience" costs a lot. 8-10 strong match, 5-7 partial,
-  0-4 weak. Do not reward keyword overlap alone.
-dull = how unappealing the role is for her (0 = dream, 10 = soul-crushing), per the Preferences section.
-  Growth/Inbound/Organic growth with SEO/website at the core, hands-on at B2B SaaS: 0-3. MarOps/HubSpot/automation: 3-5.
-  Digital/Marketing Manager generalist: 3-5 if SEO/website-led, 5-7 if paid-social/SMM-led. SEO Specialist (junior/
-  middle): 6-7. Demand Gen/PPC/CRM/Lifecycle: 5-7. Anything in the dull/unwanted list: 7-10.
+resume: which of her five resume versions to send — the one whose focus is closest to the vacancy, even if the
+  role is outside her usual scope (content, brand, SMM, PR, product marketing, junior roles and so on).
+  Rough guide: acquisition/paid/growth experiments -> growth; SEO/website/content/SMM/brand/generalist digital ->
+  digital; growth systems/CRM infrastructure/integrations/processes -> gops; marketing ops/HubSpot admin/
+  automation/reporting -> mops; CRM/lifecycle/email/retention -> crm.
 hire = can she be hired from Kyrgyzstan as remote contractor/B2B or via worldwide EOR?
   green: ONLY if the text explicitly says worldwide/anywhere/any location, contractors/B2B welcome, or allows
     CIS/Central Asia. Never green by default or because the role "sounds remote".
@@ -58,15 +53,8 @@ hire = can she be hired from Kyrgyzstan as remote contractor/B2B or via worldwid
   The Location field is a hard signal: if it names a specific city or country (e.g. "United States", "London",
   "Toronto") and the text does not explicitly say remote-worldwide, hire is red for US/UK/Canada/Australia and
   at best yellow for anywhere else.
-grade: down = junior/associate/coordinator/specialist-level scope; up = Head/Director/VP owning a big team or
-  budget beyond her scale; ok otherwise (manager/senior/lead, small team).
-blocker: the single most important hard gap if one exists (e.g. "Meta/TikTok media buying", "SQL/BI engineering",
-  "B2C retention CRM", "native English", "10+ years leadership"); "" if none.
-stop: set only on explicit evidence in the text that the COMPANY's core business is crypto/web3 (tokens,
-  blockchain, DeFi, exchange), betting/gambling/iGaming (casino, sportsbook) or game development (studio making
-  games). AI, analytics, devtools, observability, adtech or fintech are NOT stop. When unsure, leave "".
-resume: which resume version fits this vacancy best.
-If only the title is available, still answer; be conservative (fit and hire toward the middle)."""
+Do not judge fit, seniority, industry or how appealing the role is — only these two fields.
+If only the title is available, still answer (hire toward yellow)."""
 
 def _profile():
     txt = os.environ.get("SCORING_PROFILE")          # можно держать профиль в секрете репо
@@ -255,12 +243,8 @@ def parse_batch(raw, n):
 
 def parse_obj(d):
     out = {"resume": d.get("resume") if d.get("resume") in RESUMES else None,
-           "fit": _clamp(d.get("fit")), "dull": _clamp(d.get("dull")),
-           "hire": d.get("hire") if d.get("hire") in ("green", "yellow", "red") else "yellow",
-           "grade": d.get("grade") if d.get("grade") in ("down", "ok", "up") else "ok",
-           "blocker": " ".join(str(d.get("blocker") or "").split()[:4]),
-           "stop": d.get("stop") if d.get("stop") in ("crypto", "betting", "gamedev") else ""}
-    if out["fit"] is None or out["dull"] is None: return None
+           "hire": d.get("hire") if d.get("hire") in ("green", "yellow", "red") else "yellow"}
+    if out["resume"] is None: return None
     return out
 
 WW = re.compile(r"worldwide|anywhere|global|any location|any timezone|remote\s*\(?ww|\bww\b", re.I)
@@ -339,8 +323,6 @@ def score_jobs(jobs, page=None):
 
 # ---------- формат ----------
 HIRE  = {"green": "🟢 ремоут", "yellow": "🟡 ремоут", "red": "🔴 ремоут"}
-GRADE = {"down": "⬇️ грейд", "ok": "✅ грейд", "up": "⬆️ грейд"}
-STOP  = {"crypto": "крипта", "betting": "беттинг", "gamedev": "геймдев"}
 
 def fmt_job(j, suffix=""):
     l = j.get("location") or ""
@@ -350,18 +332,11 @@ def fmt_job(j, suffix=""):
     s = j.get("score")
     if not s:
         return f"{head}\n  (без оценки)\n{j['url']}{suffix}"
-    l1 = f"  📄 {RESUMES.get(s['resume'], '?')} · прохожу {s['fit']}/10 · уныло {s['dull']}/10"
+    l1 = f"  📄 {RESUMES.get(s['resume'], '?')} · {HIRE[s['hire']]}"
     if s.get("title_only"): l1 += " · по тайтлу"
-    flags = [HIRE[s["hire"]], GRADE[s["grade"]]]
-    if s.get("blocker"): flags.append(f"⚠️ {s['blocker']}")
-    if s.get("stop"): flags.append(f"🚫 {STOP[s['stop']]}")
-    return f"{head}\n{l1}\n  {' · '.join(flags)}\n{j['url']}{suffix}"
+    return f"{head}\n{l1}\n{j['url']}{suffix}"
 
 def rank(jobs):
-    """Сначала оценённые: стоп-индустрия и красный найм вниз, дальше по fit-dull."""
-    def key(j):
-        s = j.get("score")
-        if not s: return (1, 0)
-        pen = (10 if s.get("stop") else 0) + (5 if s["hire"] == "red" else 0)
-        return (0, -(s["fit"] - s["dull"] - pen))
-    return sorted(jobs, key=key)
+    """Порядок только по ремоуту: 🟢, потом 🟡 и без оценки, 🔴 в конец."""
+    order = {"green": 0, "yellow": 1, None: 1, "red": 2}
+    return sorted(jobs, key=lambda j: order[(j.get("score") or {}).get("hire")])

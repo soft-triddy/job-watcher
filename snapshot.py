@@ -60,7 +60,7 @@ def browser_jobs():
 
 def himalayas_jobs():
     import himalayas_radar as h
-    js = [j for j in h.collect(_NoHealth()) if not h._is_crypto_company(j)]
+    js = h.collect(_NoHealth())
     out = [{**j, "music": False, "key": j["guid"], "source": "Himalayas"} for j in js]
     print(f"Himalayas: {len(out)}", flush=True)
     return out
