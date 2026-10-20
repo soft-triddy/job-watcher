@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-19 10:47 UTC",
+ "updated": "2026-10-20 10:06 UTC",
  "label": "🆕 ATS",
  "total": 124,
  "broken": 0,
- "jobs_total": 2881,
- "marketing": 83,
+ "jobs_total": 2894,
+ "marketing": 249,
  "sources": {
   "10Web": {
    "jobs": 0,
    "err": "",
    "note": "BambooHR:10web",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "ABBYY": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "Greenhouse:abbyy",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Action1": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "Workable:action1",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Ahrefs": {
@@ -35,7 +35,7 @@
    "err": "",
    "note": "Greenhouse:ahrefsjobs",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "AI Digital": {
@@ -43,15 +43,15 @@
    "err": "",
    "note": "Recruitee:aidigital",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "airSlate": {
-   "jobs": 14,
+   "jobs": 15,
    "err": "",
    "note": "Lever:airslate",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "AppFollow": {
@@ -59,7 +59,7 @@
    "err": "",
    "note": "Lever:appfollow",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "AppQuantum": {
@@ -67,15 +67,15 @@
    "err": "",
    "note": "Pinpoint:appquantum",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Avride": {
-   "jobs": 77,
+   "jobs": 78,
    "err": "",
    "note": "Greenhouse:avride",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Behavox": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "Greenhouse:behavox",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Birch": {
@@ -91,7 +91,7 @@
    "err": "",
    "note": "Workable:birch",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Bumble": {
@@ -99,7 +99,7 @@
    "err": "",
    "note": "Lever:bumbleinc",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Chattermill": {
@@ -107,7 +107,7 @@
    "err": "",
    "note": "Ashby:chattermill",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Clay": {
@@ -115,15 +115,15 @@
    "err": "",
    "note": "Workable:clayglobal",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "ClickHouse": {
-   "jobs": 199,
+   "jobs": 200,
    "err": "",
    "note": "Ashby:clickhouse",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "CloudLinux": {
@@ -131,7 +131,7 @@
    "err": "",
    "note": "Workable:cloudlinux-1",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "CRITICAL REFLEX": {
@@ -139,7 +139,7 @@
    "err": "",
    "note": "BambooHR:criticalreflex",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "DBeaver": {
@@ -147,7 +147,7 @@
    "err": "",
    "note": "Greenhouse:dbeaver",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "EWA Learn Languages": {
@@ -155,15 +155,15 @@
    "err": "",
    "note": "BambooHR:appewa",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Flo Health": {
-   "jobs": 24,
+   "jobs": 23,
    "err": "",
    "note": "Greenhouse:flohealth",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Hexens": {
@@ -171,15 +171,15 @@
    "err": "",
    "note": "BambooHR:hexens",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Higgsfield AI": {
-   "jobs": 94,
+   "jobs": 93,
    "err": "",
    "note": "Ashby:higgsfieldai",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "HomeBuddy": {
@@ -187,7 +187,7 @@
    "err": "",
    "note": "Workable:homebuddy",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Humanoid AI": {
@@ -195,7 +195,7 @@
    "err": "",
    "note": "Ashby:humanoid",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "HumanSignal": {
@@ -203,7 +203,7 @@
    "err": "",
    "note": "Greenhouse:humansignal",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Intento": {
@@ -211,7 +211,7 @@
    "err": "",
    "note": "Recruitee:intento",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "InvestEngine": {
@@ -219,7 +219,7 @@
    "err": "",
    "note": "Teamtailor:investengine",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Inworld AI": {
@@ -227,7 +227,7 @@
    "err": "",
    "note": "Ashby:inworld-ai",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Joom": {
@@ -235,7 +235,7 @@
    "err": "",
    "note": "Workable:joom",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Lokalise": {
@@ -243,15 +243,15 @@
    "err": "",
    "note": "Greenhouse:lokalise",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Luminai": {
-   "jobs": 18,
+   "jobs": 17,
    "err": "",
    "note": "Ashby:luminai",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Object First": {
@@ -259,7 +259,7 @@
    "err": "",
    "note": "Greenhouse:objectfirsts",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "PropellerAds": {
@@ -267,7 +267,7 @@
    "err": "",
    "note": "BambooHR:adtechholding",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "RemoFirst": {
@@ -275,7 +275,7 @@
    "err": "",
    "note": "Lever:remofirst",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Replika": {
@@ -283,7 +283,7 @@
    "err": "",
    "note": "Teamtailor:replika",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Ruby Labs": {
@@ -291,7 +291,7 @@
    "err": "",
    "note": "Ashby:ruby-labs",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Semrush": {
@@ -299,7 +299,7 @@
    "err": "",
    "note": "Workday:semrush.wd5.myworkdayjobs.com/semrushcareers",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Social Discovery Group": {
@@ -307,7 +307,7 @@
    "err": "",
    "note": "Breezy:social-discovery-ventures",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Spines.com": {
@@ -315,23 +315,23 @@
    "err": "",
    "note": "Workable:spines",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Sumsub": {
-   "jobs": 34,
+   "jobs": 32,
    "err": "",
    "note": "Teamtailor:sumsub",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "SuperAnnotate": {
-   "jobs": 2,
+   "jobs": 3,
    "err": "",
    "note": "Lever:superannotate",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Synder": {
@@ -339,7 +339,7 @@
    "err": "",
    "note": "BambooHR:synder",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Synthesized": {
@@ -347,7 +347,7 @@
    "err": "",
    "note": "Teamtailor:synthesized",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Teleport": {
@@ -355,7 +355,7 @@
    "err": "",
    "note": "Ashby:goteleport",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Termius": {
@@ -363,7 +363,7 @@
    "err": "",
    "note": "Lever:Termius",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "The Soul Publishing": {
@@ -371,7 +371,7 @@
    "err": "",
    "note": "Workable:thesoul-publishing-1",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "TraceAir": {
@@ -379,7 +379,7 @@
    "err": "",
    "note": "Recruitee:traceair",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Virtuozzo": {
@@ -387,15 +387,15 @@
    "err": "",
    "note": "Workable:virtuozzo",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Voyagu": {
-   "jobs": 6,
+   "jobs": 8,
    "err": "",
    "note": "Breezy:voyagu",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Wallarm": {
@@ -403,23 +403,23 @@
    "err": "",
    "note": "Recruitee:wallarm",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Wayy": {
-   "jobs": 1,
+   "jobs": 0,
    "err": "",
    "note": "Breezy:wayy-llc",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Wheely": {
-   "jobs": 37,
+   "jobs": 36,
    "err": "",
    "note": "Greenhouse:wheely",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "White Circle": {
@@ -427,15 +427,15 @@
    "err": "",
    "note": "Ashby:whitecircle",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Wrike": {
-   "jobs": 61,
+   "jobs": 59,
    "err": "",
    "note": "Greenhouse:wrike",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "ZeptoLab": {
@@ -443,7 +443,7 @@
    "err": "",
    "note": "Workable:zeptolab",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "AURA Devices": {
@@ -451,7 +451,7 @@
    "err": "",
    "note": "Breezy:aura-devices",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Novakid": {
@@ -459,23 +459,23 @@
    "err": "",
    "note": "Recruitee:novakidteachers",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "inDrive": {
-   "jobs": 141,
+   "jobs": 145,
    "err": "",
    "note": "Pinpoint:indrive",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Praktika.ai": {
-   "jobs": 4,
+   "jobs": 5,
    "err": "",
    "note": "Teamtailor:praktika",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Noom": {
@@ -483,7 +483,7 @@
    "err": "",
    "note": "Greenhouse:noomgrowth",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Planner 5D": {
@@ -491,7 +491,7 @@
    "err": "",
    "note": "Lever:planner5d",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Datafold": {
@@ -499,7 +499,7 @@
    "err": "",
    "note": "Ashby:datafold",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "AtBay": {
@@ -507,7 +507,7 @@
    "err": "",
    "note": "Greenhouse:atbayjobs",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Duolingo": {
@@ -515,7 +515,7 @@
    "err": "",
    "note": "Greenhouse:duolingo",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Dwelly": {
@@ -523,7 +523,7 @@
    "err": "",
    "note": "Greenhouse:dwelly",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Enhesa": {
@@ -531,7 +531,7 @@
    "err": "",
    "note": "Greenhouse:enhesa",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Genestack": {
@@ -539,23 +539,23 @@
    "err": "",
    "note": "Breezy:genestack-ltd",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Hirehire": {
-   "jobs": 5,
+   "jobs": 11,
    "err": "",
    "note": "Ashby:hirehire",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Mirantis": {
-   "jobs": 100,
+   "jobs": 96,
    "err": "",
    "note": "SmartRecruiters:Mirantis",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Mitek": {
@@ -563,15 +563,15 @@
    "err": "",
    "note": "Lever:miteksystems-2",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Telnyx": {
-   "jobs": 52,
+   "jobs": 53,
    "err": "",
    "note": "Greenhouse:telnyx54",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Tempo Software": {
@@ -579,23 +579,23 @@
    "err": "",
    "note": "Ashby:tempo",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Xometry": {
-   "jobs": 222,
+   "jobs": 219,
    "err": "",
    "note": "Greenhouse:xometry",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Qdrant": {
-   "jobs": 8,
+   "jobs": 6,
    "err": "",
    "note": "Ashby:qdrant.tech",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Insense": {
@@ -603,7 +603,7 @@
    "err": "",
    "note": "Teamtailor:insense.na",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Servers.com": {
@@ -611,23 +611,23 @@
    "err": "",
    "note": "Breezy:servers-com",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "GoStudent": {
-   "jobs": 26,
+   "jobs": 28,
    "err": "",
    "note": "Greenhouse:gostudent",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "DataDome": {
-   "jobs": 19,
+   "jobs": 17,
    "err": "",
    "note": "Greenhouse:ddome",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "1Password": {
@@ -635,15 +635,15 @@
    "err": "",
    "note": "Ashby:1password",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Ajax Systems": {
-   "jobs": 193,
+   "jobs": 194,
    "err": "",
    "note": "Lever:ajax",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "BetterMe": {
@@ -651,7 +651,7 @@
    "err": "",
    "note": "Breezy:betterme",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Carmoola": {
@@ -659,7 +659,7 @@
    "err": "",
    "note": "Workable:carmoola-1",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Coherent Solutions": {
@@ -667,15 +667,15 @@
    "err": "",
    "note": "Greenhouse:coherentsolutions",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Exadel": {
-   "jobs": 38,
+   "jobs": 39,
    "err": "",
    "note": "Greenhouse:exadelinc",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Boku (Fortumo)": {
@@ -683,7 +683,7 @@
    "err": "",
    "note": "Greenhouse:boku",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Fotokite": {
@@ -691,7 +691,7 @@
    "err": "",
    "note": "BambooHR:fotokite",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Fractory": {
@@ -699,15 +699,15 @@
    "err": "",
    "note": "Teamtailor:fractory",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Genesis (Studio)": {
-   "jobs": 56,
+   "jobs": 55,
    "err": "",
    "note": "Breezy:gen-tech",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Giraffe360": {
@@ -715,15 +715,15 @@
    "err": "",
    "note": "Workable:giraffe360",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Hostinger": {
-   "jobs": 51,
+   "jobs": 49,
    "err": "",
    "note": "Ashby:hostinger",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Inbank": {
@@ -731,23 +731,23 @@
    "err": "",
    "note": "Greenhouse:inbank",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Influ2": {
-   "jobs": 6,
+   "jobs": 7,
    "err": "",
    "note": "Lever:influ2",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Jooble": {
-   "jobs": 9,
+   "jobs": 10,
    "err": "",
    "note": "Teamtailor:jooble",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "MGID": {
@@ -755,7 +755,7 @@
    "err": "",
    "note": "Recruitee:mgid",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Miratech": {
@@ -763,7 +763,7 @@
    "err": "",
    "note": "SmartRecruiters:miratechgroup",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "OBRIO (Nebula)": {
@@ -771,7 +771,7 @@
    "err": "",
    "note": "Ashby:OBRIO",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Paysend": {
@@ -779,7 +779,7 @@
    "err": "",
    "note": "Teamtailor:paysend",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Railsware": {
@@ -787,7 +787,7 @@
    "err": "",
    "note": "Greenhouse:railsware",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Reface (Neocortext)": {
@@ -795,7 +795,7 @@
    "err": "",
    "note": "Breezy:reface",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Restream": {
@@ -803,7 +803,7 @@
    "err": "",
    "note": "Ashby:restream",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "SKELAR": {
@@ -811,7 +811,7 @@
    "err": "",
    "note": "Ashby:SKELAR",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Skeleton Technologies": {
@@ -819,7 +819,7 @@
    "err": "",
    "note": "Workable:skeletontech",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Solidgate": {
@@ -827,7 +827,7 @@
    "err": "",
    "note": "Ashby:solidgate",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Starship Technologies": {
@@ -835,15 +835,15 @@
    "err": "",
    "note": "Teamtailor:starship",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Surfshark": {
-   "jobs": 27,
+   "jobs": 28,
    "err": "",
    "note": "Ashby:surfshark",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "VEON (VimpelCom)": {
@@ -851,7 +851,7 @@
    "err": "",
    "note": "Lever:veonhq",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Viseven": {
@@ -859,7 +859,7 @@
    "err": "",
    "note": "Lever:viseven",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "XTX Markets": {
@@ -867,7 +867,7 @@
    "err": "",
    "note": "Greenhouse:xtxmarketstechnologies",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Perforce (ZeroTurnaround/JRebel)": {
@@ -875,7 +875,7 @@
    "err": "",
    "note": "Lever:perforce",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "C Teleport": {
@@ -883,7 +883,7 @@
    "err": "",
    "note": "Teamtailor:cteleport",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "PandaDoc": {
@@ -891,23 +891,23 @@
    "err": "",
    "note": "Greenhouse:pandadoc",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Orion Innovation": {
-   "jobs": 62,
+   "jobs": 66,
    "err": "",
    "note": "Greenhouse:orioninnovation",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Kodland": {
-   "jobs": 66,
+   "jobs": 73,
    "err": "",
    "note": "Recruitee:kodland",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "ManyChat": {
@@ -915,7 +915,7 @@
    "err": "",
    "note": "Ashby:manychat",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Readymag": {
@@ -923,7 +923,7 @@
    "err": "",
    "note": "BambooHR:readymag",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Recraft": {
@@ -931,7 +931,7 @@
    "err": "",
    "note": "Ashby:recraft",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Field Materials": {
@@ -939,7 +939,7 @@
    "err": "",
    "note": "Ashby:fieldmaterials",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Haut.AI": {
@@ -947,7 +947,7 @@
    "err": "",
    "note": "Ashby:haut-ai",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "HerculesAI": {
@@ -955,7 +955,7 @@
    "err": "",
    "note": "Ashby:hercules",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "SOAX": {
@@ -963,7 +963,7 @@
    "err": "",
    "note": "SmartRecruiters:soax",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Bank of Georgia Group (BOG)": {
@@ -971,7 +971,7 @@
    "err": "",
    "note": "SmartRecruiters:bankofgeorgia",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Yolla": {
@@ -979,7 +979,7 @@
    "err": "",
    "note": "Workable:yolla",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Altoros": {
@@ -987,7 +987,7 @@
    "err": "",
    "note": "Workable:altoros",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   },
   "Safe Superintelligence (SSI)": {
@@ -995,7 +995,7 @@
    "err": "",
    "note": "Ashby:ssi",
    "bad_streak": 0,
-   "last_ok": "2026-10-19",
+   "last_ok": "2026-10-20",
    "alerted": false
   }
  }
