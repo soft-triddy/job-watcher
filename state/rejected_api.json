@@ -301,6 +301,13 @@
   "url": "https://jobs.ashbyhq.com/qdrant.tech/beffc43c-384e-4528-bbdd-cab507e979fa"
  },
  {
+  "company": "Wrike",
+  "title": "Senior Director, Growth & Demand Marketing",
+  "location": "US - Remote",
+  "why": "гео: us",
+  "url": "https://job-boards.greenhouse.io/wrike/jobs/4492980005"
+ },
+ {
   "company": "Higgsfield AI",
   "title": "Associate General Counsel, Commercial (Marketing & Growth)",
   "location": "Remote, USA",
@@ -344,10 +351,10 @@
  },
  {
   "company": "Kodland",
-  "title": "Digital Creativity | USA",
+  "title": "USA | Digital Creativity",
   "location": "Remote job",
   "why": "гео: usa",
-  "url": "https://kodland.recruitee.com/o/digital-creativity-usa"
+  "url": "https://kodland.recruitee.com/o/usa-digital-creativity"
  },
  {
   "company": "1Password",
@@ -498,7 +505,7 @@
  },
  {
   "company": "Clay",
-  "title": "Senior Brand Designer",
+  "title": "Middle Brand Designer",
   "location": "Belgrade",
   "why": "роль: design",
   "url": "https://apply.workable.com/j/EB140EDEF4"
@@ -530,6 +537,13 @@
   "location": "Kyiv, UA",
   "why": "роль: design",
   "url": "https://gen-tech.breezy.hr/p/5b2b9132d150-marketing-designer-codefinity"
+ },
+ {
+  "company": "Higgsfield AI",
+  "title": "Product Designer (Product Growth)",
+  "location": "Almaty, Kazakhstan",
+  "why": "роль: design",
+  "url": "https://jobs.ashbyhq.com/higgsfieldai/989364bc-e282-4ff4-9126-5a14646859fd"
  },
  {
   "company": "Hirehire",
@@ -617,13 +631,6 @@
  },
  {
   "company": "White Circle",
-  "title": "Brand & Visual Designer",
-  "location": "NY",
-  "why": "роль: design",
-  "url": "https://jobs.ashbyhq.com/whitecircle/ef2a1eff-5c42-4db5-ac1b-f0db8597f2bf"
- },
- {
-  "company": "White Circle",
   "title": "Communications Designer",
   "location": "NY",
   "why": "роль: design",
@@ -663,13 +670,6 @@
   "location": "Remote (United States | Canada)",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/1password/f7fa1ca7-5439-4848-a398-090a5cdf7d9d"
- },
- {
-  "company": "1Password",
-  "title": "Staff AI Marketing Systems Engineer",
-  "location": "Remote (United States | Canada)",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/1password/c03b0c63-a5e1-49ad-9063-b05e50020acb"
  },
  {
   "company": "1Password",
@@ -770,13 +770,6 @@
   "url": "https://job-boards.eu.greenhouse.io/coherentsolutions/jobs/4944071101"
  },
  {
-  "company": "Coherent Solutions",
-  "title": "QA Performance Engineer (IoT sphere)",
-  "location": "Bulgaria",
-  "why": "роль: engineer",
-  "url": "https://job-boards.eu.greenhouse.io/coherentsolutions/jobs/4874017101"
- },
- {
   "company": "DataDome",
   "title": "Senior Frontend Engineer (Full Stack growth path)",
   "location": "France - Remote",
@@ -833,6 +826,13 @@
   "url": "https://jobs.ashbyhq.com/hercules/b11ba26a-f354-4135-83db-a5e172f9bcca"
  },
  {
+  "company": "Higgsfield AI",
+  "title": "Backend Engineer (Product Growth)",
+  "location": "Almaty, Kazakhstan",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/higgsfieldai/b2de1cae-36c8-473d-bd98-65fcbe79d258"
+ },
+ {
   "company": "Hostinger",
   "title": "PHP Developer | Email Team ",
   "location": "Vilnius",
@@ -859,13 +859,6 @@
   "location": "Mumbai, Maharashtra, India",
   "why": "роль: engineer",
   "url": "https://www.orioninc.com/careers/job/?gh_jid=4721811006"
- },
- {
-  "company": "SKELAR",
-  "title": "Senior Engineer (MarTech) - Leaply",
-  "location": "Warsaw",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/SKELAR/47d5cb53-b94a-49f0-abfc-b7dd95cb1926"
  },
  {
   "company": "Teleport",
@@ -966,6 +959,13 @@
   "url": "https://jobs.ashbyhq.com/haut-ai/00183a7d-3415-4830-aa6e-bbf9817f6e72"
  },
  {
+  "company": "Higgsfield AI",
+  "title": "Product Manager (Product Growth)",
+  "location": "Almaty, Kazakhstan",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/higgsfieldai/621f2f93-d2bf-4826-869a-9eccef3ac6c1"
+ },
+ {
   "company": "Noom",
   "title": "Growth Product Manager (Builder)",
   "location": "Princeton, New Jersey, United States",
@@ -978,6 +978,13 @@
   "location": "European Union",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/ruby-labs/d16eca81-ea62-4592-a0cc-5d742c8c1b0f"
+ },
+ {
+  "company": "Ruby Labs",
+  "title": "Senior Growth Product Manager",
+  "location": "Ukraine",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/ruby-labs/946e2f7c-5c28-48a2-b1e5-7ce88f89cb5a"
  },
  {
   "company": "SKELAR",
