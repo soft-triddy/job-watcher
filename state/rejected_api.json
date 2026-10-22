@@ -175,13 +175,6 @@
   "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/5797384004"
  },
  {
-  "company": "C Teleport",
-  "title": "Field Marketing Manager (Hybrid, The Netherlands)",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://careers.cteleport.com/jobs/8311622-field-marketing-manager-hybrid-the-netherlands"
- },
- {
   "company": "Noom",
   "title": "Director, Content Strategy",
   "location": "New York, New York, United States; Princeton, New Jersey, United States",
@@ -229,6 +222,13 @@
   "location": "New York, NY",
   "why": "гео: new york",
   "url": "https://careers.duolingo.com/jobs/8778318002?gh_jid=8778318002"
+ },
+ {
+  "company": "Duolingo",
+  "title": "Social Media Content Creator",
+  "location": "New York, NY",
+  "why": "гео: new york",
+  "url": "https://careers.duolingo.com/jobs/8906062002?gh_jid=8906062002"
  },
  {
   "company": "Duolingo",
@@ -362,13 +362,6 @@
   "location": "New York, NY",
   "why": "роль: account executive",
   "url": "https://jobs.ashbyhq.com/1password/8f5bf2e9-1395-4f9a-93b3-f07fc1c95228"
- },
- {
-  "company": "1Password",
-  "title": "Account Executive - Commercial (Mid-Market), Northeast",
-  "location": "New York, NY",
-  "why": "роль: account executive",
-  "url": "https://jobs.ashbyhq.com/1password/197457a9-acda-42e7-b23a-3ac11c00dda3"
  },
  {
   "company": "1Password",
@@ -516,13 +509,6 @@
   "location": "Pittsburgh, PA",
   "why": "роль: design",
   "url": "https://careers.duolingo.com/jobs/8658654002?gh_jid=8658654002"
- },
- {
-  "company": "Genesis (Studio)",
-  "title": "Content Producer (AI/Motion Design)",
-  "location": "Ukraine",
-  "why": "роль: design",
-  "url": "https://gen-tech.breezy.hr/p/7861af99ae4f-content-producer-ai-motion-design"
  },
  {
   "company": "Genesis (Studio)",
@@ -677,6 +663,13 @@
   "location": "United States",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/1password/7be137ff-3841-49ba-afd1-d116e22b2c9c"
+ },
+ {
+  "company": "1Password",
+  "title": "Senior Developer Marketing Manager, Lifecycle & Growth",
+  "location": "Remote (United States | Canada)",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/1password/2925531c-43d3-4999-8537-c156762434a9"
  },
  {
   "company": "ClickHouse",
@@ -854,6 +847,20 @@
   "url": "https://jobs.ashbyhq.com/hostinger/5de8eec3-9a53-4d6f-ac52-fcba9a9cd2dd"
  },
  {
+  "company": "Hostinger",
+  "title": "Community Growth Lead (Developers & Agentic Products)| Based in EU",
+  "location": "Portugal",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/hostinger/090e8d4f-0ee1-4c9a-a68f-79a59f35a7c9"
+ },
+ {
+  "company": "Hostinger",
+  "title": "Community Growth Lead (Developers & Agentic Products)| Based in Lithuania",
+  "location": "Vilnius",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/hostinger/fcae6357-0232-43db-a1aa-49abdf17aa01"
+ },
+ {
   "company": "Orion Innovation",
   "title": "206518 - Digital Senior Developer",
   "location": "Mumbai, Maharashtra, India",
@@ -866,20 +873,6 @@
   "location": "United States (Remote)",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/goteleport/543d88d2-7ca9-4762-9006-5ebd0d64ce05"
- },
- {
-  "company": "Teleport",
-  "title": "Senior Backend Engineer - Performance - Ireland",
-  "location": "Ireland (Remote)",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/goteleport/6c57ad7d-f27b-43f9-9172-0197b7d1526e"
- },
- {
-  "company": "Teleport",
-  "title": "Senior Backend Engineer - Performance - UK",
-  "location": "United Kingdom (Remote)",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/goteleport/98a1b0c7-5b52-4283-931f-6a874664d561"
  },
  {
   "company": "Wheely",
@@ -915,6 +908,13 @@
   "location": "Kyiv, UA",
   "why": "роль: product manager",
   "url": "https://betterme.breezy.hr/p/72fe543fd48e-junior-growth-product-manager-style"
+ },
+ {
+  "company": "BetterMe",
+  "title": "Junior Growth Product Manager (Well-Being Coach)",
+  "location": "Kyiv, UA",
+  "why": "роль: product manager",
+  "url": "https://betterme.breezy.hr/p/9b22b9bbc5a2-junior-growth-product-manager-well-being-coach"
  },
  {
   "company": "ClickHouse",
@@ -1064,6 +1064,13 @@
   "url": "https://jobs.ashbyhq.com/solidgate/1a511e4c-229b-4982-8d57-2b8746624688"
  },
  {
+  "company": "AI Digital",
+  "title": "Talent Acquisition Team Lead",
+  "location": "Remote job",
+  "why": "роль: talent acquisition",
+  "url": "https://aidigital.recruitee.com/o/talent-acquisition-team-lead-1"
+ },
+ {
   "company": "Duolingo",
   "title": "Director, Talent Acquisition – Sourcing",
   "location": "Pittsburgh, PA",
@@ -1090,6 +1097,20 @@
   "location": "Warsaw",
   "why": "роль: talent acquisition",
   "url": "https://jobs.ashbyhq.com/solidgate/b0e39f29-7a7a-4553-800c-13df65b19373"
+ },
+ {
+  "company": "Surfshark",
+  "title": "Talent Acquisition Team Lead (Tech)",
+  "location": "Vilnius",
+  "why": "роль: talent acquisition",
+  "url": "https://jobs.ashbyhq.com/surfshark/6c7ac551-8067-475c-ac5e-1c7061b617d3"
+ },
+ {
+  "company": "Surfshark",
+  "title": "Talent Acquisition Partner",
+  "location": "Vilnius",
+  "why": "роль: talent acquisition",
+  "url": "https://jobs.ashbyhq.com/surfshark/d14e3193-b8fa-4d99-bc41-19a7e2f40964"
  },
  {
   "company": "Voyagu",
