@@ -7,23 +7,9 @@
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
  },
  {
-  "company": "HumanSignal",
-  "title": "Improv & Voice Actors, Paid AI Research Study (Miami, FL)",
-  "location": "Miami, FL",
-  "why": "гео: FL",
-  "url": "https://job-boards.greenhouse.io/humansignal/jobs/6218745004"
- },
- {
-  "company": "HumanSignal",
-  "title": "Improv & Voice Actors, Paid AI Research Study (Orlando, FL)",
-  "location": "Orlando, FL",
-  "why": "гео: FL",
-  "url": "https://job-boards.greenhouse.io/humansignal/jobs/6218740004"
- },
- {
   "company": "AI Digital",
   "title": "Growth Associate (Boise, ID)",
-  "location": "Atlanta, Georgia, United States",
+  "location": "Remote job",
   "why": "гео: ID",
   "url": "https://aidigital.recruitee.com/o/growth-associate-boise-id"
  },
@@ -78,24 +64,10 @@
  },
  {
   "company": "HumanSignal",
-  "title": "Improv & Voice Actors, Paid AI Research Study (Raleigh)",
-  "location": "Raleigh, NC",
-  "why": "гео: NC",
-  "url": "https://job-boards.greenhouse.io/humansignal/jobs/6208489004"
- },
- {
-  "company": "HumanSignal",
   "title": "Improv & Voice Actors, Paid AI Research Study (NJ)",
   "location": "Hoboken, NJ",
   "why": "гео: NJ",
   "url": "https://job-boards.greenhouse.io/humansignal/jobs/6218730004"
- },
- {
-  "company": "HumanSignal",
-  "title": "Improv & Voice Actors, Paid AI Research Study (Las Vegas)",
-  "location": "Las Vegas, NV",
-  "why": "гео: NV",
-  "url": "https://job-boards.greenhouse.io/humansignal/jobs/6218736004"
  },
  {
   "company": "White Circle",
@@ -105,18 +77,11 @@
   "url": "https://jobs.ashbyhq.com/whitecircle/a8efc466-d53a-449a-8701-f756184c5488"
  },
  {
-  "company": "HumanSignal",
-  "title": "Paid Improv and Acting Work (Columbus, OH)",
-  "location": "Columbus, OH",
-  "why": "гео: OH",
-  "url": "https://job-boards.greenhouse.io/humansignal/jobs/6122967004"
- },
- {
-  "company": "HumanSignal",
-  "title": "Paid Voice Acting Work (Columbus, OH)",
-  "location": "Columbus, OH",
-  "why": "гео: OH",
-  "url": "https://job-boards.greenhouse.io/humansignal/jobs/6179186004"
+  "company": "Enhesa",
+  "title": "Marketing Operations Manager",
+  "location": "Arlington, VA",
+  "why": "гео: VA",
+  "url": "https://job-boards.greenhouse.io/enhesa/jobs/4464002009"
  },
  {
   "company": "Ahrefs",
@@ -306,13 +271,6 @@
   "location": "US - Remote",
   "why": "гео: us",
   "url": "https://job-boards.greenhouse.io/wrike/jobs/4492980005"
- },
- {
-  "company": "Higgsfield AI",
-  "title": "Associate General Counsel, Commercial (Marketing & Growth)",
-  "location": "Remote, USA",
-  "why": "гео: usa",
-  "url": "https://jobs.ashbyhq.com/higgsfieldai/34a04290-e1eb-4874-8121-e416eaf01a00"
  },
  {
   "company": "Higgsfield AI",
@@ -581,6 +539,13 @@
   "url": "https://jobs.ashbyhq.com/recraft/be843017-b1be-4276-b408-61bcfc8e6565"
  },
  {
+  "company": "Replika",
+  "title": "Motion Designer, Growth - Remote",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://careers.replika.com/jobs/8592991-motion-designer-growth-remote"
+ },
+ {
   "company": "SKELAR",
   "title": "Full-stack Marketing Designer",
   "location": "Ukraine, Remote",
@@ -729,13 +694,6 @@
  },
  {
   "company": "Coherent Solutions",
-  "title": "DevOps Data Engineer (Digital Marketing sphere)",
-  "location": "Bulgaria",
-  "why": "роль: engineer",
-  "url": "https://job-boards.eu.greenhouse.io/coherentsolutions/jobs/4906803101"
- },
- {
-  "company": "Coherent Solutions",
   "title": "DevOps Engineer (Digital Engineering)",
   "location": "Poland",
   "why": "роль: engineer",
@@ -848,14 +806,7 @@
  },
  {
   "company": "Hostinger",
-  "title": "Community Growth Lead (Developers & Agentic Products)| Based in EU",
-  "location": "Portugal",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/hostinger/090e8d4f-0ee1-4c9a-a68f-79a59f35a7c9"
- },
- {
-  "company": "Hostinger",
-  "title": "Community Growth Lead (Developers & Agentic Products)| Based in Lithuania",
+  "title": "Community Growth Lead (Developers & Agentic Products)",
   "location": "Vilnius",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/hostinger/fcae6357-0232-43db-a1aa-49abdf17aa01"
@@ -973,6 +924,13 @@
   "url": "https://www.noom.com/careers/job-listings/?gh_jid=8098890"
  },
  {
+  "company": "Replika",
+  "title": "Growth Product Manager - Remote",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://careers.replika.com/jobs/8593046-growth-product-manager-remote"
+ },
+ {
   "company": "Ruby Labs",
   "title": "Senior Growth Product Manager",
   "location": "European Union",
@@ -1006,6 +964,13 @@
   "location": "Vilnius",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/surfshark/ff450332-1dd9-45cc-ad71-6e260ba3bbbf"
+ },
+ {
+  "company": "Telnyx",
+  "title": "Technical Product Manager, Developer Experience & Product-Led Growth",
+  "location": "United States (Remote); Dublin, Ireland; London, UK",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/telnyx54/jobs/8042159003"
  },
  {
   "company": "CloudLinux",
