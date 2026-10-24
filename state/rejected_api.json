@@ -22,6 +22,13 @@
  },
  {
   "company": "Xometry",
+  "title": "Senior Lifecycle Marketing Manager",
+  "location": "Lexington, KY",
+  "why": "гео: KY",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273974007"
+ },
+ {
+  "company": "Xometry",
   "title": "Technical Executive Communications Manager",
   "location": "Lexington, KY",
   "why": "гео: KY",
@@ -47,6 +54,13 @@
   "location": "Waltham, MA ",
   "why": "гео: MA",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5211466007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Lifecycle Marketing Manager",
+  "location": "Waltham, MA",
+  "why": "гео: MA",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273973007"
  },
  {
   "company": "Xometry",
@@ -371,6 +385,13 @@
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5181499007"
  },
  {
+  "company": "AI Digital",
+  "title": "Growth Associate / BDR",
+  "location": "Atlanta, Georgia, United States",
+  "why": "роль: bdr",
+  "url": "https://aidigital.recruitee.com/o/growth-associate-bdr"
+ },
+ {
   "company": "Ajax Systems",
   "title": "Business Development Manager - Berlin, Brandenburg, Saxony-Anhalt, Saxony",
   "location": "Berlin",
@@ -462,13 +483,6 @@
   "url": "https://apply.workable.com/j/EB140EDEF4"
  },
  {
-  "company": "Duolingo",
-  "title": "Marketing & Product Design Sourcer",
-  "location": "Pittsburgh, PA",
-  "why": "роль: design",
-  "url": "https://careers.duolingo.com/jobs/8658654002?gh_jid=8658654002"
- },
- {
   "company": "Genesis (Studio)",
   "title": "Graphic Designer / Brand Designer (Boosters)",
   "location": "Ukraine",
@@ -488,6 +502,13 @@
   "location": "Almaty, Kazakhstan",
   "why": "роль: design",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/989364bc-e282-4ff4-9126-5a14646859fd"
+ },
+ {
+  "company": "Hirehire",
+  "title": "Senior Brand Designer | Avride",
+  "location": "Austin",
+  "why": "роль: design",
+  "url": "https://jobs.ashbyhq.com/hirehire/ea6910e9-b03f-435c-b7f3-97c5ff3510c4"
  },
  {
   "company": "Hirehire",
@@ -558,6 +579,13 @@
   "location": "Ukraine, Remote",
   "why": "роль: design",
   "url": "https://jobs.ashbyhq.com/SKELAR/df38d2c9-ec1c-4006-88e5-bf13c2d8705d"
+ },
+ {
+  "company": "SKELAR",
+  "title": "Marketing Designer switch to Creative Marketing Manager",
+  "location": "Ukraine, Remote",
+  "why": "роль: design",
+  "url": "https://jobs.ashbyhq.com/SKELAR/771a6117-bccd-4f63-930a-64e9b692ecf0"
  },
  {
   "company": "Solidgate",
@@ -693,6 +721,13 @@
   "url": "https://jobs.ashbyhq.com/clickhouse/66affc05-7eb5-450e-94fd-01969c9318bf"
  },
  {
+  "company": "CloudLinux",
+  "title": "Senior ML Engineer - Email Security (remote work)",
+  "location": "Madrid",
+  "why": "роль: engineer",
+  "url": "https://apply.workable.com/j/C5FF37AA5D"
+ },
+ {
   "company": "Coherent Solutions",
   "title": "DevOps Engineer (Digital Engineering)",
   "location": "Poland",
@@ -812,6 +847,13 @@
   "url": "https://jobs.ashbyhq.com/hostinger/fcae6357-0232-43db-a1aa-49abdf17aa01"
  },
  {
+  "company": "InvestEngine",
+  "title": "Middle Manual QA Engineer, Growth team",
+  "location": "",
+  "why": "роль: engineer",
+  "url": "https://careers.investengine.com/jobs/8505082-middle-manual-qa-engineer-growth-team"
+ },
+ {
   "company": "Orion Innovation",
   "title": "206518 - Digital Senior Developer",
   "location": "Mumbai, Maharashtra, India",
@@ -828,16 +870,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "inDrive",
@@ -901,6 +943,20 @@
   "location": "New York, NY; Pittsburgh, PA",
   "why": "роль: product manager",
   "url": "https://careers.duolingo.com/jobs/8747171002?gh_jid=8747171002"
+ },
+ {
+  "company": "Flo Health",
+  "title": "Growth Product Manager - Monetisation",
+  "location": "Vilnius",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/flohealth/jobs/8042676003"
+ },
+ {
+  "company": "Flo Health",
+  "title": "Growth Product Manager – Monetisation",
+  "location": "London",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/flohealth/jobs/8041228003"
  },
  {
   "company": "Haut.AI",
