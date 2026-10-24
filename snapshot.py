@@ -8,11 +8,23 @@
 Himalayas (те же запросы, что у радара), MBW, Хабр. Фильтр — тот же is_marketing, что у радаров.
 Поле sent: присылал ли радар эту вакансию раньше (есть в seen-файлах).
 """
-import csv, json, os, sys, tempfile, time
+import csv, json, os, re, sys, tempfile, time
 
-from core import is_marketing, load
+import requests
+from core import UA, TIMEOUT, is_marketing, load
 
-OUT = "discover/snapshot.json"
+# ROLE=marketing (по умолчанию) — маркетинг для Насти; другие роли — разовые слепки для знакомых
+ROLE = os.environ.get("ROLE", "marketing")
+ROLES = {
+    "ios": {"title": re.compile(r"\bios\b|\bswift(ui)?\b|\biphone\b|mobile[\s-]*(engineer|developer|dev)\b", re.I),
+            "himalayas": ["ios", "swift", "swiftui", "mobile developer", "mobile engineer"],
+            "habr": ["iOS", "Swift"]},
+}
+OUT = "discover/snapshot.json" if ROLE == "marketing" else f"discover/snapshot_{ROLE}.json"
+
+def _match(j):
+    if ROLE == "marketing": return is_marketing(j.get("title") or "", j.get("location") or "")
+    return bool(ROLES[ROLE]["title"].search(j.get("title") or ""))
 DESC = 4000                                 # символов описания на вакансию
 
 class _NoHealth:
@@ -59,11 +71,38 @@ def browser_jobs():
     return out
 
 def himalayas_jobs():
+    if ROLE != "marketing": return _himalayas_role()
     import himalayas_radar as h
     js = h.collect(_NoHealth())
     out = [{**j, "music": False, "key": j["guid"], "source": "Himalayas"} for j in js]
     print(f"Himalayas: {len(out)}", flush=True)
     return out
+
+def _himalayas_role():
+    """Поиск Himalayas по запросам роли: все типы занятости, без ограничения по странам."""
+    out = {}
+    for q in ROLES[ROLE]["himalayas"]:
+        for page in range(1, 6):
+            r = None
+            for attempt in range(4):
+                r = requests.get("https://himalayas.app/jobs/api/search", headers=UA, timeout=TIMEOUT,
+                                 params={"q": q, "sort": "recent", "page": page})
+                if r.status_code in (429, 500, 502, 503): time.sleep(15 * (attempt + 1)); continue
+                break
+            if r is None or r.status_code != 200: print(f"  ⚠ Himalayas «{q}» p{page}: {getattr(r, 'status_code', '?')}"); break
+            d = r.json(); batch = d.get("jobs", [])
+            for j in batch:
+                locs = [x if isinstance(x, str) else (x.get("name") or "") for x in (j.get("locationRestrictions") or [])]
+                loc = ", ".join(locs) if len(locs) <= 6 else f"{len(locs)} стран: " + ", ".join(locs[:4]) + "…"
+                out[j.get("guid")] = {"title": j.get("title") or "", "company": j.get("companyName") or "",
+                                      "url": j.get("applicationLink") or "", "location": (loc or "Worldwide") + " · Remote",
+                                      "description": j.get("description") or j.get("excerpt") or "",
+                                      "etype": j.get("employmentType") or "", "seniority": ", ".join(j.get("seniority") or []),
+                                      "music": False, "key": j.get("guid"), "source": "Himalayas"}
+            if not batch or page * (d.get("limit") or len(batch)) >= d.get("totalCount", 0): break
+            time.sleep(1.2)
+    print(f"Himalayas: {len(out)}", flush=True)
+    return list(out.values())
 
 def mbw_jobs():
     import mbw_radar
@@ -80,7 +119,7 @@ def mbw_jobs():
 def habr_jobs():
     import boards_radar
     out = []
-    for q in boards_radar.HABR:
+    for q in (boards_radar.HABR if ROLE == "marketing" else ROLES[ROLE]["habr"]):
         try: out += [{**j, "music": False, "key": j["guid"], "source": "Хабр"} for j in boards_radar.habr(q)]
         except Exception as e: print("  ⚠ Хабр:", e)
     return out
@@ -96,11 +135,11 @@ def main():
     seen = _seen_keys()
     mk, dedup = [], set()
     for j in alljobs:
-        if not is_marketing(j.get("title") or "", j.get("location") or ""): continue
+        if not _match(j): continue
         k = ((j.get("title") or "").lower().strip(), (j.get("company") or "").lower().strip(), (j.get("location") or "").lower().strip())
         if k in dedup: continue
         dedup.add(k); mk.append(j)
-    print(f"всего: {len(alljobs)} | маркетинг: {len(mk)}", flush=True)
+    print(f"всего: {len(alljobs)} | {ROLE}: {len(mk)}", flush=True)
 
     from scorer import describe
     rows = []
@@ -110,6 +149,7 @@ def main():
         rows.append({"company": j.get("company", ""), "title": j["title"], "location": j.get("location", ""),
                      "url": j["url"], "source": j["source"], "music": j.get("music", False),
                      "sent": j.get("key") in seen or j["url"] in seen,
+                     "etype": j.get("etype", ""), "seniority": j.get("seniority", ""),
                      "description": " ".join((text or "").split())[:DESC], "full": full})
         time.sleep(0.2)
     os.makedirs("discover", exist_ok=True)

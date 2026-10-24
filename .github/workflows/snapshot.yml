@@ -4,6 +4,12 @@ name: snapshot
 # Без оценщика и без Telegram; seen и отчёты здоровья не трогает. Разбор делает Claude по файлу.
 on:
   workflow_dispatch:
+    inputs:
+      role:
+        description: "Чьи вакансии: marketing (Настя) или разовый слепок для знакомых"
+        type: choice
+        options: [marketing, ios]
+        default: marketing
 
 permissions:
   contents: write
@@ -21,6 +27,8 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       - name: run
         run: python snapshot.py
+        env:
+          ROLE: ${{ github.event.inputs.role }}
       - name: save result
         if: always()
-        run: bash save_state.sh "snapshot [skip ci]" discover/snapshot.json
+        run: bash save_state.sh "snapshot [skip ci]" discover/snapshot*.json
