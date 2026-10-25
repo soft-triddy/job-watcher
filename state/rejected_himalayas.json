@@ -56,20 +56,6 @@
   "url": "https://himalayas.app/companies/alpaca/jobs/senior-software-engineer-new-markets-eu?utm_source=api"
  },
  {
-  "company": "Altus Digital",
-  "title": "Salesforce Marketing Cloud (SFMC) Developer",
-  "location": "",
-  "why": "роль: engineer",
-  "url": "https://himalayas.app/companies/altus-digital/jobs/salesforce-marketing-cloud-sfmc-developer?utm_source=api"
- },
- {
-  "company": "NightOwl Consulting",
-  "title": "CRM Developer",
-  "location": "",
-  "why": "роль: engineer",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/crm-developer?utm_source=api"
- },
- {
   "company": "Six Figure Consulting",
   "title": "GTM Engineer (Email Marketing & Operations Manager)",
   "location": "",
@@ -82,6 +68,13 @@
   "location": "",
   "why": "роль: engineer",
   "url": "https://himalayas.app/companies/sword-com/jobs/senior-backend-engineer-consumer-growth?utm_source=api"
+ },
+ {
+  "company": "Clario",
+  "title": "Product Manager (Retention & Growth)",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://himalayas.app/companies/clario/jobs/product-manager-retention-growth?utm_source=api"
  },
  {
   "company": "Novakid School",
