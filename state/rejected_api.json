@@ -350,13 +350,6 @@
   "url": "https://jobs.ashbyhq.com/hercules/6e5fe916-fa4a-4da1-a8dc-a6a560b57ad5"
  },
  {
-  "company": "Recraft",
-  "title": "Account Executive, API — Mid-Market & Enterprise",
-  "location": "London, UK",
-  "why": "роль: account executive",
-  "url": "https://jobs.ashbyhq.com/recraft/bfb20039-9f2d-4471-aa5c-2338341d9e2b"
- },
- {
   "company": "Teleport",
   "title": "Mid-Market Account Executive - SF or NYC based",
   "location": "United States (Remote)",
@@ -729,13 +722,6 @@
  },
  {
   "company": "Coherent Solutions",
-  "title": "DevOps Engineer (Digital Engineering)",
-  "location": "Poland",
-  "why": "роль: engineer",
-  "url": "https://job-boards.eu.greenhouse.io/coherentsolutions/jobs/4976821101"
- },
- {
-  "company": "Coherent Solutions",
   "title": "DevOps Network Engineer (Digital Marketing)",
   "location": "Mexico",
   "why": "роль: engineer",
@@ -870,16 +856,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "inDrive",
@@ -1029,13 +1015,6 @@
   "url": "https://job-boards.greenhouse.io/telnyx54/jobs/8042159003"
  },
  {
-  "company": "CloudLinux",
-  "title": "Product Owner - Imunify Email (remote work)",
-  "location": "Yerevan",
-  "why": "роль: product owner",
-  "url": "https://apply.workable.com/j/843A5B89A3"
- },
- {
   "company": "Wrike",
   "title": "Sales Development Representative [AMS market shift: 13:30 - 10:00 CET]",
   "location": "Prague",
@@ -1055,6 +1034,13 @@
   "location": "Toulouse",
   "why": "роль: sales",
   "url": "https://jobs.lever.co/ajax/798b7b15-6a6d-4cb1-89ad-b08794585356"
+ },
+ {
+  "company": "MGID",
+  "title": "Client Acquisition/Sales Manager (AdTech, Media Option)",
+  "location": "Bangkok, Krung Thep Maha Nakhon, Thailand",
+  "why": "роль: sales",
+  "url": "https://careers.mgid.com/o/client-acquisitionsales-manager-adtech-media-option"
  },
  {
   "company": "SKELAR",
