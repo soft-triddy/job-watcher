@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-25 13:45 UTC",
+ "updated": "2026-10-26 16:10 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
- "jobs_total": 343,
- "marketing": 141,
+ "jobs_total": 350,
+ "marketing": 147,
  "sources": {
   "мир: «marketing»": {
    "jobs": 100,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "мир: «growth»": {
@@ -19,23 +19,23 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "мир: «demand»": {
-   "jobs": 28,
+   "jobs": 30,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "мир: «seo»": {
-   "jobs": 91,
+   "jobs": 93,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "мир: «crm»": {
@@ -43,7 +43,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "KG: «marketing»": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "KG: «growth»": {
@@ -59,23 +59,23 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "KG: «demand»": {
-   "jobs": 29,
+   "jobs": 31,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "KG: «seo»": {
-   "jobs": 90,
+   "jobs": 92,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   },
   "KG: «crm»": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-10-25",
+   "last_ok": "2026-10-26",
    "alerted": false
   }
  }
