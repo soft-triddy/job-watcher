@@ -127,17 +127,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
- },
- {
-  "company": "Nord Security",
   "title": "Data Analyst · Mid-Senior · Saily Saily Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/925dfba8-f7d3-4c02-bd6f-205abddf2b37/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Data Analyst · Mid-Senior · Saily Saily Poland Hybrid Marketing & Communications",
+  "location": "",
+  "why": "гео: hybrid",
+  "url": "https://nordsecurity.com/careers/36e7d8b3-9597-408e-8eb7-6b8ac999932f/"
  },
  {
   "company": "Nord Security",
@@ -256,14 +256,14 @@
   "title": "PPC Team Lead · B2B Team Nord B2B Warsaw Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/b8e2b24e-4e15-4b88-919a-79c9c46f2429/"
+  "url": "https://nordsecurity.com/careers/cd42ea85-1ec2-4762-aab9-63c089cd6d61/"
  },
  {
   "company": "Nord Security",
-  "title": "PPC Team Lead · B2B Team Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
+  "title": "PPC Team Lead · B2B Team Nord B2B Vilnius Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/e5758a76-77a0-4b98-9d33-094f30800558/"
+  "url": "https://nordsecurity.com/careers/282faf49-97cf-4a94-927b-24b68025da35/"
  },
  {
   "company": "Nord Security",
@@ -281,17 +281,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Product Marketing Manager · NordLayer Nord B2B Warsaw Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
- },
- {
-  "company": "Nord Security",
   "title": "Product Marketing Manager · NordLayer Nord B2B Vilnius / Kaunas Hybrid Marketing & Communications",
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/068c39f4-c0e5-4fd4-9cd9-b6bf2ed084db/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Product Marketing Manager · NordLayer Nord B2B Warsaw Hybrid Marketing & Communications",
+  "location": "",
+  "why": "гео: hybrid",
+  "url": "https://nordsecurity.com/careers/0d23d43f-528d-48e6-90d7-9efbe3a1846b/"
  },
  {
   "company": "Nord Security",
@@ -313,13 +313,6 @@
   "location": "",
   "why": "гео: hybrid",
   "url": "https://nordsecurity.com/careers/72b1c885-f29e-4db0-a43c-8b6cd69fa614/"
- },
- {
-  "company": "Nord Security",
-  "title": "Web Content Manager · Mid-Senior NordVPN Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "гео: hybrid",
-  "url": "https://nordsecurity.com/careers/0ddc2932-ebc2-4d6b-8019-96a14eb5b3fd/"
  },
  {
   "company": "Databricks",
@@ -436,16 +429,16 @@
  {
   "company": "Databricks",
   "title": "Delivery Solutions Architect - Digital Native Business",
-  "location": "Northeast - United States; Southeast - United States; West Coast - United States",
+  "location": "United States",
   "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8736471002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8736473002"
  },
  {
   "company": "Databricks",
   "title": "Delivery Solutions Architect - Digital Native Business",
-  "location": "United States",
+  "location": "Northeast - United States; Southeast - United States; West Coast - United States",
   "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8736473002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8736471002"
  },
  {
   "company": "Databricks",
@@ -471,9 +464,16 @@
  {
   "company": "Databricks",
   "title": "Solutions Architect - Communications, Media, Entertainment and Games",
-  "location": "Remote - Colorado",
+  "location": "Remote - New York",
   "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8569633002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755476002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Solutions Architect - Communications, Media, Entertainment and Games",
+  "location": "Denver, Colorado",
+  "why": "роль: architect",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8900134002"
  },
  {
   "company": "Databricks",
@@ -485,9 +485,9 @@
  {
   "company": "Databricks",
   "title": "Solutions Architect - Communications, Media, Entertainment and Games",
-  "location": "Remote - New York",
+  "location": "Remote - Colorado",
   "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755476002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8569633002"
  },
  {
   "company": "Databricks",
@@ -502,13 +502,6 @@
   "location": "Remote - Pennsylvania",
   "why": "роль: architect",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755482002"
- },
- {
-  "company": "Databricks",
-  "title": "Solutions Architect - Communications, Media, Entertainment and Games",
-  "location": "Denver, Colorado",
-  "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8900134002"
  },
  {
   "company": "Databricks",
@@ -579,6 +572,13 @@
   "location": "Nevada; Remote - California; Remote - Colorado; Remote - Washington",
   "why": "роль: architect",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8615045002"
+ },
+ {
+  "company": "Luxoft",
+  "title": "Enterprise CRM Architect (Engagement Lead)",
+  "location": "",
+  "why": "роль: architect",
+  "url": "https://career.luxoft.com/jobs/enterprise-crm-architect-engagement-lead-28701"
  },
  {
   "company": "Andersen",
@@ -659,17 +659,17 @@
  },
  {
   "company": "Nord Security",
-  "title": "Lead Product Designer Coveron Vilnius / Kaunas Hybrid Marketing & Communications",
-  "location": "",
-  "why": "роль: design",
-  "url": "https://nordsecurity.com/careers/f2e8b050-a467-4c28-b598-aaef65cfd6cd/"
- },
- {
-  "company": "Nord Security",
   "title": "Lead Product Designer Coveron Warsaw / Krakow Hybrid Marketing & Communications",
   "location": "",
   "why": "роль: design",
   "url": "https://nordsecurity.com/careers/3b81f583-2e0f-41f7-b93e-401265ed62a0/"
+ },
+ {
+  "company": "Nord Security",
+  "title": "Lead Product Designer Coveron Vilnius / Kaunas Hybrid Marketing & Communications",
+  "location": "",
+  "why": "роль: design",
+  "url": "https://nordsecurity.com/careers/f2e8b050-a467-4c28-b598-aaef65cfd6cd/"
  },
  {
   "company": "Nord Security",
@@ -709,16 +709,16 @@
  {
   "company": "Databricks",
   "title": "Manager, Field Engineering - Global Telecommunications",
-  "location": "Remote - Georgia",
+  "location": "Remote - Texas",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8476403002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755470002"
  },
  {
   "company": "Databricks",
   "title": "Manager, Field Engineering - Global Telecommunications",
-  "location": "Remote - Texas",
+  "location": "Remote - Georgia",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755470002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8476403002"
  },
  {
   "company": "Databricks",
@@ -737,9 +737,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "New York City, New York",
+  "location": "Boston, Massachusetts",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461222002"
  },
  {
   "company": "Databricks",
@@ -747,13 +747,6 @@
   "location": "San Francisco, California",
   "why": "роль: engineer",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461163002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "Philadelphia, Pennsylvania",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494153002"
  },
  {
   "company": "Databricks",
@@ -793,9 +786,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "Boston, Massachusetts",
+  "location": "New York City, New York",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461222002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002"
  },
  {
   "company": "Databricks",
@@ -834,6 +827,13 @@
  },
  {
   "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+  "location": "Philadelphia, Pennsylvania",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494153002"
+ },
+ {
+  "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "West Coast - United States",
   "why": "роль: engineer",
@@ -849,16 +849,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - California",
+  "location": "San Francisco, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Remote - New York",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -870,9 +863,16 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
+  "location": "Remote - California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "Remote - New York",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002"
  },
  {
   "company": "Databricks",
@@ -957,13 +957,6 @@
   "location": "",
   "why": "роль: intern",
   "url": "https://academy.qic.digital/career-internship"
- },
- {
-  "company": "Centro (Ortnec)",
-  "title": "Content Moderator (afternoon shift, Colombia)",
-  "location": "",
-  "why": "роль: moderator",
-  "url": "https://career.centro.team/apply/c0wHO2QRHR/Content-Moderator-afternoon-Shift-Colombia"
  },
  {
   "company": "Infomediji",
@@ -1072,13 +1065,6 @@
  },
  {
   "company": "Creatio",
-  "title": "Talent Acquisition Specialist",
-  "location": "",
-  "why": "роль: talent acquisition",
-  "url": "https://www.creatio.com/company/careers/job-openings/talent-acquisition-specialist-6"
- },
- {
-  "company": "Creatio",
   "title": "Talent Acquisition Researcher",
   "location": "",
   "why": "роль: talent acquisition",
@@ -1090,6 +1076,13 @@
   "location": "",
   "why": "роль: talent acquisition",
   "url": "https://www.creatio.com/company/careers/job-openings/talent-acquisition-researcher-8"
+ },
+ {
+  "company": "Creatio",
+  "title": "Talent Acquisition Specialist",
+  "location": "",
+  "why": "роль: talent acquisition",
+  "url": "https://www.creatio.com/company/careers/job-openings/talent-acquisition-specialist-6"
  },
  {
   "company": "Formlabs",
