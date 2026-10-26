@@ -19,6 +19,17 @@ ROLES = {
     "ios": {"title": re.compile(r"\bios\b|\bswift(ui)?\b|\biphone\b|mobile[\s-]*(engineer|developer|dev)\b", re.I),
             "himalayas": ["ios", "swift", "swiftui", "mobile developer", "mobile engineer"],
             "habr": ["iOS", "Swift"]},
+    # клиентские роли без квоты на новые продажи: AM, CSM, TAM, внедрение, партнёры (слепок для Артёма)
+    "am": {"title": re.compile(r"account\s+manage|account\s+director|key\s+account|strategic\s+account|"
+                               r"customer\s+success|client\s+success|customer\s+partner|client\s+partner|"
+                               r"client\s+(services\s+)?manager|relationship\s+manager|technical\s+account|"
+                               r"implementation\s+(manager|consultant|specialist|lead)|onboarding\s+(manager|specialist|lead|consultant)|"
+                               r"customer\s+(growth|expansion|engagement)\s+manager|renewals?\s+manager|"
+                               r"partner(ship)?s?\s+manager|channel\s+manager|alliances?\s+manager|"
+                               r"solutions?\s+(consultant|manager)|engagement\s+manager", re.I),
+           "himalayas": ["account manager", "customer success manager", "technical account manager",
+                         "implementation manager", "onboarding manager", "client partner", "partner manager"],
+           "habr": ["Account manager", "Customer Success"]},
 }
 OUT = "discover/snapshot.json" if ROLE == "marketing" else f"discover/snapshot_{ROLE}.json"
 

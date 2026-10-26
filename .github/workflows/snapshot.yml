@@ -8,7 +8,7 @@ on:
       role:
         description: "Чьи вакансии: marketing (Настя) или разовый слепок для знакомых"
         type: choice
-        options: [marketing, ios]
+        options: [marketing, ios, am]
         default: marketing
 
 permissions:
