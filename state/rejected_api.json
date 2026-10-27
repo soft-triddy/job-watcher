@@ -176,6 +176,13 @@
  },
  {
   "company": "Duolingo",
+  "title": "Performance Marketing Lead",
+  "location": "New York, NY",
+  "why": "гео: new york",
+  "url": "https://careers.duolingo.com/jobs/8917787002?gh_jid=8917787002"
+ },
+ {
+  "company": "Duolingo",
   "title": "Senior Creative Director, Marketing",
   "location": "New York, NY",
   "why": "гео: new york",
@@ -306,13 +313,6 @@
   "location": "San Francisco Bay Area, USA",
   "why": "гео: usa",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/9ed963ba-3348-43da-9f58-b8dc261604aa"
- },
- {
-  "company": "Inworld AI",
-  "title": "Performance Marketing Lead - USA",
-  "location": "Mountain View, California, USA",
-  "why": "гео: usa",
-  "url": "https://jobs.ashbyhq.com/inworld-ai/fc29367f-45d6-4555-a67f-2c739c3a67d2"
  },
  {
   "company": "Inworld AI",
@@ -805,6 +805,13 @@
   "url": "https://jobs.ashbyhq.com/higgsfieldai/b2de1cae-36c8-473d-bd98-65fcbe79d258"
  },
  {
+  "company": "Higgsfield AI",
+  "title": "Frontend Engineer, (Product Growth)",
+  "location": "Almaty, Kazakhstan",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/higgsfieldai/82f5f3c2-b833-44b5-9156-5fd8b4da0dfc"
+ },
+ {
   "company": "Hostinger",
   "title": "PHP Developer | Email Team ",
   "location": "Vilnius",
@@ -1083,13 +1090,6 @@
   "location": "Pittsburgh, PA",
   "why": "роль: talent acquisition",
   "url": "https://careers.duolingo.com/jobs/8691257002?gh_jid=8691257002"
- },
- {
-  "company": "Hostinger",
-  "title": "Talent Acquisition Partner",
-  "location": "Vilnius",
-  "why": "роль: talent acquisition",
-  "url": "https://jobs.ashbyhq.com/hostinger/5abf5f15-ffc6-477d-9954-2ecf2ea07f1d"
  },
  {
   "company": "Solidgate",
