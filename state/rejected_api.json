@@ -7,11 +7,25 @@
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
  },
  {
+  "company": "Wayy",
+  "title": "Campus Ambassador - Maybe.Day (One-Month Paid Project)",
+  "location": "Miami, FL",
+  "why": "гео: FL",
+  "url": "https://wayy-llc.breezy.hr/p/744ae28d2bf7-campus-ambassador-maybe-day-one-month-paid-project"
+ },
+ {
   "company": "AI Digital",
   "title": "Growth Associate (Boise, ID)",
   "location": "Remote job",
   "why": "гео: ID",
   "url": "https://aidigital.recruitee.com/o/growth-associate-boise-id"
+ },
+ {
+  "company": "Xometry",
+  "title": "Director, Marketplace Marketing",
+  "location": "Lexington, KY",
+  "why": "гео: KY",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273756007"
  },
  {
   "company": "Xometry",
@@ -40,6 +54,13 @@
   "location": "Atlanta, Georgia, United States",
   "why": "гео: MA",
   "url": "https://aidigital.recruitee.com/o/growth-associate-boston-ma"
+ },
+ {
+  "company": "Xometry",
+  "title": "Director, Marketplace Marketing",
+  "location": "Waltham, MA",
+  "why": "гео: MA",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273753007"
  },
  {
   "company": "Xometry",
@@ -211,13 +232,6 @@
  },
  {
   "company": "Duolingo",
-  "title": "Social Media Content Creator",
-  "location": "New York, NY",
-  "why": "гео: new york",
-  "url": "https://careers.duolingo.com/jobs/8906062002?gh_jid=8906062002"
- },
- {
-  "company": "Duolingo",
   "title": "VP of Product, Growth and Monetization",
   "location": "New York, NY; Pittsburgh, PA",
   "why": "гео: new york",
@@ -278,6 +292,13 @@
   "location": "Remote",
   "why": "гео: us",
   "url": "https://jobs.smartrecruiters.com/Mirantis/744000138412764"
+ },
+ {
+  "company": "Qdrant",
+  "title": "Senior Product Marketing Manager (US)",
+  "location": "Remote - United States",
+  "why": "гео: us",
+  "url": "https://jobs.ashbyhq.com/qdrant.tech/1ed9f01f-12a1-4618-82f6-c33bb6be07dd"
  },
  {
   "company": "Qdrant",
@@ -532,13 +553,6 @@
   "url": "https://careers.investengine.com/jobs/8150398-marketing-designer"
  },
  {
-  "company": "Qdrant",
-  "title": "Marketing Designer",
-  "location": "Spain",
-  "why": "роль: design",
-  "url": "https://jobs.ashbyhq.com/qdrant.tech/67297118-1426-48bb-b586-b1bf92eb93df"
- },
- {
   "company": "Recraft",
   "title": "Design Copywriter",
   "location": "Remote",
@@ -705,6 +719,13 @@
   "location": "San Francisco",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/clickhouse/7b0174fe-f124-4db2-923f-7028f39d6be9"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Sr. Frontend Software Engineer - Growth",
+  "location": "United States",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/clickhouse/da6f6da1-eabf-4647-ab1c-6e138b14a6fe"
  },
  {
   "company": "ClickHouse",
@@ -890,13 +911,6 @@
  },
  {
   "company": "BetterMe",
-  "title": "Junior Growth Product Manager (Style)",
-  "location": "Kyiv, UA",
-  "why": "роль: product manager",
-  "url": "https://betterme.breezy.hr/p/72fe543fd48e-junior-growth-product-manager-style"
- },
- {
-  "company": "BetterMe",
   "title": "Junior Growth Product Manager (Well-Being Coach)",
   "location": "Kyiv, UA",
   "why": "роль: product manager",
@@ -966,13 +980,6 @@
   "url": "https://jobs.ashbyhq.com/higgsfieldai/621f2f93-d2bf-4826-869a-9eccef3ac6c1"
  },
  {
-  "company": "Noom",
-  "title": "Growth Product Manager (Builder)",
-  "location": "Princeton, New Jersey, United States",
-  "why": "роль: product manager",
-  "url": "https://www.noom.com/careers/job-listings/?gh_jid=8098890"
- },
- {
   "company": "Replika",
   "title": "Growth Product Manager - Remote",
   "location": "",
@@ -1013,13 +1020,6 @@
   "location": "Vilnius",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/surfshark/ff450332-1dd9-45cc-ad71-6e260ba3bbbf"
- },
- {
-  "company": "Telnyx",
-  "title": "Technical Product Manager, Developer Experience & Product-Led Growth",
-  "location": "United States (Remote); Dublin, Ireland; London, UK",
-  "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/telnyx54/jobs/8042159003"
  },
  {
   "company": "Wrike",
@@ -1078,6 +1078,13 @@
   "url": "https://jobs.ashbyhq.com/solidgate/1a511e4c-229b-4982-8d57-2b8746624688"
  },
  {
+  "company": "1Password",
+  "title": "Talent Acquisition Coordinator (PST)",
+  "location": "United States",
+  "why": "роль: talent acquisition",
+  "url": "https://jobs.ashbyhq.com/1password/1a796b5f-56f4-4c9f-844b-2eb74ebcf8df"
+ },
+ {
   "company": "AI Digital",
   "title": "Talent Acquisition Team Lead",
   "location": "Remote job",
@@ -1085,11 +1092,11 @@
   "url": "https://aidigital.recruitee.com/o/talent-acquisition-team-lead-1"
  },
  {
-  "company": "Duolingo",
-  "title": "Director, Talent Acquisition – Sourcing",
-  "location": "Pittsburgh, PA",
+  "company": "Hostinger",
+  "title": "Talent Acquisition Partner",
+  "location": "Vilnius",
   "why": "роль: talent acquisition",
-  "url": "https://careers.duolingo.com/jobs/8691257002?gh_jid=8691257002"
+  "url": "https://jobs.ashbyhq.com/hostinger/c8fbb8f0-9ffc-40da-89bc-3abd4ee111ce"
  },
  {
   "company": "Solidgate",
@@ -1101,7 +1108,7 @@
  {
   "company": "Solidgate",
   "title": "Global Talent Acquisition Specialist",
-  "location": "Warsaw",
+  "location": "Europe",
   "why": "роль: talent acquisition",
   "url": "https://jobs.ashbyhq.com/solidgate/b0e39f29-7a7a-4553-800c-13df65b19373"
  },
