@@ -1,12 +1,5 @@
 [
  {
-  "company": "IBS",
-  "title": "Инженер по нагрузочному тестированию (JMeter) / Performance QA Engineer",
-  "location": "Remote",
-  "why": "роль: engineer",
-  "url": "https://career.habr.com/vacancies/1000168590"
- },
- {
   "company": "Sirius Capital",
   "title": "Lead Backend Engineer - Market Data (FinTech)",
   "location": "Ереван",
@@ -21,10 +14,17 @@
   "url": "https://career.habr.com/vacancies/1000168930"
  },
  {
-  "company": "СберЗдоровье",
-  "title": "Product Manager (CR1 +маркетинг)",
-  "location": "Москва",
-  "why": "роль: product manager",
-  "url": "https://career.habr.com/vacancies/1000168644"
+  "company": "VK",
+  "title": "Ведущий Go-разработчик в команду VK Коммуникации в VK, Москва",
+  "location": "Москва · Remote",
+  "why": "роль: engineer",
+  "url": "https://career.habr.com/vacancies/1000169468"
+ },
+ {
+  "company": "Первый Бит",
+  "title": "Onsite IT Support Engineer for UAE market",
+  "location": "Remote",
+  "why": "роль: engineer",
+  "url": "https://career.habr.com/vacancies/1000169022"
  }
 ]
