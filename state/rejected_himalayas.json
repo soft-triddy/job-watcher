@@ -8,17 +8,45 @@
  },
  {
   "company": "Interdependence Public Relations",
+  "title": "Account Executive, Public Relations",
+  "location": "",
+  "why": "роль: account executive",
+  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/account-executive-public-relations?utm_source=api"
+ },
+ {
+  "company": "Interdependence Public Relations",
+  "title": "Digital Account Executive, Public Relations",
+  "location": "",
+  "why": "роль: account executive",
+  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/digital-account-executive-public-relations?utm_source=api"
+ },
+ {
+  "company": "Interdependence Public Relations",
+  "title": "Account Executive, Integrated Marketing and Strategy",
+  "location": "",
+  "why": "роль: account executive",
+  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/account-executive-integrated-marketing-and-strategy?utm_source=api"
+ },
+ {
+  "company": "Interdependence Public Relations",
+  "title": "Account Executive, Influencer Marketing & Event Management",
+  "location": "",
+  "why": "роль: account executive",
+  "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/account-executive-influencer-marketing-event-management?utm_source=api"
+ },
+ {
+  "company": "Interdependence Public Relations",
   "title": "Enterprise Account Executive - SEO",
   "location": "",
   "why": "роль: account executive",
   "url": "https://himalayas.app/companies/interdependence-public-relations/jobs/enterprise-account-executive-seo-1115831556?utm_source=api"
  },
  {
-  "company": "Red Sky",
-  "title": "Business Development & Growth Lead (Sales/Partnerships)",
+  "company": "Aline",
+  "title": "Manager, Customer Success (Digital First/Mid-Market)",
   "location": "",
-  "why": "роль: business development",
-  "url": "https://himalayas.app/companies/red-sky/jobs/business-development-growth-lead-sales-partnerships?utm_source=api"
+  "why": "роль: customer success",
+  "url": "https://himalayas.app/companies/aline/jobs/manager-customer-success-digital-first-mid-market?utm_source=api"
  },
  {
   "company": "Search Atlas",
@@ -28,66 +56,38 @@
   "url": "https://himalayas.app/companies/search-atlas/jobs/seo-customer-success-team-lead?utm_source=api"
  },
  {
-  "company": "NightOwl Consulting",
-  "title": "Digital/ Graphic Designer",
+  "company": "Boldin",
+  "title": "Senior Brand Designer",
   "location": "",
   "why": "роль: design",
-  "url": "https://himalayas.app/companies/nightowl-consulting/jobs/digital-graphic-designer?utm_source=api"
+  "url": "https://himalayas.app/companies/boldin/jobs/senior-brand-designer?utm_source=api"
  },
  {
-  "company": "Vitalis Outsourcing LLC",
-  "title": "Expert Graphic Designer & Creative Marketing Virtual Assistant",
+  "company": "Wave Mobile Money",
+  "title": "Head of Brand Design and Creative",
   "location": "",
   "why": "роль: design",
-  "url": "https://himalayas.app/companies/vitalis-outsourcing-llc/jobs/expert-graphic-designer-creative-marketing-virtual-assistant?utm_source=api"
+  "url": "https://himalayas.app/companies/wave-mobile-money/jobs/head-of-brand-design-and-creative?utm_source=api"
  },
  {
-  "company": "Six Figure Consulting",
-  "title": "GTM Engineer (Email Marketing & Operations Manager)",
+  "company": "Project Management Institute, Inc.",
+  "title": "AI Engineer, Marketing",
   "location": "",
   "why": "роль: engineer",
-  "url": "https://himalayas.app/companies/six-figure-consulting/jobs/gtm-engineer-email-marketing-operations-manager?utm_source=api"
+  "url": "https://himalayas.app/companies/project-management-institute-inc/jobs/ai-engineer-marketing?utm_source=api"
  },
  {
-  "company": "Sword Health",
-  "title": "Senior Backend Engineer, Consumer Growth",
+  "company": "SimpleTiger",
+  "title": "Web Developer: WordPress & HubSpot (U.S. Based, Remote Contractor)",
   "location": "",
   "why": "роль: engineer",
-  "url": "https://himalayas.app/companies/sword-com/jobs/senior-backend-engineer-consumer-growth?utm_source=api"
+  "url": "https://himalayas.app/companies/simpletiger/jobs/web-developer-wordpress-hubspot-u-s-based-remote-contractor?utm_source=api"
  },
  {
-  "company": "Clario",
-  "title": "Product Manager (Retention & Growth)",
+  "company": "GitLab",
+  "title": "Marketing Expression of Interest Form",
   "location": "",
-  "why": "роль: product manager",
-  "url": "https://himalayas.app/companies/clario/jobs/product-manager-retention-growth?utm_source=api"
- },
- {
-  "company": "Novakid School",
-  "title": "Senior Growth Product Manager (Activation & Funnel Innovation) Remote",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://himalayas.app/companies/novakid-school/jobs/senior-growth-product-manager-activation-funnel-innovation-remote?utm_source=api"
- },
- {
-  "company": "Time Doctor",
-  "title": "Growth Product Manager",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://himalayas.app/companies/time-doctor/jobs/growth-product-manager?utm_source=api"
- },
- {
-  "company": "Timeleft",
-  "title": "Growth Product Manager",
-  "location": "",
-  "why": "роль: product manager",
-  "url": "https://himalayas.app/companies/timeleft/jobs/growth-product-manager?utm_source=api"
- },
- {
-  "company": "TechBiz Global",
-  "title": "Recruiter (On Demand)",
-  "location": "",
-  "why": "роль: recruiter",
-  "url": "https://himalayas.app/companies/techbiz-global/jobs/recruiter-on-demand?utm_source=api"
+  "why": "роль: expression of interest",
+  "url": "https://himalayas.app/companies/gitlab-com/jobs/marketing-expression-of-interest-form?utm_source=api"
  }
 ]
