@@ -98,13 +98,6 @@
   "url": "https://aidigital.recruitee.com/o/growth-associate-st-louis-mo"
  },
  {
-  "company": "HumanSignal",
-  "title": "Improv & Voice Actors, Paid AI Research Study (NJ)",
-  "location": "Hoboken, NJ",
-  "why": "гео: NJ",
-  "url": "https://job-boards.greenhouse.io/humansignal/jobs/6218730004"
- },
- {
   "company": "White Circle",
   "title": "Content Lead",
   "location": "NY",
@@ -124,13 +117,6 @@
   "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States; Singapore; Tokyo, Japan",
   "why": "гео: california",
   "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6227789004"
- },
- {
-  "company": "Ahrefs",
-  "title": "Events Marketing Executive",
-  "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States",
-  "why": "гео: california",
-  "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6005637004"
  },
  {
   "company": "Ahrefs",
@@ -159,20 +145,6 @@
   "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States",
   "why": "гео: california",
   "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6141625004"
- },
- {
-  "company": "Ahrefs",
-  "title": "Senior Product Marketing Manager ",
-  "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States; Singapore; Tokyo, Japan",
-  "why": "гео: california",
-  "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/5790235004"
- },
- {
-  "company": "Ahrefs",
-  "title": "Social Media Manager",
-  "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States; Singapore; Tokyo, Japan",
-  "why": "гео: california",
-  "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/5797384004"
  },
  {
   "company": "Noom",
@@ -222,13 +194,6 @@
   "location": "New York, NY",
   "why": "гео: new york",
   "url": "https://careers.duolingo.com/jobs/8759720002?gh_jid=8759720002"
- },
- {
-  "company": "Duolingo",
-  "title": "Senior Performance Marketing Manager",
-  "location": "New York, NY",
-  "why": "гео: new york",
-  "url": "https://careers.duolingo.com/jobs/8778318002?gh_jid=8778318002"
  },
  {
   "company": "Duolingo",
@@ -329,13 +294,6 @@
   "url": "https://jobs.ashbyhq.com/higgsfieldai/217ec82c-6783-4bf9-9ebc-b6973cc78e0d"
  },
  {
-  "company": "Higgsfield AI",
-  "title": "Senior Public Relations Manager - Corporate Affairs & Public Policy",
-  "location": "San Francisco Bay Area, USA",
-  "why": "гео: usa",
-  "url": "https://jobs.ashbyhq.com/higgsfieldai/9ed963ba-3348-43da-9f58-b8dc261604aa"
- },
- {
   "company": "Inworld AI",
   "title": "Senior Content Marketing Manager - USA",
   "location": "Mountain View, California, USA",
@@ -355,6 +313,13 @@
   "location": "New York, NY",
   "why": "роль: account executive",
   "url": "https://jobs.ashbyhq.com/1password/8f5bf2e9-1395-4f9a-93b3-f07fc1c95228"
+ },
+ {
+  "company": "1Password",
+  "title": "Account Executive - Commercial (Mid-Market), Northeast",
+  "location": "New York, NY",
+  "why": "роль: account executive",
+  "url": "https://jobs.ashbyhq.com/1password/197457a9-acda-42e7-b23a-3ac11c00dda3"
  },
  {
   "company": "1Password",
@@ -387,16 +352,16 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "North Bethesda, MD",
+  "location": "Lexington, KY",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
  },
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Lexington, KY",
+  "location": "North Bethesda, MD",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
  },
  {
   "company": "Xometry",
@@ -574,6 +539,13 @@
   "url": "https://jobs.ashbyhq.com/recraft/be843017-b1be-4276-b408-61bcfc8e6565"
  },
  {
+  "company": "Reface (Neocortext)",
+  "title": "Brand Designer",
+  "location": "Kyiv, Kyiv",
+  "why": "роль: design",
+  "url": "https://reface.breezy.hr/p/db9e81cc264b-brand-designer"
+ },
+ {
   "company": "Replika",
   "title": "Motion Designer, Growth - Remote",
   "location": "",
@@ -586,13 +558,6 @@
   "location": "Ukraine, Remote",
   "why": "роль: design",
   "url": "https://jobs.ashbyhq.com/SKELAR/097f08ad-4d39-4f63-8308-7c73b9b45a5e"
- },
- {
-  "company": "SKELAR",
-  "title": "Growth Designer",
-  "location": "Ukraine, Remote",
-  "why": "роль: design",
-  "url": "https://jobs.ashbyhq.com/SKELAR/df38d2c9-ec1c-4006-88e5-bf13c2d8705d"
  },
  {
   "company": "SKELAR",
@@ -884,16 +849,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "inDrive",
