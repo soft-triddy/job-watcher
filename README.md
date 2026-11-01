@@ -45,9 +45,7 @@ https://jobs.example.com/123
   or rendered page) and asks Gemini for a strict JSON verdict. Remote status is double-checked in code
   against the location field. Hard time budget per vacancy and per run; if the model is down, the
   vacancy is still delivered, marked "no score", with the reason at the bottom of the message.
-- **Habr Career · hh** (`boards_radar.py`) — CIS job boards, marketing titles: Habr Career's search JSON
-  and the official hh API restricted to every country except Russia (and Ukraine); every 4 hours.
-  DOU and Djinni were dropped on 06.10 (Ukrainian boards). If hh starts demanding a token, add it as `HH_TOKEN`.
+- **Habr Career** (`boards_radar.py`) — Habr Career's search JSON, marketing titles; every 4 hours.
 - **MBW Jobs** (`mbw_radar.py`) — the Music Business Worldwide job board via its public WordPress
   REST API (company, location, remote flag, full description); runs inside the music-tech radar.
 - **Music-tech radar** (`music.yml`) — the same API + browser radars on a separate list of music-tech
@@ -78,16 +76,15 @@ himalayas_radar.py   Himalayas radar
 scorer.py            vacancy scoring
 scoring_profile.md   condensed resume profile + preferences the scorer uses
 discover.py          one-off tool: finds careers pages and ATS for a list of new companies
-probe_ats.py         one-off tool: guesses ATS boards by company name for companies the radar can't read
-snapshot.py          on demand: every open marketing vacancy with its description -> discover/snapshot.json (no Telegram)
-boards_radar.py      Habr Career (+ hh when HH_TOKEN is set)
+snapshot.py          on demand: every open vacancy for a role (ROLE=marketing | ios | am) with its description -> discover/snapshot*.json (no Telegram)
+boards_radar.py      Habr Career
 mbw_radar.py         Music Business Worldwide job board (runs inside music)
 save_state.sh        commit + push of state from Actions, with retries
 
 lists/               company lists (radar_*, browser_*, music_*) and LinkedIn watchlists
 state/               what has already been seen, cached ATS slugs (committed by the bot)
 discover/            input/output of discover.py
-.github/workflows/   radar, browser, himalayas, music (daily); boards (every 4h); discover, probe, snapshot (on demand)
+.github/workflows/   radar, browser, himalayas, music (daily); boards (every 4h); discover, snapshot (on demand)
 ```
 
 ## Adding companies

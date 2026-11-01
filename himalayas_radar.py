@@ -83,17 +83,6 @@ def collect(health):
         time.sleep(PAUSE)
     return list(jobs.values())
 
-# крипта на уровне КОМПАНИИ (титул чистый, а контора крипта) — Himalayas даёт categories
-CRYPTO_TERMS = ["crypto","web3","blockchain","defi","stablecoin","ethereum","bitcoin","nft","token"]
-CRYPTO_COMPANIES = {"tether","tether operations limited","filecoin","filecoin foundation",
-                    "chainstack","immunefi"}
-
-def _is_crypto_company(job):
-    name=(job.get("company") or "").lower().strip()
-    if name in CRYPTO_COMPANIES: return True
-    blob=(name+" "+(job.get("cats") or "")).lower()
-    return any(t in blob for t in CRYPTO_TERMS)
-
 def main():
     seen = load(STATE, {})
     health = Health(HEALTH, LABEL, empty_is_bad=True)

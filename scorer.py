@@ -214,10 +214,6 @@ def _ask(system, user, max_tokens=2000):
 def diag_line():
     return f"\n\n⚠️ оценщик: {DIAG[0]}" if DIAG else ""
 
-def _clamp(v):
-    try: return max(0, min(10, int(round(float(v)))))
-    except Exception: return None
-
 def parse(raw):
     """Строгий разбор ответа модели. Кривой ответ -> None (вакансия уйдёт без оценки)."""
     m = re.search(r"\{.*\}", raw or "", re.S)
