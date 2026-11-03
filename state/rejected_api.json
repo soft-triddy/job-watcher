@@ -358,10 +358,17 @@
  },
  {
   "company": "Teleport",
-  "title": "Mid-Market Account Executive - SF or NYC based",
+  "title": "Mid-Market Account Executive - NYC based",
   "location": "United States (Remote)",
   "why": "роль: account executive",
   "url": "https://jobs.ashbyhq.com/goteleport/b45364ed-e5c0-4cfb-9eb2-3a2243bc0cf9"
+ },
+ {
+  "company": "Teleport",
+  "title": "Mid-Market Account Executive - SF based",
+  "location": "United States (Remote)",
+  "why": "роль: account executive",
+  "url": "https://jobs.ashbyhq.com/goteleport/31741e7e-af14-4cde-b161-064de27acfc4"
  },
  {
   "company": "Telnyx",
@@ -460,13 +467,6 @@
   "location": "New York, NY; Pittsburgh, PA",
   "why": "роль: data scien",
   "url": "https://careers.duolingo.com/jobs/8750636002?gh_jid=8750636002"
- },
- {
-  "company": "Duolingo",
-  "title": "Senior Data Scientist, User Growth",
-  "location": "New York, NY; Pittsburgh, PA",
-  "why": "роль: data scien",
-  "url": "https://careers.duolingo.com/jobs/8750527002?gh_jid=8750527002"
  },
  {
   "company": "Avride",
@@ -863,16 +863,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "inDrive",
@@ -1078,13 +1078,6 @@
   "url": "https://jobs.ashbyhq.com/solidgate/1a511e4c-229b-4982-8d57-2b8746624688"
  },
  {
-  "company": "1Password",
-  "title": "Talent Acquisition Coordinator (PST)",
-  "location": "United States",
-  "why": "роль: talent acquisition",
-  "url": "https://jobs.ashbyhq.com/1password/1a796b5f-56f4-4c9f-844b-2eb74ebcf8df"
- },
- {
   "company": "AI Digital",
   "title": "Talent Acquisition Team Lead",
   "location": "Remote job",
@@ -1125,12 +1118,5 @@
   "location": "Warsaw, PL",
   "why": "роль: talent acquisition",
   "url": "https://voyagu.breezy.hr/p/14b8d98d895801-talent-acquisition-manager"
- },
- {
-  "company": "Voyagu",
-  "title": "Talent Acquisition Specialist",
-  "location": "Warsaw, PL",
-  "why": "роль: talent acquisition",
-  "url": "https://voyagu.breezy.hr/p/4d5880846ec401-talent-acquisition-specialist"
  }
 ]
