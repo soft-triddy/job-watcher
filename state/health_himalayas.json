@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-03 17:05 UTC",
+ "updated": "2026-11-04 17:17 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
- "jobs_total": 279,
- "marketing": 96,
+ "jobs_total": 281,
+ "marketing": 99,
  "sources": {
   "мир: «marketing»": {
-   "jobs": 50,
+   "jobs": 52,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "мир: «growth»": {
-   "jobs": 12,
+   "jobs": 13,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "мир: «demand»": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "мир: «seo»": {
@@ -35,15 +35,15 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "мир: «crm»": {
-   "jobs": 13,
+   "jobs": 14,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "KG: «marketing»": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "KG: «growth»": {
@@ -59,7 +59,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "KG: «demand»": {
@@ -67,15 +67,15 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "KG: «seo»": {
-   "jobs": 27,
+   "jobs": 28,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   },
   "KG: «crm»": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-03",
+   "last_ok": "2026-11-04",
    "alerted": false
   }
  }
