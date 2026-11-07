@@ -232,10 +232,24 @@
  },
  {
   "company": "DataDome",
+  "title": "Customer Marketing Specialist",
+  "location": "US - New York City",
+  "why": "гео: us",
+  "url": "https://job-boards.greenhouse.io/ddome/jobs/8933937002"
+ },
+ {
+  "company": "DataDome",
   "title": "Product Marketing Manager",
   "location": "US - New York City",
   "why": "гео: us",
   "url": "https://job-boards.greenhouse.io/ddome/jobs/8408040002"
+ },
+ {
+  "company": "DataDome",
+  "title": "Senior Partner Marketing Program Manager",
+  "location": "US - Remote",
+  "why": "гео: us",
+  "url": "https://job-boards.greenhouse.io/ddome/jobs/8928813002"
  },
  {
   "company": "ManyChat",
@@ -292,13 +306,6 @@
   "location": "Remote - United States",
   "why": "гео: us",
   "url": "https://jobs.ashbyhq.com/qdrant.tech/beffc43c-384e-4528-bbdd-cab507e979fa"
- },
- {
-  "company": "Telnyx",
-  "title": "Off-Page AEO/SEO Manager",
-  "location": "US Remote",
-  "why": "гео: us",
-  "url": "https://job-boards.greenhouse.io/telnyx54/jobs/8183128003"
  },
  {
   "company": "Wrike",
@@ -861,6 +868,13 @@
   "url": "https://careers.investengine.com/jobs/8505082-middle-manual-qa-engineer-growth-team"
  },
  {
+  "company": "Joom",
+  "title": "Senior Data Acquisition Engineer at JoomPulse",
+  "location": "Lisbon",
+  "why": "роль: engineer",
+  "url": "https://apply.workable.com/j/3641CA6A58"
+ },
+ {
   "company": "Orion Innovation",
   "title": "206518 - Digital Senior Developer",
   "location": "Mumbai, Maharashtra, India",
@@ -877,16 +891,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "inDrive",
