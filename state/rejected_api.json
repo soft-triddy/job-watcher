@@ -154,13 +154,6 @@
   "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6141627004"
  },
  {
-  "company": "Ahrefs",
-  "title": "Product Marketer - Letaido",
-  "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States",
-  "why": "гео: california",
-  "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6141625004"
- },
- {
   "company": "Noom",
   "title": "Director, Content Strategy",
   "location": "New York, New York, United States; Princeton, New Jersey, United States",
@@ -511,18 +504,18 @@
   "url": "https://careers.duolingo.com/jobs/8750636002?gh_jid=8750636002"
  },
  {
+  "company": "Ahrefs",
+  "title": "Brand Designer",
+  "location": "Singapore",
+  "why": "роль: design",
+  "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6252258004"
+ },
+ {
   "company": "Avride",
   "title": "Senior Brand Designer",
   "location": "Austin, Texas",
   "why": "роль: design",
   "url": "https://job-boards.greenhouse.io/avride/jobs/4259245009"
- },
- {
-  "company": "BetterMe",
-  "title": "AI Creative Designer (Marketing Team)",
-  "location": "Ukraine",
-  "why": "роль: design",
-  "url": "https://betterme.breezy.hr/p/cabff643edae-ai-creative-designer-marketing-team"
  },
  {
   "company": "Clay",
@@ -891,16 +884,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "inDrive",
@@ -915,6 +908,13 @@
   "location": "Ukraine, Remote",
   "why": "роль: moderator",
   "url": "https://jobs.ashbyhq.com/SKELAR/edaee103-9fc0-4893-9879-6852de11d023"
+ },
+ {
+  "company": "Social Discovery Group",
+  "title": "Content Moderator (Freelancer)",
+  "location": "Almaty, KZ",
+  "why": "роль: moderator",
+  "url": "https://social-discovery-ventures.breezy.hr/p/ae5c106849bf01-content-moderator-freelancer"
  },
  {
   "company": "BetterMe",
