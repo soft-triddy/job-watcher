@@ -7,13 +7,6 @@
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
  },
  {
-  "company": "Wayy",
-  "title": "Campus Ambassador - Maybe.Day (One-Month Paid Project)",
-  "location": "Miami, FL",
-  "why": "гео: FL",
-  "url": "https://wayy-llc.breezy.hr/p/744ae28d2bf7-campus-ambassador-maybe-day-one-month-paid-project"
- },
- {
   "company": "AI Digital",
   "title": "Growth Associate (Boise, ID)",
   "location": "Remote job",
@@ -428,6 +421,13 @@
  },
  {
   "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Detroit, MI",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
+ },
+ {
+  "company": "Xometry",
   "title": "Account Executive, Marketplace Sales",
   "location": "Buenos Aires, Argentina",
   "why": "роль: account executive",
@@ -723,7 +723,7 @@
  {
   "company": "ClickHouse",
   "title": "Sr. Frontend Software Engineer - Growth",
-  "location": "United States",
+  "location": "Europe or US",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/clickhouse/da6f6da1-eabf-4647-ab1c-6e138b14a6fe"
  },
@@ -761,13 +761,6 @@
   "location": "Mexico",
   "why": "роль: engineer",
   "url": "https://job-boards.eu.greenhouse.io/coherentsolutions/jobs/4918655101"
- },
- {
-  "company": "Coherent Solutions",
-  "title": "Lead AI Engineer (Digital Marketing sphere)",
-  "location": "Poland",
-  "why": "роль: engineer",
-  "url": "https://job-boards.eu.greenhouse.io/coherentsolutions/jobs/4944071101"
  },
  {
   "company": "DataDome",
@@ -854,6 +847,13 @@
   "url": "https://jobs.ashbyhq.com/hostinger/5de8eec3-9a53-4d6f-ac52-fcba9a9cd2dd"
  },
  {
+  "company": "Hostinger",
+  "title": "Community Growth Lead (Developers & Agentic Products)",
+  "location": "Vilnius",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/hostinger/fcae6357-0232-43db-a1aa-49abdf17aa01"
+ },
+ {
   "company": "InvestEngine",
   "title": "Middle Manual QA Engineer, Growth team",
   "location": "",
@@ -866,6 +866,13 @@
   "location": "Lisbon",
   "why": "роль: engineer",
   "url": "https://apply.workable.com/j/3641CA6A58"
+ },
+ {
+  "company": "Mirantis",
+  "title": "Engineering Team Lead, Automation, Performance & Scale — k0rdent AI",
+  "location": "Austin",
+  "why": "роль: engineer",
+  "url": "https://jobs.smartrecruiters.com/Mirantis/744000160746499"
  },
  {
   "company": "Orion Innovation",
