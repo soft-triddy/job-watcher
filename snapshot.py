@@ -30,13 +30,27 @@ ROLES = {
            "himalayas": ["account manager", "customer success manager", "technical account manager",
                          "implementation manager", "onboarding manager", "client partner", "partner manager"],
            "habr": ["Account manager", "Customer Success"]},
+    # Артём: AM / Customer Success / Implementation & Solutions в B2B-софте, удалёнка из Бишкека.
+    # Заголовок + локация -> artem_filter.title_reason, описание -> desc_reason; отказы пишутся рядом.
+    "artem": {"title": None,
+              "himalayas": ["account manager", "customer success manager", "client success manager",
+                            "implementation manager", "onboarding manager", "solutions manager", "renewals manager"],
+              "habr": ["Account manager", "Customer Success", "Менеджер по работе с клиентами", "Внедрение"]},
 }
 OUT = "discover/snapshot.json" if ROLE == "marketing" else f"discover/snapshot_{ROLE}.json"
 
+REJECTED = []                               # ROLE=artem: что отсеяли и почему -> discover/snapshot_artem_rejected.json
+
 def _match(j):
     if ROLE == "marketing": return is_marketing(j.get("title") or "", j.get("location") or "")
+    if ROLE == "artem":
+        import artem_filter
+        why = artem_filter.title_reason(j.get("title"), j.get("location"), j.get("source"))
+        if why: REJECTED.append({"company": j.get("company", ""), "title": j.get("title"), "location": j.get("location", ""),
+                                 "source": j.get("source"), "why": why, "url": j.get("url")})
+        return not why
     return bool(ROLES[ROLE]["title"].search(j.get("title") or ""))
-DESC = 4000                                 # символов описания на вакансию
+DESC = 6000 if ROLE == "artem" else 4000    # символов описания на вакансию
 
 class _NoHealth:
     def mark(self, *a, **k): pass
@@ -105,6 +119,7 @@ def _himalayas_role():
             for j in batch:
                 locs = [x if isinstance(x, str) else (x.get("name") or "") for x in (j.get("locationRestrictions") or [])]
                 loc = ", ".join(locs) if len(locs) <= 6 else f"{len(locs)} стран: " + ", ".join(locs[:4]) + "…"
+                if len(locs) > 6 and any("kyrgyz" in x.lower() for x in locs): loc = "Kyrgyzstan + " + loc
                 out[j.get("guid")] = {"title": j.get("title") or "", "company": j.get("companyName") or "",
                                       "url": j.get("applicationLink") or "", "location": (loc or "Worldwide") + " · Remote",
                                       "description": j.get("description") or j.get("excerpt") or "",
@@ -157,7 +172,16 @@ def main():
     for j in mk:
         try: text, full = describe(j)
         except Exception: text, full = "", False
-        rows.append({"company": j.get("company", ""), "title": j["title"], "location": j.get("location", ""),
+        extra = {}
+        if ROLE == "artem":
+            import artem_filter
+            why = artem_filter.desc_reason(text, j.get("source"))
+            if why:
+                REJECTED.append({"company": j.get("company", ""), "title": j["title"], "location": j.get("location", ""),
+                                 "source": j.get("source"), "why": why, "url": j["url"]})
+                continue
+            extra = {"tags": artem_filter.tags(text, j.get("location", ""))}
+        rows.append({**extra, "company": j.get("company", ""), "title": j["title"], "location": j.get("location", ""),
                      "url": j["url"], "source": j["source"], "music": j.get("music", False),
                      "sent": j.get("key") in seen or j["url"] in seen,
                      "etype": j.get("etype", ""), "seniority": j.get("seniority", ""),
@@ -166,6 +190,10 @@ def main():
     os.makedirs("discover", exist_ok=True)
     json.dump(rows, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print(f"записано: {len(rows)} -> {OUT}")
+    if ROLE == "artem":
+        json.dump(REJECTED, open("discover/snapshot_artem_rejected.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+        from collections import Counter
+        print("отсеяно:", len(REJECTED), dict(Counter(r["why"].split(" только")[0] for r in REJECTED).most_common()))
 
 if __name__ == "__main__":
     main()
