@@ -399,13 +399,6 @@
   "url": "https://jobs.ashbyhq.com/goteleport/31741e7e-af14-4cde-b161-064de27acfc4"
  },
  {
-  "company": "Telnyx",
-  "title": "Growth Account Executive, EMEA",
-  "location": "London, United Kingdom; Dublin, Ireland",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/telnyx54/jobs/8046798003"
- },
- {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
   "location": "Lexington, KY",
@@ -425,6 +418,20 @@
   "location": "Detroit, MI",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Waltham, MA",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290693007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Huntsville, AL",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
  },
  {
   "company": "Xometry",
@@ -1146,6 +1153,13 @@
   "location": "Germany",
   "why": "роль: sales",
   "url": "https://jobs.ashbyhq.com/solidgate/1a511e4c-229b-4982-8d57-2b8746624688"
+ },
+ {
+  "company": "Dwelly",
+  "title": "Lead Talent Acquisitions Partner (Engineering)",
+  "location": "London",
+  "why": "роль: talent acquisition",
+  "url": "https://job-boards.eu.greenhouse.io/dwelly/jobs/5032742101"
  },
  {
   "company": "Hostinger",
