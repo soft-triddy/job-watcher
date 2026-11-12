@@ -27,7 +27,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests playwright
-      - run: python -m playwright install --with-deps chromium
+      - name: install browser
+        # 11.11 установка упала на сбое DNS у зеркала Ubuntu на раннере GitHub — повторяем до 3 раз
+        run: |
+          for i in 1 2 3; do
+            python -m playwright install --with-deps chromium && exit 0
+            echo "!! установка браузера: попытка $i не удалась"; sudo apt-get update -qq || true; sleep 30
+          done
+          exit 1
       - name: run
         run: |
           if [ -z "$DIAG" ] && [ "$ALL" = "true" ]; then python browser_radar.py --all

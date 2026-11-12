@@ -44,9 +44,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests playwright
-      - run: python -m playwright install --with-deps chromium
+      - name: install browser
+        # 11.11 установка упала на сбое DNS у зеркала Ubuntu на раннере GitHub — повторяем до 3 раз
+        run: |
+          for i in 1 2 3; do
+            python -m playwright install --with-deps chromium && exit 0
+            echo "!! установка браузера: попытка $i не удалась"; sudo apt-get update -qq || true; sleep 30
+          done
+          exit 1
       # первый запуск: сразу присылаем все текущие вакансии (с оценками), дальше только новые
       - name: api
+        if: always()        # API браузер не нужен: сбой установки браузера не должен его пропускать
         timeout-minutes: 50
         run: |
           if [ -f state/seen_music.json ] && [ "$ALL" != "true" ]; then python radar.py; else python radar.py --all; fi
