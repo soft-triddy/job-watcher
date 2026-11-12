@@ -98,6 +98,13 @@
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
  },
  {
+  "company": "Perforce (ZeroTurnaround/JRebel)",
+  "title": "Senior Director, Sales & Marketing Operations",
+  "location": "Minneapolis, MN",
+  "why": "гео: MN",
+  "url": "https://jobs.lever.co/perforce/c90b3d4e-de33-4195-aecd-f2b7a881053d"
+ },
+ {
   "company": "AI Digital",
   "title": "Growth Associate (St. Louis, MO)",
   "location": "Atlanta, Georgia, United States",
@@ -408,16 +415,16 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "North Bethesda, MD",
+  "location": "Detroit, MI",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
  },
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Detroit, MI",
+  "location": "Huntsville, AL",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
  },
  {
   "company": "Xometry",
@@ -429,9 +436,9 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Huntsville, AL",
+  "location": "North Bethesda, MD",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
  },
  {
   "company": "Xometry",
@@ -488,13 +495,6 @@
   "location": "San Francisco Bay Area, USA",
   "why": "роль: capital market",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/866ea93e-126f-4a82-9cd5-8209e4b6e9d2"
- },
- {
-  "company": "Joom",
-  "title": "CPO Joom Marketplace",
-  "location": "Lisbon",
-  "why": "роль: cpo",
-  "url": "https://apply.workable.com/j/B9EA28DAE8"
  },
  {
   "company": "1Password",
@@ -742,13 +742,6 @@
   "url": "https://jobs.ashbyhq.com/clickhouse/66affc05-7eb5-450e-94fd-01969c9318bf"
  },
  {
-  "company": "CloudLinux",
-  "title": "Senior ML Engineer - Email Security (remote work)",
-  "location": "Madrid",
-  "why": "роль: engineer",
-  "url": "https://apply.workable.com/j/C5FF37AA5D"
- },
- {
   "company": "Coherent Solutions",
   "title": "DevOps Engineer (Digital Marketing sphere)",
   "location": "Moldova",
@@ -852,13 +845,6 @@
   "location": "Vilnius",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/hostinger/5de8eec3-9a53-4d6f-ac52-fcba9a9cd2dd"
- },
- {
-  "company": "Hostinger",
-  "title": "Community Growth Lead (Developers & Agentic Products)",
-  "location": "Vilnius",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/hostinger/fcae6357-0232-43db-a1aa-49abdf17aa01"
  },
  {
   "company": "InvestEngine",
@@ -1073,6 +1059,13 @@
  {
   "company": "Xometry",
   "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
+  "location": "Waltham, MA",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292464007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
   "location": "North Bethesda, MD",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
@@ -1083,6 +1076,13 @@
   "location": "North Bethesda, MD",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5285920007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Staff Product Manager, Supplier Experience & Go-to-Market (Thomas)",
+  "location": "Waltham, MA",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292471007"
  },
  {
   "company": "Wrike",
