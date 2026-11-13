@@ -408,23 +408,16 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Lexington, KY",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
-  "location": "Detroit, MI",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
   "location": "Huntsville, AL",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Lexington, KY",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
  },
  {
   "company": "Xometry",
@@ -439,6 +432,13 @@
   "location": "North Bethesda, MD",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Detroit, MI",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
  },
  {
   "company": "Xometry",
@@ -495,13 +495,6 @@
   "location": "San Francisco Bay Area, USA",
   "why": "роль: capital market",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/866ea93e-126f-4a82-9cd5-8209e4b6e9d2"
- },
- {
-  "company": "1Password",
-  "title": "Senior Digital Customer Success Campaign Manager",
-  "location": "Remote (United States | Canada)",
-  "why": "роль: customer success",
-  "url": "https://jobs.ashbyhq.com/1password/6639ae84-8af4-4dfb-931c-bdce0704e5e3"
  },
  {
   "company": "Duolingo",
@@ -562,14 +555,14 @@
  {
   "company": "Hirehire",
   "title": "Staff Product Designer - Growth | Deel",
-  "location": "Remote",
+  "location": "Europe",
   "why": "роль: design",
   "url": "https://jobs.ashbyhq.com/hirehire/a35aaffa-a43d-43e6-9b4f-100d75761f26"
  },
  {
   "company": "Hirehire",
   "title": "Senior Product Designer - Growth/Website | Deel",
-  "location": "Remote",
+  "location": "Europe",
   "why": "роль: design",
   "url": "https://jobs.ashbyhq.com/hirehire/682371a3-eb63-403c-91eb-6b1d6553538b"
  },
@@ -1059,23 +1052,16 @@
  {
   "company": "Xometry",
   "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
-  "location": "Waltham, MA",
-  "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292464007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
   "location": "North Bethesda, MD",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
  },
  {
   "company": "Xometry",
-  "title": "Staff Product Manager, Supplier Experience & Go-to-Market (Thomas)",
-  "location": "North Bethesda, MD",
+  "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
+  "location": "Waltham, MA",
   "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285920007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292464007"
  },
  {
   "company": "Xometry",
@@ -1083,6 +1069,13 @@
   "location": "Waltham, MA",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5292471007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Staff Product Manager, Supplier Experience & Go-to-Market (Thomas)",
+  "location": "North Bethesda, MD",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285920007"
  },
  {
   "company": "Wrike",
