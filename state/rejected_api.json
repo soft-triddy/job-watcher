@@ -204,10 +204,24 @@
  },
  {
   "company": "Duolingo",
+  "title": "Staff Technical Program Manager, Growth ",
+  "location": "New York, NY",
+  "why": "гео: new york",
+  "url": "https://careers.duolingo.com/jobs/8875080002?gh_jid=8875080002"
+ },
+ {
+  "company": "Duolingo",
   "title": "VP of Product, Growth and Monetization",
   "location": "New York, NY; Pittsburgh, PA",
   "why": "гео: new york",
   "url": "https://careers.duolingo.com/jobs/8747077002?gh_jid=8747077002"
+ },
+ {
+  "company": "Wheely",
+  "title": "Operations Associate, Chauffeur Acquisition",
+  "location": "New York, New York, United States",
+  "why": "гео: new york",
+  "url": "https://boards.greenhouse.io/wheely/jobs/8202469003?gh_jid=8202469003"
  },
  {
   "company": "AtBay",
@@ -408,9 +422,9 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Huntsville, AL",
+  "location": "Detroit, MI",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
  },
  {
   "company": "Xometry",
@@ -418,6 +432,13 @@
   "location": "Lexington, KY",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Huntsville, AL",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
  },
  {
   "company": "Xometry",
@@ -435,13 +456,6 @@
  },
  {
   "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
-  "location": "Detroit, MI",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
- },
- {
-  "company": "Xometry",
   "title": "Account Executive, Marketplace Sales",
   "location": "Buenos Aires, Argentina",
   "why": "роль: account executive",
@@ -453,6 +467,13 @@
   "location": "Atlanta, Georgia, United States",
   "why": "роль: bdr",
   "url": "https://aidigital.recruitee.com/o/growth-associate-bdr"
+ },
+ {
+  "company": "Joom",
+  "title": "BDR Sênior at JoomPro (Outbound Enterprise & Mid-Market)",
+  "location": "",
+  "why": "роль: bdr",
+  "url": "https://apply.workable.com/j/9A241B4726"
  },
  {
   "company": "Ajax Systems",
@@ -672,6 +693,13 @@
   "url": "https://jobs.ashbyhq.com/1password/2925531c-43d3-4999-8537-c156762434a9"
  },
  {
+  "company": "1Password",
+  "title": "Staff Content Developer",
+  "location": "Remote (United States | Canada)",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/1password/3bacd3c1-45d1-4337-a11b-a21569a51148"
+ },
+ {
   "company": "ClickHouse",
   "title": "Senior Cloud Performance Engineer",
   "location": "Singapore",
@@ -868,6 +896,27 @@
   "url": "https://www.orioninc.com/careers/job/?gh_jid=4721811006"
  },
  {
+  "company": "Qdrant",
+  "title": "Senior Software Engineer, Cluster & Lifecycle (EMEA)",
+  "location": "Remote - EMEA",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/qdrant.tech/da3d5253-5dc3-4543-afee-bb65126074a7"
+ },
+ {
+  "company": "Teleport",
+  "title": "Senior Backend Engineer - Performance - Ireland",
+  "location": "Ireland (Remote)",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/goteleport/6c57ad7d-f27b-43f9-9172-0197b7d1526e"
+ },
+ {
+  "company": "Teleport",
+  "title": "Senior Backend Engineer - Performance - UK",
+  "location": "United Kingdom (Remote)",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/goteleport/98a1b0c7-5b52-4283-931f-6a874664d561"
+ },
+ {
   "company": "Teleport",
   "title": "Staff Backend Engineer - Performance - US",
   "location": "United States (Remote)",
@@ -1052,23 +1101,16 @@
  {
   "company": "Xometry",
   "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
-  "location": "North Bethesda, MD",
-  "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
   "location": "Waltham, MA",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5292464007"
  },
  {
   "company": "Xometry",
-  "title": "Staff Product Manager, Supplier Experience & Go-to-Market (Thomas)",
-  "location": "Waltham, MA",
+  "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
+  "location": "North Bethesda, MD",
   "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292471007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
  },
  {
   "company": "Xometry",
@@ -1076,6 +1118,13 @@
   "location": "North Bethesda, MD",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5285920007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Staff Product Manager, Supplier Experience & Go-to-Market (Thomas)",
+  "location": "Waltham, MA",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292471007"
  },
  {
   "company": "Wrike",
