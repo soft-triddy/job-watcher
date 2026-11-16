@@ -1,0 +1,24 @@
+name: hdiag
+on: workflow_dispatch
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.parse, time
+          def q(**p):
+              u="https://himalayas.app/jobs/api/search?"+urllib.parse.urlencode(p)
+              r=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"job-radar personal use"}),timeout=30)
+              d=json.load(r); j=d.get("jobs",[])
+              return d.get("totalCount"), d.get("limit"), len(j), [ (x.get("title"), x.get("locationRestrictions")[:3] if x.get("locationRestrictions") else x.get("locationRestrictions"), x.get("pubDate")) for x in j[:3]]
+          for p in [dict(q="growth",worldwide="true"),dict(q="growth",worldwide="true",employment_type="Full Time,Contractor"),
+                    dict(q="growth"),dict(q="growth",country="KG"),dict(q="seo",worldwide="true"),dict(q="marketing",worldwide="true"),
+                    dict(q="marketing")]:
+              p["sort"]="recent"
+              try: print(p, q(**p))
+              except Exception as e: print(p, "ERR", e)
+              time.sleep(2)
+          r=urllib.request.urlopen(urllib.request.Request("https://himalayas.app/jobs/api?limit=5",headers={"User-Agent":"job-radar personal use"}),timeout=30)
+          d=json.load(r); print("browse keys", list(d.keys())[:10], d.get("totalCount"))
+          PY
