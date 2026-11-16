@@ -33,6 +33,22 @@ NEG_ROLE = ["stock market","supermarket","capital market","money market","labor 
            "intern","internship","praktikant","стажер","стажёр","стажист",
            "expression of interest","general application"]
 
+# 2026-11-16: шум по ТИПУ роли. Индустрии и грейды по-прежнему любые (решение 19.10 в силе),
+# но роли не её трека отсекаем: UA, paid/performance, PMM, SMM, бренд, контент, PR, email/lifecycle,
+# комьюнити, ивенты, партнёрский/трейд-маркетинг. Если в заголовке есть ядро (KEEP) — роль остаётся:
+# «Content & SEO Manager», «Brand & Digital Marketing Manager» проходят.
+NOISE_HARD = ["user acquisition","ua manager","ua specialist","ua lead","ua marketing","media buyer",
+              "медиабайер","закупщик трафика","арбитраж"]
+NOISE = ["paid","ppc","performance","перформанс","таргет","acquisition","affiliate","influencer",
+         "smm","смм","social media","соцсет","brand","бренд","product marketing","pmm","продуктов",
+         "content","контент","copywrit","копирайт","communications","коммуникац","public relations","пиар",
+         "community","комьюнити","email","e-mail","lifecycle","retention","creative","креатив",
+         "event","ивент","partner marketing","field marketing","channel marketing","trade marketing",
+         "trade-маркет","shopper","video","видео","aso"]
+KEEP = ["growth","рост","seo","inbound","hubspot","marketing operations","marketing ops","mops","martech",
+        "marketing automation","маркетинговой автоматиз","crm","digital","диджитал","интернет-маркет",
+        "website","web marketing","cro","conversion","demand gen","лидген"]
+
 # инженер — не маркетинг, кроме маркетинговых инженерных ролей (это как раз её профиль)
 ENG_OK = ["marketing engineer","marketing automation engineer","martech engineer","marketing technolog",
           "marketing operations engineer","growth marketing engineer"]
@@ -77,6 +93,13 @@ def classify(title, location=""):
     if re.search(r"\bagents?\b", t): return "роль: agent"   # словом: Agentic AI не режем
     # 2) это вообще маркетинг? — по заголовку
     if not any(k in t for k in KW): return "не маркетинг"
+    # 2б) шум по типу роли (16.11)
+    for n in NOISE_HARD:
+        if n in t: return f"шум: {n}"
+    if not any(k in t for k in KEEP):
+        for n in NOISE:
+            if (n in ("aso", "pmm") and re.search(r"\b"+n+r"\b", t)) or (n not in ("aso", "pmm") and n in t):
+                return f"шум: {n}"
     # 3) формат/гео — по заголовку И локации вместе
     raw_blob = raw_t + " " + (location or "")
     blob = raw_blob.lower()
