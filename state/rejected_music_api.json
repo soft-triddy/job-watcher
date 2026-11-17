@@ -7,13 +7,6 @@
   "url": "https://job-boards.greenhouse.io/unitedmasterstranslation/jobs/8821978002"
  },
  {
-  "company": "UnitedMasters",
-  "title": "Temporary Copywriter",
-  "location": "Brooklyn, NY",
-  "why": "гео: NY",
-  "url": "https://job-boards.greenhouse.io/unitedmasterstranslation/jobs/8870685002"
- },
- {
   "company": "Sony Music (AWAL)",
   "title": "Director, Digital Media Planning - AWAL",
   "location": "United States, California, Los Angeles",
@@ -35,13 +28,6 @@
   "url": "https://job-boards.greenhouse.io/sonymusicentertainment/jobs/8617129002"
  },
  {
-  "company": "Hook",
-  "title": "Social Media Lead",
-  "location": "New York City",
-  "why": "гео: new york",
-  "url": "https://jobs.ashbyhq.com/hookmusic/07f1c352-365e-4887-9472-92c5656e43da"
- },
- {
   "company": "Sony Music (AWAL)",
   "title": "Analyst, Marketing Financial Planning",
   "location": "United States, New York, New York",
@@ -56,11 +42,11 @@
   "url": "https://job-boards.greenhouse.io/sonymusicentertainment/jobs/8923882002"
  },
  {
-  "company": "UnitedMasters",
-  "title": "VP, Brand Marketing",
-  "location": "Brooklyn, New York",
+  "company": "Sony Music (AWAL)",
+  "title": "Director, Marketing & Trademarks, Business & Legal Affairs",
+  "location": "United States, New York, New York",
   "why": "гео: new york",
-  "url": "https://job-boards.greenhouse.io/unitedmasterstranslation/jobs/8543616002"
+  "url": "https://job-boards.greenhouse.io/sonymusicentertainment/jobs/8927686002"
  },
  {
   "company": "Sony Music (AWAL)",
@@ -176,9 +162,72 @@
  },
  {
   "company": "Sony Music (AWAL)",
-  "title": "Senior Talent Acquisition Partner, Latin-Iberia ",
-  "location": "United States, Florida, Miami",
-  "why": "роль: talent acquisition",
-  "url": "https://job-boards.greenhouse.io/sonymusicentertainment/jobs/8909000002"
+  "title": "Juriste Junior Pôle Acquisition - F/H/NB -  Stage",
+  "location": "Europe, France, Paris",
+  "why": "шум: acquisition",
+  "url": "https://job-boards.greenhouse.io/sonymusicentertainment/jobs/8928014002"
+ },
+ {
+  "company": "Audiohook",
+  "title": "Strategic Affiliate Partnerships Manager",
+  "location": "United States",
+  "why": "шум: affiliate",
+  "url": "https://jobs.ashbyhq.com/audiohook/d2234be7-0a75-4a5d-ae5c-631d9a738a53"
+ },
+ {
+  "company": "UnitedMasters",
+  "title": "VP, Brand Marketing",
+  "location": "Brooklyn, New York",
+  "why": "шум: brand",
+  "url": "https://job-boards.greenhouse.io/unitedmasterstranslation/jobs/8543616002"
+ },
+ {
+  "company": "Moises",
+  "title": "Express Your Interest / Join Our Talent Community",
+  "location": null,
+  "why": "шум: community",
+  "url": "https://moises.bamboohr.com/careers/45"
+ },
+ {
+  "company": "Sony Music (AWAL)",
+  "title": "Content Planning Assistant Manager",
+  "location": "Asia, China, Beijing",
+  "why": "шум: content",
+  "url": "https://job-boards.greenhouse.io/sonymusicentertainment/jobs/8615212002"
+ },
+ {
+  "company": "Sony Music (AWAL)",
+  "title": "Junior Manager, Music Content & Marketing - Liquid State",
+  "location": "Asia, China, Beijing",
+  "why": "шум: content",
+  "url": "https://job-boards.greenhouse.io/sonymusicentertainment/jobs/8842253002"
+ },
+ {
+  "company": "Yoto",
+  "title": "Content Operations Coordinator, Music",
+  "location": "",
+  "why": "шум: content",
+  "url": "https://careers.yotoplay.com/jobs/8615907-content-operations-coordinator-music"
+ },
+ {
+  "company": "UnitedMasters",
+  "title": "Temporary Copywriter",
+  "location": "Brooklyn, NY",
+  "why": "шум: copywrit",
+  "url": "https://job-boards.greenhouse.io/unitedmasterstranslation/jobs/8870685002"
+ },
+ {
+  "company": "Audiohook",
+  "title": "Product Marketing Manager",
+  "location": "United States",
+  "why": "шум: product marketing",
+  "url": "https://jobs.ashbyhq.com/audiohook/5d8e16bb-6bc9-4294-9762-37419ad319fa"
+ },
+ {
+  "company": "Hook",
+  "title": "Social Media Lead",
+  "location": "New York City",
+  "why": "шум: social media",
+  "url": "https://jobs.ashbyhq.com/hookmusic/07f1c352-365e-4887-9472-92c5656e43da"
  }
 ]
