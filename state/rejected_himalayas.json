@@ -91,20 +91,6 @@
   "url": "https://himalayas.app/companies/playattack/jobs/head-of-affiliates-6187463589?utm_source=api"
  },
  {
-  "company": "RMG Talent",
-  "title": "Senior Affiliate Manager – Consumer AI",
-  "location": "102 стран, есть Кыргызстан",
-  "why": "шум: affiliate",
-  "url": "https://himalayas.app/companies/rmg-talent/jobs/senior-affiliate-manager-consumer-ai?utm_source=api"
- },
- {
-  "company": "Paired",
-  "title": "Creative Strategist for a US DTC Brand",
-  "location": "193 стран, есть Кыргызстан",
-  "why": "шум: brand",
-  "url": "https://himalayas.app/companies/paired-so/jobs/creative-strategist-for-a-us-dtc-brand?utm_source=api"
- },
- {
   "company": "Trade Treasury Payments",
   "title": "Marketing and Communications Manager (Asia)",
   "location": "50 стран, есть Кыргызстан",
@@ -159,20 +145,6 @@
   "location": "",
   "why": "шум: copywrit",
   "url": "https://himalayas.app/companies/healthhue/jobs/copywriter-medical-aesthetics?utm_source=api"
- },
- {
-  "company": "MailerLite",
-  "title": "Senior Email Marketing Manager",
-  "location": "28 стран, есть Кыргызстан",
-  "why": "шум: email",
-  "url": "https://himalayas.app/companies/mailerlite/jobs/senior-email-marketing-manager?utm_source=api"
- },
- {
-  "company": "MailerLite",
-  "title": "Senior Email Marketing Specialist",
-  "location": "28 стран, есть Кыргызстан",
-  "why": "шум: email",
-  "url": "https://himalayas.app/companies/mailerlite/jobs/senior-email-marketing-specialist?utm_source=api"
  },
  {
   "company": "Nuitée",
@@ -231,6 +203,20 @@
   "url": "https://himalayas.app/companies/david-kennedy-recruitment/jobs/junior-performance-marketer-mainstream?utm_source=api"
  },
  {
+  "company": "David Kennedy Recruitment",
+  "title": "Performance Marketer — Senior · Adult RTB",
+  "location": "102 стран, есть Кыргызстан",
+  "why": "шум: performance",
+  "url": "https://himalayas.app/companies/david-kennedy-recruitment/jobs/performance-marketer-senior-adult-rtb?utm_source=api"
+ },
+ {
+  "company": "David Kennedy Recruitment",
+  "title": "Performance Marketer Junior · Adult RTB",
+  "location": "102 стран, есть Кыргызстан",
+  "why": "шум: performance",
+  "url": "https://himalayas.app/companies/david-kennedy-recruitment/jobs/performance-marketer-junior-adult-rtb?utm_source=api"
+ },
+ {
   "company": "Finch",
   "title": "Head of Client Success, EMEA (Performance Agency)",
   "location": "148 стран, есть Кыргызстан",
@@ -254,7 +240,7 @@
  {
   "company": "Canonical",
   "title": "Product Marketing Lead",
-  "location": "149 стран, есть Кыргызстан",
+  "location": "148 стран, есть Кыргызстан",
   "why": "шум: product marketing",
   "url": "https://himalayas.app/companies/canonical/jobs/product-marketing-lead?utm_source=api"
  },
@@ -285,6 +271,13 @@
   "location": "149 стран, есть Кыргызстан",
   "why": "шум: product marketing",
   "url": "https://himalayas.app/companies/revalize/jobs/product-marketing-manager-8530870067?utm_source=api"
+ },
+ {
+  "company": "Growe Talents",
+  "title": "SMM Specialist",
+  "location": "",
+  "why": "шум: smm",
+  "url": "https://himalayas.app/companies/growe-talents/jobs/smm-specialist?utm_source=api"
  },
  {
   "company": "Bjak",
