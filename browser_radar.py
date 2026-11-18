@@ -181,7 +181,10 @@ def _dom_candidates(anchors, base):
         if href.lower().startswith(("javascript:","mailto:","tel:")): continue
         head=_clean(a.get("head"))
         options=([head] if head and head.lower() not in labels else []) + \
-                [l for l in lines(a) if l.lower() not in labels] + [head, _clean(a.get("text"))]
+                [l for l in lines(a) if l.lower() not in labels] + \
+                [x for x in (head, _clean(a.get("text"))) if x.lower() not in labels]
+        # 18.11: у Creatio метка «Global market» — отдельная ссылка на ту же вакансию; запасной вариант
+        # [head, text] метки не фильтровал, и каждая вакансия Creatio приходила как «Global market»
         title=next((t for t in options if _text_is_jobish(t)), "")
         if not title: continue
         url = href if href.startswith("http") else urljoin(base, href)
