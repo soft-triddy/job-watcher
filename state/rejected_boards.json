@@ -1,17 +1,38 @@
 [
  {
-  "company": "Miles an miles",
+  "company": "Mindbox",
+  "title": "Менеджер по успеху клиентов (Customer success manager) в mid-market",
+  "location": "Москва",
+  "why": "роль: customer success",
+  "url": "https://career.habr.com/vacancies/1000170456"
+ },
+ {
+  "company": "Sirius Capital",
+  "title": "Lead Backend Engineer - Market Data (FinTech)",
+  "location": "Ереван",
+  "why": "роль: engineer",
+  "url": "https://career.habr.com/vacancies/1000168936"
+ },
+ {
+  "company": "Sirius Capital",
+  "title": "FullStack Developer - CRM (FinTech)",
+  "location": "Ереван · Remote",
+  "why": "роль: engineer",
+  "url": "https://career.habr.com/vacancies/1000168930"
+ },
+ {
+  "company": "Miles and miles",
   "title": "Middle+/Senior Affiliate-менеджер",
   "location": "Москва · Remote",
   "why": "шум: affiliate",
   "url": "https://career.habr.com/vacancies/1000170439"
  },
  {
-  "company": "Abbott",
-  "title": "Специалист по контенту канала электронной коммерции / E-com Content Specialist",
-  "location": "Москва",
-  "why": "шум: content",
-  "url": "https://career.habr.com/vacancies/1000170193"
+  "company": "Lead Reapers",
+  "title": "Маркетолог (TikTok Media Buyer | iGaming)",
+  "location": "Remote",
+  "why": "шум: media buyer",
+  "url": "https://career.habr.com/vacancies/1000170354"
  },
  {
   "company": "Vital Partners",
@@ -40,12 +61,5 @@
   "location": "Барнаул",
   "why": "шум: бренд",
   "url": "https://career.habr.com/vacancies/1000170298"
- },
- {
-  "company": "Abbott",
-  "title": "Специалист по контенту канала электронной коммерции",
-  "location": "Москва",
-  "why": "шум: контент",
-  "url": "https://career.habr.com/vacancies/1000170188"
  }
 ]
