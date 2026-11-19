@@ -56,13 +56,6 @@
   "url": "https://himalayas.app/companies/bondora/jobs/senior-affiliate-marketing-manager?utm_source=api"
  },
  {
-  "company": "David Kennedy Recruitment",
-  "title": "Senior Affiliate Manager",
-  "location": "202 стран, есть Кыргызстан",
-  "why": "шум: affiliate",
-  "url": "https://himalayas.app/companies/david-kennedy-recruitment/jobs/senior-affiliate-manager?utm_source=api"
- },
- {
   "company": "Growe Talents",
   "title": "Affiliate Manager",
   "location": "",
@@ -114,7 +107,7 @@
  {
   "company": "Canonical",
   "title": "Content marketing team manager",
-  "location": "149 стран, есть Кыргызстан",
+  "location": "148 стран, есть Кыргызстан",
   "why": "шум: content",
   "url": "https://himalayas.app/companies/canonical/jobs/content-marketing-team-manager?utm_source=api"
  },
@@ -124,13 +117,6 @@
   "location": "148 стран, есть Кыргызстан",
   "why": "шум: content",
   "url": "https://himalayas.app/companies/careerbuddy/jobs/content-associate?utm_source=api"
- },
- {
-  "company": "Welo Global",
-  "title": "English to Latvian Review Lead for UI, Marketing & Product Content",
-  "location": "249 стран, есть Кыргызстан",
-  "why": "шум: content",
-  "url": "https://himalayas.app/companies/welo-global/jobs/english-to-latvian-review-lead-for-ui-marketing-product-content?utm_source=api"
  },
  {
   "company": "Welo Global",
@@ -145,6 +131,13 @@
   "location": "",
   "why": "шум: copywrit",
   "url": "https://himalayas.app/companies/healthhue/jobs/copywriter-medical-aesthetics?utm_source=api"
+ },
+ {
+  "company": "Arkscale Ventures",
+  "title": "Remote B2B Lead Generation Specialist (Cold Email)",
+  "location": "",
+  "why": "шум: email",
+  "url": "https://himalayas.app/companies/arkscale-ventures/jobs/remote-b2b-lead-generation-specialist-cold-email?utm_source=api"
  },
  {
   "company": "Nuitée",
@@ -204,13 +197,6 @@
  },
  {
   "company": "David Kennedy Recruitment",
-  "title": "Performance Marketer — Senior · Adult RTB",
-  "location": "102 стран, есть Кыргызстан",
-  "why": "шум: performance",
-  "url": "https://himalayas.app/companies/david-kennedy-recruitment/jobs/performance-marketer-senior-adult-rtb?utm_source=api"
- },
- {
-  "company": "David Kennedy Recruitment",
   "title": "Performance Marketer Junior · Adult RTB",
   "location": "102 стран, есть Кыргызстан",
   "why": "шум: performance",
@@ -226,7 +212,7 @@
  {
   "company": "Canonical",
   "title": "Product Marketing Manager",
-  "location": "149 стран, есть Кыргызстан",
+  "location": "148 стран, есть Кыргызстан",
   "why": "шум: product marketing",
   "url": "https://himalayas.app/companies/canonical/jobs/product-marketing-manager?utm_source=api"
  },
