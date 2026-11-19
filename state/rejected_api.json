@@ -133,13 +133,6 @@
   "url": "https://jobs.ashbyhq.com/manychat/2e3cfe30-ddbd-473e-8c82-b118bf82a8f2"
  },
  {
-  "company": "Mirantis",
-  "title": "Technical Product Marketer, k0rdent AI - remote in the US",
-  "location": "Remote",
-  "why": "гео: us",
-  "url": "https://jobs.smartrecruiters.com/Mirantis/744000138412764"
- },
- {
   "company": "Qdrant",
   "title": "Growth Marketing Manager (US)",
   "location": "Remote - United States",
@@ -219,16 +212,23 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Waltham, MA",
+  "location": "Lexington, KY",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290693007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
  },
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Lexington, KY",
+  "location": "Detroit, MI",
   "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Waltham, MA",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290693007"
  },
  {
   "company": "Xometry",
@@ -243,13 +243,6 @@
   "location": "North Bethesda, MD",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
-  "location": "Detroit, MI",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290686007"
  },
  {
   "company": "Xometry",
@@ -313,13 +306,6 @@
   "location": "San Francisco Bay Area, USA",
   "why": "роль: capital market",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/866ea93e-126f-4a82-9cd5-8209e4b6e9d2"
- },
- {
-  "company": "Duolingo",
-  "title": "Senior Data Scientist, Growth Forecasting",
-  "location": "New York, NY; Pittsburgh, PA",
-  "why": "роль: data scien",
-  "url": "https://careers.duolingo.com/jobs/8750636002?gh_jid=8750636002"
  },
  {
   "company": "Ahrefs",
@@ -658,6 +644,13 @@
   "url": "https://jobs.ashbyhq.com/hostinger/5de8eec3-9a53-4d6f-ac52-fcba9a9cd2dd"
  },
  {
+  "company": "Hostinger",
+  "title": "Community Growth Lead (Developers & Agentic Products)",
+  "location": "Vilnius",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/hostinger/fcae6357-0232-43db-a1aa-49abdf17aa01"
+ },
+ {
   "company": "InvestEngine",
   "title": "Middle Manual QA Engineer, Growth team",
   "location": "",
@@ -716,16 +709,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "inDrive",
@@ -820,6 +813,13 @@
  },
  {
   "company": "ManyChat",
+  "title": "Staff Product Manager, Growth",
+  "location": "Barcelona, Spain",
+  "why": "роль: product manager",
+  "url": "https://jobs.ashbyhq.com/manychat/e6b71c34-f586-4b46-85c9-882ded5a77f6"
+ },
+ {
+  "company": "ManyChat",
   "title": "Senior Product Manager (Brands)",
   "location": "New York, US",
   "why": "роль: product manager",
@@ -859,6 +859,13 @@
   "location": "Kyiv",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/SKELAR/36b3d6a7-ea0c-4f98-a7c1-d0ed92155315"
+ },
+ {
+  "company": "Sumsub",
+  "title": "Product Manager (Growth)",
+  "location": "",
+  "why": "роль: product manager",
+  "url": "https://careers.sumsub.com/jobs/8456327-product-manager-growth"
  },
  {
   "company": "Surfshark",
@@ -912,6 +919,13 @@
  {
   "company": "Viseven",
   "title": "Senior Product Owner (with Veeva CRM experience)",
+  "location": "Madrid",
+  "why": "роль: product owner",
+  "url": "https://jobs.lever.co/viseven/0338fb31-7fec-4e7d-a715-c6563ce0e35c"
+ },
+ {
+  "company": "Viseven",
+  "title": "Senior Product Owner (with Veeva CRM experience)",
   "location": "Warszawa",
   "why": "роль: product owner",
   "url": "https://jobs.lever.co/viseven/49c3ca4e-2e9d-479d-a3d0-0c86db4ae9fa"
@@ -919,7 +933,7 @@
  {
   "company": "Viseven",
   "title": "Senior Product Owner (with Veeva CRM experience)",
-  "location": "Warszawa",
+  "location": "Bucharest",
   "why": "роль: product owner",
   "url": "https://jobs.lever.co/viseven/67a73899-72b3-423c-b6c3-262c5822f577"
  },
@@ -988,6 +1002,13 @@
  },
  {
   "company": "SKELAR",
+  "title": "Inbound Sales Specialist (B2C)",
+  "location": "Venezuela",
+  "why": "роль: sales",
+  "url": "https://jobs.ashbyhq.com/SKELAR/e205f911-4dfa-415a-adff-c82af4bcdd42"
+ },
+ {
+  "company": "SKELAR",
   "title": "Inbound Sales Specialist (LatAm/B2C)",
   "location": "Argentina",
   "why": "роль: sales",
@@ -1027,6 +1048,13 @@
   "location": "Vilnius",
   "why": "роль: talent acquisition",
   "url": "https://jobs.ashbyhq.com/hostinger/c8fbb8f0-9ffc-40da-89bc-3abd4ee111ce"
+ },
+ {
+  "company": "Humanoid AI",
+  "title": "Senior Talent Acquisition Partner - Robotics & ML",
+  "location": "US (Remote)",
+  "why": "роль: talent acquisition",
+  "url": "https://jobs.ashbyhq.com/humanoid/d0ba93a2-2286-4466-bc55-5c3ac11951d2"
  },
  {
   "company": "Solidgate",
@@ -1198,14 +1226,14 @@
  },
  {
   "company": "Xometry",
-  "title": "Senior Brand Marketing & Insights Manager",
+  "title": "Senior Manager, Brand Marketing",
   "location": "North Bethesda, MD",
   "why": "шум: brand",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5227514007"
  },
  {
   "company": "Xometry",
-  "title": "Senior Brand Marketing & Insights Manager",
+  "title": "Senior Manager, Brand Marketing",
   "location": "Waltham, MA",
   "why": "шум: brand",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5227591007"
@@ -1239,13 +1267,6 @@
   "url": "https://jobs.ashbyhq.com/clickhouse/8053823a-c5f3-4c00-9aae-15439f08cf6d"
  },
  {
-  "company": "Flo Health",
-  "title": "Director, Head of Global PR & Communications",
-  "location": "London",
-  "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/flohealth/jobs/7971371003"
- },
- {
   "company": "Higgsfield AI",
   "title": "Senior Public Relations Manager, Financial Communications",
   "location": "Remote, USA",
@@ -1262,23 +1283,16 @@
  {
   "company": "Xometry",
   "title": "Director, External Communications",
-  "location": "Waltham, MA",
-  "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5280234007"
- },
- {
-  "company": "Xometry",
-  "title": "Director, External Communications",
   "location": "North Bethesda, MD",
   "why": "шум: communications",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5280216007"
  },
  {
   "company": "Xometry",
-  "title": "Technical Executive Communications Manager",
+  "title": "Director, External Communications",
   "location": "Waltham, MA",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5265567007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5280234007"
  },
  {
   "company": "Xometry",
@@ -1290,6 +1304,13 @@
  {
   "company": "Xometry",
   "title": "Technical Executive Communications Manager",
+  "location": "Waltham, MA",
+  "why": "шум: communications",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5265567007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Technical Executive Communications Manager",
   "location": "Lexington, KY",
   "why": "шум: communications",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5265566007"
@@ -1297,16 +1318,16 @@
  {
   "company": "Xometry",
   "title": "Vice President, Communications ",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD ",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
  },
  {
   "company": "Xometry",
   "title": "Vice President, Communications ",
-  "location": "North Bethesda, MD ",
+  "location": "Waltham, MA",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
  },
  {
   "company": "inDrive",
@@ -1370,6 +1391,13 @@
   "location": "Ukraine",
   "why": "шум: content",
   "url": "https://betterme.breezy.hr/p/c3caf5f989a5-ai-content-producer"
+ },
+ {
+  "company": "BetterMe",
+  "title": "Project Manager (Content Production Team)",
+  "location": "Kyiv, UA",
+  "why": "шум: content",
+  "url": "https://betterme.breezy.hr/p/0b7ca8476090-project-manager-content-production-team"
  },
  {
   "company": "HerculesAI",
@@ -1456,6 +1484,13 @@
   "url": "https://jobs.ashbyhq.com/OBRIO/f0a62963-9f31-4a71-a22c-2e35ddb4bdce"
  },
  {
+  "company": "Paysend",
+  "title": "Director, Content Production",
+  "location": "",
+  "why": "шум: content",
+  "url": "https://paysend.teamtailor.com/jobs/8764028-director-content-production"
+ },
+ {
   "company": "Replika",
   "title": "Content Writer - Remote",
   "location": "",
@@ -1513,7 +1548,7 @@
  },
  {
   "company": "airSlate",
-  "title": "Senior Content Manager",
+  "title": "Senior Content Specialist",
   "location": "Tel Aviv",
   "why": "шум: content",
   "url": "https://jobs.lever.co/airslate/65b92dec-8594-4b9e-afb0-59d79450f1ca"
@@ -1521,16 +1556,16 @@
  {
   "company": "Duolingo",
   "title": "Senior Creative Director, Marketing",
-  "location": "New York, NY",
+  "location": "London, England",
   "why": "шум: creative",
-  "url": "https://careers.duolingo.com/jobs/8442932002?gh_jid=8442932002"
+  "url": "https://careers.duolingo.com/jobs/8442934002?gh_jid=8442934002"
  },
  {
   "company": "Duolingo",
   "title": "Senior Creative Director, Marketing",
-  "location": "London, England",
+  "location": "New York, NY",
   "why": "шум: creative",
-  "url": "https://careers.duolingo.com/jobs/8442934002?gh_jid=8442934002"
+  "url": "https://careers.duolingo.com/jobs/8442932002?gh_jid=8442932002"
  },
  {
   "company": "Genesis (Studio)",
@@ -1552,13 +1587,6 @@
   "location": "Lviv",
   "why": "шум: creative",
   "url": "https://jobs.ashbyhq.com/SKELAR/56769f4d-cd58-4d03-acff-62acc758cba2"
- },
- {
-  "company": "SKELAR",
-  "title": "Senior Creative Marketing Producer - Self-Improvement App",
-  "location": "Kyiv",
-  "why": "шум: creative",
-  "url": "https://jobs.ashbyhq.com/SKELAR/2eb654ca-7510-41a3-aa3b-2707faf83e07"
  },
  {
   "company": "SKELAR",
@@ -1678,6 +1706,13 @@
   "location": "UK, London",
   "why": "шум: influencer",
   "url": "https://jobs.ashbyhq.com/humanoid/2a4b61a6-e959-43f6-a3e0-4b4e43748db6"
+ },
+ {
+  "company": "InvestEngine",
+  "title": "Influencer Marketing Lead",
+  "location": "",
+  "why": "шум: influencer",
+  "url": "https://careers.investengine.com/jobs/8176302-influencer-marketing-lead"
  },
  {
   "company": "SKELAR",
@@ -2044,13 +2079,6 @@
   "url": "https://jobs.ashbyhq.com/SKELAR/74cb17d7-283f-423a-9b7f-7b33110bf879"
  },
  {
-  "company": "Semrush",
-  "title": "Global Head of Product Marketing PLG (Marketing Team)",
-  "location": "Berlin",
-  "why": "шум: product marketing",
-  "url": "https://semrush.wd5.myworkdayjobs.com/semrushcareers/job/Berlin/Global-Head-of-Product-Marketing-PLG--Marketing-Team-_JR100969"
- },
- {
   "company": "Social Discovery Group",
   "title": "Product Marketing Manager",
   "location": "Poland",
@@ -2175,13 +2203,6 @@
   "location": "Remote",
   "why": "шум: user acquisition",
   "url": "https://appquantum.pinpointhq.com/en/postings/b9e9d6ca-6e53-4141-8652-eeed9fb2e18e"
- },
- {
-  "company": "Genesis (Studio)",
-  "title": "Senior User Acquisition Manager",
-  "location": "Ukraine",
-  "why": "шум: user acquisition",
-  "url": "https://gen-tech.breezy.hr/p/6f4f615a3471-senior-user-acquisition-manager"
  },
  {
   "company": "Genesis (Studio)",
@@ -2357,5 +2378,12 @@
   "location": "Kyiv or Warsaw Office",
   "why": "шум: user acquisition",
   "url": "https://jobs.ashbyhq.com/SKELAR/8befcb3a-913f-4cf7-986e-475605ea6509"
+ },
+ {
+  "company": "SKELAR",
+  "title": "User Acquisition Manager - Self-Improvement App",
+  "location": "Warsaw",
+  "why": "шум: user acquisition",
+  "url": "https://jobs.ashbyhq.com/SKELAR/9a4e9568-f043-4503-a781-9e6b428da939"
  }
 ]
