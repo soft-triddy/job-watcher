@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-19 18:21 UTC",
+ "updated": "2026-11-20 17:52 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
  "jobs_total": 269,
- "marketing": 60,
+ "marketing": 61,
  "sources": {
   "мир: «marketing»": {
-   "jobs": 59,
+   "jobs": 60,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "мир: «growth»": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "мир: «demand»": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "мир: «seo»": {
@@ -35,15 +35,15 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "мир: «crm»": {
-   "jobs": 25,
+   "jobs": 27,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "KG: «marketing»": {
@@ -51,23 +51,23 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "KG: «growth»": {
-   "jobs": 60,
+   "jobs": 61,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "KG: «demand»": {
-   "jobs": 28,
+   "jobs": 27,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "KG: «seo»": {
@@ -75,7 +75,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   },
   "KG: «crm»": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "alerted": false
   }
  }
