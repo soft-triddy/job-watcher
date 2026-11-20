@@ -63,13 +63,6 @@
   "url": "https://aidigital.recruitee.com/o/growth-associate-st-louis-mo"
  },
  {
-  "company": "Enhesa",
-  "title": "Marketing Operations Manager",
-  "location": "Arlington, VA",
-  "why": "гео: VA",
-  "url": "https://job-boards.greenhouse.io/enhesa/jobs/4464002009"
- },
- {
   "company": "Ahrefs",
   "title": "Head of Growth/Organic - Letaido",
   "location": "Cambridge, Massachusetts, United States; Palo Alto, California, United States",
@@ -212,9 +205,23 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
+  "location": "Huntsville, AL",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
   "location": "Lexington, KY",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "North Bethesda, MD",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
  },
  {
   "company": "Xometry",
@@ -229,20 +236,6 @@
   "location": "Waltham, MA",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5290693007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
-  "location": "Huntsville, AL",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
-  "location": "North Bethesda, MD",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
  },
  {
   "company": "Xometry",
@@ -467,13 +460,6 @@
   "location": "Remote (United States | Canada)",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/1password/2925531c-43d3-4999-8537-c156762434a9"
- },
- {
-  "company": "1Password",
-  "title": "Staff Content Developer",
-  "location": "Remote (United States | Canada)",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/1password/3bacd3c1-45d1-4337-a11b-a21569a51148"
  },
  {
   "company": "ClickHouse",
@@ -709,16 +695,16 @@
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "London, England, United Kingdom",
+  "location": "Λευκωσία, Nicosia, Cyprus",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
  },
  {
   "company": "Wheely",
   "title": "Backend Engineer (Mid/Senior), Marketplace",
-  "location": "Λευκωσία, Nicosia, Cyprus",
+  "location": "London, England, United Kingdom",
   "why": "роль: engineer",
-  "url": "https://boards.greenhouse.io/wheely/jobs/7712039003?gh_jid=7712039003"
+  "url": "https://boards.greenhouse.io/wheely/jobs/8016820003?gh_jid=8016820003"
  },
  {
   "company": "inDrive",
@@ -726,13 +712,6 @@
   "location": "Kazakhstan",
   "why": "роль: engineer",
   "url": "https://indrive.pinpointhq.com/en/postings/c2de96f0-b778-4996-8814-ae541cd6a669"
- },
- {
-  "company": "SKELAR",
-  "title": "Junior content moderator",
-  "location": "Ukraine, Remote",
-  "why": "роль: moderator",
-  "url": "https://jobs.ashbyhq.com/SKELAR/edaee103-9fc0-4893-9879-6852de11d023"
  },
  {
   "company": "Social Discovery Group",
@@ -810,6 +789,13 @@
   "location": "Almaty, Kazakhstan",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/621f2f93-d2bf-4826-869a-9eccef3ac6c1"
+ },
+ {
+  "company": "Joom",
+  "title": "Product Manager at Joom Marketplace",
+  "location": "Lisbon",
+  "why": "роль: product manager",
+  "url": "https://apply.workable.com/j/9A17CFB372"
  },
  {
   "company": "ManyChat",
@@ -891,23 +877,16 @@
  {
   "company": "Xometry",
   "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
-  "location": "North Bethesda, MD",
-  "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
   "location": "Waltham, MA",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5292464007"
  },
  {
   "company": "Xometry",
-  "title": "Staff Product Manager, Supplier Experience & Go-to-Market (Thomas)",
+  "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
   "location": "North Bethesda, MD",
   "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285920007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
  },
  {
   "company": "Xometry",
@@ -915,6 +894,13 @@
   "location": "Waltham, MA",
   "why": "роль: product manager",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5292471007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Staff Product Manager, Supplier Experience & Go-to-Market (Thomas)",
+  "location": "North Bethesda, MD",
+  "why": "роль: product manager",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285920007"
  },
  {
   "company": "Viseven",
@@ -1078,20 +1064,6 @@
   "url": "https://jobs.ashbyhq.com/solidgate/615061f4-58e0-480b-a1be-df0a645420fc"
  },
  {
-  "company": "Surfshark",
-  "title": "Talent Acquisition Team Lead (Tech)",
-  "location": "Vilnius",
-  "why": "роль: talent acquisition",
-  "url": "https://jobs.ashbyhq.com/surfshark/6c7ac551-8067-475c-ac5e-1c7061b617d3"
- },
- {
-  "company": "Surfshark",
-  "title": "Talent Acquisition Partner (Tech)",
-  "location": "Vilnius",
-  "why": "роль: talent acquisition",
-  "url": "https://jobs.ashbyhq.com/surfshark/d0331b4a-5f64-4ecf-bb8e-e9c086790ea1"
- },
- {
   "company": "Voyagu",
   "title": "Talent Acquisition Manager",
   "location": "Warsaw, PL",
@@ -1227,16 +1199,16 @@
  {
   "company": "Xometry",
   "title": "Senior Manager, Brand Marketing",
-  "location": "North Bethesda, MD",
+  "location": "Waltham, MA",
   "why": "шум: brand",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227514007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227591007"
  },
  {
   "company": "Xometry",
   "title": "Senior Manager, Brand Marketing",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD",
   "why": "шум: brand",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227591007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227514007"
  },
  {
   "company": "inDrive",
@@ -1297,13 +1269,6 @@
  {
   "company": "Xometry",
   "title": "Technical Executive Communications Manager",
-  "location": "North Bethesda, MD",
-  "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5257253007"
- },
- {
-  "company": "Xometry",
-  "title": "Technical Executive Communications Manager",
   "location": "Waltham, MA",
   "why": "шум: communications",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5265567007"
@@ -1317,10 +1282,10 @@
  },
  {
   "company": "Xometry",
-  "title": "Vice President, Communications ",
-  "location": "North Bethesda, MD ",
+  "title": "Technical Executive Communications Manager",
+  "location": "North Bethesda, MD",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5257253007"
  },
  {
   "company": "Xometry",
@@ -1328,6 +1293,13 @@
   "location": "Waltham, MA",
   "why": "шум: communications",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Vice President, Communications ",
+  "location": "North Bethesda, MD ",
+  "why": "шум: communications",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
  },
  {
   "company": "inDrive",
@@ -1440,13 +1412,6 @@
   "location": "Almaty, Kazakhstan",
   "why": "шум: content",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/03167fdb-9ec3-4f07-b493-99722796624a"
- },
- {
-  "company": "Hostinger",
-  "title": "Content Team Lead",
-  "location": "Spain",
-  "why": "шум: content",
-  "url": "https://jobs.ashbyhq.com/hostinger/a6d383fb-a28d-42fa-8bbc-6afd879ca946"
  },
  {
   "company": "Influ2",
@@ -1633,9 +1598,9 @@
  {
   "company": "Behavox",
   "title": "Marketing Events Manager ",
-  "location": "Montreal, Quebec, Canada",
+  "location": "London, UK",
   "why": "шум: event",
-  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132560"
+  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132559"
  },
  {
   "company": "Behavox",
@@ -1647,9 +1612,9 @@
  {
   "company": "Behavox",
   "title": "Marketing Events Manager ",
-  "location": "London, UK",
+  "location": "Montreal, Quebec, Canada",
   "why": "шум: event",
-  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132559"
+  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132560"
  },
  {
   "company": "Field Materials",
@@ -1738,16 +1703,16 @@
  {
   "company": "Xometry",
   "title": "Senior Lifecycle Marketing Manager",
-  "location": "Lexington, KY",
+  "location": "Waltham, MA",
   "why": "шум: lifecycle",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273974007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273973007"
  },
  {
   "company": "Xometry",
   "title": "Senior Lifecycle Marketing Manager",
-  "location": "Waltham, MA",
+  "location": "Lexington, KY",
   "why": "шум: lifecycle",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273973007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273974007"
  },
  {
   "company": "Xometry",
@@ -1790,6 +1755,13 @@
   "location": "United States (Remote)",
   "why": "шум: partner marketing",
   "url": "https://jobs.ashbyhq.com/goteleport/000200e5-1275-4d27-9207-31e4cf4a1005"
+ },
+ {
+  "company": "Teleport",
+  "title": "Field/Partner Marketing Manager - EMEA",
+  "location": "London, England",
+  "why": "шум: partner marketing",
+  "url": "https://jobs.ashbyhq.com/goteleport/1c68aea9-e1c9-405e-9f92-87315b46feb8"
  },
  {
   "company": "Xometry",
@@ -1848,13 +1820,6 @@
   "url": "https://careers.duolingo.com/jobs/8895215002?gh_jid=8895215002"
  },
  {
-  "company": "Flo Health",
-  "title": "Freelance Performance Copywriter (3 months, full time)",
-  "location": "United Kingdom",
-  "why": "шум: performance",
-  "url": "https://job-boards.greenhouse.io/flohealth/jobs/8041594003"
- },
- {
   "company": "HerculesAI",
   "title": "Head of Performance Marketing ",
   "location": "Remote - North America",
@@ -1869,13 +1834,6 @@
   "url": "https://jobs.ashbyhq.com/hostinger/3daacc1e-8e05-4f05-b7d3-8f1d0774649d"
  },
  {
-  "company": "Inbank",
-  "title": "Portfolio Planning & Performance Manager",
-  "location": "Tallinn, Harju, Estonia",
-  "why": "шум: performance",
-  "url": "https://job-boards.eu.greenhouse.io/inbank/jobs/4966909101"
- },
- {
   "company": "MGID",
   "title": "Client Acquisition Manager (Performance Marketing)",
   "location": "Remote job",
@@ -1888,13 +1846,6 @@
   "location": "Ukraine",
   "why": "шум: performance",
   "url": "https://jobs.ashbyhq.com/ruby-labs/840ca5c9-f11c-427e-b040-c74ebdce4b3f"
- },
- {
-  "company": "Surfshark",
-  "title": "Performance Video Editor",
-  "location": "Vilnius",
-  "why": "шум: performance",
-  "url": "https://jobs.ashbyhq.com/surfshark/95e79c85-dd19-426d-b4ce-4a92d530fc19"
  },
  {
   "company": "Surfshark",
@@ -1979,20 +1930,6 @@
   "location": "Kyiv, UA",
   "why": "шум: product marketing",
   "url": "https://gen-tech.breezy.hr/p/cd15fc2c2006-product-marketing-manager"
- },
- {
-  "company": "Hostinger",
-  "title": "Head of Product Marketing",
-  "location": "Vilnius",
-  "why": "шум: product marketing",
-  "url": "https://jobs.ashbyhq.com/hostinger/dea5d905-5be4-47dd-866e-bf4a2f2ff3de"
- },
- {
-  "company": "Hostinger",
-  "title": "Head of Product Marketing (Web Hosting)",
-  "location": "Kaunas",
-  "why": "шум: product marketing",
-  "url": "https://jobs.ashbyhq.com/hostinger/7f13d59a-cbf5-4f41-bff2-f502d09525bf"
  },
  {
   "company": "Inbank",
@@ -2126,6 +2063,13 @@
   "location": "Poland",
   "why": "шум: product marketing",
   "url": "https://jobs.lever.co/airslate/77a4539d-285c-4e95-9dd4-dbc87f1eaa87"
+ },
+ {
+  "company": "Hostinger",
+  "title": "Public Relations Manager",
+  "location": "Vilnius",
+  "why": "шум: public relations",
+  "url": "https://jobs.ashbyhq.com/hostinger/e43a2c35-f2b4-4117-a812-f60398786aba"
  },
  {
   "company": "Social Discovery Group",
@@ -2353,13 +2297,6 @@
  },
  {
   "company": "SKELAR",
-  "title": "Trainee/Junior User Acquisition Manager - Health&Wellness app",
-  "location": "Lviv",
-  "why": "шум: user acquisition",
-  "url": "https://jobs.ashbyhq.com/SKELAR/1e0c1012-da13-44e1-81cb-3faabd1893ac"
- },
- {
-  "company": "SKELAR",
   "title": "User Acquisition Manager",
   "location": "Ukraine, Remote",
   "why": "шум: user acquisition",
@@ -2385,5 +2322,12 @@
   "location": "Warsaw",
   "why": "шум: user acquisition",
   "url": "https://jobs.ashbyhq.com/SKELAR/9a4e9568-f043-4503-a781-9e6b428da939"
+ },
+ {
+  "company": "SKELAR",
+  "title": "Trainee/Junior User Acquisition Manager - Health&Wellness app",
+  "location": "Lviv",
+  "why": "шум: user acquisition",
+  "url": "https://jobs.ashbyhq.com/SKELAR/f8adb9dd-f2fb-439c-9a70-f206e0a91d08"
  }
 ]
