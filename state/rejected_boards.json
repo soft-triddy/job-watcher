@@ -1,10 +1,24 @@
 [
  {
+  "company": "ВсеИнструменты.ру",
+  "title": "Solution Architect / Архитектор решений (маркетинг)",
+  "location": "Москва · Remote",
+  "why": "роль: architect",
+  "url": "https://career.habr.com/vacancies/1000169939"
+ },
+ {
   "company": "Mindbox",
   "title": "Менеджер по успеху клиентов (Customer success manager) в mid-market",
   "location": "Москва",
   "why": "роль: customer success",
   "url": "https://career.habr.com/vacancies/1000170456"
+ },
+ {
+  "company": "ВсеИнструменты.ру",
+  "title": "Senior Designer (Ребрендинг)",
+  "location": "Москва",
+  "why": "роль: design",
+  "url": "https://career.habr.com/vacancies/1000169962"
  },
  {
   "company": "Sirius Capital",
@@ -42,13 +56,6 @@
   "url": "https://career.habr.com/vacancies/1000170451"
  },
  {
-  "company": "A SWISS GROUP",
-  "title": "SMM-менеджер (медицина)",
-  "location": "Москва",
-  "why": "шум: smm",
-  "url": "https://career.habr.com/vacancies/1000170347"
- },
- {
   "company": "B2B-РТС",
   "title": "Руководитель бренда и креатива (B2B / Tech)",
   "location": "Москва · Remote",
@@ -56,10 +63,10 @@
   "url": "https://career.habr.com/vacancies/1000170410"
  },
  {
-  "company": "Makk",
-  "title": "Бренд-маркетолог",
-  "location": "Барнаул",
+  "company": "МегаФон",
+  "title": "Бизнес-партнер по аналитике и эффективности бренда",
+  "location": "Москва",
   "why": "шум: бренд",
-  "url": "https://career.habr.com/vacancies/1000170298"
+  "url": "https://career.habr.com/vacancies/1000167005"
  }
 ]
