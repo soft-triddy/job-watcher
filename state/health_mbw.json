@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 15:52 UTC",
+ "updated": "2026-11-21 15:02 UTC",
  "label": "🎵 MBW Jobs",
  "total": 1,
  "broken": 1,
@@ -10,9 +10,9 @@
    "jobs": 0,
    "err": "HTTPError 403 Client Error: Forbidden for url: https://www.musicbusine",
    "note": "",
-   "bad_streak": 2,
+   "bad_streak": 3,
    "last_ok": "",
-   "alerted": false
+   "alerted": true
   }
  }
 }
