@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-20 17:52 UTC",
+ "updated": "2026-11-21 16:49 UTC",
  "label": "🏔 Himalayas",
  "total": 10,
  "broken": 0,
- "jobs_total": 269,
- "marketing": 61,
+ "jobs_total": 263,
+ "marketing": 55,
  "sources": {
   "мир: «marketing»": {
-   "jobs": 60,
+   "jobs": 57,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "мир: «growth»": {
-   "jobs": 14,
+   "jobs": 12,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "мир: «demand»": {
@@ -27,15 +27,15 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "мир: «seo»": {
-   "jobs": 16,
+   "jobs": 14,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "мир: «crm»": {
@@ -43,7 +43,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "KG: «marketing»": {
@@ -51,15 +51,15 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "KG: «growth»": {
-   "jobs": 61,
+   "jobs": 55,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "KG: «demand»": {
@@ -67,15 +67,15 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "KG: «seo»": {
-   "jobs": 30,
+   "jobs": 28,
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   },
   "KG: «crm»": {
@@ -83,7 +83,7 @@
    "err": "",
    "note": "",
    "bad_streak": 0,
-   "last_ok": "2026-11-20",
+   "last_ok": "2026-11-21",
    "alerted": false
   }
  }
