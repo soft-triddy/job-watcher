@@ -140,13 +140,6 @@
   "url": "https://job-boards.greenhouse.io/wrike/jobs/4492980005"
  },
  {
-  "company": "Higgsfield AI",
-  "title": "Director of Demand Generation ",
-  "location": "San Francisco Bay Area, USA",
-  "why": "гео: usa",
-  "url": "https://jobs.ashbyhq.com/higgsfieldai/217ec82c-6783-4bf9-9ebc-b6973cc78e0d"
- },
- {
   "company": "Kodland",
   "title": "USA | Digital Creativity",
   "location": "Remote job",
@@ -205,13 +198,6 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Huntsville, AL",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
   "location": "Lexington, KY",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
@@ -222,6 +208,13 @@
   "location": "North Bethesda, MD",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Huntsville, AL",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
  },
  {
   "company": "Xometry",
@@ -498,17 +491,17 @@
  },
  {
   "company": "ClickHouse",
-  "title": "Langfuse - DevRel Engineer, Events & Community (EMEA)",
-  "location": "Germany",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/clickhouse/49953f5a-271a-492f-a8be-50b8f028fbd7"
- },
- {
-  "company": "ClickHouse",
   "title": "Langfuse - DevRel Engineer, Events & Community (AMER)",
   "location": "San Francisco",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/clickhouse/7b0174fe-f124-4db2-923f-7028f39d6be9"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Langfuse - DevRel Engineer, Events & Community (EMEA)",
+  "location": "Germany",
+  "why": "роль: engineer",
+  "url": "https://jobs.ashbyhq.com/clickhouse/62e56a74-e1a8-4cbd-8314-a6f9788a4dd2"
  },
  {
   "company": "ClickHouse",
@@ -691,6 +684,13 @@
   "location": "United States (Remote)",
   "why": "роль: engineer",
   "url": "https://jobs.ashbyhq.com/goteleport/4ac5c867-e63e-41eb-a978-8a63e29f6e49"
+ },
+ {
+  "company": "Telnyx",
+  "title": "Founding Growth Engineer (AI Growth / Conversion / Distribution)",
+  "location": "San Francisco, CA",
+  "why": "роль: engineer",
+  "url": "https://job-boards.greenhouse.io/telnyx54/jobs/8207203003"
  },
  {
   "company": "Wheely",
@@ -877,16 +877,16 @@
  {
   "company": "Xometry",
   "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD",
   "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292464007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
  },
  {
   "company": "Xometry",
   "title": "Senior Product Manager, Account-Based Marketing & Targeted Messaging",
-  "location": "North Bethesda, MD",
+  "location": "Waltham, MA",
   "why": "роль: product manager",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5285905007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5292464007"
  },
  {
   "company": "Xometry",
@@ -1199,16 +1199,16 @@
  {
   "company": "Xometry",
   "title": "Senior Manager, Brand Marketing",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD",
   "why": "шум: brand",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227591007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227514007"
  },
  {
   "company": "Xometry",
   "title": "Senior Manager, Brand Marketing",
-  "location": "North Bethesda, MD",
+  "location": "Waltham, MA",
   "why": "шум: brand",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227514007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5227591007"
  },
  {
   "company": "inDrive",
@@ -1255,16 +1255,16 @@
  {
   "company": "Xometry",
   "title": "Director, External Communications",
-  "location": "North Bethesda, MD",
+  "location": "Waltham, MA",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5280216007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5280234007"
  },
  {
   "company": "Xometry",
   "title": "Director, External Communications",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5280234007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5280216007"
  },
  {
   "company": "Xometry",
@@ -1290,16 +1290,16 @@
  {
   "company": "Xometry",
   "title": "Vice President, Communications ",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD ",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
  },
  {
   "company": "Xometry",
   "title": "Vice President, Communications ",
-  "location": "North Bethesda, MD ",
+  "location": "Waltham, MA",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
  },
  {
   "company": "inDrive",
@@ -1352,7 +1352,7 @@
  },
  {
   "company": "Xometry",
-  "title": "Social & Community Manager",
+  "title": "Social & Community Manager (B2B)",
   "location": "Buenos Aires, Argentina",
   "why": "шум: community",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5241046007"
@@ -1512,6 +1512,13 @@
   "url": "https://jobs.ashbyhq.com/whitecircle/a8efc466-d53a-449a-8701-f756184c5488"
  },
  {
+  "company": "Xometry",
+  "title": "Technical Content Associate",
+  "location": "Bangalore, India",
+  "why": "шум: content",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5303301007"
+ },
+ {
   "company": "airSlate",
   "title": "Senior Content Specialist",
   "location": "Tel Aviv",
@@ -1582,6 +1589,13 @@
   "url": "https://jobs.ashbyhq.com/SKELAR/04846c19-0c91-4d17-94a9-8fe0a9125413"
  },
  {
+  "company": "SKELAR",
+  "title": "Creative Marketing Manager_Brighterly",
+  "location": "Kyiv or Lviv Office",
+  "why": "шум: creative",
+  "url": "https://jobs.ashbyhq.com/SKELAR/71a96120-53be-452f-b35e-b766da6cd369"
+ },
+ {
   "company": "Genesis (Studio)",
   "title": "Email Marketing Manager (PlantIn)",
   "location": "київ, UA",
@@ -1598,9 +1612,9 @@
  {
   "company": "Behavox",
   "title": "Marketing Events Manager ",
-  "location": "London, UK",
+  "location": "Montreal, Quebec, Canada",
   "why": "шум: event",
-  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132559"
+  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132560"
  },
  {
   "company": "Behavox",
@@ -1612,9 +1626,9 @@
  {
   "company": "Behavox",
   "title": "Marketing Events Manager ",
-  "location": "Montreal, Quebec, Canada",
+  "location": "London, UK",
   "why": "шум: event",
-  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132560"
+  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132559"
  },
  {
   "company": "Field Materials",
@@ -1703,9 +1717,9 @@
  {
   "company": "Xometry",
   "title": "Senior Lifecycle Marketing Manager",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD",
   "why": "шум: lifecycle",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273973007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273969007"
  },
  {
   "company": "Xometry",
@@ -1717,9 +1731,9 @@
  {
   "company": "Xometry",
   "title": "Senior Lifecycle Marketing Manager",
-  "location": "North Bethesda, MD",
+  "location": "Waltham, MA",
   "why": "шум: lifecycle",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273969007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273973007"
  },
  {
   "company": "AI Digital",
@@ -2014,6 +2028,13 @@
   "location": "Kyiv",
   "why": "шум: product marketing",
   "url": "https://jobs.ashbyhq.com/SKELAR/74cb17d7-283f-423a-9b7f-7b33110bf879"
+ },
+ {
+  "company": "Semrush",
+  "title": "Global Head of Product Marketing PLG (Marketing Team)",
+  "location": "Berlin",
+  "why": "шум: product marketing",
+  "url": "https://semrush.wd5.myworkdayjobs.com/semrushcareers/job/Berlin/Global-Head-of-Product-Marketing-PLG--Marketing-Team-_JR100969"
  },
  {
   "company": "Social Discovery Group",
