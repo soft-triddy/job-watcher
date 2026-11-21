@@ -156,16 +156,16 @@
  {
   "company": "Databricks",
   "title": "Senior Solutions Architect - Digital Natives",
-  "location": "Finland",
+  "location": "Sweden",
   "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8905967002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8885049002"
  },
  {
   "company": "Databricks",
   "title": "Senior Solutions Architect - Digital Natives",
-  "location": "Sweden",
+  "location": "Finland",
   "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8885049002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8905967002"
  },
  {
   "company": "Databricks",
@@ -191,13 +191,6 @@
  {
   "company": "Databricks",
   "title": "Solutions Architect - Communications, Media, Entertainment and Games",
-  "location": "Denver, Colorado",
-  "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8900134002"
- },
- {
-  "company": "Databricks",
-  "title": "Solutions Architect - Communications, Media, Entertainment and Games",
   "location": "Remote - Colorado",
   "why": "роль: architect",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8569633002"
@@ -205,9 +198,9 @@
  {
   "company": "Databricks",
   "title": "Solutions Architect - Communications, Media, Entertainment and Games",
-  "location": "New Jersey",
+  "location": "Denver, Colorado",
   "why": "роль: architect",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755492002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8900134002"
  },
  {
   "company": "Databricks",
@@ -222,6 +215,13 @@
   "location": "Remote - New York",
   "why": "роль: architect",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755476002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Solutions Architect - Communications, Media, Entertainment and Games",
+  "location": "New Jersey",
+  "why": "роль: architect",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755492002"
  },
  {
   "company": "Databricks",
@@ -386,7 +386,7 @@
  },
  {
   "company": "Kilo Health",
-  "title": "Creative Performance Designer @Iteractive Barcelona Creative Iteractive Full-time Mid",
+  "title": "Creative Performance Designer @Iteractive",
   "location": "",
   "why": "роль: design",
   "url": "https://kilo.co/career/creative-performance-designer-iteractive/"
@@ -471,44 +471,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "San Francisco, California",
+  "location": "New York City, New York",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461163002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "Raleigh, North Carolina",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461258002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "Mountain View, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461251002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "Denver, Colorado",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461243002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "Washington, D.C.",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461241002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "Philadelphia, Pennsylvania",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494153002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002"
  },
  {
   "company": "Databricks",
@@ -520,9 +485,30 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-  "location": "New York City, New York",
+  "location": "Washington, D.C.",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461241002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+  "location": "Denver, Colorado",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461243002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+  "location": "Mountain View, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461251002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+  "location": "Raleigh, North Carolina",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461258002"
  },
  {
   "company": "Databricks",
@@ -568,6 +554,20 @@
  },
  {
   "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+  "location": "San Francisco, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461163002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+  "location": "Philadelphia, Pennsylvania",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494153002"
+ },
+ {
+  "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
   "location": "Seattle, Washington",
   "why": "роль: engineer",
@@ -576,16 +576,9 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "West Coast - United States",
+  "location": "Mountain View, California",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
- },
- {
-  "company": "Databricks",
-  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "San Francisco, California",
-  "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
  },
  {
   "company": "Databricks",
@@ -604,9 +597,16 @@
  {
   "company": "Databricks",
   "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-  "location": "Mountain View, California",
+  "location": "West Coast - United States",
   "why": "роль: engineer",
-  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002"
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807081002"
+ },
+ {
+  "company": "Databricks",
+  "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+  "location": "San Francisco, California",
+  "why": "роль: engineer",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002"
  },
  {
   "company": "Databricks",
@@ -698,13 +698,6 @@
   "location": "",
   "why": "роль: engineer",
   "url": "https://wellfound.com/jobs/4891714-senior-backend-developer-campaigns-team-remote"
- },
- {
-  "company": "SoftServe",
-  "title": "USA / Forward Deployed Engineer (AI & Digital Experience)",
-  "location": "",
-  "why": "роль: engineer",
-  "url": "https://career.softserveinc.com/en-us/vacancies/usa-forward-deployed-engineer-ai-digital-experience-91550"
  },
  {
   "company": "Temporal",
@@ -802,14 +795,14 @@
   "title": "Product Owner (Marketing Product)",
   "location": "",
   "why": "роль: product owner",
-  "url": "https://www.creatio.com/company/careers/job-openings/product-owner-marketing-product-0"
+  "url": "https://www.creatio.com/company/careers/job-openings/product-owner-marketing-product-1"
  },
  {
   "company": "Creatio",
   "title": "Product Owner (Marketing Product)",
   "location": "",
   "why": "роль: product owner",
-  "url": "https://www.creatio.com/company/careers/job-openings/product-owner-marketing-product-1"
+  "url": "https://www.creatio.com/company/careers/job-openings/product-owner-marketing-product-0"
  },
  {
   "company": "Formlabs",
@@ -859,6 +852,13 @@
   "location": "",
   "why": "роль: talent acquisition",
   "url": "https://www.plurio.ai/careers/recruiter-performance-gtm"
+ },
+ {
+  "company": "Veeam",
+  "title": "Talent Acquisition Partner",
+  "location": "",
+  "why": "роль: talent acquisition",
+  "url": "https://careers.veeam.com/job/bucharest/talent-acquisition-partner/22681/103503169808"
  },
  {
   "company": "Infomediji",
@@ -1041,6 +1041,13 @@
   "location": "",
   "why": "шум: communications",
   "url": "https://temporal.io/careers/30600762-62fe-4ffb-9b6e-98f145329ea3"
+ },
+ {
+  "company": "Databricks",
+  "title": "Industry Executive, Intel Community (AI Transformation)",
+  "location": "Remote - Washington D.C.",
+  "why": "шум: community",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8948986002"
  },
  {
   "company": "Infomediji",
@@ -1267,6 +1274,13 @@
   "url": "http://jobdesk-api.accelclub.pro/v1/teams/Performance%20Marketing/"
  },
  {
+  "company": "Adapty",
+  "title": "Senior People Partner (Performance and Talent)",
+  "location": "",
+  "why": "шум: performance",
+  "url": "https://adapty.io/careers/senior-people-partner-performance-and-talent/"
+ },
+ {
   "company": "Formlabs",
   "title": "Manager, Performance Marketing",
   "location": "",
@@ -1426,13 +1440,6 @@
   "location": "",
   "why": "шум: product marketing",
   "url": "https://team.peopleforce.io/careers/v/248089-senior-product-marketing-manager"
- },
- {
-  "company": "Semrush",
-  "title": "Global Head of Product Marketing PLG (Marketing Team)",
-  "location": "",
-  "why": "шум: product marketing",
-  "url": "https://careers.semrush.com/jobs/JR100969_Berlin/"
  },
  {
   "company": "Temporal",
