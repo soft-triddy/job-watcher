@@ -1,0 +1,19 @@
+name: mbwdiag
+on: workflow_dispatch
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+          for u in "https://www.musicbusinessworldwide.com/jobs/wp-json/wp/v2/job-listings?per_page=5" \
+                   "https://www.musicbusinessworldwide.com/jobs/wp-json/" \
+                   "https://www.musicbusinessworldwide.com/jobs/" \
+                   "https://www.musicbusinessworldwide.com/jobs/feed/" \
+                   "https://www.musicbusinessworldwide.com/jobs/?feed=job_feed" \
+                   "https://www.musicbusinessworldwide.com/jobs/jm-ajax/get_listings/" \
+                   "https://www.musicbusinessworldwide.com/"; do
+            for a in "$UA" "radar-bot/1.0" ""; do
+              code=$(curl -s -o /tmp/b -w "%{http_code} %{size_download}" -A "$a" "$u"); echo "$code | ua=${a:0:10} | $u"; done
+            head -c 300 /tmp/b | tr '\n' ' '; echo; curl -sI -A "$UA" "$u" | grep -iE "^(server|cf-|x-|retry)" ; echo ---
+          done
