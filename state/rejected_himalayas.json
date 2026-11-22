@@ -7,6 +7,13 @@
   "url": "https://himalayas.app/companies/autodesk/jobs/midmarket-account-executive-global-expansion-sales-5160571853?utm_source=api"
  },
  {
+  "company": "VAme Ltd",
+  "title": "Senior Account Executive – B2B SaaS (US Market)",
+  "location": "",
+  "why": "роль: account executive",
+  "url": "https://himalayas.app/companies/vame-ltd/jobs/senior-account-executive-b2b-saas-us-market?utm_source=api"
+ },
+ {
   "company": "Search Atlas",
   "title": "SEO Customer Success Team Lead",
   "location": "",
@@ -49,6 +56,13 @@
   "url": "https://himalayas.app/companies/bondora/jobs/senior-affiliate-marketing-manager?utm_source=api"
  },
  {
+  "company": "David Kennedy Recruitment",
+  "title": "Senior Affiliate Manager",
+  "location": "102 стран, есть Кыргызстан",
+  "why": "шум: affiliate",
+  "url": "https://himalayas.app/companies/david-kennedy-recruitment/jobs/senior-affiliate-manager?utm_source=api"
+ },
+ {
   "company": "Growe Talents",
   "title": "Affiliate Manager",
   "location": "",
@@ -75,6 +89,13 @@
   "location": "",
   "why": "шум: affiliate",
   "url": "https://himalayas.app/companies/playattack/jobs/head-of-affiliates-6187463589?utm_source=api"
+ },
+ {
+  "company": "RMG Talent",
+  "title": "Senior Affiliate Manager – Consumer AI",
+  "location": "102 стран, есть Кыргызстан",
+  "why": "шум: affiliate",
+  "url": "https://himalayas.app/companies/rmg-talent/jobs/senior-affiliate-manager-consumer-ai?utm_source=api"
  },
  {
   "company": "Trade Treasury Payments",
@@ -105,20 +126,6 @@
   "url": "https://himalayas.app/companies/canonical/jobs/content-marketing-team-manager?utm_source=api"
  },
  {
-  "company": "CareerBuddy",
-  "title": "Content Associate",
-  "location": "148 стран, есть Кыргызстан",
-  "why": "шум: content",
-  "url": "https://himalayas.app/companies/careerbuddy/jobs/content-associate?utm_source=api"
- },
- {
-  "company": "Welo Global",
-  "title": "English to Kyrgyz Review Lead for UI, Marketing & Product Content",
-  "location": "248 стран, есть Кыргызстан",
-  "why": "шум: content",
-  "url": "https://himalayas.app/companies/welo-global/jobs/english-to-kyrgyz-review-lead-for-ui-marketing-product-content?utm_source=api"
- },
- {
   "company": "Health Hue Digital",
   "title": "Copywriter, Medical Aesthetics",
   "location": "",
@@ -138,13 +145,6 @@
   "location": "",
   "why": "шум: email",
   "url": "https://himalayas.app/companies/arkscale-ventures/jobs/remote-b2b-lead-generation-specialist-cold-email?utm_source=api"
- },
- {
-  "company": "Nuitée",
-  "title": "Marketing Director, PR & Events",
-  "location": "148 стран, есть Кыргызстан",
-  "why": "шум: event",
-  "url": "https://himalayas.app/companies/nuitee/jobs/marketing-director-pr-events?utm_source=api"
  },
  {
   "company": "SiTime",
@@ -201,6 +201,20 @@
   "location": "148 стран, есть Кыргызстан",
   "why": "шум: performance",
   "url": "https://himalayas.app/companies/finch/jobs/head-of-client-success-emea-performance-agency?utm_source=api"
+ },
+ {
+  "company": "RMG Talent",
+  "title": "Performance Marketer (Mainstream) – Consumer Subscription App",
+  "location": "102 стран, есть Кыргызстан",
+  "why": "шум: performance",
+  "url": "https://himalayas.app/companies/rmg-talent/jobs/performance-marketer-mainstream-consumer-subscription-app?utm_source=api"
+ },
+ {
+  "company": "Nuitée",
+  "title": "Marketing Director, PR & Events",
+  "location": "148 стран, есть Кыргызстан",
+  "why": "шум: pr",
+  "url": "https://himalayas.app/companies/nuitee/jobs/marketing-director-pr-events?utm_source=api"
  },
  {
   "company": "Canonical",
