@@ -10,7 +10,7 @@ Music Business Worldwide Jobs (musicbusinessworldwide.com/jobs): доска ва
 import html, os, re, time
 
 import requests
-from core import UA, is_marketing, near_misses, load, save, report, Health
+from core import is_marketing, near_misses, load, save, report, Health
 
 API     = "https://www.musicbusinessworldwide.com/jobs/wp-json/wp/v2/job-listings"
 STATE   = os.environ.get("MBW_STATE", "state/seen_mbw.json")
@@ -19,6 +19,9 @@ REJECTED = "state/rejected_mbw.json"
 LABEL   = "🎵 MBW Jobs"
 PAGES   = 3            # по 100 свежих вакансий на страницу — доска небольшая, этого с запасом
 TIMEOUT = 30
+# 19.11 Cloudflare у MBW начал отвечать 403 (challenge) на «браузерный» User-Agent без браузера,
+# а честный UA бота пропускает (проверено с раннера GitHub 22.11)
+UA      = {"User-Agent": "job-radar/1.0 (personal job alerts; github.com/soft-triddy/job-watcher)"}
 
 def _text(s):
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", s or "")).split())

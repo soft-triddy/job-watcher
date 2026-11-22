@@ -97,6 +97,7 @@ def classify(title, location=""):
     for n in NOISE_HARD:
         if n in t: return f"шум: {n}"
     if not any(k in t for k in KEEP):
+        if re.search(r"\bpr\b", t): return "шум: pr"          # 22.11: «PR Manager, Tech & Product» проходил
         for n in NOISE:
             if (n in ("aso", "pmm") and re.search(r"\b"+n+r"\b", t)) or (n not in ("aso", "pmm") and n in t):
                 return f"шум: {n}"
