@@ -1,18 +1,18 @@
 {
- "updated": "2026-11-21 15:02 UTC",
+ "updated": "2026-11-22 15:03 UTC",
  "label": "🎵 MBW Jobs",
  "total": 1,
- "broken": 1,
- "jobs_total": 0,
- "marketing": 0,
+ "broken": 0,
+ "jobs_total": 50,
+ "marketing": 13,
  "sources": {
-  "страница 1": {
-   "jobs": 0,
-   "err": "HTTPError 403 Client Error: Forbidden for url: https://www.musicbusine",
+  "доска": {
+   "jobs": 50,
+   "err": "",
    "note": "",
-   "bad_streak": 3,
-   "last_ok": "",
-   "alerted": true
+   "bad_streak": 0,
+   "last_ok": "2026-11-22",
+   "alerted": false
   }
  }
 }
