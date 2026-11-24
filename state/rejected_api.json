@@ -7,13 +7,6 @@
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5249148007"
  },
  {
-  "company": "AI Digital",
-  "title": "Growth Associate (Boise, ID)",
-  "location": "Remote job",
-  "why": "гео: ID",
-  "url": "https://aidigital.recruitee.com/o/growth-associate-boise-id"
- },
- {
   "company": "Xometry",
   "title": "Director, Marketplace Marketing",
   "location": "Lexington, KY",
@@ -126,18 +119,18 @@
   "url": "https://jobs.ashbyhq.com/manychat/2e3cfe30-ddbd-473e-8c82-b118bf82a8f2"
  },
  {
+  "company": "Mirantis",
+  "title": "Technical Product Marketer, k0rdent AI - remote in the US",
+  "location": "Remote",
+  "why": "гео: us",
+  "url": "https://jobs.smartrecruiters.com/Mirantis/744000138412764"
+ },
+ {
   "company": "Qdrant",
   "title": "Growth Marketing Manager (US)",
   "location": "Remote - United States",
   "why": "гео: us",
   "url": "https://jobs.ashbyhq.com/qdrant.tech/beffc43c-384e-4528-bbdd-cab507e979fa"
- },
- {
-  "company": "Wrike",
-  "title": "Senior Director, Growth & Demand Marketing",
-  "location": "US - Remote",
-  "why": "гео: us",
-  "url": "https://job-boards.greenhouse.io/wrike/jobs/4492980005"
  },
  {
   "company": "Kodland",
@@ -182,6 +175,20 @@
   "url": "https://jobs.ashbyhq.com/higgsfieldai/19a167d6-0219-4123-a673-14f071016d3b"
  },
  {
+  "company": "Higgsfield AI",
+  "title": "Founding Account Executive, Israel — Advertising (Brands, Agencies, Platforms)",
+  "location": "Remote, Israel",
+  "why": "роль: account executive",
+  "url": "https://jobs.ashbyhq.com/higgsfieldai/de8a55de-ed85-4044-a2da-4cfdc6f8e3f9"
+ },
+ {
+  "company": "Higgsfield AI",
+  "title": "Founding Account Executive, Benelux — Advertising (Brands, Agencies, Platforms)",
+  "location": "Remote, Benelux",
+  "why": "роль: account executive",
+  "url": "https://jobs.ashbyhq.com/higgsfieldai/8cebac85-14e4-491d-b6fd-5bdf6e8e345d"
+ },
+ {
   "company": "Teleport",
   "title": "Mid-Market Account Executive - NYC based",
   "location": "United States (Remote)",
@@ -198,23 +205,9 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
-  "location": "Lexington, KY",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
   "location": "North Bethesda, MD",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5075045007"
- },
- {
-  "company": "Xometry",
-  "title": "Account Executive III, Marketplace Sales",
-  "location": "Waltham, MA",
-  "why": "роль: account executive",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290693007"
  },
  {
   "company": "Xometry",
@@ -226,9 +219,23 @@
  {
   "company": "Xometry",
   "title": "Account Executive III, Marketplace Sales",
+  "location": "Waltham, MA",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5290693007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
   "location": "Huntsville, AL",
   "why": "роль: account executive",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5290692007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Account Executive III, Marketplace Sales",
+  "location": "Lexington, KY",
+  "why": "роль: account executive",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5166073007"
  },
  {
   "company": "Xometry",
@@ -243,13 +250,6 @@
   "location": "Atlanta, Georgia, United States",
   "why": "роль: bdr",
   "url": "https://aidigital.recruitee.com/o/growth-associate-bdr"
- },
- {
-  "company": "Joom",
-  "title": "BDR Senior at JoomPro (Outbound Enterprise & Mid-Market)",
-  "location": "",
-  "why": "роль: bdr",
-  "url": "https://apply.workable.com/j/9A241B4726"
  },
  {
   "company": "Ajax Systems",
@@ -306,13 +306,6 @@
   "location": "Austin, Texas",
   "why": "роль: design",
   "url": "https://job-boards.greenhouse.io/avride/jobs/4259245009"
- },
- {
-  "company": "Clay",
-  "title": "Middle Brand Designer",
-  "location": "Belgrade",
-  "why": "роль: design",
-  "url": "https://apply.workable.com/j/EB140EDEF4"
  },
  {
   "company": "Genesis (Studio)",
@@ -511,13 +504,6 @@
   "url": "https://jobs.ashbyhq.com/clickhouse/da6f6da1-eabf-4647-ab1c-6e138b14a6fe"
  },
  {
-  "company": "ClickHouse",
-  "title": "Growth Engineer",
-  "location": "United States",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/clickhouse/66affc05-7eb5-450e-94fd-01969c9318bf"
- },
- {
   "company": "Coherent Solutions",
   "title": "DevOps Engineer (Digital Marketing sphere)",
   "location": "Moldova",
@@ -635,13 +621,6 @@
   "location": "",
   "why": "роль: engineer",
   "url": "https://careers.investengine.com/jobs/8505082-middle-manual-qa-engineer-growth-team"
- },
- {
-  "company": "Joom",
-  "title": "Senior Data Acquisition Engineer at JoomPulse",
-  "location": "Lisbon",
-  "why": "роль: engineer",
-  "url": "https://apply.workable.com/j/3641CA6A58"
  },
  {
   "company": "Mirantis",
@@ -789,13 +768,6 @@
   "location": "Almaty, Kazakhstan",
   "why": "роль: product manager",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/621f2f93-d2bf-4826-869a-9eccef3ac6c1"
- },
- {
-  "company": "Joom",
-  "title": "Product Manager at Joom Marketplace",
-  "location": "Lisbon",
-  "why": "роль: product manager",
-  "url": "https://apply.workable.com/j/9A17CFB372"
  },
  {
   "company": "ManyChat",
@@ -1283,16 +1255,16 @@
  {
   "company": "Xometry",
   "title": "Vice President, Communications ",
-  "location": "Waltham, MA",
+  "location": "North Bethesda, MD ",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
  },
  {
   "company": "Xometry",
   "title": "Vice President, Communications ",
-  "location": "North Bethesda, MD ",
+  "location": "Waltham, MA",
   "why": "шум: communications",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278186007"
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5278188007"
  },
  {
   "company": "inDrive",
@@ -1521,16 +1493,16 @@
  {
   "company": "Duolingo",
   "title": "Senior Creative Director, Marketing",
-  "location": "London, England",
+  "location": "New York, NY",
   "why": "шум: creative",
-  "url": "https://careers.duolingo.com/jobs/8442934002?gh_jid=8442934002"
+  "url": "https://careers.duolingo.com/jobs/8442932002?gh_jid=8442932002"
  },
  {
   "company": "Duolingo",
   "title": "Senior Creative Director, Marketing",
-  "location": "New York, NY",
+  "location": "London, England",
   "why": "шум: creative",
-  "url": "https://careers.duolingo.com/jobs/8442932002?gh_jid=8442932002"
+  "url": "https://careers.duolingo.com/jobs/8442934002?gh_jid=8442934002"
  },
  {
   "company": "Genesis (Studio)",
@@ -1605,13 +1577,6 @@
  {
   "company": "Behavox",
   "title": "Marketing Events Manager ",
-  "location": "Montreal, Quebec, Canada",
-  "why": "шум: event",
-  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132560"
- },
- {
-  "company": "Behavox",
-  "title": "Marketing Events Manager ",
   "location": "Toronto, Ontario, Canada",
   "why": "шум: event",
   "url": "https://job-boards.greenhouse.io/behavox/jobs/8132556"
@@ -1622,6 +1587,13 @@
   "location": "London, UK",
   "why": "шум: event",
   "url": "https://job-boards.greenhouse.io/behavox/jobs/8132559"
+ },
+ {
+  "company": "Behavox",
+  "title": "Marketing Events Manager ",
+  "location": "Montreal, Quebec, Canada",
+  "why": "шум: event",
+  "url": "https://job-boards.greenhouse.io/behavox/jobs/8132560"
  },
  {
   "company": "Field Materials",
@@ -1668,7 +1640,7 @@
  {
   "company": "Higgsfield AI",
   "title": "Senior Public Relations Manager - Consumer, Influencer & Entertainment",
-  "location": "San Francisco Bay Area, USA",
+  "location": "Los Angeles, USA",
   "why": "шум: influencer",
   "url": "https://jobs.ashbyhq.com/higgsfieldai/5c2279d4-9073-4dc4-a2de-4b666d8dfbeb"
  },
@@ -1703,6 +1675,13 @@
  {
   "company": "Xometry",
   "title": "Senior Lifecycle Marketing Manager",
+  "location": "Waltham, MA",
+  "why": "шум: lifecycle",
+  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273973007"
+ },
+ {
+  "company": "Xometry",
+  "title": "Senior Lifecycle Marketing Manager",
   "location": "Lexington, KY",
   "why": "шум: lifecycle",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5273974007"
@@ -1713,13 +1692,6 @@
   "location": "North Bethesda, MD",
   "why": "шум: lifecycle",
   "url": "https://job-boards.greenhouse.io/xometry/jobs/5273969007"
- },
- {
-  "company": "Xometry",
-  "title": "Senior Lifecycle Marketing Manager",
-  "location": "Waltham, MA",
-  "why": "шум: lifecycle",
-  "url": "https://job-boards.greenhouse.io/xometry/jobs/5273973007"
  },
  {
   "company": "AI Digital",
@@ -2038,6 +2010,13 @@
  },
  {
   "company": "Teleport",
+  "title": "Senior Technical Product Marketing Manager",
+  "location": "United States (Remote)",
+  "why": "шум: product marketing",
+  "url": "https://jobs.ashbyhq.com/goteleport/39b75df0-d28e-4c7c-b536-60f177165c19"
+ },
+ {
+  "company": "Teleport",
   "title": "Senior Product Marketing Manager",
   "location": "United States (Remote)",
   "why": "шум: product marketing",
@@ -2126,6 +2105,20 @@
   "location": "Kazakhstan",
   "why": "шум: smm",
   "url": "https://indrive.pinpointhq.com/en/postings/41bf72db-19ef-4cb1-ab70-db6ac8ceee53"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Senior Social Media Manager - UK",
+  "location": "United Kingdom",
+  "why": "шум: social media",
+  "url": "https://jobs.ashbyhq.com/clickhouse/d9d3e937-2373-4a4d-a339-3b5f5b9d3825"
+ },
+ {
+  "company": "ClickHouse",
+  "title": "Senior Social Media Manager",
+  "location": "United States",
+  "why": "шум: social media",
+  "url": "https://jobs.ashbyhq.com/clickhouse/60cebb7f-603b-4831-9bc3-65d90c32eb10"
  },
  {
   "company": "HerculesAI",

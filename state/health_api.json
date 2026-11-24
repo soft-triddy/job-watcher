@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-23 16:02 UTC",
+ "updated": "2026-11-24 15:54 UTC",
  "label": "🆕 ATS",
  "total": 124,
- "broken": 1,
- "jobs_total": 2816,
- "marketing": 118,
+ "broken": 13,
+ "jobs_total": 2756,
+ "marketing": 115,
  "sources": {
   "10Web": {
    "jobs": 0,
    "err": "",
    "note": "BambooHR:10web",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "ABBYY": {
@@ -19,7 +19,7 @@
    "err": "",
    "note": "Greenhouse:abbyy",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Action1": {
@@ -27,7 +27,7 @@
    "err": "",
    "note": "Workable:action1",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Ahrefs": {
@@ -35,15 +35,15 @@
    "err": "",
    "note": "Greenhouse:ahrefsjobs",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "AI Digital": {
-   "jobs": 36,
+   "jobs": 35,
    "err": "",
    "note": "Recruitee:aidigital",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "airSlate": {
@@ -51,7 +51,7 @@
    "err": "",
    "note": "Lever:airslate",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "AppFollow": {
@@ -59,7 +59,7 @@
    "err": "",
    "note": "Lever:appfollow",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "AppQuantum": {
@@ -67,7 +67,7 @@
    "err": "",
    "note": "Pinpoint:appquantum",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Avride": {
@@ -75,7 +75,7 @@
    "err": "",
    "note": "Greenhouse:avride",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Behavox": {
@@ -83,14 +83,14 @@
    "err": "",
    "note": "Greenhouse:behavox",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Birch": {
    "jobs": 0,
-   "err": "",
-   "note": "Workable:birch",
-   "bad_streak": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
@@ -99,7 +99,7 @@
    "err": "",
    "note": "Lever:bumbleinc",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Chattermill": {
@@ -107,30 +107,30 @@
    "err": "",
    "note": "Ashby:chattermill",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Clay": {
-   "jobs": 4,
-   "err": "",
-   "note": "Workable:clayglobal",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
   "ClickHouse": {
-   "jobs": 205,
+   "jobs": 210,
    "err": "",
    "note": "Ashby:clickhouse",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "CloudLinux": {
-   "jobs": 34,
-   "err": "",
-   "note": "Workable:cloudlinux-1",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
@@ -139,7 +139,7 @@
    "err": "",
    "note": "BambooHR:criticalreflex",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "DBeaver": {
@@ -147,7 +147,7 @@
    "err": "",
    "note": "Greenhouse:dbeaver",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "EWA Learn Languages": {
@@ -155,15 +155,15 @@
    "err": "",
    "note": "BambooHR:appewa",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Flo Health": {
-   "jobs": 30,
+   "jobs": 26,
    "err": "",
    "note": "Greenhouse:flohealth",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Hexens": {
@@ -171,31 +171,31 @@
    "err": "",
    "note": "BambooHR:hexens",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Higgsfield AI": {
-   "jobs": 82,
+   "jobs": 85,
    "err": "",
    "note": "Ashby:higgsfieldai",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "HomeBuddy": {
    "jobs": 0,
-   "err": "",
-   "note": "Workable:homebuddy",
-   "bad_streak": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
   "Humanoid AI": {
-   "jobs": 89,
+   "jobs": 87,
    "err": "",
    "note": "Ashby:humanoid",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "HumanSignal": {
@@ -203,7 +203,7 @@
    "err": "",
    "note": "Greenhouse:humansignal",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Intento": {
@@ -211,7 +211,7 @@
    "err": "",
    "note": "Recruitee:intento",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "InvestEngine": {
@@ -219,7 +219,7 @@
    "err": "",
    "note": "Teamtailor:investengine",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Inworld AI": {
@@ -227,14 +227,14 @@
    "err": "",
    "note": "Ashby:inworld-ai",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Joom": {
-   "jobs": 23,
-   "err": "",
-   "note": "Workable:joom",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
@@ -243,7 +243,7 @@
    "err": "",
    "note": "Greenhouse:lokalise",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Luminai": {
@@ -251,7 +251,7 @@
    "err": "",
    "note": "Ashby:luminai",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Object First": {
@@ -259,7 +259,7 @@
    "err": "",
    "note": "Greenhouse:objectfirsts",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "PropellerAds": {
@@ -267,7 +267,7 @@
    "err": "",
    "note": "BambooHR:adtechholding",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "RemoFirst": {
@@ -275,7 +275,7 @@
    "err": "",
    "note": "Lever:remofirst",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Replika": {
@@ -283,22 +283,22 @@
    "err": "",
    "note": "Teamtailor:replika",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Ruby Labs": {
-   "jobs": 31,
+   "jobs": 32,
    "err": "",
    "note": "Ashby:ruby-labs",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Semrush": {
    "jobs": 0,
    "err": "HTTPError 429 Client Error: Too Many Requests for url: https://semrush",
    "note": "",
-   "bad_streak": 1,
+   "bad_streak": 2,
    "last_ok": "2026-11-22",
    "alerted": false
   },
@@ -307,7 +307,7 @@
    "err": "",
    "note": "Breezy:social-discovery-ventures",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Spines.com": {
@@ -315,15 +315,15 @@
    "err": "",
    "note": "Workable:spines",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Sumsub": {
-   "jobs": 34,
+   "jobs": 33,
    "err": "",
    "note": "Teamtailor:sumsub",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "SuperAnnotate": {
@@ -331,7 +331,7 @@
    "err": "",
    "note": "Lever:superannotate",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Synder": {
@@ -339,7 +339,7 @@
    "err": "",
    "note": "BambooHR:synder",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Synthesized": {
@@ -347,15 +347,15 @@
    "err": "",
    "note": "Teamtailor:synthesized",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Teleport": {
-   "jobs": 25,
+   "jobs": 26,
    "err": "",
    "note": "Ashby:goteleport",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Termius": {
@@ -363,14 +363,14 @@
    "err": "",
    "note": "Lever:Termius",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "The Soul Publishing": {
-   "jobs": 3,
-   "err": "",
-   "note": "Workable:thesoul-publishing-1",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
@@ -379,14 +379,14 @@
    "err": "",
    "note": "Recruitee:traceair",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Virtuozzo": {
    "jobs": 0,
-   "err": "",
-   "note": "Workable:virtuozzo",
-   "bad_streak": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
@@ -395,7 +395,7 @@
    "err": "",
    "note": "Breezy:voyagu",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Wallarm": {
@@ -403,7 +403,7 @@
    "err": "",
    "note": "Recruitee:wallarm",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Wayy": {
@@ -411,7 +411,7 @@
    "err": "",
    "note": "Breezy:wayy-llc",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Wheely": {
@@ -419,7 +419,7 @@
    "err": "",
    "note": "Greenhouse:wheely",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "White Circle": {
@@ -427,22 +427,22 @@
    "err": "",
    "note": "Ashby:whitecircle",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Wrike": {
-   "jobs": 65,
+   "jobs": 64,
    "err": "",
    "note": "Greenhouse:wrike",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "ZeptoLab": {
-   "jobs": 1,
-   "err": "",
-   "note": "Workable:zeptolab",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
@@ -451,7 +451,7 @@
    "err": "",
    "note": "Breezy:aura-devices",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Novakid": {
@@ -459,15 +459,15 @@
    "err": "",
    "note": "Recruitee:novakidteachers",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "inDrive": {
-   "jobs": 163,
+   "jobs": 165,
    "err": "",
    "note": "Pinpoint:indrive",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Praktika.ai": {
@@ -475,15 +475,15 @@
    "err": "",
    "note": "Teamtailor:praktika",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Noom": {
-   "jobs": 4,
+   "jobs": 3,
    "err": "",
    "note": "Greenhouse:noomgrowth",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Planner 5D": {
@@ -491,7 +491,7 @@
    "err": "",
    "note": "Lever:planner5d",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Datafold": {
@@ -499,7 +499,7 @@
    "err": "",
    "note": "Ashby:datafold",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "AtBay": {
@@ -507,23 +507,23 @@
    "err": "",
    "note": "Greenhouse:atbayjobs",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Duolingo": {
-   "jobs": 54,
+   "jobs": 52,
    "err": "",
    "note": "Greenhouse:duolingo",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Dwelly": {
-   "jobs": 25,
+   "jobs": 26,
    "err": "",
    "note": "Greenhouse:dwelly",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Enhesa": {
@@ -531,7 +531,7 @@
    "err": "",
    "note": "Greenhouse:enhesa",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Genestack": {
@@ -539,7 +539,7 @@
    "err": "",
    "note": "Breezy:genestack-ltd",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Hirehire": {
@@ -547,23 +547,23 @@
    "err": "",
    "note": "Ashby:hirehire",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Mirantis": {
-   "jobs": 100,
+   "jobs": 92,
    "err": "",
    "note": "SmartRecruiters:Mirantis",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Mitek": {
-   "jobs": 8,
+   "jobs": 7,
    "err": "",
    "note": "Lever:miteksystems-2",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Telnyx": {
@@ -571,7 +571,7 @@
    "err": "",
    "note": "Greenhouse:telnyx54",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Tempo Software": {
@@ -579,15 +579,15 @@
    "err": "",
    "note": "Ashby:tempo-io",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Xometry": {
-   "jobs": 254,
+   "jobs": 262,
    "err": "",
    "note": "Greenhouse:xometry",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Qdrant": {
@@ -595,7 +595,7 @@
    "err": "",
    "note": "Ashby:qdrant.tech",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Insense": {
@@ -603,7 +603,7 @@
    "err": "",
    "note": "Teamtailor:insense.na",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Servers.com": {
@@ -611,15 +611,15 @@
    "err": "",
    "note": "Breezy:servers-com",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "GoStudent": {
-   "jobs": 21,
+   "jobs": 20,
    "err": "",
    "note": "Greenhouse:gostudent",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "DataDome": {
@@ -627,7 +627,7 @@
    "err": "",
    "note": "Greenhouse:ddome",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "1Password": {
@@ -635,15 +635,15 @@
    "err": "",
    "note": "Ashby:1password",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Ajax Systems": {
-   "jobs": 177,
+   "jobs": 176,
    "err": "",
    "note": "Lever:ajax",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "BetterMe": {
@@ -651,23 +651,23 @@
    "err": "",
    "note": "Breezy:betterme",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Carmoola": {
-   "jobs": 7,
-   "err": "",
-   "note": "Workable:carmoola-1",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
   "Coherent Solutions": {
-   "jobs": 14,
+   "jobs": 16,
    "err": "",
    "note": "Greenhouse:coherentsolutions",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Exadel": {
@@ -675,15 +675,15 @@
    "err": "",
    "note": "Greenhouse:exadelinc",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Boku (Fortumo)": {
-   "jobs": 11,
+   "jobs": 13,
    "err": "",
    "note": "Greenhouse:boku",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Fotokite": {
@@ -691,7 +691,7 @@
    "err": "",
    "note": "BambooHR:fotokite",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Fractory": {
@@ -699,7 +699,7 @@
    "err": "",
    "note": "Teamtailor:fractory",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Genesis (Studio)": {
@@ -707,23 +707,23 @@
    "err": "",
    "note": "Breezy:gen-tech",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Giraffe360": {
    "jobs": 0,
-   "err": "",
-   "note": "Workable:giraffe360",
-   "bad_streak": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
   "Hostinger": {
-   "jobs": 43,
+   "jobs": 41,
    "err": "",
    "note": "Ashby:hostinger",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Inbank": {
@@ -731,7 +731,7 @@
    "err": "",
    "note": "Greenhouse:inbank",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Influ2": {
@@ -739,15 +739,15 @@
    "err": "",
    "note": "Lever:influ2",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Jooble": {
-   "jobs": 8,
+   "jobs": 9,
    "err": "",
    "note": "Teamtailor:jooble",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "MGID": {
@@ -755,7 +755,7 @@
    "err": "",
    "note": "Recruitee:mgid",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Miratech": {
@@ -763,7 +763,7 @@
    "err": "",
    "note": "SmartRecruiters:miratechgroup",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "OBRIO (Nebula)": {
@@ -771,15 +771,15 @@
    "err": "",
    "note": "Ashby:OBRIO",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Paysend": {
-   "jobs": 15,
+   "jobs": 13,
    "err": "",
    "note": "Teamtailor:paysend",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Railsware": {
@@ -787,7 +787,7 @@
    "err": "",
    "note": "Greenhouse:railsware",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Reface (Neocortext)": {
@@ -795,7 +795,7 @@
    "err": "",
    "note": "Breezy:reface",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Restream": {
@@ -803,7 +803,7 @@
    "err": "",
    "note": "Ashby:restream",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "SKELAR": {
@@ -811,31 +811,31 @@
    "err": "",
    "note": "Ashby:SKELAR",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Skeleton Technologies": {
-   "jobs": 32,
-   "err": "",
-   "note": "Workable:skeletontech",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
   "Solidgate": {
-   "jobs": 50,
+   "jobs": 51,
    "err": "",
    "note": "Ashby:solidgate",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Starship Technologies": {
-   "jobs": 3,
+   "jobs": 4,
    "err": "",
    "note": "Teamtailor:starship",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Surfshark": {
@@ -843,7 +843,7 @@
    "err": "",
    "note": "Ashby:surfshark",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "VEON (VimpelCom)": {
@@ -851,15 +851,15 @@
    "err": "",
    "note": "Lever:veonhq",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Viseven": {
-   "jobs": 31,
+   "jobs": 33,
    "err": "",
    "note": "Lever:viseven",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "XTX Markets": {
@@ -867,7 +867,7 @@
    "err": "",
    "note": "Greenhouse:xtxmarketstechnologies",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Perforce (ZeroTurnaround/JRebel)": {
@@ -875,7 +875,7 @@
    "err": "",
    "note": "Lever:perforce",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "C Teleport": {
@@ -883,7 +883,7 @@
    "err": "",
    "note": "Teamtailor:cteleport",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "PandaDoc": {
@@ -891,23 +891,23 @@
    "err": "",
    "note": "Greenhouse:pandadoc",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Orion Innovation": {
-   "jobs": 72,
+   "jobs": 73,
    "err": "",
    "note": "Greenhouse:orioninnovation",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Kodland": {
-   "jobs": 69,
+   "jobs": 80,
    "err": "",
    "note": "Recruitee:kodland",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "ManyChat": {
@@ -915,7 +915,7 @@
    "err": "",
    "note": "Ashby:manychat",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Readymag": {
@@ -923,7 +923,7 @@
    "err": "",
    "note": "BambooHR:readymag",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Recraft": {
@@ -931,7 +931,7 @@
    "err": "",
    "note": "Ashby:recraft",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Field Materials": {
@@ -939,7 +939,7 @@
    "err": "",
    "note": "Ashby:fieldmaterials",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Haut.AI": {
@@ -947,15 +947,15 @@
    "err": "",
    "note": "Ashby:haut-ai",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "HerculesAI": {
-   "jobs": 32,
+   "jobs": 29,
    "err": "",
    "note": "Ashby:hercules",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "SOAX": {
@@ -963,7 +963,7 @@
    "err": "",
    "note": "SmartRecruiters:soax",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Bank of Georgia Group (BOG)": {
@@ -971,7 +971,7 @@
    "err": "",
    "note": "SmartRecruiters:bankofgeorgia",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Yolla": {
@@ -979,14 +979,14 @@
    "err": "",
    "note": "Workable:yolla",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   },
   "Altoros": {
-   "jobs": 5,
-   "err": "",
-   "note": "Workable:altoros",
-   "bad_streak": 0,
+   "jobs": 0,
+   "err": "HTTPError 429 Client Error: Too Many Requests for url: https://apply.w",
+   "note": "",
+   "bad_streak": 1,
    "last_ok": "2026-11-23",
    "alerted": false
   },
@@ -995,7 +995,7 @@
    "err": "",
    "note": "Ashby:ssi",
    "bad_streak": 0,
-   "last_ok": "2026-11-23",
+   "last_ok": "2026-11-24",
    "alerted": false
   }
  }
