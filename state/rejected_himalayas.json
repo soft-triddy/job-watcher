@@ -21,13 +21,6 @@
   "url": "https://himalayas.app/companies/search-atlas/jobs/seo-customer-success-team-lead?utm_source=api"
  },
  {
-  "company": "PubNub",
-  "title": "Developer Marketing Manager, Blocks Network",
-  "location": "148 стран, есть Кыргызстан",
-  "why": "роль: engineer",
-  "url": "https://himalayas.app/companies/pubnub/jobs/developer-marketing-manager-blocks-network?utm_source=api"
- },
- {
   "company": "SimpleTiger",
   "title": "Web Developer: WordPress & HubSpot (U.S. Based, Remote Contractor)",
   "location": "",
@@ -49,6 +42,13 @@
   "url": "https://himalayas.app/companies/capslock/jobs/talent-acquisition-specialist-7666912127?utm_source=api"
  },
  {
+  "company": "Indigo VC",
+  "title": "Acquisition Executive (Roblox Games)",
+  "location": "",
+  "why": "шум: acquisition",
+  "url": "https://himalayas.app/companies/indigo-vc/jobs/acquisition-executive-roblox-games?utm_source=api"
+ },
+ {
   "company": "Bondora",
   "title": "Senior Affiliate Marketing Manager",
   "location": "148 стран, есть Кыргызстан",
@@ -68,20 +68,6 @@
   "location": "",
   "why": "шум: affiliate",
   "url": "https://himalayas.app/companies/growe-talents/jobs/affiliate-manager?utm_source=api"
- },
- {
-  "company": "Nordic Recruiters",
-  "title": "Affiliate Manager (Spanish) - remote, EMEA or LATAM region",
-  "location": "193 стран, есть Кыргызстан",
-  "why": "шум: affiliate",
-  "url": "https://himalayas.app/companies/nordic-recruiters/jobs/affiliate-manager-spanish-remote-emea-or-latam-region?utm_source=api"
- },
- {
-  "company": "Nordic Recruiters",
-  "title": "Affiliate Manager (Russian) - EMEA, Remote",
-  "location": "149 стран, есть Кыргызстан",
-  "why": "шум: affiliate",
-  "url": "https://himalayas.app/companies/nordic-recruiters/jobs/affiliate-manager-russian-emea-remote?utm_source=api"
  },
  {
   "company": "PlayAttack",
@@ -152,6 +138,13 @@
   "location": "148 стран, есть Кыргызстан",
   "why": "шум: field marketing",
   "url": "https://himalayas.app/companies/sitime/jobs/field-marketing-manager-emea?utm_source=api"
+ },
+ {
+  "company": "Health Loft",
+  "title": "Senior Paid Media/ SEM Manager",
+  "location": "",
+  "why": "шум: paid",
+  "url": "https://himalayas.app/companies/health-loft/jobs/senior-paid-media-sem-manager?utm_source=api"
  },
  {
   "company": "Triangulate Digital",
