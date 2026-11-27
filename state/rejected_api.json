@@ -393,6 +393,13 @@
  },
  {
   "company": "SKELAR",
+  "title": "Middle Creative Marketing Designer",
+  "location": "Ukraine, Remote",
+  "why": "роль: design",
+  "url": "https://jobs.ashbyhq.com/SKELAR/fe15c246-30ab-4c63-a1ba-c563cce40e11"
+ },
+ {
+  "company": "SKELAR",
   "title": "Marketing Designer switch to Creative Marketing Manager",
   "location": "Ukraine, Remote",
   "why": "роль: design",
@@ -616,13 +623,6 @@
   "url": "https://jobs.ashbyhq.com/hostinger/5de8eec3-9a53-4d6f-ac52-fcba9a9cd2dd"
  },
  {
-  "company": "Hostinger",
-  "title": "Community Growth Lead (Developers & Agentic Products)",
-  "location": "Vilnius",
-  "why": "роль: engineer",
-  "url": "https://jobs.ashbyhq.com/hostinger/fcae6357-0232-43db-a1aa-49abdf17aa01"
- },
- {
   "company": "Joom",
   "title": "Senior Data Acquisition Engineer at JoomPulse",
   "location": "Lisbon",
@@ -638,7 +638,7 @@
  },
  {
   "company": "Orion Innovation",
-  "title": "206518 - Digital Senior Developer",
+  "title": "Digital Senior Developer",
   "location": "Mumbai, Maharashtra, India",
   "why": "роль: engineer",
   "url": "https://www.orioninc.com/careers/job/?gh_jid=4721811006"
@@ -988,7 +988,7 @@
  },
  {
   "company": "Dwelly",
-  "title": "Lead Talent Acquisitions Partner (Engineering)",
+  "title": "Lead Talent Acquisition Partner (Engineering)",
   "location": "London",
   "why": "роль: talent acquisition",
   "url": "https://job-boards.eu.greenhouse.io/dwelly/jobs/5032742101"
@@ -1260,13 +1260,6 @@
   "url": "https://job-boards.greenhouse.io/ahrefsjobs/jobs/6196765004"
  },
  {
-  "company": "Dwelly",
-  "title": "Head of Community",
-  "location": "London, UK ",
-  "why": "шум: community",
-  "url": "https://job-boards.eu.greenhouse.io/dwelly/jobs/4947970101"
- },
- {
   "company": "Higgsfield AI",
   "title": "Reddit Community Manager",
   "location": "Almaty, Kazakhstan",
@@ -1300,6 +1293,13 @@
   "location": "Ukraine",
   "why": "шум: content",
   "url": "https://betterme.breezy.hr/p/c3caf5f989a5-ai-content-producer"
+ },
+ {
+  "company": "BetterMe",
+  "title": "Creator Content Specialist",
+  "location": "Ukraine",
+  "why": "шум: content",
+  "url": "https://betterme.breezy.hr/p/52d2f52e347a-creator-content-specialist"
  },
  {
   "company": "HerculesAI",
@@ -1799,6 +1799,13 @@
   "url": "https://jobs.ashbyhq.com/surfshark/2f98e0c3-b967-4d66-baa4-7a9902889418"
  },
  {
+  "company": "Surfshark",
+  "title": "Performance Video Editor",
+  "location": "Vilnius",
+  "why": "шум: performance",
+  "url": "https://jobs.ashbyhq.com/surfshark/e6050fc9-6378-479c-bd5c-6e3332818952"
+ },
+ {
   "company": "Xometry",
   "title": "Copywriter, Performance Marketing",
   "location": "Buenos Aires, Argentina",
@@ -1965,13 +1972,6 @@
   "location": "Kyiv",
   "why": "шум: product marketing",
   "url": "https://jobs.ashbyhq.com/SKELAR/74cb17d7-283f-423a-9b7f-7b33110bf879"
- },
- {
-  "company": "Semrush",
-  "title": "Global Head of Product Marketing PLG (Marketing Team)",
-  "location": "Berlin",
-  "why": "шум: product marketing",
-  "url": "https://semrush.wd5.myworkdayjobs.com/semrushcareers/job/Berlin/Global-Head-of-Product-Marketing-PLG--Marketing-Team-_JR100969"
  },
  {
   "company": "Social Discovery Group",
@@ -2294,5 +2294,12 @@
   "location": "Lviv",
   "why": "шум: user acquisition",
   "url": "https://jobs.ashbyhq.com/SKELAR/f8adb9dd-f2fb-439c-9a70-f206e0a91d08"
+ },
+ {
+  "company": "SKELAR",
+  "title": "User Acquisition Manager - Storyby",
+  "location": "Ukraine, Remote",
+  "why": "шум: user acquisition",
+  "url": "https://jobs.ashbyhq.com/SKELAR/508b6b26-295e-4f33-9991-fbc1574b3694"
  }
 ]
